@@ -1,4 +1,7 @@
 Redesignproject::Application.routes.draw do
+
+  root to: "redesign#home"
+  get "redesign/welcome"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

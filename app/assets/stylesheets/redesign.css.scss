@@ -1,0 +1,23 @@
+// Place all the styles related to the redesign controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//Main menus in the navbar
+header li[id|=navbar-item] > a {
+  text-transform: uppercase;
+}
+
+#navbar-item-openapp {
+  font-weight: bold;
+}
+
+#navbar-item-notifications > a,
+#navbar-item-downloads > a,
+#navbar-item-security > a,
+#navbar-item-settings > a, {
+  font-size: 20px;
+}
+
+#notifications-quantity {
+
+}
