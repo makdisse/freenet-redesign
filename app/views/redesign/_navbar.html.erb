@@ -1,10 +1,11 @@
 <header id="navbar" class="navbar navbar-inverse navbar-fixed-top">
-  <div class="navbar-inner">
+  <nav class="navbar-inner">
     <div class="container">
       <a class="brand" href="#">
         <span id="#logo"></span> Freenet</a>
 
       <ul class="nav" id="navbar-item-openapp">
+        <li class="divider-vertical"></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sone <b class="caret"></b></a>
           <ul class="dropdown-menu">
@@ -27,8 +28,10 @@
             <li><a href="#">One more separated link</a></li>
           </ul>
         </li>
+
         </ul>
       <ul class="nav pull-right">
+        <li class="divider-vertical"></li>
         <li class="dropdown" id="navbar-item-apps">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">apps <b class="caret"></b></a>
           <ul class="dropdown-menu">
@@ -93,9 +96,10 @@
             <li><a href="#">Upload File</a></li>
           </ul>
         </li>
+        <li class="divider-vertical"></li>
         <li class="dropdown" id="navbar-item-notifications">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            <span id="notifications-quantity" class="label">
+            <span id="notifications-quantity" class="label label-warning">
               1
             </span></a>
           <ul class="dropdown-menu">
@@ -148,5 +152,5 @@
 
       </ul>
     </div>
-  </div>
+  </nav>
 </header>
