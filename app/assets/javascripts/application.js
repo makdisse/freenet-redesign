@@ -19,6 +19,13 @@
 $(document).ready(function() {
     $("[data-toggle='tooltip']").tooltip({
         placement: 'right',
-        container: 'body'
+        container: 'body',
     });
+
+    $("[data-toggle='popover']").popover({
+        container: 'body',
+        html: 'true'
+    }).click(function(e) {
+        e.preventDefault();
+     });;
 })
