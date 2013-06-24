@@ -1,4 +1,4 @@
-
+<%= render partial: 'redesign/navbar', locals: {menu:  "none"} %>
 <div class="row">
   <div class="span4">
     <legend>Messages</legend>
@@ -92,8 +92,8 @@
       <div class="span4">
         <h5>Install new apps</h5>
         <ul>
-          <li><strong>Sone</strong>  <small class="muted">microblogging platform</small> <a href="#" class="btn btn-link btn-mini">Learn more</a></li>
-          <li><strong>FMS</strong>  <small class="muted">forum</small> <a href="#" class="btn btn-link btn-mini">Learn more</a></li>
+          <li><strong>Sone</strong>  <small class="muted">microblogging platform</small> <a href="#installAppModal" class="btn btn-link btn-mini"  data-toggle="modal">Learn more</a></li>
+          <li><strong>FMS</strong>  <small class="muted">forum</small> <a href="#installAppModalExisting" class="btn btn-link btn-mini" data-toggle="modal">Learn more</a></li>
           <li><strong>FLIC</strong>  <small class="muted">real-time chat</small> <a href="#" class="btn btn-link btn-mini">Learn more</a></li>
           <li><strong>Freemail</strong>  <small class="muted">anonymous email</small> <a href="#" class="btn btn-link btn-mini">Learn more</a></li>
         </ul>
@@ -141,3 +141,6 @@
     <a href="#" class="btn btn-small ">Shutdown freenet</a>
   </div>
 </div>
+
+<%= render 'redesign/welcomemodal_new' %>
+<%= render 'redesign/welcomemodal_existing' %>

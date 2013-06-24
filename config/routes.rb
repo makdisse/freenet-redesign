@@ -1,8 +1,10 @@
 Redesignproject::Application.routes.draw do
 
   root to: "redesign#home"
-  get "redesign/welcome"
+  match "/welcome" => "redesign#welcome"
   get "redesign/downloadingfile"
+  get "redesign/search"
+  get "redesign/searchinprogress"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

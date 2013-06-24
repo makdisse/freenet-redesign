@@ -29,3 +29,23 @@ header li[id|=navbar-item] > a {
 	text-decorarion: none;
 	font-size: 1.1em;
 }
+
+#search-advanced {
+	margin-top: 100px;
+}
+
+.show-item-on-mouse-over .item-to-show {
+	display:none;
+}
+
+.show-item-on-mouse-over:hover .item-to-show {
+	display:inline;
+}
+
+.index-status {
+	margin-top: -20px;
+}
+
+#search-index-status-block {
+	margin-top: 40px;
+}
