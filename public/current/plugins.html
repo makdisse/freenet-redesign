@@ -1,0 +1,666 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN">
+<!-- saved from url=(0030)http://127.0.0.1:8888/plugins/ -->
+<html xml:lang="eng"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+			<title>Plugins - Freenet</title>
+			<noscript>&lt;style&gt; .jsonly {display:none;}&lt;/style&gt;</noscript>
+			<link title="clean-dropdown" rel="stylesheet" type="text/css" href="theme.css">
+			<meta content="10; url=" http-equiv="refresh">
+
+		</head>
+		<body id="page-_plugins_" class="fproxy-page">
+			<div id="page">
+				<div id="topbar">
+					<h1>Plugins</h1>
+
+				</div>
+				<div id="statusbar-container">
+					<div id="statusbar">
+						<div id="statusbar-alerts" class="alerts-line contains-information">
+							<div class="infobox-header">
+								Outstanding alerts
+							</div>
+							<div class="infobox-content">
+								<a href="http://127.0.0.1:8888/alerts/">Messages: 3 Minor</a>
+							</div>
+
+						</div>
+						<div class="separator">
+							&nbsp;
+						</div>
+						<div id="statusbar-language">
+							<a href="http://127.0.0.1:8888/config/node#l10n">English</a>
+						</div>
+						<div class="separator">
+							&nbsp;
+						</div>
+						<div id="statusbar-switchmode" class="simple">
+							<a href="http://127.0.0.1:8888/plugins/?fproxyAdvancedMode=1">Switch to simple mode</a>
+						</div>
+						<div class="separator">
+							&nbsp;
+						</div>
+						<div id="statusbar-seclevels">
+							Security levels:<a title="Protection against a stranger attacking you over the Internet" class="low" href="http://127.0.0.1:8888/seclevels/">LOW&nbsp;</a><a title="Protection of your downloads, uploads and Freenet browsing cache" class="normal" href="http://127.0.0.1:8888/seclevels/">LOW</a>
+						</div>
+						<div class="separator">
+							&nbsp;
+						</div>
+						<div class="progressbar">
+							<div style="width: 80.0%;" class="progressbar-done progressbar-peers full-peers">
+							</div>
+							<div title="We are currently connected to 0 friends and 8 strangers." class="progress_fraction_finalized">
+								8 / 10
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+				<div id="navbar">
+					<ul id="navlist">
+						<li id="FProxyToadlet_categoryTitleBrowsing" class="navlist-not-selected"><a title="Browse Freenet" href="http://127.0.0.1:8888/">Browsing</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Browse and search Freesites, web sites hosted anonymously on Freenet" href="http://127.0.0.1:8888/">Browse Freenet</a></li>
+								<li class="submenuitem-not-selected"><a title="Upload a web site anonymously to Freenet" href="http://127.0.0.1:8888/insertsite/">Upload a Freesite</a></li>
+								<li class="submenuitem-not-selected"><a title="Search Freenet!" href="http://127.0.0.1:8888/library/">Search Freenet!</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleQueue" class="navlist-not-selected"><a title="Uploads and downloads" href="http://127.0.0.1:8888/downloads/">Filesharing</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Files being downloaded from Freenet" href="http://127.0.0.1:8888/downloads/">Downloads</a></li>
+								<li class="submenuitem-not-selected"><a title="Files being uploaded to Freenet" href="http://127.0.0.1:8888/uploads/">Uploads</a></li>
+								<li class="submenuitem-not-selected"><a title="Upload a file to Freenet" href="http://127.0.0.1:8888/insertfile/">Upload a file</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleFriends" class="navlist-not-selected"><a title="Connect to your friends to improve Freenet&#39;s performance and security" href="http://127.0.0.1:8888/friends/">Friends</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Connections to your friends&#39; nodes" href="http://127.0.0.1:8888/friends/">Connections to friends</a></li>
+								<li class="submenuitem-not-selected"><a title="Connect to a friend running Freenet to improve your security" href="http://127.0.0.1:8888/addfriend/">Add a Friend</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleChat" class="navlist-not-selected"><a title="Talk with other people over Freenet on message boards" href="http://127.0.0.1:8888/chat/">Discussion</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="How to talk to other Freenet users anonymously over chat forums" href="http://127.0.0.1:8888/chat/">Forums</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleStatus" class="navlist-not-selected"><a title="Status information" href="http://127.0.0.1:8888/alerts/">Status</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Detailed status alerts and messages from your Friends" href="http://127.0.0.1:8888/alerts/">Messages</a></li>
+								<li class="submenuitem-not-selected"><a title="Connections to nodes you have no reason to trust" href="http://127.0.0.1:8888/strangers/">Connections to strangers</a></li>
+								<li class="submenuitem-not-selected"><a title="Detailed statistics about your Freenet node" href="http://127.0.0.1:8888/stats/">Statistics</a></li>
+								<li class="submenuitem-not-selected"><a title="Diagnostics to send to developers" href="http://127.0.0.1:8888/diagnostic/">Diagnostic</a></li>
+								<li class="submenuitem-not-selected"><a title="Status of your internet connection (port forwarding etc)" href="http://127.0.0.1:8888/connectivity/">Internet connection</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleConfig" class="navlist-selected"><a title="Configure Freenet" href="http://127.0.0.1:8888/seclevels/">Configuration</a><ul class="subnavlist-selected">
+								<li class="submenuitem-not-selected"><a title="Configure the level of security provided by Freenet" href="http://127.0.0.1:8888/seclevels/">Security Levels</a></li>
+								<li class="submenuitem-selected"><a title="Configure plugins" href="./plugins_files/plugins.html">Plugins</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure the console interface" href="http://127.0.0.1:8888/config/console">Console interface</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure Freenet Client Protocol (used for client applications to talk to Freenet)" href="http://127.0.0.1:8888/config/fcp">FCP</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure the web interface" href="http://127.0.0.1:8888/config/fproxy">Web interface</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure the amount of information kept by Freenet for troubleshooting purposes" href="http://127.0.0.1:8888/config/logger">Logs</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure core settings e.g. bandwidth usage" href="http://127.0.0.1:8888/config/node">Core settings</a></li>
+								<li class="submenuitem-not-selected"><a title="Installation settings, e.g. readonly program directory locations" href="http://127.0.0.1:8888/config/node.install">Installation settings</a></li>
+								<li class="submenuitem-not-selected"><a title="Settings for controlling the amount of traffic through your Freenet node" href="http://127.0.0.1:8888/config/node.load">Load management</a></li>
+								<li class="submenuitem-not-selected"><a title="Settings related to connecting to nodes other than Friends" href="http://127.0.0.1:8888/config/node.opennet">Opennet</a></li>
+								<li class="submenuitem-not-selected"><a title="Settings related to choosing local requests to run" href="http://127.0.0.1:8888/config/node.scheduler">Request scheduling</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure the auto-update system" href="http://127.0.0.1:8888/config/node.updater">Auto-update</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure SSL" href="http://127.0.0.1:8888/config/ssl">SSL (restart required)</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure web interface aliases" href="http://127.0.0.1:8888/config/toadletsymlinker">Web interface aliases</a></li>
+								<li class="submenuitem-not-selected"><a title="Contribute to the translation" href="http://127.0.0.1:8888/translation/">Translation</a></li>
+								<li class="submenuitem-not-selected"><a title="default settings for KeyUtils" href="http://127.0.0.1:8888/config/plugins.KeyUtils.KeyUtilsPlugin">KeyUtils</a></li>
+
+							</ul>
+							</li>
+						<li id="plugins_KeyUtils_KeyUtilsPlugin-ConfigToadlet_plugins_KeyUtils_KeyUtilsPlugin_label" class="navlist-not-selected"><a title="Toolbox for debugging Freenet URIs and more…" href="http://127.0.0.1:8888/KeyUtils/">KeyUtils</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Explore a Freenet URI" href="http://127.0.0.1:8888/KeyUtils/">Key Explorer</a></li>
+								<li class="submenuitem-not-selected"><a title="Explore a site manifest" href="http://127.0.0.1:8888/KeyUtils/Site">Site Explorer</a></li>
+								<li class="submenuitem-not-selected"><a title="Explore a split file" href="http://127.0.0.1:8888/KeyUtils/Split">Split Explorer</a></li>
+								<li class="submenuitem-not-selected"><a title="Compose and decompose Freenet URI extra data" href="http://127.0.0.1:8888/KeyUtils/Extra">Extra Calculator</a></li>
+								<li class="submenuitem-not-selected"><a title="Show the contents of a FBlob" href="http://127.0.0.1:8888/KeyUtils/FBlob">FBlob Viewer</a></li>
+								<li class="submenuitem-not-selected"><a title="Convert a file key to CHK" href="http://127.0.0.1:8888/KeyUtils/KeyConverter">Key Converter</a></li>
+								<li class="submenuitem-not-selected"><a title="Info about Key Utils" href="http://127.0.0.1:8888/KeyUtils/About">About</a></li>
+
+							</ul>
+							</li>
+
+					</ul>
+
+				</div>
+				<div id="selected-subnavbar">
+					<ul id="selected-subnavbar-list">
+						<li class="submenuitem-not-selected"><a title="Configure the level of security provided by Freenet" href="http://127.0.0.1:8888/seclevels/">Security Levels</a></li>
+						<li class="submenuitem-selected"><a title="Configure plugins" href="./plugins_files/plugins.html">Plugins</a></li>
+						<li class="submenuitem-not-selected"><a title="Configure the console interface" href="http://127.0.0.1:8888/config/console">Console interface</a></li>
+						<li class="submenuitem-not-selected"><a title="Configure Freenet Client Protocol (used for client applications to talk to Freenet)" href="http://127.0.0.1:8888/config/fcp">FCP</a></li>
+						<li class="submenuitem-not-selected"><a title="Configure the web interface" href="http://127.0.0.1:8888/config/fproxy">Web interface</a></li>
+						<li class="submenuitem-not-selected"><a title="Configure the amount of information kept by Freenet for troubleshooting purposes" href="http://127.0.0.1:8888/config/logger">Logs</a></li>
+						<li class="submenuitem-not-selected"><a title="Configure core settings e.g. bandwidth usage" href="http://127.0.0.1:8888/config/node">Core settings</a></li>
+						<li class="submenuitem-not-selected"><a title="Installation settings, e.g. readonly program directory locations" href="http://127.0.0.1:8888/config/node.install">Installation settings</a></li>
+						<li class="submenuitem-not-selected"><a title="Settings for controlling the amount of traffic through your Freenet node" href="http://127.0.0.1:8888/config/node.load">Load management</a></li>
+						<li class="submenuitem-not-selected"><a title="Settings related to connecting to nodes other than Friends" href="http://127.0.0.1:8888/config/node.opennet">Opennet</a></li>
+						<li class="submenuitem-not-selected"><a title="Settings related to choosing local requests to run" href="http://127.0.0.1:8888/config/node.scheduler">Request scheduling</a></li>
+						<li class="submenuitem-not-selected"><a title="Configure the auto-update system" href="http://127.0.0.1:8888/config/node.updater">Auto-update</a></li>
+						<li class="submenuitem-not-selected"><a title="Configure SSL" href="http://127.0.0.1:8888/config/ssl">SSL (restart required)</a></li>
+						<li class="submenuitem-not-selected"><a title="Configure web interface aliases" href="http://127.0.0.1:8888/config/toadletsymlinker">Web interface aliases</a></li>
+						<li class="submenuitem-not-selected"><a title="Contribute to the translation" href="http://127.0.0.1:8888/translation/">Translation</a></li>
+						<li class="submenuitem-not-selected"><a title="default settings for KeyUtils" href="http://127.0.0.1:8888/config/plugins.KeyUtils.KeyUtilsPlugin">KeyUtils</a></li>
+
+					</ul>
+
+				</div>
+				<div id="content">
+					<div class="infobox infobox-normal">
+						<div class="infobox-header">
+							Starting Plugins
+						</div>
+						<div class="infobox-content">
+							<table>
+								<tbody><tr>
+									<th>Plugin name</th><th>Current status</th><th>Time spent</th>
+								</tr>
+								<tr>
+									<td>
+										WebOfTrust
+									</td>
+									<td>
+										downloading
+									</td>
+									<td aligh="right">
+										4s
+									</td>
+
+								</tr>
+
+							</tbody></table>
+
+						</div>
+
+					</div>
+					<div class="infobox infobox-normal">
+						<div class="infobox-header">
+							Plugins currently loaded
+						</div>
+						<div class="infobox-content">
+							<table class="plugins">
+								<tbody><tr>
+									<th>Name</th><th>Class Name</th><th>Version</th><th>Internal ID</th><th>Started at</th><th></th><th></th><th></th>
+								</tr>
+								<tr>
+									<td>
+										JSTUN
+									</td>
+									<td>
+										plugins.JSTUN.JSTUN
+									</td>
+									<td>
+										1.2 (3)
+									</td>
+									<td>
+										pplugins.JSTUN.JSTUN_9125674
+									</td>
+									<td>
+										Sat Jun 15 16:26:54 CEST 2013
+									</td>
+									<td>
+										<form target="_blank" action="http://127.0.0.1:8888/plugins/plugins.JSTUN.JSTUN" method="get">
+											<input name="formPassword" value="QJm3SVinCbLFUOQyLQ8NHg" type="hidden">
+
+											<input value="Visit" type="submit">
+
+
+										</form>
+
+									</td>
+									<td>
+										<div>
+											<form id="unloadPluginForm" enctype="multipart/form-data" action="./plugins_files/plugins.html" method="post" accept-charset="utf-8">
+												<input name="formPassword" value="QJm3SVinCbLFUOQyLQ8NHg" type="hidden">
+
+												<input name="unload" value="pplugins.JSTUN.JSTUN_9125674" type="hidden">
+
+												<input value="Unload" type="submit">
+
+
+											</form>
+
+										</div>
+
+									</td>
+									<td>
+										<div>
+											<form id="reloadPluginForm" enctype="multipart/form-data" action="./plugins_files/plugins.html" method="post" accept-charset="utf-8">
+												<input name="formPassword" value="QJm3SVinCbLFUOQyLQ8NHg" type="hidden">
+
+												<input name="reload" value="pplugins.JSTUN.JSTUN_9125674" type="hidden">
+
+												<input value="Reload" type="submit">
+
+
+											</form>
+
+										</div>
+
+									</td>
+
+								</tr>
+								<tr>
+									<td>
+										KeyUtils
+									</td>
+									<td>
+										plugins.KeyUtils.KeyUtilsPlugin
+									</td>
+									<td>
+										0.5.3 v5019 (5019)
+									</td>
+									<td>
+										pplugins.KeyUtils.KeyUtilsPlugin_29345320
+									</td>
+									<td>
+										Sat Jun 15 16:26:54 CEST 2013
+									</td>
+									<td>
+									</td>
+									<td>
+										<div>
+											<form id="unloadPluginForm" enctype="multipart/form-data" action="./plugins_files/plugins.html" method="post" accept-charset="utf-8">
+												<input name="formPassword" value="QJm3SVinCbLFUOQyLQ8NHg" type="hidden">
+
+												<input name="unload" value="pplugins.KeyUtils.KeyUtilsPlugin_29345320" type="hidden">
+
+												<input value="Unload" type="submit">
+
+
+											</form>
+
+										</div>
+
+									</td>
+									<td>
+										<div>
+											<form id="reloadPluginForm" enctype="multipart/form-data" action="./plugins_files/plugins.html" method="post" accept-charset="utf-8">
+												<input name="formPassword" value="QJm3SVinCbLFUOQyLQ8NHg" type="hidden">
+
+												<input name="reload" value="pplugins.KeyUtils.KeyUtilsPlugin_29345320" type="hidden">
+
+												<input value="Reload" type="submit">
+
+
+											</form>
+
+										</div>
+
+									</td>
+
+								</tr>
+								<tr>
+									<td>
+										Library
+									</td>
+									<td>
+										plugins.Library.Main
+									</td>
+									<td>
+										27 v27 (27)
+									</td>
+									<td>
+										pplugins.Library.Main_17456856
+									</td>
+									<td>
+										Sat Jun 15 16:27:00 CEST 2013
+									</td>
+									<td>
+										<form target="_blank" action="http://127.0.0.1:8888/plugins/plugins.Library.Main" method="get">
+											<input name="formPassword" value="QJm3SVinCbLFUOQyLQ8NHg" type="hidden">
+
+											<input value="Visit" type="submit">
+
+
+										</form>
+
+									</td>
+									<td>
+										<div>
+											<form id="unloadPluginForm" enctype="multipart/form-data" action="./plugins_files/plugins.html" method="post" accept-charset="utf-8">
+												<input name="formPassword" value="QJm3SVinCbLFUOQyLQ8NHg" type="hidden">
+
+												<input name="unload" value="pplugins.Library.Main_17456856" type="hidden">
+
+												<input value="Unload" type="submit">
+
+
+											</form>
+
+										</div>
+
+									</td>
+									<td>
+										<div>
+											<form id="reloadPluginForm" enctype="multipart/form-data" action="./plugins_files/plugins.html" method="post" accept-charset="utf-8">
+												<input name="formPassword" value="QJm3SVinCbLFUOQyLQ8NHg" type="hidden">
+
+												<input name="reload" value="pplugins.Library.Main_17456856" type="hidden">
+
+												<input value="Reload" type="submit">
+
+
+											</form>
+
+										</div>
+
+									</td>
+
+								</tr>
+								<tr>
+									<td>
+										ThawIndexBrowser
+									</td>
+									<td>
+										plugins.ThawIndexBrowser.ThawIndexBrowser
+									</td>
+									<td>
+										0.1 r@custom@ (5)
+									</td>
+									<td>
+										pplugins.ThawIndexBrowser.ThawIndexBrowser_6422238
+									</td>
+									<td>
+										Sat Jun 15 16:26:54 CEST 2013
+									</td>
+									<td>
+										<form target="_blank" action="http://127.0.0.1:8888/plugins/plugins.ThawIndexBrowser.ThawIndexBrowser" method="get">
+											<input name="formPassword" value="QJm3SVinCbLFUOQyLQ8NHg" type="hidden">
+
+											<input value="Visit" type="submit">
+
+
+										</form>
+
+									</td>
+									<td>
+										<div>
+											<form id="unloadPluginForm" enctype="multipart/form-data" action="./plugins_files/plugins.html" method="post" accept-charset="utf-8">
+												<input name="formPassword" value="QJm3SVinCbLFUOQyLQ8NHg" type="hidden">
+
+												<input name="unload" value="pplugins.ThawIndexBrowser.ThawIndexBrowser_6422238" type="hidden">
+
+												<input value="Unload" type="submit">
+
+
+											</form>
+
+										</div>
+
+									</td>
+									<td>
+										<div>
+											<form id="reloadPluginForm" enctype="multipart/form-data" action="./plugins_files/plugins.html" method="post" accept-charset="utf-8">
+												<input name="formPassword" value="QJm3SVinCbLFUOQyLQ8NHg" type="hidden">
+
+												<input name="reload" value="pplugins.ThawIndexBrowser.ThawIndexBrowser_6422238" type="hidden">
+
+												<input value="Reload" type="submit">
+
+
+											</form>
+
+										</div>
+
+									</td>
+
+								</tr>
+								<tr>
+									<td>
+										UPnP
+									</td>
+									<td>
+										plugins.UPnP.UPnP
+									</td>
+									<td>
+										1.5 @custom@ (10005)
+									</td>
+									<td>
+										pplugins.UPnP.UPnP_976496
+									</td>
+									<td>
+										Sat Jun 15 16:26:54 CEST 2013
+									</td>
+									<td>
+										<form target="_blank" action="http://127.0.0.1:8888/plugins/plugins.UPnP.UPnP" method="get">
+											<input name="formPassword" value="QJm3SVinCbLFUOQyLQ8NHg" type="hidden">
+
+											<input value="Visit" type="submit">
+
+
+										</form>
+
+									</td>
+									<td>
+										<div>
+											<form id="unloadPluginForm" enctype="multipart/form-data" action="./plugins_files/plugins.html" method="post" accept-charset="utf-8">
+												<input name="formPassword" value="QJm3SVinCbLFUOQyLQ8NHg" type="hidden">
+
+												<input name="unload" value="pplugins.UPnP.UPnP_976496" type="hidden">
+
+												<input value="Unload" type="submit">
+
+
+											</form>
+
+										</div>
+
+									</td>
+									<td>
+										<div>
+											<form id="reloadPluginForm" enctype="multipart/form-data" action="./plugins_files/plugins.html" method="post" accept-charset="utf-8">
+												<input name="formPassword" value="QJm3SVinCbLFUOQyLQ8NHg" type="hidden">
+
+												<input name="reload" value="pplugins.UPnP.UPnP_976496" type="hidden">
+
+												<input value="Reload" type="submit">
+
+
+											</form>
+
+										</div>
+
+									</td>
+
+								</tr>
+
+							</tbody></table>
+
+						</div>
+
+					</div>
+					<div class="infobox infobox-normal">
+						<div class="infobox-header">
+							Add an Official Plugin
+						</div>
+						<div class="infobox-content">
+							<div>
+								<form id="addOfficialPluginForm" enctype="multipart/form-data" action="./plugins_files/plugins.html" method="post" accept-charset="utf-8">
+									<input name="formPassword" value="QJm3SVinCbLFUOQyLQ8NHg" type="hidden">
+
+									<p>You can load any of these official plugins. We believe these plugins are free of privacy leaks, although bugs are possible and we make no guarantees. You can also load unofficial plugins, see below. You can either fetch the plugin over Freenet or from our central servers:</p><input name="pluginSource" value="freenet" type="radio" checked="true">
+
+									Fetch over Freenet. This is untraceable, safe, and may be slow.<br><input name="pluginSource" value="https" type="radio">
+
+									Fetch over the web from our central servers. <b>WARNING: This will give away the fact that you are running Freenet, and won't work if our website is blocked! It may even be possible for a wiretapper to tell what you are trying to load, and thus connect it with when e.g. a Freemail identity was created.</b><p>Load an official plugin: </p><div class="plugin-group">
+										<div class="plugin-group-title">
+											Communication Plugins
+										</div>
+										<div class="plugin">
+											<input name="plugin-name" value="FlogHelper" type="radio">
+												<i>FlogHelper</i> (version 29) - Easy to use tool for creating a blog on Freenet. Requires WebOfTrust.
+
+
+										</div>
+										<div class="plugin">
+											<input name="plugin-name" value="Freemail" type="radio">
+												<i>Freemail</i> (version 15) - Email over Freenet. Requires an email client (e.g. Thunderbird).
+
+
+										</div>
+										<div class="plugin">
+											<input name="plugin-name" value="Freetalk" type="radio">
+												<i>Freetalk</i> (version 13) - Experimental anonymous forum. Currently has severe performance and reliability problems. Requires WebOfTrust.
+
+
+										</div>
+
+									</div>
+									<div class="plugin-group">
+										<div class="plugin-group-title">
+											Connectivity Plugins
+										</div>
+										<div class="plugin">
+											<input name="plugin-name" value="MDNSDiscovery" type="radio">
+												<i>MDNSDiscovery</i> (version 2) - Announces Freenet on your local network (LAN) so that clients can automatically connect to it. Not used much at the moment.
+
+
+										</div>
+										<div class="plugin">
+											<input name="plugin-name" value="SNMP" type="radio">
+												<i>SNMP</i> - Enables you to remotely monitor your Freenet node's status via tools such as MRTG.
+
+
+										</div>
+
+									</div>
+									<div class="plugin-group">
+										<div class="plugin-group-title">
+											Example Plugins
+										</div>
+										<div class="plugin">
+											<input name="plugin-name" value="HelloFCP" type="radio">
+												<i>HelloFCP</i> - FCP test plugin. Does nothing useful, only for developers of new plugins.
+
+
+										</div>
+										<div class="plugin">
+											<input name="plugin-name" value="HelloWorld" type="radio">
+												<i>HelloWorld</i> - Test plugin. Does nothing useful, only for developers of new plugins.
+
+
+										</div>
+										<div class="plugin">
+											<input name="plugin-name" value="TestGallery" type="radio">
+												<i>TestGallery</i><b> (experimental)</b> (version 1) - Simple gallery page plugin, not currently used.
+
+
+										</div>
+
+									</div>
+									<div class="plugin-group">
+										<div class="plugin-group-title">
+											Indexing Plugins
+										</div>
+										<div class="plugin">
+											<input name="plugin-name" value="Freereader" type="radio">
+												<i>Freereader</i> (version 4) - Tool to insert RSS and ATOM feeds as freesites.
+
+
+										</div>
+										<div class="plugin">
+										</div>
+										<div class="plugin">
+											<input name="plugin-name" value="Spider" type="radio">
+												<i>Spider</i> (version 50) - Tool to create and automatically upload new format freesite search indexes, by automatically following links from your bookmarks. Causes very heavy load on your Freenet node, don't use it unless you have a powerful computer! Requires that the Library plugin also be loaded.
+
+
+										</div>
+										<div class="plugin">
+											<input name="plugin-name" value="XMLLibrarian" type="radio">
+												<i>XMLLibrarian</i><b> (deprecated)</b> (version 26) - Obsolete tool to use old format freesite search indexes. See Library.
+
+
+										</div>
+										<div class="plugin">
+											<input name="plugin-name" value="XMLSpider" type="radio">
+												<i>XMLSpider</i><b> (deprecated)</b> (version 48) - Obsolete tool to generate old format freesite search indexes. See Spider.
+
+
+										</div>
+
+									</div>
+									<div class="plugin-group">
+										<div class="plugin-group-title">
+											Technical Plugins
+										</div>
+										<div class="plugin">
+										</div>
+
+									</div>
+									<p><input name="submit-official" value="Load" type="submit">
+
+										</p>
+								</form>
+
+							</div>
+
+						</div>
+
+					</div>
+					<div class="infobox infobox-normal">
+						<div class="infobox-header">
+							Add an Unofficial Plugin
+						</div>
+						<div class="infobox-content">
+							<div>
+								<form id="addOtherPluginForm" enctype="multipart/form-data" action="./plugins_files/plugins.html" method="post" accept-charset="utf-8">
+									<input name="formPassword" value="QJm3SVinCbLFUOQyLQ8NHg" type="hidden">
+
+									<div>
+										Here you can enter the filename or internet address (URL) of a plugin you want to load. Other plugins than the ones listed above are not even remotely supported or checked for privacy leaks by us, so if you load a remote plugin here, you are basically on your own.
+									</div>
+									Plugin URL: <input name="plugin-url" type="text" size="80">
+
+									 <input name="submit-other" value="Load" type="submit">
+
+									<br><input name="fileonly" type="checkbox" checked="checked">
+
+									 local files only
+								</form>
+
+							</div>
+
+						</div>
+
+					</div>
+					<div class="infobox infobox-normal">
+						<div class="infobox-header">
+							Add an Unofficial Plugin from Freenet
+						</div>
+						<div class="infobox-content">
+							<div>
+								<form id="addFreenetPluginForm" enctype="multipart/form-data" action="./plugins_files/plugins.html" method="post" accept-charset="utf-8">
+									<input name="formPassword" value="QJm3SVinCbLFUOQyLQ8NHg" type="hidden">
+
+									<div>
+										Here you can enter the Freenet key of a plugin you want to load. These plugins are not even remotely supported or checked for privacy leaks by us, so if you load a remote plugin here, you are basically on your own.
+									</div>
+									Plugin Key: <input name="plugin-uri" type="text" size="80">
+
+									 <input name="submit-freenet" value="Load" type="submit">
+
+
+								</form>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+
+	</body><style type="text/css">embed[type*="application/x-shockwave-flash"],embed[src*=".swf"],object[type*="application/x-shockwave-flash"],object[codetype*="application/x-shockwave-flash"],object[src*=".swf"],object[codebase*="swflash.cab"],object[classid*="D27CDB6E-AE6D-11cf-96B8-444553540000"],object[classid*="d27cdb6e-ae6d-11cf-96b8-444553540000"],object[classid*="D27CDB6E-AE6D-11cf-96B8-444553540000"]{	display: none !important;}</style></html>

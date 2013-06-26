@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN">
+<!-- saved from url=(0035)http://127.0.0.1:8888/config/fproxy -->
+<html xml:lang="eng"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+			<title>Freenet Node Configuration - Freenet</title>
+			<noscript>&lt;style&gt; .jsonly {display:none;}&lt;/style&gt;</noscript>
+			<link title="clean-dropdown" rel="stylesheet" type="text/css" href="theme.css">
+
+		</head>
+		<body id="page-_config_fproxy" class="fproxy-page">
+			<div id="page">
+				<div id="topbar">
+					<h1>Freenet Node Configuration</h1>
+
+				</div>
+				<div id="statusbar-container">
+					<div id="statusbar">
+						<div id="statusbar-alerts" class="alerts-line contains-information">
+							<div class="infobox-header">
+								Outstanding alerts
+							</div>
+							<div class="infobox-content">
+								<a href="http://127.0.0.1:8888/alerts/">Messages: 1 Minor</a>
+							</div>
+
+						</div>
+						<div class="separator">
+							&nbsp;
+						</div>
+						<div id="statusbar-language">
+							<a href="http://127.0.0.1:8888/config/node#l10n">English</a>
+						</div>
+						<div class="separator">
+							&nbsp;
+						</div>
+						<div id="statusbar-switchmode" class="simple">
+							<a href="http://127.0.0.1:8888/config/fproxy?fproxyAdvancedMode=1">Switch to simple mode</a>
+						</div>
+						<div class="separator">
+							&nbsp;
+						</div>
+						<div id="statusbar-seclevels">
+							Security levels:<a title="Protection against a stranger attacking you over the Internet" class="low" href="http://127.0.0.1:8888/seclevels/">LOW&nbsp;</a><a title="Protection of your downloads, uploads and Freenet browsing cache" class="normal" href="http://127.0.0.1:8888/seclevels/">LOW</a>
+						</div>
+						<div class="separator">
+							&nbsp;
+						</div>
+						<div class="progressbar">
+							<div style="width: 70.0%;" class="progressbar-done progressbar-peers avg-peers">
+							</div>
+							<div title="We are currently connected to 0 friends and 7 strangers." class="progress_fraction_finalized">
+								7 / 10
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+				<div id="navbar">
+					<ul id="navlist">
+						<li id="FProxyToadlet_categoryTitleBrowsing" class="navlist-not-selected"><a title="Browse Freenet" href="http://127.0.0.1:8888/">Browsing</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Browse and search Freesites, web sites hosted anonymously on Freenet" href="http://127.0.0.1:8888/">Browse Freenet</a></li>
+								<li class="submenuitem-not-selected"><a title="Upload a web site anonymously to Freenet" href="http://127.0.0.1:8888/insertsite/">Upload a Freesite</a></li>
+								<li class="submenuitem-not-selected"><a title="Search Freenet!" href="http://127.0.0.1:8888/library/">Search Freenet!</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleQueue" class="navlist-not-selected"><a title="Uploads and downloads" href="http://127.0.0.1:8888/downloads/">Filesharing</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Files being downloaded from Freenet" href="http://127.0.0.1:8888/downloads/">Downloads</a></li>
+								<li class="submenuitem-not-selected"><a title="Files being uploaded to Freenet" href="http://127.0.0.1:8888/uploads/">Uploads</a></li>
+								<li class="submenuitem-not-selected"><a title="Upload a file to Freenet" href="http://127.0.0.1:8888/insertfile/">Upload a file</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleFriends" class="navlist-not-selected"><a title="Connect to your friends to improve Freenet&#39;s performance and security" href="http://127.0.0.1:8888/friends/">Friends</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Connections to your friends&#39; nodes" href="http://127.0.0.1:8888/friends/">Connections to friends</a></li>
+								<li class="submenuitem-not-selected"><a title="Connect to a friend running Freenet to improve your security" href="http://127.0.0.1:8888/addfriend/">Add a Friend</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleChat" class="navlist-not-selected"><a title="Talk with other people over Freenet on message boards" href="http://127.0.0.1:8888/chat/">Discussion</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="How to talk to other Freenet users anonymously over chat forums" href="http://127.0.0.1:8888/chat/">Forums</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleStatus" class="navlist-not-selected"><a title="Status information" href="http://127.0.0.1:8888/alerts/">Status</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Detailed status alerts and messages from your Friends" href="http://127.0.0.1:8888/alerts/">Messages</a></li>
+								<li class="submenuitem-not-selected"><a title="Connections to nodes you have no reason to trust" href="http://127.0.0.1:8888/strangers/">Connections to strangers</a></li>
+								<li class="submenuitem-not-selected"><a title="Detailed statistics about your Freenet node" href="http://127.0.0.1:8888/stats/">Statistics</a></li>
+								<li class="submenuitem-not-selected"><a title="Diagnostics to send to developers" href="http://127.0.0.1:8888/diagnostic/">Diagnostic</a></li>
+								<li class="submenuitem-not-selected"><a title="Status of your internet connection (port forwarding etc)" href="http://127.0.0.1:8888/connectivity/">Internet connection</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleConfig" class="navlist-selected"><a title="Configure Freenet" href="http://127.0.0.1:8888/seclevels/">Configuration</a><ul class="subnavlist-selected">
+								<li class="submenuitem-not-selected"><a title="Configure the level of security provided by Freenet" href="http://127.0.0.1:8888/seclevels/">Security Levels</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure plugins" href="http://127.0.0.1:8888/plugins/">Plugins</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure the console interface" href="http://127.0.0.1:8888/config/console">Console interface</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure Freenet Client Protocol (used for client applications to talk to Freenet)" href="http://127.0.0.1:8888/config/fcp">FCP</a></li>
+								<li class="submenuitem-selected"><a title="Configure the web interface" href="./webinterface_files/webinterface.html">Web interface</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure the amount of information kept by Freenet for troubleshooting purposes" href="http://127.0.0.1:8888/config/logger">Logs</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure core settings e.g. bandwidth usage" href="http://127.0.0.1:8888/config/node">Core settings</a></li>
+								<li class="submenuitem-not-selected"><a title="Installation settings, e.g. readonly program directory locations" href="http://127.0.0.1:8888/config/node.install">Installation settings</a></li>
+								<li class="submenuitem-not-selected"><a title="Settings for controlling the amount of traffic through your Freenet node" href="http://127.0.0.1:8888/config/node.load">Load management</a></li>
+								<li class="submenuitem-not-selected"><a title="Settings related to connecting to nodes other than Friends" href="http://127.0.0.1:8888/config/node.opennet">Opennet</a></li>
+								<li class="submenuitem-not-selected"><a title="Settings related to choosing local requests to run" href="http://127.0.0.1:8888/config/node.scheduler">Request scheduling</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure the auto-update system" href="http://127.0.0.1:8888/config/node.updater">Auto-update</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure SSL" href="http://127.0.0.1:8888/config/ssl">SSL (restart required)</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure web interface aliases" href="http://127.0.0.1:8888/config/toadletsymlinker">Web interface aliases</a></li>
+								<li class="submenuitem-not-selected"><a title="Contribute to the translation" href="http://127.0.0.1:8888/translation/">Translation</a></li>
+								<li class="submenuitem-not-selected"><a title="default settings for KeyUtils" href="http://127.0.0.1:8888/config/plugins.KeyUtils.KeyUtilsPlugin">KeyUtils</a></li>
+
+							</ul>
+							</li>
+						<li id="plugins_KeyUtils_KeyUtilsPlugin-ConfigToadlet_plugins_KeyUtils_KeyUtilsPlugin_label" class="navlist-not-selected"><a title="Toolbox for debugging Freenet URIs and more…" href="http://127.0.0.1:8888/KeyUtils/">KeyUtils</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Explore a Freenet URI" href="http://127.0.0.1:8888/KeyUtils/">Key Explorer</a></li>
+								<li class="submenuitem-not-selected"><a title="Explore a site manifest" href="http://127.0.0.1:8888/KeyUtils/Site">Site Explorer</a></li>
+								<li class="submenuitem-not-selected"><a title="Explore a split file" href="http://127.0.0.1:8888/KeyUtils/Split">Split Explorer</a></li>
+								<li class="submenuitem-not-selected"><a title="Compose and decompose Freenet URI extra data" href="http://127.0.0.1:8888/KeyUtils/Extra">Extra Calculator</a></li>
+								<li class="submenuitem-not-selected"><a title="Show the contents of a FBlob" href="http://127.0.0.1:8888/KeyUtils/FBlob">FBlob Viewer</a></li>
+								<li class="submenuitem-not-selected"><a title="Convert a file key to CHK" href="http://127.0.0.1:8888/KeyUtils/KeyConverter">Key Converter</a></li>
+								<li class="submenuitem-not-selected"><a title="Info about Key Utils" href="http://127.0.0.1:8888/KeyUtils/About">About</a></li>
+
+							</ul>
+							</li>
+
+					</ul>
+
+				</div>
+				<div id="selected-subnavbar">
+					<ul id="selected-subnavbar-list">
+						<li class="submenuitem-not-selected"><a title="Configure the level of security provided by Freenet" href="http://127.0.0.1:8888/seclevels/">Security Levels</a></li>
+						<li class="submenuitem-not-selected"><a title="Configure plugins" href="http://127.0.0.1:8888/plugins/">Plugins</a></li>
+						<li class="submenuitem-not-selected"><a title="Configure the console interface" href="http://127.0.0.1:8888/config/console">Console interface</a></li>
+						<li class="submenuitem-not-selected"><a title="Configure Freenet Client Protocol (used for client applications to talk to Freenet)" href="http://127.0.0.1:8888/config/fcp">FCP</a></li>
+						<li class="submenuitem-selected"><a title="Configure the web interface" href="./webinterface_files/webinterface.html">Web interface</a></li>
+						<li class="submenuitem-not-selected"><a title="Configure the amount of information kept by Freenet for troubleshooting purposes" href="http://127.0.0.1:8888/config/logger">Logs</a></li>
+						<li class="submenuitem-not-selected"><a title="Configure core settings e.g. bandwidth usage" href="http://127.0.0.1:8888/config/node">Core settings</a></li>
+						<li class="submenuitem-not-selected"><a title="Installation settings, e.g. readonly program directory locations" href="http://127.0.0.1:8888/config/node.install">Installation settings</a></li>
+						<li class="submenuitem-not-selected"><a title="Settings for controlling the amount of traffic through your Freenet node" href="http://127.0.0.1:8888/config/node.load">Load management</a></li>
+						<li class="submenuitem-not-selected"><a title="Settings related to connecting to nodes other than Friends" href="http://127.0.0.1:8888/config/node.opennet">Opennet</a></li>
+						<li class="submenuitem-not-selected"><a title="Settings related to choosing local requests to run" href="http://127.0.0.1:8888/config/node.scheduler">Request scheduling</a></li>
+						<li class="submenuitem-not-selected"><a title="Configure the auto-update system" href="http://127.0.0.1:8888/config/node.updater">Auto-update</a></li>
+						<li class="submenuitem-not-selected"><a title="Configure SSL" href="http://127.0.0.1:8888/config/ssl">SSL (restart required)</a></li>
+						<li class="submenuitem-not-selected"><a title="Configure web interface aliases" href="http://127.0.0.1:8888/config/toadletsymlinker">Web interface aliases</a></li>
+						<li class="submenuitem-not-selected"><a title="Contribute to the translation" href="http://127.0.0.1:8888/translation/">Translation</a></li>
+						<li class="submenuitem-not-selected"><a title="default settings for KeyUtils" href="http://127.0.0.1:8888/config/plugins.KeyUtils.KeyUtilsPlugin">KeyUtils</a></li>
+
+					</ul>
+
+				</div>
+				<div id="content">
+					<div class="infobox infobox-normal">
+						<div class="infobox-header">
+							Freenet Node Configuration
+						</div>
+						<div class="infobox-content">
+							<div>
+								<form id="configForm" enctype="multipart/form-data" action="./webinterface_files/webinterface.html" method="post" accept-charset="utf-8">
+									<input name="formPassword" value="QJm3SVinCbLFUOQyLQ8NHg" type="hidden">
+
+									<input value="Apply" class="invisible" type="submit">
+
+									<div class="configprefix">
+										Web interface
+									</div>
+									<a id="fproxy"></a><ul class="config">
+										<li class="boolean"><a id="enabled" name="enabled"><span title="Default: &#39;true&#39;. [fproxy.enabled]" style="cursor: help;" class="configshortdesc">Enable the web interface (FProxy)?</span></a><span class="config"><select name="fproxy.enabled"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">Whether to enable the web interface and related HTTP services. The web interface is the user interface to Freenet which you can access with your browser.</span></li>
+										<li class="boolean"><a id="ssl" name="ssl"><span title="Default: &#39;false&#39;. [fproxy.ssl]" style="cursor: help;" class="configshortdesc">Enable SSL?</span></a><span class="config"><select name="fproxy.ssl" disabled="disabled"><option value="true">true</option>
+													<option selected="selected" value="false">false</option>
+													</select></span><span class="configlongdesc">Enable SSL on the web interface. You will need the 'Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files' for it to work.</span></li>
+										<li class="text"><a id="port" name="port"><span title="Default: &#39;8888&#39;. [fproxy.port]" style="cursor: help;" class="configshortdesc">Web interface port</span></a><span class="config"><input alt="SimpleToadletServer.port" name="fproxy.port" value="8888" class="config" type="text">
+
+												</span><span class="configlongdesc">The TCP port the web interface should listen on</span></li>
+										<li class="text"><a id="bindTo" name="bindTo"><span title="Default: &#39;127.0.0.1,0:0:0:0:0:0:0:1&#39;. [fproxy.bindTo]" style="cursor: help;" class="configshortdesc">IP address to bind to</span></a><span class="config"><input alt="SimpleToadletServer.bindTo" name="fproxy.bindTo" value="127.0.0.1,0:0:0:0:0:0:0:1" class="config" type="text">
+
+												</span><span class="configlongdesc">IP address to bind to</span></li>
+										<li class="dropdown"><a id="css" name="css"><span title="Default: &#39;clean-dropdown&#39;. [fproxy.css]" style="cursor: help;" class="configshortdesc">Web interface theme</span></a><span class="config"><select name="fproxy.css"><option value="boxed">boxed</option>
+													<option value="boxed-classic">boxed-classic</option>
+													<option value="boxed-dropdown">boxed-dropdown</option>
+													<option value="boxed-classic">boxed-classic</option>
+													<option value="boxed-static">boxed-static</option>
+													<option value="clean">clean</option>
+													<option value="clean-classic">clean-classic</option>
+													<option selected="selected" value="clean-dropdown">clean-dropdown</option>
+													<option value="clean-static">clean-static</option>
+													<option value="clean-top">clean-top</option>
+													<option value="grayandblue">grayandblue</option>
+													<option value="grayandblue-dynamic">grayandblue-dynamic</option>
+													<option value="grayandblue-dropdown">grayandblue-dropdown</option>
+													<option value="grayandblue-static">grayandblue-static</option>
+													<option value="grayandblue-top">grayandblue-top</option>
+													<option value="sky">sky</option>
+													<option value="sky-classic">sky-classic</option>
+													<option value="sky-dropdown">sky-dropdown</option>
+													<option value="sky-dynamic">sky-dynamic</option>
+													<option value="sky-static">sky-static</option>
+													<option value="minimalblue">minimalblue</option>
+													<option value="minimalist">minimalist</option>
+													<option value="rabbit-hole">rabbit-hole</option>
+													</select></span><span class="configlongdesc">Select a theme for the Freenet web interface</span></li>
+										<li class="text"><a id="CSSOverride" name="CSSOverride"><span title="Default: &#39;&#39;. [fproxy.CSSOverride]" style="cursor: help;" class="configshortdesc">Override the CSS with a custom one (WARNING!)</span></a><span class="config"><input alt="SimpleToadletServer.cssOverride" name="fproxy.CSSOverride" value="" class="config" type="text">
+
+												</span><span class="configlongdesc">That setting allows you to override Freenet's CSS with a custom file. WARNING: CSSes can be dangerous and won't be filtered! use at your own risks. We will allow access to the CSS file from /static/override/ (plus the filename within the folder the file is in), so you can refer to images, @include other CSS files etc. If you make a nice theme, consider mailing devl@freenetproject to get it included in the main distribution ;)</span></li>
+										<li class="boolean"><a id="sendAllThemes" name="sendAllThemes"><span title="Default: &#39;false&#39;. [fproxy.sendAllThemes]" style="cursor: help;" class="configshortdesc">Send all themes to browser?</span></a><span class="config"><select name="fproxy.sendAllThemes"><option value="true">true</option>
+													<option selected="selected" value="false">false</option>
+													</select></span><span class="configlongdesc">If set true, all available themes will be loaded by the browser when viewing the FProxy UI pages, and switchable using your browser's page style selection options.</span></li>
+										<li class="boolean"><a id="advancedModeEnabled" name="advancedModeEnabled"><span title="Default: &#39;true&#39;. [fproxy.advancedModeEnabled]" style="cursor: help;" class="configshortdesc">Enable Advanced Mode?</span></a><span class="config"><select name="fproxy.advancedModeEnabled"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">Enables display of advanced options and information in the web interface by default. This setting should be turned to false in most cases.</span></li>
+										<li class="boolean"><a id="enableExtendedMethodHandling" name="enableExtendedMethodHandling"><span title="Default: &#39;false&#39;. [fproxy.enableExtendedMethodHandling]" style="cursor: help;" class="configshortdesc">Enable extended HTTP method handling?</span></a><span class="config"><select name="fproxy.enableExtendedMethodHandling"><option value="true">true</option>
+													<option selected="selected" value="false">false</option>
+													</select></span><span class="configlongdesc">Enable this to allow other HTTP methods then GET and POST to be handled. Required for WebDAV and other HTTP extensions.</span></li>
+										<li class="boolean"><a id="javascriptEnabled" name="javascriptEnabled"><span title="Default: &#39;true&#39;. [fproxy.javascriptEnabled]" style="cursor: help;" class="configshortdesc">Enable web interface use of Javascript?</span></a><span class="config"><select name="fproxy.javascriptEnabled"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">Whether or not the web interface should use Javascript "helpers". This setting should be turned to false in most cases. Note that freesites may not use javascript even if this is enabled.</span></li>
+										<li class="boolean"><a id="webPushingEnabled" name="webPushingEnabled"><span title="Default: &#39;false&#39;. [fproxy.webPushingEnabled]" style="cursor: help;" class="configshortdesc">Enable web interface use of web pushing (experimental)?</span></a><span class="config"><select name="fproxy.webPushingEnabled"><option value="true">true</option>
+													<option selected="selected" value="false">false</option>
+													</select></span><span class="configlongdesc">Whether or not the web interface should use javascript web pushing to update displayed data without reloading. It requires that javascript is turned on. It is experimental and use at your own risk.</span></li>
+										<li class="boolean"><a id="hasCompletedWizard" name="hasCompletedWizard"><span title="Default: &#39;true&#39;. [fproxy.hasCompletedWizard]" style="cursor: help;" class="configshortdesc">Have you completed the first-time configuration wizard yet?</span></a><span class="config"><select name="fproxy.hasCompletedWizard"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">Have you completed the first-time configuration wizard yet? If not, the web interface will redirect all your requests to it.</span></li>
+										<li class="boolean"><a id="disableProgressPage" name="disableProgressPage"><span title="Default: &#39;false&#39;. [fproxy.disableProgressPage]" style="cursor: help;" class="configshortdesc">Disable progress page when loading pages?</span></a><span class="config"><select name="fproxy.disableProgressPage"><option value="true">true</option>
+													<option selected="selected" value="false">false</option>
+													</select></span><span class="configlongdesc">Set to not show the progress page when loading a page. WARNING: Most browsers will only use a small number of connections to Freenet, therefore turning off the progress page will reduce performance considerably.</span></li>
+										<li class="boolean"><a id="showPanicButton" name="showPanicButton"><span title="Default: &#39;false&#39;. [fproxy.showPanicButton]" style="cursor: help;" class="configshortdesc">Show the panic button?</span></a><span class="config"><select name="fproxy.showPanicButton"><option value="true">true</option>
+													<option selected="selected" value="false">false</option>
+													</select></span><span class="configlongdesc">Shows a 'panic button' on the queue page that will remove all downloads and uploads, wipe the cache of recently visited freesites, and clear the master keys file.</span></li>
+										<li class="boolean"><a id="noConfirmPanic" name="noConfirmPanic"><span title="Default: &#39;false&#39;. [fproxy.noConfirmPanic]" style="cursor: help;" class="configshortdesc">No confirmation on panic button?</span></a><span class="config"><select name="fproxy.noConfirmPanic"><option value="true">true</option>
+													<option selected="selected" value="false">false</option>
+													</select></span><span class="configlongdesc">If true, the panic button will not ask for confirmation but will act immediately.</span></li>
+										<li class="boolean"><a id="publicGatewayMode" name="publicGatewayMode"><span title="Default: &#39;false&#39;. [fproxy.publicGatewayMode]" style="cursor: help;" class="configshortdesc">Public gateway mode? (Only applies to allowed but non-full-access connections)</span></a><span class="config"><select name="fproxy.publicGatewayMode"><option value="true">true</option>
+													<option selected="selected" value="false">false</option>
+													</select></span><span class="configlongdesc">Should we enable public gateway mode? For IPs which are allowed to access Freenet, but are not allowed full access, this option disables the download queue and anything else that might conceivably be abused to attack the Freenet node, while still allowing browsing freesites. They will also only see the default bookmarks, not your bookmarks. IP addresses with full access will be allowed to configure the node. You will still need to configure allowed addresses and bind address to get a true public gateway; you should do this after restarting.</span></li>
+										<li class="boolean"><a id="enablePersistentConnections" name="enablePersistentConnections"><span title="Default: &#39;false&#39;. [fproxy.enablePersistentConnections]" style="cursor: help;" class="configshortdesc">Enable persistent HTTP connections? (Read detailed description)</span></a><span class="config"><select name="fproxy.enablePersistentConnections"><option value="true">true</option>
+													<option selected="selected" value="false">false</option>
+													</select></span><span class="configlongdesc">Don't enable this unless your browser is configured to use lots of connections even if they are persistent.</span></li>
+										<li class="boolean"><a id="enableInlinePrefetch" name="enableInlinePrefetch"><span title="Default: &#39;false&#39;. [fproxy.enableInlinePrefetch]" style="cursor: help;" class="configshortdesc">Enable prefetching of inline images?</span></a><span class="config"><select name="fproxy.enableInlinePrefetch"><option value="true">true</option>
+													<option selected="selected" value="false">false</option>
+													</select></span><span class="configlongdesc">This may help if your browser only uses a small number of connections to talk to Freenet. On the other hand it may not.</span></li>
+										<li class="boolean"><a id="enableActivelinks" name="enableActivelinks"><span title="Default: &#39;false&#39;. [fproxy.enableActivelinks]" style="cursor: help;" class="configshortdesc">Enable activelinks?</span></a><span class="config"><select name="fproxy.enableActivelinks"><option value="true">true</option>
+													<option selected="selected" value="false">false</option>
+													</select></span><span class="configlongdesc">Should the Browse Freenet page show icons for each bookmarked page? The page will load faster if it doesn't show the icons...</span></li>
+										<li class="text"><a id="passthroughMaxSize" name="passthroughMaxSize"><span title="Default: &#39;2306867&#39;. [fproxy.passthroughMaxSize]" style="cursor: help;" class="configshortdesc">Maximum size for transparent pass-through in the web interface where we cannot show progress (e.g. images)</span></a><span class="config"><input alt="SimpleToadletServer.passthroughMaxSize" name="fproxy.passthroughMaxSize" value="2306867" class="config" type="text">
+
+												</span><span class="configlongdesc">Maximum size for images etc on the Freenet web interface. If an image, style sheet etc is larger than this threshold, it will fail, and if possible Freenet will show an error. This is to prevent your browser from waiting forever for a page full of enormous images.</span></li>
+										<li class="text"><a id="passthroughMaxSizeProgress" name="passthroughMaxSizeProgress"><span title="Default: &#39;5632KiB&#39;. [fproxy.passthroughMaxSizeProgress]" style="cursor: help;" class="configshortdesc">Maximum size for transparent pass-through in the web interface where we can show a progress bar (e.g. HTML pages)</span></a><span class="config"><input alt="SimpleToadletServer.passthroughMaxSizeProgress" name="fproxy.passthroughMaxSizeProgress" value="5632KiB" class="config" type="text">
+
+												</span><span class="configlongdesc">Maximum size of an HTML page or file, where Freenet can show a progress bar. If the file is larger than this it will ask you whether you want to download it in the background, e.g. to your downloads folder.</span></li>
+										<li class="text"><a id="allowedHosts" name="allowedHosts"><span title="Default: &#39;127.0.0.1,0:0:0:0:0:0:0:1&#39;. [fproxy.allowedHosts]" style="cursor: help;" class="configshortdesc">Hostnames or IP addresses that are allowed to connect to the web interface.</span></a><span class="config"><input alt="SimpleToadletServer.allowedHosts" name="fproxy.allowedHosts" value="127.0.0.1,0:0:0:0:0:0:0:1" class="config" type="text">
+
+												</span><span class="configlongdesc">May be a comma-separated list of single IPs and CIDR masked IPs like 192.168.0.0/24. Note that these can access the hard disk within the limits set by other config options. They can also see your bookmarks.</span></li>
+										<li class="text"><a id="allowedHostsFullAccess" name="allowedHostsFullAccess"><span title="Default: &#39;127.0.0.1,0:0:0:0:0:0:0:1&#39;. [fproxy.allowedHostsFullAccess]" style="cursor: help;" class="configshortdesc">Hosts having a full access to the Freenet web interface (read warning)</span></a><span class="config"><input alt="SimpleToadletServer.allowedFullAccess" name="fproxy.allowedHostsFullAccess" value="127.0.0.1,0:0:0:0:0:0:0:1" class="config" type="text">
+
+												</span><span class="configlongdesc">Hosts granted full access (i.e. change config settings, restart, etc) to your Freenet node. WARNING: Be very careful who you give full web interface access to!</span></li>
+										<li class="boolean"><a id="doRobots" name="doRobots"><span title="Default: &#39;false&#39;. [fproxy.doRobots]" style="cursor: help;" class="configshortdesc">Exclude robots via robots.txt?</span></a><span class="config"><select name="fproxy.doRobots"><option value="true">true</option>
+													<option selected="selected" value="false">false</option>
+													</select></span><span class="configlongdesc">Whether to serve a /robots.txt telling google, spiders, wget, etc to go away</span></li>
+										<li class="text"><a id="maxFproxyConnections" name="maxFproxyConnections"><span title="Default: &#39;100&#39;. [fproxy.maxFproxyConnections]" style="cursor: help;" class="configshortdesc">Maximum fproxy connections</span></a><span class="config"><input alt="SimpleToadletServer.maxFproxyConnections" name="fproxy.maxFproxyConnections" value="100" class="config" type="text">
+
+												</span><span class="configlongdesc">Maximum number of fproxy connections we will serve at once. Each uses a thread.</span></li>
+										<li class="text"><a id="metaRefreshSamePageInterval" name="metaRefreshSamePageInterval"><span title="Default: &#39;1&#39;. [fproxy.metaRefreshSamePageInterval]" style="cursor: help;" class="configshortdesc">Allow freesites to refresh themselves periodically: Minimum interval in seconds or -1 for disabled.</span></a><span class="config"><input alt="SimpleToadletServer.metaRefreshSamePageInterval" name="fproxy.metaRefreshSamePageInterval" value="1" class="config" type="text">
+
+												</span><span class="configlongdesc">Allow freesites to refresh themselves periodically with HTML meta refresh: Minimum interval in seconds or -1 for disabled.</span></li>
+										<li class="text"><a id="metaRefreshRedirectInterval" name="metaRefreshRedirectInterval"><span title="Default: &#39;1&#39;. [fproxy.metaRefreshRedirectInterval]" style="cursor: help;" class="configshortdesc">Allow freesites to redirect to other freesites after a delay: Minimum interval in seconds or -1 for disabled.</span></a><span class="config"><input alt="SimpleToadletServer.metaRefreshRedirectInterval" name="fproxy.metaRefreshRedirectInterval" value="1" class="config" type="text">
+
+												</span><span class="configlongdesc">Allow freesites to redirect to other freesites after a delay with HTML meta refresh: Minimum interval in seconds or -1 for disabled.</span></li>
+										<li class="dropdown"><a id="refilterPolicy" name="refilterPolicy"><span title="Default: &#39;RE_FILTER&#39;. [fproxy.refilterPolicy]" style="cursor: help;" class="configshortdesc">What should fproxy do when a downloaded file matches the key being fetched, but it has already been filtered?</span></a><span class="config"><select name="fproxy.refilterPolicy"><option value="RE_FILTER">RE_FILTER</option>
+													<option selected="selected" value="ACCEPT_OLD">ACCEPT_OLD</option>
+													<option value="RE_FETCH">RE_FETCH</option>
+													</select></span><span class="configlongdesc">What should fproxy do when a downloaded file matches the key being fetched, but it has already been filtered? RE_FILTER = filter it anyway, since the filter may have been improved since the original download, ACCEPT_OLD = accept the old data (maximum performance), RE_FETCH = ignore the old data.</span></li>
+
+									</ul>
+									<input value="Apply" type="submit">
+
+									<input value="Undo unsaved changes" type="reset">
+
+									<input name="subconfig" value="fproxy" type="hidden">
+
+									<input name="confirm-reset-to-defaults" value="Reset to defaults" type="submit">
+
+
+								</form>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+
+	</body><style type="text/css">embed[type*="application/x-shockwave-flash"],embed[src*=".swf"],object[type*="application/x-shockwave-flash"],object[codetype*="application/x-shockwave-flash"],object[src*=".swf"],object[codebase*="swflash.cab"],object[classid*="D27CDB6E-AE6D-11cf-96B8-444553540000"],object[classid*="d27cdb6e-ae6d-11cf-96b8-444553540000"],object[classid*="D27CDB6E-AE6D-11cf-96B8-444553540000"]{	display: none !important;}</style></html>

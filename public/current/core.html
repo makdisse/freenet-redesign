@@ -1,0 +1,613 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN">
+<html xml:lang="eng"><head>
+			<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+			<title>Freenet Node Configuration - Freenet</title>
+			<noscript><style> .jsonly {display:none;}</style></noscript>
+			<link title="clean-dropdown" rel="stylesheet" type="text/css" href="theme.css">
+
+		</head>
+		<body id="page-_config_node" class="fproxy-page">
+			<div id="page">
+				<div id="topbar">
+					<h1>Freenet Node Configuration</h1>
+
+				</div>
+				<div id="statusbar-container">
+					<div id="statusbar">
+						<div id="statusbar-language">
+							<a href="http://127.0.0.1:8888/config/node#l10n">English</a>
+						</div>
+						<div class="separator">
+							&nbsp;
+						</div>
+						<div id="statusbar-switchmode" class="simple">
+							<a href="http://127.0.0.1:8888/config/node?fproxyAdvancedMode=1">Switch to simple mode</a>
+						</div>
+						<div class="separator">
+							&nbsp;
+						</div>
+						<div id="statusbar-seclevels">
+							Security levels:<a title="Protection against a stranger attacking you over the Internet" class="low" href="http://127.0.0.1:8888/seclevels/">LOW&nbsp;</a><a title="Protection of your downloads, uploads and Freenet browsing cache" class="normal" href="http://127.0.0.1:8888/seclevels/">LOW</a>
+						</div>
+						<div class="separator">
+							&nbsp;
+						</div>
+						<div class="progressbar">
+							<div style="width: 10.0%;" class="progressbar-done progressbar-peers very-few-peers">
+							</div>
+							<div title="We are currently connected to 0 friends and 1 strangers." class="progress_fraction_finalized">
+								1 / 10
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+				<div id="navbar">
+					<ul id="navlist">
+						<li id="FProxyToadlet_categoryTitleBrowsing" class="navlist-not-selected"><a title="Browse Freenet" href="http://127.0.0.1:8888/">Browsing</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Browse and search Freesites, web sites hosted anonymously on Freenet" href="http://127.0.0.1:8888/">Browse Freenet</a></li>
+								<li class="submenuitem-not-selected"><a title="Upload a web site anonymously to Freenet" href="http://127.0.0.1:8888/insertsite/">Upload a Freesite</a></li>
+								<li class="submenuitem-not-selected"><a title="Search Freenet!" href="http://127.0.0.1:8888/library/">Search Freenet!</a></li>
+
+							</ul>
+							</li>
+						<li id="plugins_WebOfTrust_WebOfTrust-WebInterface_WotMenuName" class="navlist-not-selected"><a title="Web of Trust, the collaborative spam filter underlying the forums." href="http://127.0.0.1:8888/WebOfTrust/">Community</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Home page" href="http://127.0.0.1:8888/WebOfTrust/">Home</a></li>
+								<li class="submenuitem-not-selected"><a title="Manage your own identities" href="http://127.0.0.1:8888/WebOfTrust/OwnIdentities">Own anonymous identities</a></li>
+								<li class="submenuitem-not-selected"><a title="Manage others identities" href="http://127.0.0.1:8888/WebOfTrust/KnownIdentities">Known anonymous identities</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure the web of trust plugin" href="http://127.0.0.1:8888/WebOfTrust/Configuration">Configuration</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleQueue" class="navlist-not-selected"><a title="Uploads and downloads" href="http://127.0.0.1:8888/downloads/">Filesharing</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Files being downloaded from Freenet" href="http://127.0.0.1:8888/downloads/">Downloads</a></li>
+								<li class="submenuitem-not-selected"><a title="Files being uploaded to Freenet" href="http://127.0.0.1:8888/uploads/">Uploads</a></li>
+								<li class="submenuitem-not-selected"><a title="Upload a file to Freenet" href="http://127.0.0.1:8888/insertfile/">Upload a file</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleFriends" class="navlist-not-selected"><a title="Connect to your friends to improve Freenet's performance and security" href="http://127.0.0.1:8888/friends/">Friends</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Connections to your friends' nodes" href="http://127.0.0.1:8888/friends/">Connections to friends</a></li>
+								<li class="submenuitem-not-selected"><a title="Connect to a friend running Freenet to improve your security" href="http://127.0.0.1:8888/addfriend/">Add a Friend</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleChat" class="navlist-not-selected"><a title="Talk with other people over Freenet on message boards" href="http://127.0.0.1:8888/chat/">Discussion</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="How to talk to other Freenet users anonymously over chat forums" href="http://127.0.0.1:8888/chat/">Forums</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleStatus" class="navlist-not-selected"><a title="Status information" href="http://127.0.0.1:8888/alerts/">Status</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Detailed status alerts and messages from your Friends" href="http://127.0.0.1:8888/alerts/">Messages</a></li>
+								<li class="submenuitem-not-selected"><a title="Connections to nodes you have no reason to trust" href="http://127.0.0.1:8888/strangers/">Connections to strangers</a></li>
+								<li class="submenuitem-not-selected"><a title="Detailed statistics about your Freenet node" href="http://127.0.0.1:8888/stats/">Statistics</a></li>
+								<li class="submenuitem-not-selected"><a title="Diagnostics to send to developers" href="http://127.0.0.1:8888/diagnostic/">Diagnostic</a></li>
+								<li class="submenuitem-not-selected"><a title="Status of your internet connection (port forwarding etc)" href="http://127.0.0.1:8888/connectivity/">Internet connection</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleConfig" class="navlist-selected"><a title="Configure Freenet" href="http://127.0.0.1:8888/seclevels/">Configuration</a><ul class="subnavlist-selected">
+								<li class="submenuitem-not-selected"><a title="Configure the level of security provided by Freenet" href="http://127.0.0.1:8888/seclevels/">Security Levels</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure plugins" href="http://127.0.0.1:8888/plugins/">Plugins</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure the console interface" href="http://127.0.0.1:8888/config/console">Console interface</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure Freenet Client Protocol (used for client applications to talk to Freenet)" href="http://127.0.0.1:8888/config/fcp">FCP</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure the web interface" href="http://127.0.0.1:8888/config/fproxy">Web interface</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure the amount of information kept by Freenet for troubleshooting purposes" href="http://127.0.0.1:8888/config/logger">Logs</a></li>
+								<li class="submenuitem-selected"><a title="Configure core settings e.g. bandwidth usage" href="http://127.0.0.1:8888/config/node">Core settings</a></li>
+								<li class="submenuitem-not-selected"><a title="Installation settings, e.g. readonly program directory locations" href="http://127.0.0.1:8888/config/node.install">Installation settings</a></li>
+								<li class="submenuitem-not-selected"><a title="Settings for controlling the amount of traffic through your Freenet node" href="http://127.0.0.1:8888/config/node.load">Load management</a></li>
+								<li class="submenuitem-not-selected"><a title="Settings related to connecting to nodes other than Friends" href="http://127.0.0.1:8888/config/node.opennet">Opennet</a></li>
+								<li class="submenuitem-not-selected"><a title="Settings related to choosing local requests to run" href="http://127.0.0.1:8888/config/node.scheduler">Request scheduling</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure the auto-update system" href="http://127.0.0.1:8888/config/node.updater">Auto-update</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure SSL" href="http://127.0.0.1:8888/config/ssl">SSL (restart required)</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure web interface aliases" href="http://127.0.0.1:8888/config/toadletsymlinker">Web interface aliases</a></li>
+								<li class="submenuitem-not-selected"><a title="Contribute to the translation" href="http://127.0.0.1:8888/translation/">Translation</a></li>
+								<li class="submenuitem-not-selected"><a title="default settings for KeyUtils" href="http://127.0.0.1:8888/config/plugins.KeyUtils.KeyUtilsPlugin">KeyUtils</a></li>
+
+							</ul>
+							</li>
+						<li id="plugins_KeyUtils_KeyUtilsPlugin-ConfigToadlet_plugins_KeyUtils_KeyUtilsPlugin_label" class="navlist-not-selected"><a title="Toolbox for debugging Freenet URIs and more…" href="http://127.0.0.1:8888/KeyUtils/">KeyUtils</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Explore a Freenet URI" href="http://127.0.0.1:8888/KeyUtils/">Key Explorer</a></li>
+								<li class="submenuitem-not-selected"><a title="Explore a site manifest" href="http://127.0.0.1:8888/KeyUtils/Site">Site Explorer</a></li>
+								<li class="submenuitem-not-selected"><a title="Explore a split file" href="http://127.0.0.1:8888/KeyUtils/Split">Split Explorer</a></li>
+								<li class="submenuitem-not-selected"><a title="Compose and decompose Freenet URI extra data" href="http://127.0.0.1:8888/KeyUtils/Extra">Extra Calculator</a></li>
+								<li class="submenuitem-not-selected"><a title="Show the contents of a FBlob" href="http://127.0.0.1:8888/KeyUtils/FBlob">FBlob Viewer</a></li>
+								<li class="submenuitem-not-selected"><a title="Convert a file key to CHK" href="http://127.0.0.1:8888/KeyUtils/KeyConverter">Key Converter</a></li>
+								<li class="submenuitem-not-selected"><a title="Info about Key Utils" href="http://127.0.0.1:8888/KeyUtils/About">About</a></li>
+
+							</ul>
+							</li>
+
+					</ul>
+
+				</div>
+				<div id="selected-subnavbar">
+					<ul id="selected-subnavbar-list">
+						<li class="submenuitem-not-selected"><a title="Configure the level of security provided by Freenet" href="http://127.0.0.1:8888/seclevels/">Security Levels</a></li>
+						<li class="submenuitem-not-selected"><a title="Configure plugins" href="http://127.0.0.1:8888/plugins/">Plugins</a></li>
+						<li class="submenuitem-not-selected"><a title="Configure the console interface" href="http://127.0.0.1:8888/config/console">Console interface</a></li>
+						<li class="submenuitem-not-selected"><a title="Configure Freenet Client Protocol (used for client applications to talk to Freenet)" href="http://127.0.0.1:8888/config/fcp">FCP</a></li>
+						<li class="submenuitem-not-selected"><a title="Configure the web interface" href="http://127.0.0.1:8888/config/fproxy">Web interface</a></li>
+						<li class="submenuitem-not-selected"><a title="Configure the amount of information kept by Freenet for troubleshooting purposes" href="http://127.0.0.1:8888/config/logger">Logs</a></li>
+						<li class="submenuitem-selected"><a title="Configure core settings e.g. bandwidth usage" href="http://127.0.0.1:8888/config/node">Core settings</a></li>
+						<li class="submenuitem-not-selected"><a title="Installation settings, e.g. readonly program directory locations" href="http://127.0.0.1:8888/config/node.install">Installation settings</a></li>
+						<li class="submenuitem-not-selected"><a title="Settings for controlling the amount of traffic through your Freenet node" href="http://127.0.0.1:8888/config/node.load">Load management</a></li>
+						<li class="submenuitem-not-selected"><a title="Settings related to connecting to nodes other than Friends" href="http://127.0.0.1:8888/config/node.opennet">Opennet</a></li>
+						<li class="submenuitem-not-selected"><a title="Settings related to choosing local requests to run" href="http://127.0.0.1:8888/config/node.scheduler">Request scheduling</a></li>
+						<li class="submenuitem-not-selected"><a title="Configure the auto-update system" href="http://127.0.0.1:8888/config/node.updater">Auto-update</a></li>
+						<li class="submenuitem-not-selected"><a title="Configure SSL" href="http://127.0.0.1:8888/config/ssl">SSL (restart required)</a></li>
+						<li class="submenuitem-not-selected"><a title="Configure web interface aliases" href="http://127.0.0.1:8888/config/toadletsymlinker">Web interface aliases</a></li>
+						<li class="submenuitem-not-selected"><a title="Contribute to the translation" href="http://127.0.0.1:8888/translation/">Translation</a></li>
+						<li class="submenuitem-not-selected"><a title="default settings for KeyUtils" href="http://127.0.0.1:8888/config/plugins.KeyUtils.KeyUtilsPlugin">KeyUtils</a></li>
+
+					</ul>
+
+				</div>
+				<div id="content">
+					<div class="infobox infobox-normal">
+						<div class="infobox-header">
+							Freenet Node Configuration
+						</div>
+						<div class="infobox-content">
+							<div>
+								<form id="configForm" enctype="multipart/form-data" action="/config/node" method="post" accept-charset="utf-8">
+									<input name="formPassword" value="hmXSiqnrKlcByfUg3kHxsA" type="hidden">
+
+									<input value="Apply" class="invisible" type="submit">
+
+									<div class="configprefix">
+										Core settings
+									</div>
+									<a id="node"></a><ul class="config">
+										<li class="dropdown"><a id="l10n" name="l10n"><span title="Default: 'en'. [node.l10n]" style="cursor: help;" class="configshortdesc">The language Freenet will use to display messages</span></a><span class="config"><select name="node.l10n"><option selected="selected" value="English">English</option>
+													<option value="Español">Español</option>
+													<option value="Dansk">Dansk</option>
+													<option value="Nederlands">Nederlands</option>
+													<option value="Deutsch">Deutsch</option>
+													<option value="Suomi">Suomi</option>
+													<option value="Français">Français</option>
+													<option value="Italiano">Italiano</option>
+													<option value="Norsk">Norsk</option>
+													<option value="Polski">Polski</option>
+													<option value="Svenska">Svenska</option>
+													<option value="中文(简体)">中文(简体)</option>
+													<option value="中文(繁體)">中文(繁體)</option>
+													<option value="Русский">Русский</option>
+													<option value="日本語">日本語</option>
+													<option value="unlisted">unlisted</option>
+													</select></span><span class="configlongdesc">This setting will change the language used to display messages.</span></li>
+										<li class="boolean"><a id="autoChangeDatabaseEncryption" name="autoChangeDatabaseEncryption"><span title="Default: 'true'. [node.autoChangeDatabaseEncryption]" style="cursor: help;" class="configshortdesc">Automatically encrypt or decrypt node.db4o on restarting the node?</span></a><span class="config"><select name="node.autoChangeDatabaseEncryption"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">Automatically
+encrypt or decrypt node.db4o on restart (or on first entering the
+password) if the security level has changed? (It is encrypted unless
+physical security level is LOW). This can take some time during startup,
+ but if it is disabled, you will have to shut down Freenet, remove
+node.db4o(.crypt), and start it back up to change whether it is
+encrypted, which will wipe out your downloads/uploads queue.</span></li>
+										<li class="text"><a id="masterKeyFile" name="masterKeyFile"><span title="Default: 'master.keys'. [node.masterKeyFile]" style="cursor: help;" class="configshortdesc">Location of the master keys file</span></a><span class="config"><input alt="Node.masterKeyFile" name="node.masterKeyFile" value="master.keys" class="config" type="text">
+
+												</span><span class="configlongdesc">Filename for the master
+keys file. This contains the encryption keys for the cache of recently
+visited sites (client-cache), the download queue etc. These may be
+passworded through the security levels page, but securely deleting the
+keys file will make them useless even with the password. (If this is a
+relative path, it will be taken relative to the user data directory.)</span></li>
+										<li class="boolean"><a id="defragDatabaseOnStartup" name="defragDatabaseOnStartup"><span title="Default: 'false'. [node.defragDatabaseOnStartup]" style="cursor: help;" class="configshortdesc">Defragment the downloads database during the next startup?</span></a><span class="config"><select name="node.defragDatabaseOnStartup"><option value="true">true</option>
+													<option selected="selected" value="false">false</option>
+													</select></span><span class="configlongdesc">If true, the database will be defragmented during the next startup (or after the password is entered).</span></li>
+										<li class="boolean"><a id="defragOnce" name="defragOnce"><span title="Default: 'false'. [node.defragOnce]" style="cursor: help;" class="configshortdesc">Defrag once only (set above option as well!)</span></a><span class="config"><select name="node.defragOnce"><option value="true">true</option>
+													<option selected="selected" value="false">false</option>
+													</select></span><span class="configlongdesc">If this and the above option is true, we will defragment on the next startup and then turn off the defragment option.</span></li>
+										<li class="boolean"><a id="showFriendsVisibilityAlert" name="showFriendsVisibilityAlert"><span title="Default: 'false'. [node.showFriendsVisibilityAlert]" style="cursor: help;" class="configshortdesc">Show the friends' visibility settings need to be set alert?</span></a><span class="config"><select name="node.showFriendsVisibilityAlert"><option value="true">true</option>
+													<option selected="selected" value="false">false</option>
+													</select></span><span class="configlongdesc">Show the friends' visibility settings need to be set alert?</span></li>
+										<li class="boolean"><a id="disableProbabilisticHTLs" name="disableProbabilisticHTLs"><span title="Default: 'false'. [node.disableProbabilisticHTLs]" style="cursor: help;" class="configshortdesc">Disable probabilistic HTL</span></a><span class="config"><select name="node.disableProbabilisticHTLs"><option value="true">true</option>
+													<option selected="selected" value="false">false</option>
+													</select></span><span class="configlongdesc">Disable probabilistic HTL (don't touch this unless you know what you are doing)</span></li>
+										<li class="text"><a id="maxHTL" name="maxHTL"><span title="Default: '18'. [node.maxHTL]" style="cursor: help;" class="configshortdesc">Maximum HTL</span></a><span class="config"><input alt="Node.maxHTL" name="node.maxHTL" value="18" class="config" type="text">
+
+												</span><span class="configlongdesc">Maximum HTL (FOR DEVELOPER USE ONLY!)</span></li>
+										<li class="text"><a id="ipAddressOverride" name="ipAddressOverride"><span title="Default: ''. [node.ipAddressOverride]" style="cursor: help;" class="configshortdesc">IP address override</span></a><span class="config"><input alt="NodeIPDectector.ipOverride" name="node.ipAddressOverride" class="config" type="text">
+
+												</span><span class="configlongdesc">IP address override (not
+ usually needed) - set this if you have a *static* IP address or a
+domain name (e.g. via dyndns), and you are behind a firewall. Note that
+Freenet will still include other detected IP addresses unless you use
+the "bind to" option.</span></li>
+										<li class="text"><a id="tempIPAddressHint" name="tempIPAddressHint"><span title="Default: ''. [node.tempIPAddressHint]" style="cursor: help;" class="configshortdesc">Temporary IP address hint</span></a><span class="config"><input alt="NodeIPDectector.tempAddressHint" name="node.tempIPAddressHint" class="config" type="text">
+
+												</span><span class="configlongdesc">Temporary hint to what our IP might be; deleted after use</span></li>
+										<li class="boolean"><a id="enableARKs" name="enableARKs"><span title="Default: 'true'. [node.enableARKs]" style="cursor: help;" class="configshortdesc">Enable ARKs? (DON'T TURN THIS OFF!)</span></a><span class="config"><select name="node.enableARKs" disabled="disabled"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">Enable ARKs? (DON'T TURN THIS OFF!).</span></li>
+										<li class="boolean"><a id="enablePerNodeFailureTables" name="enablePerNodeFailureTables"><span title="Default: 'true'. [node.enablePerNodeFailureTables]" style="cursor: help;" class="configshortdesc">Enable per-node failure tables?</span></a><span class="config"><select name="node.enablePerNodeFailureTables" disabled="disabled"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">Enable automatically rerouting around nodes that failed a request within the last 10 minutes?</span></li>
+										<li class="boolean"><a id="enableULPRDataPropagation" name="enableULPRDataPropagation"><span title="Default: 'true'. [node.enableULPRDataPropagation]" style="cursor: help;" class="configshortdesc">Enable ULPR data propagation?</span></a><span class="config"><select name="node.enableULPRDataPropagation" disabled="disabled"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">Enable fast
+propagation of recently requested keys to those nodes which have asked
+for them when the data is eventually found? (Ultra-Lightweight
+Persistent Requests; this is particularly important for chat clients).
+Note that this also enables RecentlyFailed, which will squash requests
+which have recently had 3 DNFs at at least the HTL it is being fetched
+at now (this is only safe because ULPRs ensure that we will get the key
+quickly if it is found); this is important to limit the load chat
+clients put on the Freenet network.</span></li>
+										<li class="boolean"><a id="enableSwapping" name="enableSwapping"><span title="Default: 'true'. [node.enableSwapping]" style="cursor: help;" class="configshortdesc">Enable location swapping? (DO NOT TURN THIS OFF!)</span></a><span class="config"><select name="node.enableSwapping" disabled="disabled"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">Enable location swapping? (DO NOT TURN THIS OFF! It is only useful in some simulations).</span></li>
+										<li class="boolean"><a id="publishOurPeersLocation" name="publishOurPeersLocation"><span title="Default: 'true'. [node.publishOurPeersLocation]" style="cursor: help;" class="configshortdesc">Shall we send our peers' locations to our peers?</span></a><span class="config"><select name="node.publishOurPeersLocation"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">Shall we send our peers' locations to our peers? Doing so helps routing but gives some information away to a potential attacker.</span></li>
+										<li class="boolean"><a id="routeAccordingToOurPeersLocation" name="routeAccordingToOurPeersLocation"><span title="Default: 'true'. [node.routeAccordingToOurPeersLocation]" style="cursor: help;" class="configshortdesc">Shall we use the locations of the peers of our peers into account for routing purposes?</span></a><span class="config"><select name="node.routeAccordingToOurPeersLocation"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">Shall we use
+the locations of the peers of our peers into account for routing
+purposes? Doing so helps routing but might help a potential attacker.</span></li>
+										<li class="boolean"><a id="enableSwapQueueing" name="enableSwapQueueing"><span title="Default: 'true'. [node.enableSwapQueueing]" style="cursor: help;" class="configshortdesc">Enable queueing of swap requests? (DO NOT TURN THIS OFF!)</span></a><span class="config"><select name="node.enableSwapQueueing"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">Enable queueing of swap requests? (DO NOT TURN THIS OFF!)</span></li>
+										<li class="boolean"><a id="enablePacketCoalescing" name="enablePacketCoalescing"><span title="Default: 'true'. [node.enablePacketCoalescing]" style="cursor: help;" class="configshortdesc">Enable packet coalescing?</span></a><span class="config"><select name="node.enablePacketCoalescing"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">Enable packet
+coalescing? Packet coalescing increases bandwidth efficiency, reduces
+CPU usage and gains some resistance to traffic analysis at a small cost
+in message latency. Don't turn this off unless you know what you're
+doing.</span></li>
+										<li class="text readonly"><a id="listenPort" name="listenPort"><span title="Default: '-1'. [node.listenPort]" style="cursor: help;" class="configshortdesc">Darknet port number (UDP)</span></a><span class="config"><input alt="Node.port" name="node.listenPort" value="22227" class="config" disabled="disabled" type="text">
+
+												</span><span class="configlongdesc">UDP port used by Freenet
+ to communicate with your Friends' nodes. This port should be forwarded
+in your router if possible. We use a separate port for connections to
+Strangers.</span></li>
+										<li class="text readonly"><a id="bindTo" name="bindTo"><span title="Default: '0.0.0.0'. [node.bindTo]" style="cursor: help;" class="configshortdesc">IP address to bind to</span></a><span class="config"><input alt="Node.bindTo" name="node.bindTo" value="0.0.0.0" class="config" disabled="disabled" type="text">
+
+												</span><span class="configlongdesc">IP address to bind to</span></li>
+										<li class="text"><a id="testingDropPacketsEvery" name="testingDropPacketsEvery"><span title="Default: '0'. [node.testingDropPacketsEvery]" style="cursor: help;" class="configshortdesc">Testing packet drop frequency</span></a><span class="config"><input alt="Node.dropPacketEvery" name="node.testingDropPacketsEvery" value="0" class="config" type="text">
+
+												</span><span class="configlongdesc">Frequency of dropping
+packets. Testing option used by devs to simulate packet loss. 0 means
+never artificially drop a packet. Don't touch this!</span></li>
+										<li class="boolean"><a id="oneConnectionPerIP" name="oneConnectionPerIP"><span title="Default: 'false'. [node.oneConnectionPerIP]" style="cursor: help;" class="configshortdesc">Limit to one connection per address? (friends) (NOT RECOMMENDED)</span></a><span class="config"><select name="node.oneConnectionPerIP"><option value="true">true</option>
+													<option selected="selected" value="false">false</option>
+													</select></span><span class="configlongdesc">Automatically
+drop friend connections when other friends have the same (external) IP
+address. DO NOT ENABLE THIS UNLESS YOU *REALLY* KNOW WHAT YOU ARE DOING!</span></li>
+										<li class="boolean"><a id="alwaysAllowLocalAddresses" name="alwaysAllowLocalAddresses"><span title="Default: 'true'. [node.alwaysAllowLocalAddresses]" style="cursor: help;" class="configshortdesc">Always allow connecting to nodes via local addresses?</span></a><span class="config"><select name="node.alwaysAllowLocalAddresses"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">If true,
+Freenet will attempt to connect to other nodes via their local
+(localhost, LAN) addresses as well as their public IPs. If this is not
+set, you can still enable it for specific darknet peers (but not opennet
+ peers). Set this if you want to connect to other nodes on the same LAN
+or computer, and don't mind that bogus references can cause your node to
+ send UDP packets to machines on your LAN.</span></li>
+										<li class="boolean"><a id="assumeNATed" name="assumeNATed"><span title="Default: 'true'. [node.assumeNATed]" style="cursor: help;" class="configshortdesc">Assume the port is not forwarded.</span></a><span class="config"><select name="node.assumeNATed"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">Should Freenet
+ assume the port is NATed and not forwarded, and always send handshakes
+aggressively (every 10-30 seconds), regardless of any evidence to the
+contrary?</span></li>
+										<li class="boolean"><a id="includeLocalAddressesInNoderefs" name="includeLocalAddressesInNoderefs"><span title="Default: 'true'. [node.includeLocalAddressesInNoderefs]" style="cursor: help;" class="configshortdesc">Include local addresses in noderef</span></a><span class="config"><select name="node.includeLocalAddressesInNoderefs"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">Whether to
+include local addresses (LAN and localhost) in node references. This
+will not be useful unless the both sides set allowLocalAddresses=true
+for the respective references (use the Friends page in advanced mode to
+set this flag).</span></li>
+										<li class="boolean"><a id="paddDataPackets" name="paddDataPackets"><span title="Default: 'true'. [node.paddDataPackets]" style="cursor: help;" class="configshortdesc">Pad data packets sent by this Freenet node with random data of random length? (READ WARNING BEFORE TURNING OFF!)</span></a><span class="config"><select name="node.paddDataPackets"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">Pad data
+packets sent by this Freenet node with random-length content? For
+security, on a single node, turning this off is bad; if a large part of
+the network starts doing it, we become very vulnerable to a passive
+attacker. However, it should improve performance, particularly the
+payload percentage. You have been warned!</span></li>
+										<li class="text"><a id="outputBandwidthLimit" name="outputBandwidthLimit"><span title="Default: '15KiB'. [node.outputBandwidthLimit]" style="cursor: help;" class="configshortdesc">Upload bandwidth limit</span></a><span class="config"><input alt="Node.outBWLimit" name="node.outputBandwidthLimit" value="5KiB" class="config" type="text">
+
+												</span><span class="configlongdesc">Hard upload bandwidth
+limit. Freenet should almost never exceed this. Normally you should set
+this to no more than half the your internet connection's upload
+bandwidth, which is usually much less than your download bandwidth.
+Without units this is in bytes/second, and SI and IEC units are
+accepted, so things like 10 KiB/s or 1.5 mbps (meaning 10 kibibytes/sec
+and 1.5 megabytes/sec respectively) are okay.</span></li>
+										<li class="text"><a id="inputBandwidthLimit" name="inputBandwidthLimit"><span title="Default: '-1'. [node.inputBandwidthLimit]" style="cursor: help;" class="configshortdesc">Download bandwidth limit</span></a><span class="config"><input alt="Node.inBWLimit" name="node.inputBandwidthLimit" value="5KiB" class="config" type="text">
+
+												</span><span class="configlongdesc">Download bandwidth
+limit. Freenet will try not to exceed this, but it is not very accurate.
+ If set to -1 the download bandwidth limit will be 4x the upload
+bandwidth limit. Without units this is in bytes/second, and SI and IEC
+units are accepted, so things like 10 KiB/s or 1.5 mbps (meaning 10
+kibibytes/sec and 1.5 megabytes/sec respectively) are okay.</span></li>
+										<li class="boolean"><a id="throttleLocalTraffic" name="throttleLocalTraffic"><span title="Default: 'true'. [node.throttleLocalTraffic]" style="cursor: help;" class="configshortdesc">Throttle local traffic?</span></a><span class="config"><select name="node.throttleLocalTraffic"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">Throttle local traffic? If enabled, even LAN and localhost traffic will be subject to bandwidth limiting.</span></li>
+										<li class="boolean"><a id="probeBandwidth" name="probeBandwidth"><span title="Default: 'true'. [node.probeBandwidth]" style="cursor: help;" class="configshortdesc">Respond to probe requests for bandwidth limit</span></a><span class="config"><select name="node.probeBandwidth"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">If true
+Freenet will respond to requests for the outgoing bandwidth limit. This
+is to improve knowledge of network conditions and allow simulations to
+better reflect the actual network. It will add a small amount of random
+noise to make the information less identifiable but still useful for
+diagnostics. If false it will respond with a refusal.</span></li>
+										<li class="boolean"><a id="probeBuild" name="probeBuild"><span title="Default: 'true'. [node.probeBuild]" style="cursor: help;" class="configshortdesc">Respond to probe requests for build</span></a><span class="config"><select name="node.probeBuild"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">If true
+Freenet will respond to probe requests for the build. This is to measure
+ update propagation. If false it will respond with a refusal.</span></li>
+										<li class="boolean"><a id="probeIdentifier" name="probeIdentifier"><span title="Default: 'true'. [node.probeIdentifier]" style="cursor: help;" class="configshortdesc">Respond to probe requests for an identifier</span></a><span class="config"><select name="node.probeIdentifier"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">If true
+Freenet will respond to probe requests for an identifier and very
+low-precision uptime information. It will add a small amount of random
+noise to the uptime to make it less identifiable but still useful for
+diagnostics. This is useful for estimations of network size and churn.
+If false it will respond with a refusal.</span></li>
+										<li class="boolean"><a id="probeLinkLengths" name="probeLinkLengths"><span title="Default: 'true'. [node.probeLinkLengths]" style="cursor: help;" class="configshortdesc">Respond to probe requests for link lengths</span></a><span class="config"><select name="node.probeLinkLengths"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">If true
+Freenet will respond to probe requests for link lengths. This is to
+improve knowledge of network conditions, and allow simulations to better
+ reflect the actual network. It will add a small amount of random noise
+to make the information less identifiable but still useful for
+diagnostics. If false it will respond with a refusal.</span></li>
+										<li class="boolean"><a id="probeLocation" name="probeLocation"><span title="Default: 'true'. [node.probeLocation]" style="cursor: help;" class="configshortdesc">Respond to probe requests for location</span></a><span class="config"><select name="node.probeLocation"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">If true
+Freenet will respond to probe requests for low-precision location. This
+is to allow measurement of the network location distribution, and
+contains no information other than location. If false it will respond
+with a refusal.</span></li>
+										<li class="boolean"><a id="probeStoreSize" name="probeStoreSize"><span title="Default: 'true'. [node.probeStoreSize]" style="cursor: help;" class="configshortdesc">Respond to probe requests for store size</span></a><span class="config"><select name="node.probeStoreSize"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">If true
+freenet will respond to probe requests for store size. This is to
+improve knowledge of network conditions, and allow simulations to better
+ reflect the actual network. It will add a small amount of random noise
+to make the information less identifiable but still useful for
+diagnostics. If false it will respond with a refusal.</span></li>
+										<li class="boolean"><a id="probeUptime" name="probeUptime"><span title="Default: 'true'. [node.probeUptime]" style="cursor: help;" class="configshortdesc">Respond to probe requests for uptime</span></a><span class="config"><select name="node.probeUptime"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">If true
+freenet will respond to probe requests for 48-hour or 7-day uptime
+percentage. This is to improve knowledge of network conditions, and
+allow simulations to better reflect the actual network. It will add a
+small amount of random noise to make the information less identifiable
+but still useful for diagnostics. If false it will respond with a
+refusal.</span></li>
+										<li class="boolean"><a id="probeRejectStats" name="probeRejectStats"><span title="Default: 'true'. [node.probeRejectStats]" style="cursor: help;" class="configshortdesc">Respond to probe requests for proportion of requests of various kinds rejected.</span></a><span class="config"><select name="node.probeRejectStats"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">If true,
+Freenet will respond to probe requests for the proportion of various
+kinds of requests which are being rejected. This returns an integer
+proportion if there have been more than 200 requests, for each category
+(CHK, SSK for insert, request) and it is updated every 10 minutes.</span></li>
+										<li class="boolean"><a id="probeOverallBulkOutputCapacityUsage" name="probeOverallBulkOutputCapacityUsage"><span title="Default: 'true'. [node.probeOverallBulkOutputCapacityUsage]" style="cursor: help;" class="configshortdesc">Respond to probe requests for overall capacity usage and very approximate bandwidth limit</span></a><span class="config"><select name="node.probeOverallBulkOutputCapacityUsage"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">If true
+Freenet will respond to probe requests for the overall capacity usage
+(bandwidth liability, this is a guesstimate of how much bandwidth would
+be used if all running requests succeeded), and a rough idea of the
+bandwidth limit (as an integer, divided by 10KB/sec, min 1 max 10).</span></li>
+										<li class="text"><a id="identifier" name="identifier"><span title="Default: '-1'. [node.identifier]" style="cursor: help;" class="configshortdesc">Randomly assigned identifier for probe requests</span></a><span class="config"><input alt="Node.probeIdentifierShort" name="node.identifier" value="8715864291665981597" class="config" type="text">
+
+												</span><span class="configlongdesc">This identifier is only used in probe requests for an identifier. If set to -1 it will select a new random value.</span></li>
+										<li class="text"><a id="clientThrottleFile" name="clientThrottleFile"><span title="Default: 'client-throttle.dat'. [node.clientThrottleFile]" style="cursor: help;" class="configshortdesc">File to store client statistics in</span></a><span class="config"><input alt="NodeClientCore.fileForClientStats" name="node.clientThrottleFile" value="client-throttle.dat" class="config" type="text">
+
+												</span><span class="configlongdesc">File to store client throttling statistics in (used to decide how often to send requests)</span></li>
+										<li class="boolean"><a id="encryptPersistentTempBuckets" name="encryptPersistentTempBuckets"><span title="Default: 'true'. [node.encryptPersistentTempBuckets]" style="cursor: help;" class="configshortdesc">Encrypt the persistent temporary buckets? LEAVE THIS ALONE!</span></a><span class="config"><select name="node.encryptPersistentTempBuckets"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">Encrypt the
+persistent temporary buckets? In some cases (if you use hard-drive and
+swap encryption) it might not make sense to encrypt persistent temporary
+ buckets. LEAVE THIS ALONE IF YOU DON'T KNOW WHAT YOU ARE DOING!</span></li>
+										<li class="text"><a id="maxRAMBucketSize" name="maxRAMBucketSize"><span title="Default: '2243952'. [node.maxRAMBucketSize]" style="cursor: help;" class="configshortdesc">Maximum size of a RAMBucket (bytes, KB MB etc allowed)</span></a><span class="config"><input alt="NodeClientCore.maxRAMBucketSize" name="node.maxRAMBucketSize" value="2243952" class="config" type="text">
+
+												</span><span class="configlongdesc">Maximum size of a RAMBucket (bigger buckets will be kept as files on the disk)</span></li>
+										<li class="text"><a id="RAMBucketPoolSize" name="RAMBucketPoolSize"><span title="Default: '43MiB'. [node.RAMBucketPoolSize]" style="cursor: help;" class="configshortdesc">Amount of RAM to dedicate to temporary buckets (bytes, KB MB etc allowed)</span></a><span class="config"><input alt="NodeClientCore.ramBucketPoolSize" name="node.RAMBucketPoolSize" value="43MiB" class="config" type="text">
+
+												</span><span class="configlongdesc">Amount of RAM to dedicate to temporary buckets. The tradeoff is more memory usage against more IOs.</span></li>
+										<li class="boolean"><a id="encryptTempBuckets" name="encryptTempBuckets"><span title="Default: 'true'. [node.encryptTempBuckets]" style="cursor: help;" class="configshortdesc">Encrypt the temporary buckets? LEAVE THIS ALONE!</span></a><span class="config"><select name="node.encryptTempBuckets"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">Encrypt the
+temporary buckets? In some cases (if you use hard-drive and swap
+encryption) it might not make sense to encrypt temporary buckets. LEAVE
+THIS ALONE IF YOU DON'T KNOW WHAT YOU ARE DOING!</span></li>
+										<li class="directory"><a id="downloadsDir" name="downloadsDir"><span title="Default: 'downloads'. [node.downloadsDir]" style="cursor: help;" class="configshortdesc">Default download directory</span></a><span class="config"><input alt="NodeClientCore.downloadsDir" name="node.downloadsDir" value="downloads" class="config" type="text">
+
+												<input name="select-directory.node.downloadsDir" value="Browse to change" type="submit">
+
+												</span><span class="configlongdesc">The directory to save downloaded files into by default</span></li>
+										<li class="text"><a id="downloadAllowedDirs" name="downloadAllowedDirs"><span title="Default: 'all'. [node.downloadAllowedDirs]" style="cursor: help;" class="configshortdesc">Directories downloading is allowed to</span></a><span class="config"><input alt="NodeClientCore.downloadAllowedDirs" name="node.downloadAllowedDirs" value="all" class="config" type="text">
+
+												</span><span class="configlongdesc">Semicolon separated list
+ of directories to which downloads are allowed. "downloads" means
+downloadsDir, empty means no downloads to disk allowed, "all" means
+downloads allowed from anywhere. WARNING! If this is set to "all" any
+user with access to FCP can download any file to anywhere on your
+computer!</span></li>
+										<li class="text"><a id="uploadAllowedDirs" name="uploadAllowedDirs"><span title="Default: 'all'. [node.uploadAllowedDirs]" style="cursor: help;" class="configshortdesc">Directories uploading is allowed from</span></a><span class="config"><input alt="NodeClientCore.uploadAllowedDirs" name="node.uploadAllowedDirs" value="all" class="config" type="text">
+
+												</span><span class="configlongdesc">Semicolon separated list
+ of directories from which uploads are allowed. Empty means no uploads
+from disk allowed, "all" means uploads allowed from anywhere (including
+system files etc!). WARNING! If this is set to "all" any file on your
+computer can be uploaded by any user with access to FCP.</span></li>
+										<li class="text"><a id="maxBackgroundUSKFetchers" name="maxBackgroundUSKFetchers"><span title="Default: '64'. [node.maxBackgroundUSKFetchers]" style="cursor: help;" class="configshortdesc">Maximum number of temporary  USK fetchers</span></a><span class="config"><input alt="NodeClientCore.maxUSKFetchers" name="node.maxBackgroundUSKFetchers" value="64" class="config" type="text">
+
+												</span><span class="configlongdesc">Maximum number of
+temporary background fetches for recently visited USKs (e.g. freesites).
+ Note that clients and plugins (e.g. WebOfTrust) can subscribe to USKs,
+which does not count towards the limit.</span></li>
+										<li class="boolean"><a id="alwaysCommit" name="alwaysCommit"><span title="Default: 'false'. [node.alwaysCommit]" style="cursor: help;" class="configshortdesc">Commit after every database job?</span></a><span class="config"><select name="node.alwaysCommit"><option value="true">true</option>
+													<option selected="selected" value="false">false</option>
+													</select></span><span class="configlongdesc">If this option
+ is false, we commit the database to disk every 30 seconds. If it is
+true we commit it after every database job. This will reduce performance
+ but will ensure that no progress is lost on an unclean shutdown, and
+slightly reduce memory usage. Normally this should be false, to reduce
+disk access.</span></li>
+										<li class="boolean"><a id="passOpennetPeersThroughDarknet" name="passOpennetPeersThroughDarknet"><span title="Default: 'true'. [node.passOpennetPeersThroughDarknet]" style="cursor: help;" class="configshortdesc">Relay opennet noderefs through darknet peers?</span></a><span class="config"><select name="node.passOpennetPeersThroughDarknet"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">If true,
+opennet noderefs (NEVER our own darknet noderef) will be relayed through
+ our darknet peers. So a node (this node, or its peers) can get opennet
+peers from its darknet peers. This is useful because it allows us to
+bootstrap new opennet peers after having lost our peers due to downtime,
+ for example. However, it may make traffic analysis slightly easier, so
+turn it off if you are paranoid.</span></li>
+										<li class="text"><a id="name" name="name"><span title="Default: 'Freenet node with no name #2248670188567236023'. [node.name]" style="cursor: help;" class="configshortdesc">Nickname for this Freenet node</span></a><span class="config"><input alt="Node.nodeName" name="node.name" value="Freenet node with no name #2248670188567236023" class="config" type="text">
+
+												</span><span class="configlongdesc">Node nickname. This will be visible to your friends only.</span></li>
+										<li class="boolean"><a id="storeForceBigShrinks" name="storeForceBigShrinks"><span title="Default: 'false'. [node.storeForceBigShrinks]" style="cursor: help;" class="configshortdesc">Do large store shrinks immediately (bdbje-index store type only)</span></a><span class="config"><select name="node.storeForceBigShrinks"><option value="true">true</option>
+													<option selected="selected" value="false">false</option>
+													</select></span><span class="configlongdesc">Whether to do
+large store shrinks (over 10%) immediately (rather than waiting for the
+next node restart). Online shrinks do not preserve the most recently
+used data, so this is not recommended; use it only if you must have an
+immediate result. Specific to bdbje-index store type.</span></li>
+										<li class="dropdown"><a id="storeType" name="storeType"><span title="Default: 'ram'. [node.storeType]" style="cursor: help;" class="configshortdesc">Datastore type (LEAVE THIS ALONE)</span></a><span class="config"><select name="node.storeType"><option selected="selected" value="salt-hash">salt-hash</option>
+													<option value="ram">ram</option>
+													</select></span><span class="configlongdesc">Datastore
+type. Currently this can be salt-hash (this is the default, stores data
+on disk with a lossy hashtable and a Bloom filter), or ram (FOR TESTING
+ONLY, keep the index and the data in memory, not on disk). Only use ram
+if you know what you are doing and have enough RAM to store all your
+data (and note it will not be saved on shutdown)! Changes will not take
+effect until Freenet has been restarted.</span></li>
+										<li class="text"><a id="storeSize" name="storeSize"><span title="Default: '10MiB'. [node.storeSize]" style="cursor: help;" class="configshortdesc">Freenet datastore size (bytes, MB GB TB etc allowed)</span></a><span class="config"><input alt="Node.storeSize" name="node.storeSize" value="455535821" class="config" type="text">
+
+												</span><span class="configlongdesc">Size of the Freenet
+datastore, which includes the store and cache, and stores data passing
+through your node. Freenet uses disk space for many other things, such
+as temporary files and your downloads, which are separate.</span></li>
+										<li class="boolean"><a id="storeUseSlotFilters" name="storeUseSlotFilters"><span title="Default: 'true'. [node.storeUseSlotFilters]" style="cursor: help;" class="configshortdesc">Use slot filters? (Strongly recommended)</span></a><span class="config"><select name="node.storeUseSlotFilters"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">This greatly
+reduces disk I/O for the salted-hash store, at a memory and disk cost of
+ around 4 bytes for every key i.e. 1/3000th of the store size. This is
+strongly recommended, unless your RAM is small and you have a fast SSD.</span></li>
+										<li class="text"><a id="storeSaltHashSlotFilterPersistenceTime" name="storeSaltHashSlotFilterPersistenceTime"><span title="Default: '300k'. [node.storeSaltHashSlotFilterPersistenceTime]" style="cursor: help;" class="configshortdesc">Persistence interval for slot filters</span></a><span class="config"><input alt="Node.storeSaltHashSlotFilterPersistenceTime" name="node.storeSaltHashSlotFilterPersistenceTime" value="300k" class="config" type="text">
+
+												</span><span class="configlongdesc">How often should the
+slot filters be written for the store? -1 = write immediately. 0 = write
+ at shutdown. &gt;0 = write every n milliseconds. So e.g. 60000 = every
+minute. Note that if Freenet is shut down uncleanly, and this is not set
+ to write immediately, the slot filter will be rebuilt on the next
+start-up, which will cause a significant amount of disk access.</span></li>
+										<li class="boolean"><a id="storeSaltHashResizeOnStart" name="storeSaltHashResizeOnStart"><span title="Default: 'false'. [node.storeSaltHashResizeOnStart]" style="cursor: help;" class="configshortdesc">Resize store on node start (salt-hash only)</span></a><span class="config"><select name="node.storeSaltHashResizeOnStart"><option value="true">true</option>
+													<option selected="selected" value="false">false</option>
+													</select></span><span class="configlongdesc">Resize store
+on node start (salt-hash only). If this is true, Freenet will complete
+resizing the datastore during startup. This will complete much faster
+than doing it "on the fly", but on the other hand your Freenet node will
+ not be available for some time while it completes the resize.</span></li>
+										<li class="boolean"><a id="storePreallocate" name="storePreallocate"><span title="Default: 'true'. [node.storePreallocate]" style="cursor: help;" class="configshortdesc">Preallocate space for datastore</span></a><span class="config"><select name="node.storePreallocate"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">Preallocate space for datastore</span></li>
+										<li class="text"><a id="cachingFreenetStoreMaxSize" name="cachingFreenetStoreMaxSize"><span title="Default: '1024KiB'. [node.cachingFreenetStoreMaxSize]" style="cursor: help;" class="configshortdesc">Maximum size of the in-memory write cache for each store (there are 9 such stores).</span></a><span class="config"><input alt="Node.cachingFreenetStoreMaxSize" name="node.cachingFreenetStoreMaxSize" value="1024KiB" class="config" type="text">
+
+												</span><span class="configlongdesc">Maximum size of the
+in-memory write cache for each store (there are 9 such stores). 0 for no
+ in-memory cache (e.g. if you have a solid-state disk). Keys are of
+various sizes, so e.g. if the limit is between 2K and 32K it will only
+be used for storing small keys (SSKs and public keys).</span></li>
+										<li class="text"><a id="cachingFreenetStorePeriod" name="cachingFreenetStorePeriod"><span title="Default: '300k'. [node.cachingFreenetStorePeriod]" style="cursor: help;" class="configshortdesc">Maximum time blocks will be kept in the in-memory datastore cache before being written to the store on disk (in milliseconds).</span></a><span class="config"><input alt="Node.cachingFreenetStorePeriod" name="node.cachingFreenetStorePeriod" value="300k" class="config" type="text">
+
+												</span><span class="configlongdesc">Maximum time blocks will be kept in the in-memory datastore cache before being written to the store on disk (in milliseconds).</span></li>
+										<li class="dropdown"><a id="clientCacheType" name="clientCacheType"><span title="Default: 'ram'. [node.clientCacheType]" style="cursor: help;" class="configshortdesc">Client cache type?</span></a><span class="config"><select name="node.clientCacheType"><option selected="selected" value="salt-hash">salt-hash</option>
+													<option value="ram">ram</option>
+													<option value="none">none</option>
+													</select></span><span class="configlongdesc">If you set
+this to none there will be less evidence if your computer is seized, but
+ your node will need to re-fetch every page you visit every time you
+visit it, reducing performance and making your requests more visible on
+the network; if you set it to ram, cached pages will only be remembered
+until shutting down this Freenet node and will take up RAM; the
+first-time wizard sets it to salt-hash, which stores visited freesites
+on disk, but encrypted and possibly passworded according to the physical
+ security level (so securely deleting master.keys will wipe the client
+cache).</span></li>
+										<li class="text"><a id="clientCacheSize" name="clientCacheSize"><span title="Default: '10MiB'. [node.clientCacheSize]" style="cursor: help;" class="configshortdesc">Size of the client cache? (bytes, MB, GB etc allowed)</span></a><span class="config"><input alt="Node.clientCacheSize" name="node.clientCacheSize" value="53687091" class="config" type="text">
+
+												</span><span class="configlongdesc">Set the size of the
+client cache. This is used to cache freesites you visit so that they
+won't need to be requested next time, and therefore will load faster and
+ won't be visible on the network. If the client cache type is "none",
+this option is ignored; if it is "ram", this option is the size in RAM
+of the client cache (part of by the overall maximum memory limit, so
+increase that if you need to); if it is "salt-hash", this option is the
+size of the client-cache on disk.</span></li>
+										<li class="boolean"><a id="useSlashdotCache" name="useSlashdotCache"><span title="Default: 'true'. [node.useSlashdotCache]" style="cursor: help;" class="configshortdesc">Cache all requests for 30 minutes?</span></a><span class="config"><select name="node.useSlashdotCache"><option selected="selected" value="true">true</option>
+													<option value="false">false</option>
+													</select></span><span class="configlongdesc">Requests with
+high HTL are not eligible to be stored in the datastore. If this option
+is true, they will be stored in the recent requests cache, a special
+short-term cache. If this option is false then only ULPR responses (i.e.
+ delayed answers to requests) will be stored in this cache. This is
+enabled by default unless network security level is MAXIMUM, as it is
+important for performance when a key becomes popular suddenly. However,
+it does have some security impact, in that if an attacker can get close
+to the target within 30 minutes (unlikely in most cases), this mechanism
+ may help him to confirm his guesses.</span></li>
+										<li class="boolean"><a id="writeLocalToDatastore" name="writeLocalToDatastore"><span title="Default: 'false'. [node.writeLocalToDatastore]" style="cursor: help;" class="configshortdesc">Write local and nearby requests to the datastore?</span></a><span class="config"><select name="node.writeLocalToDatastore"><option value="true">true</option>
+													<option selected="selected" value="false">false</option>
+													</select></span><span class="configlongdesc">Whether to
+write data returned by high HTL (local and nearby) requests to the main
+persistent datastore. Strongly recommend you keep this option disabled
+unless you don't care about either datastore seizure or store probing
+attacks. Will be enabled by default only if the network security level
+and physical security level are both LOW.</span></li>
+										<li class="text"><a id="slashdotCacheLifetime" name="slashdotCacheLifetime"><span title="Default: '1800k'. [node.slashdotCacheLifetime]" style="cursor: help;" class="configshortdesc">How long to keep data in the recent requests cache?</span></a><span class="config"><input alt="Node.slashdotCacheLifetime" name="node.slashdotCacheLifetime" value="1800k" class="config" type="text">
+
+												</span><span class="configlongdesc">How long to keep data in
+ the recent requests cache (milliseconds, use k for seconds)? Note that
+this goes away on restart anyway.</span></li>
+										<li class="text"><a id="slashdotCacheSize" name="slashdotCacheSize"><span title="Default: '10MiB'. [node.slashdotCacheSize]" style="cursor: help;" class="configshortdesc">Maximum size of the recent requests cache (in bytes, KB MB GB TB etc)</span></a><span class="config"><input alt="Node.slashdotCacheSize" name="node.slashdotCacheSize" value="27000KiB" class="config" type="text">
+
+												</span><span class="configlongdesc">Maximum size of the recent requests cache (note that there is also a time limit).</span></li>
+										<li class="boolean"><a id="skipWrapperWarning" name="skipWrapperWarning"><span title="Default: 'false'. [node.skipWrapperWarning]" style="cursor: help;" class="configshortdesc">Skip "not using the wrapper" warning?</span></a><span class="config"><select name="node.skipWrapperWarning"><option value="true">true</option>
+													<option selected="selected" value="false">false</option>
+													</select></span><span class="configlongdesc">If true, the
+"not using the wrapper" warning will not be shown. Note that this will
+only hide the warning from the next restart on.</span></li>
+										<li class="text"><a id="maxPacketSize" name="maxPacketSize"><span title="Default: '1280'. [node.maxPacketSize]" style="cursor: help;" class="configshortdesc">Maximum packet size (aka MTU)</span></a><span class="config"><input alt="Node.maxPacketSize" name="node.maxPacketSize" value="1280" class="config" type="text">
+
+												</span><span class="configlongdesc">Maximum size of the UDP
+packets Freenet sends, assuming UDP/IP headers are 28 bytes. We will use
+ the MTU of the interface if we can detect it, but mostly obstructions
+happen elsewhere, and unfortunately we cannot easily detect the path
+MTU.</span></li>
+										<li class="boolean"><a id="enableRoutedPing" name="enableRoutedPing"><span title="Default: 'false'. [node.enableRoutedPing]" style="cursor: help;" class="configshortdesc">Enable FNPRoutedPing?</span></a><span class="config"><select name="node.enableRoutedPing"><option value="true">true</option>
+													<option selected="selected" value="false">false</option>
+													</select></span><span class="configlongdesc">Enable FNPRoutedPing? Only useful in simulations, not on the real network. Turn it off.</span></li>
+
+									</ul>
+									<input value="Apply" type="submit">
+
+									<input value="Undo unsaved changes" type="reset">
+
+									<input name="subconfig" value="node" type="hidden">
+
+
+								</form>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+
+	</body></html>

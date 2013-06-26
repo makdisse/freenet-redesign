@@ -1,0 +1,3452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN">
+<!-- saved from url=(0028)http://127.0.0.1:8888/stats/ -->
+<html xml:lang="eng"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+			<title>Statistics - Freenet</title>
+			<noscript>&lt;style&gt; .jsonly {display:none;}&lt;/style&gt;</noscript>
+			<link title="clean-dropdown" rel="stylesheet" type="text/css" href="theme.css">
+
+		</head>
+		<body id="page-_stats_" class="fproxy-page">
+			<div id="page">
+				<div id="topbar">
+					<h1>Statistics</h1>
+
+				</div>
+				<div id="statusbar-container">
+					<div id="statusbar">
+						<div id="statusbar-language">
+							<a href="http://127.0.0.1:8888/config/node#l10n">English</a>
+						</div>
+						<div class="separator">
+							&nbsp;
+						</div>
+						<div id="statusbar-switchmode" class="simple">
+							<a href="http://127.0.0.1:8888/stats/?fproxyAdvancedMode=1">Switch to simple mode</a>
+						</div>
+						<div class="separator">
+							&nbsp;
+						</div>
+						<div id="statusbar-seclevels">
+							Security levels:<a title="Protection against a stranger attacking you over the Internet" class="low" href="http://127.0.0.1:8888/seclevels/">LOW&nbsp;</a><a title="Protection of your downloads, uploads and Freenet browsing cache" class="normal" href="http://127.0.0.1:8888/seclevels/">LOW</a>
+						</div>
+						<div class="separator">
+							&nbsp;
+						</div>
+						<div class="progressbar">
+							<div style="width: 60.0%;" class="progressbar-done progressbar-peers avg-peers">
+							</div>
+							<div title="We are currently connected to 0 friends and 6 strangers." class="progress_fraction_finalized">
+								6 / 10
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+				<div id="navbar">
+					<ul id="navlist">
+						<li id="FProxyToadlet_categoryTitleBrowsing" class="navlist-not-selected"><a title="Browse Freenet" href="http://127.0.0.1:8888/">Browsing</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Browse and search Freesites, web sites hosted anonymously on Freenet" href="http://127.0.0.1:8888/">Browse Freenet</a></li>
+								<li class="submenuitem-not-selected"><a title="Upload a web site anonymously to Freenet" href="http://127.0.0.1:8888/insertsite/">Upload a Freesite</a></li>
+								<li class="submenuitem-not-selected"><a title="Search Freenet!" href="http://127.0.0.1:8888/library/">Search Freenet!</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleQueue" class="navlist-not-selected"><a title="Uploads and downloads" href="http://127.0.0.1:8888/downloads/">Filesharing</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Files being downloaded from Freenet" href="http://127.0.0.1:8888/downloads/">Downloads</a></li>
+								<li class="submenuitem-not-selected"><a title="Files being uploaded to Freenet" href="http://127.0.0.1:8888/uploads/">Uploads</a></li>
+								<li class="submenuitem-not-selected"><a title="Upload a file to Freenet" href="http://127.0.0.1:8888/insertfile/">Upload a file</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleFriends" class="navlist-not-selected"><a title="Connect to your friends to improve Freenet&#39;s performance and security" href="http://127.0.0.1:8888/friends/">Friends</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Connections to your friends&#39; nodes" href="http://127.0.0.1:8888/friends/">Connections to friends</a></li>
+								<li class="submenuitem-not-selected"><a title="Connect to a friend running Freenet to improve your security" href="http://127.0.0.1:8888/addfriend/">Add a Friend</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleChat" class="navlist-not-selected"><a title="Talk with other people over Freenet on message boards" href="http://127.0.0.1:8888/chat/">Discussion</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="How to talk to other Freenet users anonymously over chat forums" href="http://127.0.0.1:8888/chat/">Forums</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleStatus" class="navlist-selected"><a title="Status information" href="http://127.0.0.1:8888/alerts/">Status</a><ul class="subnavlist-selected">
+								<li class="submenuitem-not-selected"><a title="Detailed status alerts and messages from your Friends" href="http://127.0.0.1:8888/alerts/">Messages</a></li>
+								<li class="submenuitem-not-selected"><a title="Connections to nodes you have no reason to trust" href="http://127.0.0.1:8888/strangers/">Connections to strangers</a></li>
+								<li class="submenuitem-selected"><a title="Detailed statistics about your Freenet node" href="./stats_files/stats.html">Statistics</a></li>
+								<li class="submenuitem-not-selected"><a title="Diagnostics to send to developers" href="http://127.0.0.1:8888/diagnostic/">Diagnostic</a></li>
+								<li class="submenuitem-not-selected"><a title="Status of your internet connection (port forwarding etc)" href="http://127.0.0.1:8888/connectivity/">Internet connection</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleConfig" class="navlist-not-selected"><a title="Configure Freenet" href="http://127.0.0.1:8888/seclevels/">Configuration</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Configure the level of security provided by Freenet" href="http://127.0.0.1:8888/seclevels/">Security Levels</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure plugins" href="http://127.0.0.1:8888/plugins/">Plugins</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure the console interface" href="http://127.0.0.1:8888/config/console">Console interface</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure Freenet Client Protocol (used for client applications to talk to Freenet)" href="http://127.0.0.1:8888/config/fcp">FCP</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure the web interface" href="http://127.0.0.1:8888/config/fproxy">Web interface</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure the amount of information kept by Freenet for troubleshooting purposes" href="http://127.0.0.1:8888/config/logger">Logs</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure core settings e.g. bandwidth usage" href="http://127.0.0.1:8888/config/node">Core settings</a></li>
+								<li class="submenuitem-not-selected"><a title="Installation settings, e.g. readonly program directory locations" href="http://127.0.0.1:8888/config/node.install">Installation settings</a></li>
+								<li class="submenuitem-not-selected"><a title="Settings for controlling the amount of traffic through your Freenet node" href="http://127.0.0.1:8888/config/node.load">Load management</a></li>
+								<li class="submenuitem-not-selected"><a title="Settings related to connecting to nodes other than Friends" href="http://127.0.0.1:8888/config/node.opennet">Opennet</a></li>
+								<li class="submenuitem-not-selected"><a title="Settings related to choosing local requests to run" href="http://127.0.0.1:8888/config/node.scheduler">Request scheduling</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure the auto-update system" href="http://127.0.0.1:8888/config/node.updater">Auto-update</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure SSL" href="http://127.0.0.1:8888/config/ssl">SSL (restart required)</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure web interface aliases" href="http://127.0.0.1:8888/config/toadletsymlinker">Web interface aliases</a></li>
+								<li class="submenuitem-not-selected"><a title="Contribute to the translation" href="http://127.0.0.1:8888/translation/">Translation</a></li>
+								<li class="submenuitem-not-selected"><a title="default settings for KeyUtils" href="http://127.0.0.1:8888/config/plugins.KeyUtils.KeyUtilsPlugin">KeyUtils</a></li>
+
+							</ul>
+							</li>
+						<li id="plugins_KeyUtils_KeyUtilsPlugin-ConfigToadlet_plugins_KeyUtils_KeyUtilsPlugin_label" class="navlist-not-selected"><a title="Toolbox for debugging Freenet URIs and more…" href="http://127.0.0.1:8888/KeyUtils/">KeyUtils</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Explore a Freenet URI" href="http://127.0.0.1:8888/KeyUtils/">Key Explorer</a></li>
+								<li class="submenuitem-not-selected"><a title="Explore a site manifest" href="http://127.0.0.1:8888/KeyUtils/Site">Site Explorer</a></li>
+								<li class="submenuitem-not-selected"><a title="Explore a split file" href="http://127.0.0.1:8888/KeyUtils/Split">Split Explorer</a></li>
+								<li class="submenuitem-not-selected"><a title="Compose and decompose Freenet URI extra data" href="http://127.0.0.1:8888/KeyUtils/Extra">Extra Calculator</a></li>
+								<li class="submenuitem-not-selected"><a title="Show the contents of a FBlob" href="http://127.0.0.1:8888/KeyUtils/FBlob">FBlob Viewer</a></li>
+								<li class="submenuitem-not-selected"><a title="Convert a file key to CHK" href="http://127.0.0.1:8888/KeyUtils/KeyConverter">Key Converter</a></li>
+								<li class="submenuitem-not-selected"><a title="Info about Key Utils" href="http://127.0.0.1:8888/KeyUtils/About">About</a></li>
+
+							</ul>
+							</li>
+
+					</ul>
+
+				</div>
+				<div id="selected-subnavbar">
+					<ul id="selected-subnavbar-list">
+						<li class="submenuitem-not-selected"><a title="Detailed status alerts and messages from your Friends" href="http://127.0.0.1:8888/alerts/">Messages</a></li>
+						<li class="submenuitem-not-selected"><a title="Connections to nodes you have no reason to trust" href="http://127.0.0.1:8888/strangers/">Connections to strangers</a></li>
+						<li class="submenuitem-selected"><a title="Detailed statistics about your Freenet node" href="./stats_files/stats.html">Statistics</a></li>
+						<li class="submenuitem-not-selected"><a title="Diagnostics to send to developers" href="http://127.0.0.1:8888/diagnostic/">Diagnostic</a></li>
+						<li class="submenuitem-not-selected"><a title="Status of your internet connection (port forwarding etc)" href="http://127.0.0.1:8888/connectivity/">Internet connection</a></li>
+
+					</ul>
+
+				</div>
+				<div id="content">
+					<table class="column">
+						<tbody><tr>
+							<td class="first">
+								<div class="infobox">
+									<div class="infobox-header">
+										Node Version Information
+									</div>
+									<div class="infobox-content">
+										<ul>
+											<li>Freenet 0.7.5 Build #1444 build01444</li>
+											<li>Freenet-ext Build #29 rv29</li>
+
+										</ul>
+
+									</div>
+
+								</div>
+								<div class="infobox">
+									<div class="infobox-header">
+										Java Info
+									</div>
+									<div class="infobox-content">
+										<ul>
+											<li>Used Java memory: 24.0&nbsp;MiB</li>
+											<li>Allocated Java memory: 58.0&nbsp;MiB</li>
+											<li>Maximum Java memory: 494&nbsp;MiB</li>
+											<li>Running threads: 82/500</li>
+											<li>Available CPUs: 2</li>
+											<li>Java Version: 1.7.0_21</li>
+											<li>Java VM Vendor: Oracle Corporation</li>
+											<li>Java VM Name: Java HotSpot(TM) Client VM</li>
+											<li>Java VM Version: 23.21-b01</li>
+											<li>OS Name: Windows 8</li>
+											<li>OS Version: 6.2</li>
+											<li>OS Architecture: x86</li>
+											<li>Encryption: Using built-in code.</li>
+
+										</ul>
+
+									</div>
+
+								</div>
+								<div id="statistics-generating" class="infobox #">
+									<div class="infobox-header">
+										Statistics Gathering
+									</div>
+									<div class="infobox-content">
+										<div>
+											<form id="threadDumpForm" enctype="multipart/form-data" action="http://127.0.0.1:8888/" method="post" accept-charset="utf-8">
+												<input name="formPassword" value="QJm3SVinCbLFUOQyLQ8NHg" type="hidden">
+
+												<input name="getThreadDump" value="Generate a Thread Dump" type="submit">
+
+
+											</form>
+
+										</div>
+										<ul>
+											<li><a target="_blank" href="http://127.0.0.1:8888/?latestlog">Get latest node's logfile</a></li>
+											<li><a href="http://127.0.0.1:8888/translation/?getOverrideTranlationFile">Download your translations file</a></li>
+											<li><a href="http://127.0.0.1:8888/diagnostic/">Diagnostics to send to developers</a></li>
+
+										</ul>
+
+									</div>
+
+								</div>
+								<div class="infobox">
+									<div class="infobox-header">
+										Load limiting Bulk
+									</div>
+									<div class="infobox-content">
+										<ul>
+											<li>Global window: 10.411736402408001</li>
+											<li>Real global window: 1.7352894004013335</li>
+											<li>CHK Request Bulk RTT=1m10s delay=6.739s bw=4862B/sec</li>
+											<li>SSK Request Bulk RTT=20.840s delay=2.001s bw=511B/sec</li>
+											<li>CHK Insert Bulk RTT=20.000s delay=1.920s bw=17066B/sec</li>
+											<li>SSK Insert Bulk RTT=20.000s delay=1.920s bw=533B/sec</li>
+											<li>CHK window: freenet.node.ThrottleWindowManager@153d528 w: 4.162027162692585, d:0.11702128=22/188, SSK window: freenet.node.ThrottleWindowManager@cf62e9 w: 2.494444966609095, d:0.20242915=150/741</li>
+											<li>Request window: freenet.node.ThrottleWindowManager@166b697 w: 2.6087962184208546, d:0.21630615=130/601, Insert window: freenet.node.ThrottleWindowManager@5d9d41 w: 2.0, d:NaN=0/0</li>
+
+										</ul>
+
+									</div>
+
+								</div>
+								<div class="infobox">
+									<div class="infobox-header">
+										Load limiting RealTime
+									</div>
+									<div class="infobox-content">
+										<ul>
+											<li>Global window: 18.341917933210365</li>
+											<li>Real global window: 3.0569863222017273</li>
+											<li>CHK Request RealTime RTT=5.000s delay=0.272s bw=120470B/sec</li>
+											<li>SSK Request RealTime RTT=9.680s delay=0.527s bw=1943B/sec</li>
+											<li>CHK Insert RealTime RTT=20.000s delay=1.090s bw=30062B/sec</li>
+											<li>SSK Insert RealTime RTT=20.000s delay=1.090s bw=939B/sec</li>
+											<li>CHK window: freenet.node.ThrottleWindowManager@153d528 w: 4.162027162692585, d:0.11702128=22/188, SSK window: freenet.node.ThrottleWindowManager@cf62e9 w: 2.494444966609095, d:0.20242915=150/741</li>
+											<li>Request window: freenet.node.ThrottleWindowManager@166b697 w: 2.6087962184208546, d:0.21630615=130/601, Insert window: freenet.node.ThrottleWindowManager@5d9d41 w: 2.0, d:NaN=0/0</li>
+
+										</ul>
+
+									</div>
+
+								</div>
+								<div class="infobox">
+									<div class="infobox-header">
+										New load management stats
+									</div>
+									<div class="infobox-content">
+										<p>Requests waiting for slots: 0 local, 0 remote.</p><table border="0">
+											<tbody><tr>
+												<th>Delay times</th><th>Local</th><th>Remote</th>
+											</tr>
+											<tr>
+												<th>Real-time</th><td>
+
+												</td>
+												<td>
+
+												</td>
+
+											</tr>
+											<tr>
+												<th>Bulk</th><td>
+
+												</td>
+												<td>
+
+												</td>
+
+											</tr>
+
+										</tbody></table>
+
+									</div>
+
+								</div>
+								<div class="infobox">
+									<div class="infobox-header">
+										Success Rate
+									</div>
+									<div class="infobox-content">
+										<table border="0">
+											<tbody><tr>
+												<th>Group</th><th>P(Success)</th><th>Count</th>
+											</tr>
+											<tr>
+												<td>
+													All requests
+												</td>
+												<td>
+													49.083%
+												</td>
+												<td>
+													872
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													Local CHKs
+												</td>
+												<td>
+													80.645%
+												</td>
+												<td>
+													31
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													Remote CHKs
+												</td>
+												<td>
+													27.083%
+												</td>
+												<td>
+													48
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													Local SSKs
+												</td>
+												<td>
+													64.471%
+												</td>
+												<td>
+													577
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													Remote SSKs
+												</td>
+												<td>
+													8.333%
+												</td>
+												<td>
+													216
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													Block transfers (Bulk)
+												</td>
+												<td>
+													80.435%
+												</td>
+												<td>
+													46
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													Block transfers (RT)
+												</td>
+												<td>
+													100.000%
+												</td>
+												<td>
+													2
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													Block transfers (Local)
+												</td>
+												<td>
+													80.645%
+												</td>
+												<td>
+													31
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													Transfers timed out
+												</td>
+												<td>
+													71.429%
+												</td>
+												<td>
+													7
+												</td>
+
+											</tr>
+											<tr>
+											</tr>
+											<tr>
+												<td>
+													Bulk sends
+												</td>
+												<td>
+													100.000%
+												</td>
+												<td>
+													27
+												</td>
+
+											</tr>
+
+										</tbody></table>
+
+									</div>
+
+								</div>
+								<div class="infobox">
+									<div class="infobox-header">
+										Detailed timings (local fetches)
+									</div>
+									<div class="infobox-content">
+										<table>
+											<tbody><tr>
+												<td>
+												</td>
+												<td colspan="2">
+													CHK
+												</td>
+												<td colspan="2">
+													SSK
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													Successful
+												</td>
+												<td>
+													52.348s
+												</td>
+												<td>
+
+												</td>
+												<td>
+													8.346s
+												</td>
+												<td>
+													4.331s
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													Unsuccessful
+												</td>
+												<td>
+
+												</td>
+												<td>
+
+												</td>
+												<td>
+													18.497s
+												</td>
+												<td>
+													10.562s
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													Average
+												</td>
+												<td>
+													52.348s
+												</td>
+												<td>
+
+												</td>
+												<td>
+													16.805s
+												</td>
+												<td>
+													6.177s
+												</td>
+
+											</tr>
+
+										</tbody></table>
+
+									</div>
+
+								</div>
+								<div class="infobox">
+									<div class="infobox-header">
+										Success rates by HTL (remote bulk fetches)
+									</div>
+									<div class="infobox-content">
+										<table>
+											<tbody><tr>
+												<th>HTL</th><th>CHKs</th><th>SSKs</th>
+											</tr>
+											<tr>
+											</tr>
+											<tr>
+												<td>
+													18
+												</td>
+												<td>
+													57.143%&nbsp;(0,4,7)&nbsp;(.0031)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,9)&nbsp;(.0722)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													17
+												</td>
+												<td>
+													50.000%&nbsp;(0,1,2)&nbsp;(.0004)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,14)&nbsp;(.0367)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													16
+												</td>
+												<td>
+													14.286%&nbsp;(0,1,7)&nbsp;(.0005)
+												</td>
+												<td>
+													11.111%&nbsp;(0,2,18)&nbsp;(.0117)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													15
+												</td>
+												<td>
+													33.333%&nbsp;(0,1,3)&nbsp;(.0005)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,7)&nbsp;(.0076)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													14
+												</td>
+												<td>
+													66.667%&nbsp;(0,2,3)&nbsp;(.0014)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,5)&nbsp;(.0008)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													13
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,2)&nbsp;(.0138)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,3)&nbsp;(.3144)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													12
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,5)&nbsp;(.0007)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													11
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,1)&nbsp;(.0000)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,3)&nbsp;(.0004)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													10
+												</td>
+												<td>
+													100.000%&nbsp;(0,1,1)&nbsp;(.0003)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,2)&nbsp;(.0159)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													9
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,2)&nbsp;(.0012)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													8
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,3)&nbsp;(.0022)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													7
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,2)&nbsp;(.0025)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													6
+												</td>
+												<td>
+													33.333%&nbsp;(0,1,3)&nbsp;(.0001)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													5
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,1)&nbsp;(.0009)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													4
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,2)&nbsp;(.0014)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													3
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,3)&nbsp;(.0037)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,1)&nbsp;(.0025)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													2
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,1)&nbsp;(.0000)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													1
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,8)&nbsp;(.0003)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,6)&nbsp;(.0088)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													0
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													Total
+												</td>
+												<td>
+													25.000%&nbsp;(0,11,44)
+												</td>
+												<td>
+													2.500%&nbsp;(0,2,80)
+												</td>
+
+											</tr>
+
+										</tbody></table>
+
+									</div>
+
+								</div>
+								<div class="infobox">
+									<div class="infobox-header">
+										Success rates by HTL (remote realtime fetches)
+									</div>
+									<div class="infobox-content">
+										<table>
+											<tbody><tr>
+												<th>HTL</th><th>CHKs</th><th>SSKs</th>
+											</tr>
+											<tr>
+											</tr>
+											<tr>
+												<td>
+													18
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+												<td>
+													13.333%&nbsp;(0,2,15)&nbsp;(.0013)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													17
+												</td>
+												<td>
+													100.000%&nbsp;(0,1,1)&nbsp;(.4336)
+												</td>
+												<td>
+													20.000%&nbsp;(0,6,30)&nbsp;(.0049)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													16
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+												<td>
+													21.622%&nbsp;(1,7,37)&nbsp;(.0013)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													15
+												</td>
+												<td>
+													100.000%&nbsp;(0,1,1)&nbsp;(.0000)
+												</td>
+												<td>
+													6.250%&nbsp;(0,1,16)&nbsp;(.0002)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													14
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,8)&nbsp;(.0001)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													13
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,1)&nbsp;(.0000)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,2)&nbsp;(.0000)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													12
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,3)&nbsp;(.0041)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													11
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,2)&nbsp;(.0144)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													10
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,4)&nbsp;(.0001)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													9
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,2)&nbsp;(.0000)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													8
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,3)&nbsp;(.0265)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													7
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,3)&nbsp;(.0004)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													6
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,3)&nbsp;(.0218)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													5
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,1)&nbsp;(.3252)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													4
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													3
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,3)&nbsp;(.0387)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													2
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,2)&nbsp;(.0012)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													1
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,1)&nbsp;(.0000)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,3)&nbsp;(.0035)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													0
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+												<td>
+													0.000%&nbsp;(0,0,0)&nbsp;(�)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													Total
+												</td>
+												<td>
+													50.000%&nbsp;(0,2,4)
+												</td>
+												<td>
+													12.409%&nbsp;(1,16,137)
+												</td>
+
+											</tr>
+
+										</tbody></table>
+
+									</div>
+
+								</div>
+
+							</td>
+							<td class="last">
+								<div class="infobox">
+									<div class="infobox-header">
+										Current Activity
+									</div>
+									<div class="infobox-content">
+										<ul>
+											<li>Inserts: 1 CHK handlers, 0 SSK handlers (0/0 local)</li>
+											<li>Requests: 8 CHK handlers, 7 SSK handlers (4/3 local)</li>
+											<li>Transferring Requests: sending 4, receiving 3</li>
+											<li>Block transfers: 1 sends, 5 receives</li>
+											<li>ARK&nbsp;Fetch&nbsp;Requests:&nbsp;5</li>
+											<li>BackgroundFetcherByUSKSize:&nbsp;26</li>
+											<li>temporaryBackgroundFetchersLRUSize:&nbsp;0</li>
+											<li>outputBandwidthLiabilityUsage:&nbsp;30.7%</li>
+
+										</ul>
+
+									</div>
+
+								</div>
+								<div class="infobox">
+									<div class="infobox-header">
+										Node status overview
+									</div>
+									<div class="infobox-content">
+										<ul>
+											<li>bwlimitDelayTime:&nbsp;1043ms</li>
+											<li>bwlimitDelayTimeBulk:&nbsp;1094ms</li>
+											<li>bwlimitDelayTimeRT:&nbsp;829ms</li>
+											<li>nodeAveragePingTime:&nbsp;405ms</li>
+											<li>darknetSizeEstimateSession:&nbsp;0&nbsp;nodes</li>
+											<li>opennetSizeEstimateSession:&nbsp;20&nbsp;nodes</li>
+											<li>nodeUptimeSession:&nbsp;13m24s</li>
+											<li>nodeUptimeTotal:&nbsp;21m19s</li>
+											<li>routingMissDistanceLocal:&nbsp;0.0026</li>
+											<li>routingMissDistanceRemote:&nbsp;0.0012</li>
+											<li>routingMissDistanceOverall:&nbsp;0.0021</li>
+											<li>routingMissDistanceBulk:&nbsp;0.0014</li>
+											<li>routingMissDistanceRT:&nbsp;0.0028</li>
+											<li>backedOffPercent:&nbsp;0.3%</li>
+											<li>pInstantReject:&nbsp;24.0%</li>
+											<li>pInstantRejectRequestBulk:&nbsp;32.8% (CHK) 32.2% (SSK)</li>
+											<li>pInstantRejectInsertBulk:&nbsp;50.0% (CHK) 50.0% (SSK)</li>
+											<li>pInstantRejectRequestRT:&nbsp;0.0% (CHK) 13.1% (SSK)</li>
+											<li>pInstantRejectInsertRT:&nbsp;0.0% (CHK) 0.0% (SSK)</li>
+											<li>unclaimedFIFOSize:&nbsp;55</li>
+											<li>RAMBucketPoolSize:&nbsp;2.58 MiB / 43.0 MiB</li>
+											<li>uptimeAverage:&nbsp;1.4%</li>
+
+										</ul>
+
+									</div>
+
+								</div>
+								<div class="infobox">
+									<div class="infobox-header">
+										Peer statistics
+									</div>
+									<div class="infobox-content">
+										<ul>
+											<li><span><span title="Connected: We&#39;re successfully connected to these nodes" style="border-bottom: 1px dotted; cursor: help;" class="peer_connected">Connected</span><span>:&nbsp;6</span></span></li>
+											<li><span><span title="Not connected: No connection so far but this node is continuously trying to connect." style="border-bottom: 1px dotted; cursor: help;" class="peer_disconnected">Disconnected</span><span>:&nbsp;1</span></span></li>
+											<li><span><span title="Never Connected: Freenet has never connected to these peers." style="border-bottom: 1px dotted; cursor: help;" class="peer_never_connected">Never connected</span><span>:&nbsp;3</span></span></li>
+											<li><span><span title="Nodes we are using as seednodes." style="border-bottom: 1px dotted; cursor: help;" class="peer_listening">Seed nodes</span><span>:&nbsp;8</span></span></li>
+											<li>Max peers: 10</li>
+											<li>Max strangers: 10</li>
+
+										</ul>
+
+									</div>
+
+								</div>
+								<div class="infobox">
+									<div class="infobox-header">
+										Bandwidth
+									</div>
+									<div class="infobox-content">
+										<ul>
+											<li>Input Rate: 2.32&nbsp;KiB/s (of 5.0&nbsp;KiB/s)</li>
+											<li>Output Rate: 997&nbsp;B/s (of 5.0&nbsp;KiB/s)</li>
+											<li>Session Total Input: 3.09&nbsp;MiB (3.94&nbsp;KiB/s average)</li>
+											<li>Session Total Output: 1.20&nbsp;MiB (1.53&nbsp;KiB/s average)</li>
+											<li>Payload Output: 547&nbsp;KiB (696&nbsp;B/sec)(44%)</li>
+											<li>Global Total Input: 10.0&nbsp;MiB</li>
+											<li>Global Total Output: 2.18&nbsp;MiB</li>
+											<li>Request output (excluding payload): CHK 26.4&nbsp;KiB SSK 141&nbsp;KiB.</li>
+											<li>Insert output (excluding payload): CHK 2.98&nbsp;KiB SSK 575&nbsp;B.</li>
+											<li>Offered keys: sending keys 0&nbsp;B, sending offers 3.36&nbsp;KiB</li>
+											<li>Swapping Output: 2.84&nbsp;KiB.</li>
+											<li>Connection setup: 70.7&nbsp;KiB output</li>
+											<li>Ack-only packets: 124&nbsp;KiB</li>
+											<li>Resent bytes: 61.9&nbsp;KiB (5%)</li>
+											<li>Updater Output: 0&nbsp;B</li>
+											<li>Announcement output: 49.1&nbsp;KiB (transferring node refs payload 45.0&nbsp;KiB)</li>
+											<li>Admin bytes: 2.40&nbsp;KiB initial messages, 0&nbsp;B IP change messages, 464&nbsp;B disconnection notifications, 0&nbsp;B routing status</li>
+											<li>Debugging bytes: 0&nbsp;B network coloring, 337&nbsp;B ping, 52&nbsp;B probe requests, 0&nbsp;B routed test messages.</li>
+											<li>Node to node messages: 9.36&nbsp;KiB</li>
+											<li>Load allocation notices: 18.8&nbsp;KiB</li>
+											<li>FOAF related: 0&nbsp;B</li>
+											<li>Other output: 173&nbsp;KiB (14%)</li>
+											<li>Total non-request overhead: 421 B/sec (26%).</li>
+
+										</ul>
+
+									</div>
+
+								</div>
+								<div class="infobox">
+									<div class="infobox-header">
+										Peer Backoff
+									</div>
+									<div class="infobox-content">
+										<div class="infobox">
+											<div class="infobox-header">
+												Current backoff reasons (bulk)
+											</div>
+											<div class="infobox-content">
+												Good, your node is not backed off from any peers!
+											</div>
+
+										</div>
+										<div class="infobox">
+											<div class="infobox-header">
+												Current backoff reasons (realtime)
+											</div>
+											<div class="infobox-content">
+												Good, your node is not backed off from any peers!
+											</div>
+
+										</div>
+
+									</div>
+									<table border="0">
+										<tbody><tr>
+											<th>Mandatory Backoff Reason (bulk)</th><th>Count</th><th>Avg. Time</th><th>Total Time</th>
+										</tr>
+
+									</tbody></table>
+									<table border="0">
+										<tbody><tr>
+											<th>Mandatory Backoff Reason (realtime)</th><th>Count</th><th>Avg. Time</th><th>Total Time</th>
+										</tr>
+
+									</tbody></table>
+									<table border="0">
+										<tbody><tr>
+											<th>Routing Backoff Reason (bulk)</th><th>Count</th><th>Avg. Time</th><th>Total Time</th>
+										</tr>
+										<tr>
+											<td>
+												ForwardRejectedOverload
+											</td>
+											<td>
+												7
+											</td>
+											<td>
+												1.200s
+											</td>
+											<td>
+												8.404s
+											</td>
+
+										</tr>
+										<tr>
+											<td>
+												TransferFailedRequest5
+											</td>
+											<td>
+												2
+											</td>
+											<td>
+												1.735s
+											</td>
+											<td>
+												3.471s
+											</td>
+
+										</tr>
+										<tr>
+											<td>
+												TransferFailedInsert
+											</td>
+											<td>
+												2
+											</td>
+											<td>
+												1.182s
+											</td>
+											<td>
+												2.365s
+											</td>
+
+										</tr>
+										<tr>
+											<td>
+												TransferFailedRequest7
+											</td>
+											<td>
+												1
+											</td>
+											<td>
+												0.104s
+											</td>
+											<td>
+												0.104s
+											</td>
+
+										</tr>
+
+									</tbody></table>
+									<table border="0">
+										<tbody><tr>
+											<th>Routing Backoff Reason (realtime)</th><th>Count</th><th>Avg. Time</th><th>Total Time</th>
+										</tr>
+										<tr>
+											<td>
+												ForwardRejectedOverload
+											</td>
+											<td>
+												25
+											</td>
+											<td>
+												2.952s
+											</td>
+											<td>
+												1m13s
+											</td>
+
+										</tr>
+										<tr>
+											<td>
+												ForwardRejectedOverload2
+											</td>
+											<td>
+												3
+											</td>
+											<td>
+												1.261s
+											</td>
+											<td>
+												3.784s
+											</td>
+
+										</tr>
+										<tr>
+											<td>
+												FatalTimeout
+											</td>
+											<td>
+												3
+											</td>
+											<td>
+												0.908s
+											</td>
+											<td>
+												2.726s
+											</td>
+
+										</tr>
+
+									</tbody></table>
+									<table border="0">
+										<tbody><tr>
+											<th>Transfer Backoff Reason (bulk)</th><th>Count</th><th>Avg. Time</th><th>Total Time</th>
+										</tr>
+										<tr>
+											<td>
+												SENDER_DIED
+											</td>
+											<td>
+												1
+											</td>
+											<td>
+												57.776s
+											</td>
+											<td>
+												57.776s
+											</td>
+
+										</tr>
+
+									</tbody></table>
+									<table border="0">
+										<tbody><tr>
+											<th>Transfer Backoff Reason (realtime)</th><th>Count</th><th>Avg. Time</th><th>Total Time</th>
+										</tr>
+
+									</tbody></table>
+
+								</div>
+								<div class="infobox">
+									<div class="infobox-header">
+										Location swaps
+									</div>
+									<div class="infobox-content">
+										<ul>
+											<li>location:&nbsp;0.5623284136366454</li>
+											<li>averageSwapTime:&nbsp;8.000s</li>
+											<li>sendSwapInterval:&nbsp;8.000s</li>
+
+										</ul>
+
+									</div>
+
+								</div>
+								<div class="infobox">
+									<div class="infobox-header">
+										unclaimedFIFO Message Counts
+									</div>
+									<div class="infobox-content">
+										<ul>
+											<li>FNPPong:&nbsp;42&nbsp;(76.4%)</li>
+											<li>packetTransmit:&nbsp;2&nbsp;(3.6%)</li>
+											<li>allSent:&nbsp;2&nbsp;(3.6%)</li>
+											<li>FNPOpennetCompletedAck:&nbsp;2&nbsp;(3.6%)</li>
+											<li>sendAborted:&nbsp;2&nbsp;(3.6%)</li>
+											<li>FNPDataInsertRejected:&nbsp;2&nbsp;(3.6%)</li>
+											<li>FNPInsertTransfersCompleted:&nbsp;2&nbsp;(3.6%)</li>
+											<li>FNPOpennetCompletedTimeout:&nbsp;1&nbsp;(1.8%)</li>
+											<li>Unclaimed Messages Considered:&nbsp;55</li>
+
+										</ul>
+
+									</div>
+
+								</div>
+								<div class="infobox">
+									<div class="infobox-header">
+										Pooled threads by priority
+									</div>
+									<div class="infobox-content">
+										<table border="0">
+											<tbody><tr>
+												<th>Priority</th><th>Running</th><th>Waiting</th>
+											</tr>
+											<tr>
+												<td>
+													1
+												</td>
+												<td>
+													1
+												</td>
+												<td>
+													2
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													2
+												</td>
+												<td>
+													0
+												</td>
+												<td>
+													0
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													3
+												</td>
+												<td>
+													2
+												</td>
+												<td>
+													0
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													4
+												</td>
+												<td>
+													0
+												</td>
+												<td>
+													0
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													5
+												</td>
+												<td>
+													17
+												</td>
+												<td>
+													14
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													6
+												</td>
+												<td>
+													2
+												</td>
+												<td>
+													3
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													7
+												</td>
+												<td>
+													11
+												</td>
+												<td>
+													7
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													8
+												</td>
+												<td>
+													0
+												</td>
+												<td>
+													0
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													9
+												</td>
+												<td>
+													0
+												</td>
+												<td>
+													0
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													10
+												</td>
+												<td>
+													2
+												</td>
+												<td>
+													0
+												</td>
+
+											</tr>
+
+										</tbody></table>
+
+									</div>
+
+								</div>
+
+							</td>
+							<td>
+								<div class="infobox">
+									<div class="infobox-header">
+										Thread usage
+									</div>
+									<div class="infobox-content">
+										<ul>
+											<li>Pooled thread awaiting work :&nbsp;26&nbsp;(24.1%)</li>
+											<li>UPnP-HTTPServer:&nbsp;7&nbsp;(6.5%)</li>
+											<li>UPnP-SSDPNotifySocket:&nbsp;7&nbsp;(6.5%)</li>
+											<li>UPnP-SSDPSearchResponseSocket:&nbsp;7&nbsp;(6.5%)</li>
+											<li>Announcer to freenet.node.SeedServerPeerNode:&nbsp;5&nbsp;(4.6%)</li>
+											<li>Network Interface Acceptor:&nbsp;4&nbsp;(3.7%)</li>
+											<li>CHK Insert starter :&nbsp;2&nbsp;(1.9%)</li>
+											<li>CHK Request starter :&nbsp;2&nbsp;(1.9%)</li>
+											<li>FEC Pool:&nbsp;2&nbsp;(1.9%)</li>
+											<li>SSK Insert starter :&nbsp;2&nbsp;(1.9%)</li>
+											<li>SSK Request starter :&nbsp;2&nbsp;(1.9%)</li>
+											<li>UdpSocketHandler:&nbsp;2&nbsp;(1.9%)</li>
+											<li>&lt;noname&gt;:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Attach Listener:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Background block encoder:&nbsp;1&nbsp;(0.9%)</li>
+											<li>CHKInsertHandler:&nbsp;1&nbsp;(0.9%)</li>
+											<li>CHKInsertSender:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Client database access thread:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Compression scheduler:&nbsp;1&nbsp;(0.9%)</li>
+											<li>DNSRequester thread:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Datastore checker:&nbsp;1&nbsp;(0.9%)</li>
+											<li>DestroyJavaVM:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Diffie-Hellman-Precalc:&nbsp;1&nbsp;(0.9%)</li>
+											<li>FCP server:&nbsp;1&nbsp;(0.9%)</li>
+											<li>FNP incoming auth packet handler thread:&nbsp;1&nbsp;(0.9%)</li>
+											<li>FailureTable offers executor:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Finalizer:&nbsp;1&nbsp;(0.9%)</li>
+											<li>HTTP socket handler:&nbsp;1&nbsp;(0.9%)</li>
+											<li>IP address re-detector:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Log File Writer Thread:&nbsp;1&nbsp;(0.9%)</li>
+											<li>PacketSender thread:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Plug:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Reference Handler:&nbsp;1&nbsp;(0.9%)</li>
+											<li>RequestSender:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Signal Dispatcher:&nbsp;1&nbsp;(0.9%)</li>
+											<li>SimpleToadletServer:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Store-CHK-cache-Cleaner:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Store-CHK-clientcache-Cleaner:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Store-CHK-store-Cleaner:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Store-PUBKEY-cache-Cleaner:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Store-PUBKEY-clientcache-Cleaner:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Store-PUBKEY-store-Cleaner:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Store-SSK-cache-Cleaner:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Store-SSK-clientcache-Cleaner:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Store-SSK-store-Cleaner:&nbsp;1&nbsp;(0.9%)</li>
+											<li>SwapRequestSender:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Thread-21:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Ticker thread:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Timer-0:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Wrapper-Connection:&nbsp;1&nbsp;(0.9%)</li>
+											<li>Wrapper-Control-Event-Monitor:&nbsp;1&nbsp;(0.9%)</li>
+											<li>db4o WeakReference collector:&nbsp;1&nbsp;(0.9%)</li>
+
+										</ul>
+
+									</div>
+
+								</div>
+								<div class="infobox">
+									<div class="infobox-header">
+										Preemptive Rejection Reasons
+									</div>
+									<div class="infobox-content">
+										<table>
+											<tbody><tr>
+												<td>
+													42&nbsp;
+												</td>
+												<td>
+													Input bandwidth liability: fairness between peers  (bulk)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													21&nbsp;
+												</td>
+												<td>
+													&gt;SUB_MAX_PING_TIME  (bulk)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													8&nbsp;
+												</td>
+												<td>
+													TooManyTransfers: Fair sharing between peers  (rt)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													7&nbsp;
+												</td>
+												<td>
+													&gt;SUB_MAX_PING_TIME  (rt)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													6&nbsp;
+												</td>
+												<td>
+													&gt;MAX_PING_TIME  (rt)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													3&nbsp;
+												</td>
+												<td>
+													&gt;MAX_PING_TIME  (bulk)
+												</td>
+
+											</tr>
+
+										</tbody></table>
+
+									</div>
+
+								</div>
+								<div class="infobox">
+									<div class="infobox-header">
+										Local Preemptive Rejection Reasons
+									</div>
+									<div class="infobox-content">
+										<table>
+											<tbody><tr>
+												<td>
+													183&nbsp;
+												</td>
+												<td>
+													Input bandwidth liability: fairness between peers  (bulk)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													54&nbsp;
+												</td>
+												<td>
+													&gt;SUB_MAX_PING_TIME  (rt)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													44&nbsp;
+												</td>
+												<td>
+													&gt;MAX_PING_TIME  (rt)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													28&nbsp;
+												</td>
+												<td>
+													&gt;SUB_MAX_PING_TIME  (bulk)
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													11&nbsp;
+												</td>
+												<td>
+													&gt;MAX_PING_TIME  (bulk)
+												</td>
+
+											</tr>
+
+										</tbody></table>
+
+									</div>
+
+								</div>
+								<div class="infobox">
+									<div class="infobox-header">
+										Database jobs
+									</div>
+									<div class="infobox-content">
+										<table border="0">
+											<tbody><tr>
+												<th>Priority</th><th>Waiting</th>
+											</tr>
+											<tr>
+												<td>
+													0
+												</td>
+												<td>
+													0
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													1
+												</td>
+												<td>
+													0
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													2
+												</td>
+												<td>
+													0
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													3
+												</td>
+												<td>
+													0
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													4
+												</td>
+												<td>
+													0
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													5
+												</td>
+												<td>
+													0
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													6
+												</td>
+												<td>
+													0
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													7
+												</td>
+												<td>
+													0
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													8
+												</td>
+												<td>
+													0
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													9
+												</td>
+												<td>
+													0
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													10
+												</td>
+												<td>
+													0
+												</td>
+
+											</tr>
+
+										</tbody></table>
+										<table border="0">
+											<tbody><tr>
+												<th>Job Type</th><th>Count</th><th>Avg. Time</th><th>Total Time</th>
+											</tr>
+											<tr>
+												<td>
+													PersistentStatsPutter
+												</td>
+												<td>
+													13
+												</td>
+												<td>
+													0.519s
+												</td>
+												<td>
+													6.755s
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													DatastoreCheckerPersistentRequestLoader
+												</td>
+												<td>
+													267
+												</td>
+												<td>
+													0.009s
+												</td>
+												<td>
+													2.545s
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													PluginRespirator$2
+												</td>
+												<td>
+													5
+												</td>
+												<td>
+													0.351s
+												</td>
+												<td>
+													1.756s
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													MaybeShrink
+												</td>
+												<td>
+													12
+												</td>
+												<td>
+													0.058s
+												</td>
+												<td>
+													0.700s
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													fillRequestStarterQueue
+												</td>
+												<td>
+													77
+												</td>
+												<td>
+													0.007s
+												</td>
+												<td>
+													0.584s
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													BackgroundBlockEncoder$1
+												</td>
+												<td>
+													1
+												</td>
+												<td>
+													0.572s
+												</td>
+												<td>
+													0.572s
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													FECQueueCacheFiller
+												</td>
+												<td>
+													2
+												</td>
+												<td>
+													0.072s
+												</td>
+												<td>
+													0.145s
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													Init ArchiveManager
+												</td>
+												<td>
+													1
+												</td>
+												<td>
+													0.094s
+												</td>
+												<td>
+													0.094s
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													ClientRequestSchedulerCore$3
+												</td>
+												<td>
+													4
+												</td>
+												<td>
+													0.009s
+												</td>
+												<td>
+													0.037s
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													PluginRespirator$1
+												</td>
+												<td>
+													1
+												</td>
+												<td>
+													0.009s
+												</td>
+												<td>
+													0.009s
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													QueueToadlet LoadCompletedIdentifiers
+												</td>
+												<td>
+													2
+												</td>
+												<td>
+													0.004s
+												</td>
+												<td>
+													0.008s
+												</td>
+
+											</tr>
+
+										</tbody></table>
+										<table border="0">
+											<tbody><tr>
+												<th>Queued Count</th><th>Job Type</th>
+											</tr>
+
+										</tbody></table>
+
+									</div>
+
+								</div>
+								<div class="infobox">
+									<div class="infobox-header">
+										Opennet stats
+									</div>
+									<div class="infobox-content">
+										<table border="0">
+											<tbody><tr>
+												<th></th><th>PATH_FOLDING</th><th>ANNOUNCE</th><th>RECONNECT</th>
+											</tr>
+											<tr>
+												<td>
+													Connection attempts
+												</td>
+												<td>
+													2
+												</td>
+												<td>
+													19
+												</td>
+												<td>
+													0
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													Connections accepted
+												</td>
+												<td>
+													2
+												</td>
+												<td>
+													12
+												</td>
+												<td>
+													0
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													Accepted (free slots)
+												</td>
+												<td>
+													0
+												</td>
+												<td>
+													0
+												</td>
+												<td>
+													0
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													Rejected (per-type grace periods)
+												</td>
+												<td>
+													0
+												</td>
+												<td>
+													0
+												</td>
+												<td>
+													0
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													Rejected (no droppable peers)
+												</td>
+												<td>
+													0
+												</td>
+												<td>
+													7
+												</td>
+												<td>
+													0
+												</td>
+
+											</tr>
+
+										</tbody></table>
+
+									</div>
+
+								</div>
+
+							</td>
+
+						</tr>
+						<tr>
+							<td class="first">
+								<div class="infobox">
+									<div class="infobox-header">
+										Peer&nbsp;Location&nbsp;Distribution (w/pReject)
+									</div>
+									<div class="infobox-content">
+										<table>
+											<tbody><tr>
+												<td colspan="10" class="first">
+													<div style="position: relative; height: 220px; width: 220px" class="peercircle">
+														<span style="position: absolute; top: 0.0px; left: 110.0px" class="mark">|</span><span style="position: absolute; top: 29.3px; left: 180.7px" class="mark">+</span><span style="position: absolute; top: 100.0px; left: 210.0px" class="mark">--</span><span style="position: absolute; top: 170.7px; left: 180.7px" class="mark">+</span><span style="position: absolute; top: 200.0px; left: 110.0px" class="mark">|</span><span style="position: absolute; top: 170.7px; left: 39.3px" class="mark">+</span><span style="position: absolute; top: 100.0px; left: 10.0px" class="mark">--</span><span style="position: absolute; top: 29.3px; left: 39.3px" class="mark">+</span><span style="position: absolute; top: 100px; left: 110px" class="mark">+</span><span style="position: absolute; top: 5.0px; left: 110.2px" class="disconnected">.</span><span style="position: absolute; top: 5.0px; left: 110.3px" class="disconnected">.</span><span style="position: absolute; top: 5.0px; left: 110.5px" class="disconnected">.</span><span style="position: absolute; top: 5.2px; left: 115.6px" class="disconnected">.</span><span style="position: absolute; top: 6.0px; left: 123.8px" class="disconnected">.</span><span style="position: absolute; top: 7.0px; left: 129.2px" class="disconnected">.</span><span style="position: absolute; top: 8.2px; left: 134.5px" class="disconnected">.</span><span style="position: absolute; top: 9.5px; left: 138.9px" class="disconnected">.</span><span style="position: absolute; top: 35.7px; left: 180.0px" class="disconnected">.</span><span style="position: absolute; top: 38.1px; left: 182.0px" class="disconnected">.</span><span style="position: absolute; top: 49.6px; left: 190.5px" class="disconnected">.</span><span style="position: absolute; top: 49.8px; left: 190.7px" class="disconnected">.</span><span style="position: absolute; top: 50.5px; left: 191.1px" class="disconnected">.</span><span style="position: absolute; top: 50.6px; left: 191.1px" class="disconnected">.</span><span style="position: absolute; top: 50.9px; left: 191.3px" class="disconnected">.</span><span style="position: absolute; top: 76.7px; left: 202.1px" class="disconnected">.</span><span style="position: absolute; top: 88.1px; left: 204.2px" class="disconnected">.</span><span style="position: absolute; top: 95.3px; left: 204.9px" class="disconnected">.</span><span style="position: absolute; top: 105.6px; left: 204.8px" class="disconnected">.</span><span style="position: absolute; top: 110.8px; left: 204.4px" class="disconnected">.</span><span style="position: absolute; top: 122.0px; left: 202.4px" class="disconnected">.</span><span style="position: absolute; top: 124.7px; left: 201.7px" class="disconnected">.</span><span style="position: absolute; top: 128.0px; left: 200.8px" class="disconnected">.</span><span style="position: absolute; top: 146.7px; left: 192.7px" class="disconnected">.</span><span style="position: absolute; top: 154.3px; left: 188.0px" class="disconnected">.</span><span style="position: absolute; top: 154.3px; left: 187.9px" class="disconnected">.</span><span style="position: absolute; top: 156.6px; left: 186.3px" class="disconnected">.</span><span style="position: absolute; top: 175.2px; left: 168.0px" class="disconnected">.</span><span style="position: absolute; top: 181.4px; left: 158.9px" class="disconnected">.</span><span style="position: absolute; top: 185.6px; left: 151.2px" class="disconnected">.</span><span style="position: absolute; top: 186.8px; left: 148.7px" class="disconnected">.</span><span style="position: absolute; top: 186.9px; left: 148.3px" class="disconnected">.</span><span style="position: absolute; top: 188.1px; left: 145.7px" class="disconnected">.</span><span style="position: absolute; top: 189.6px; left: 141.6px" class="disconnected">.</span><span style="position: absolute; top: 194.2px; left: 122.5px" class="disconnected">.</span><span style="position: absolute; top: 194.2px; left: 122.1px" class="disconnected">.</span><span style="position: absolute; top: 194.9px; left: 106.2px" class="disconnected">.</span><span style="position: absolute; top: 193.5px; left: 93.0px" class="disconnected">.</span><span style="position: absolute; top: 187.8px; left: 73.7px" class="disconnected">.</span><span style="position: absolute; top: 187.3px; left: 72.5px" class="disconnected">.</span><span style="position: absolute; top: 185.4px; left: 68.3px" class="disconnected">.</span><span style="position: absolute; top: 180.6px; left: 59.8px" class="disconnected">.</span><span style="position: absolute; top: 167.6px; left: 43.3px" class="disconnected">.</span><span style="position: absolute; top: 156.1px; left: 33.4px" class="disconnected">.</span><span style="position: absolute; top: 142.6px; left: 25.1px" class="disconnected">.</span><span style="position: absolute; top: 128.8px; left: 19.5px" class="disconnected">.</span><span style="position: absolute; top: 114.5px; left: 16.1px" class="disconnected">.</span><span style="position: absolute; top: 102.2px; left: 15.0px" class="disconnected">.</span><span style="position: absolute; top: 86.8px; left: 15.9px" class="disconnected">.</span><span style="position: absolute; top: 65.3px; left: 21.6px" class="disconnected">.</span><span style="position: absolute; top: 59.6px; left: 24.0px" class="disconnected">.</span><span style="position: absolute; top: 28.1px; left: 47.9px" class="disconnected">.</span><span style="position: absolute; top: 27.7px; left: 48.4px" class="disconnected">.</span><span style="position: absolute; top: 22.6px; left: 54.9px" class="disconnected">.</span><span style="position: absolute; top: 18.2px; left: 61.7px" class="disconnected">.</span><span style="position: absolute; top: 17.1px; left: 63.6px" class="disconnected">.</span><span style="position: absolute; top: 17.0px; left: 63.7px" class="disconnected">.</span><span style="position: absolute; top: 16.9px; left: 64.0px" class="disconnected">.</span><span style="position: absolute; top: 11.9px; left: 74.5px" class="disconnected">.</span><span style="position: absolute; top: 5.7px; left: 98.8px" class="disconnected">.</span><span style="position: absolute; top: 48.4px; left: 195.7px" class="connected">o</span><span style="position: absolute; top: 5.0px; left: 110.3px" class="disconnected">.</span><span style="position: absolute; top: 5.0px; left: 110.6px" class="disconnected">.</span><span style="position: absolute; top: 5.1px; left: 114.4px" class="disconnected">.</span><span style="position: absolute; top: 5.1px; left: 114.7px" class="disconnected">.</span><span style="position: absolute; top: 6.0px; left: 123.8px" class="disconnected">.</span><span style="position: absolute; top: 6.0px; left: 124.0px" class="disconnected">.</span><span style="position: absolute; top: 11.0px; left: 143.3px" class="disconnected">.</span><span style="position: absolute; top: 12.0px; left: 145.9px" class="disconnected">.</span><span style="position: absolute; top: 14.2px; left: 150.8px" class="disconnected">.</span><span style="position: absolute; top: 17.7px; left: 157.5px" class="disconnected">.</span><span style="position: absolute; top: 18.6px; left: 159.0px" class="disconnected">.</span><span style="position: absolute; top: 20.9px; left: 162.6px" class="disconnected">.</span><span style="position: absolute; top: 36.0px; left: 180.2px" class="disconnected">.</span><span style="position: absolute; top: 47.9px; left: 189.4px" class="disconnected">.</span><span style="position: absolute; top: 51.0px; left: 191.4px" class="disconnected">.</span><span style="position: absolute; top: 53.2px; left: 192.7px" class="disconnected">.</span><span style="position: absolute; top: 57.1px; left: 194.8px" class="disconnected">.</span><span style="position: absolute; top: 65.9px; left: 198.7px" class="disconnected">.</span><span style="position: absolute; top: 88.6px; left: 204.3px" class="disconnected">.</span><span style="position: absolute; top: 90.4px; left: 204.5px" class="disconnected">.</span><span style="position: absolute; top: 93.2px; left: 204.8px" class="disconnected">.</span><span style="position: absolute; top: 96.7px; left: 204.9px" class="disconnected">.</span><span style="position: absolute; top: 159.3px; left: 184.2px" class="disconnected">.</span><span style="position: absolute; top: 161.0px; left: 182.9px" class="disconnected">.</span><span style="position: absolute; top: 163.8px; left: 180.3px" class="disconnected">.</span><span style="position: absolute; top: 164.9px; left: 179.3px" class="disconnected">.</span><span style="position: absolute; top: 165.1px; left: 179.2px" class="disconnected">.</span><span style="position: absolute; top: 181.7px; left: 158.5px" class="disconnected">.</span><span style="position: absolute; top: 190.5px; left: 138.9px" class="disconnected">.</span><span style="position: absolute; top: 194.1px; left: 123.4px" class="disconnected">.</span><span style="position: absolute; top: 194.5px; left: 119.3px" class="disconnected">.</span><span style="position: absolute; top: 194.7px; left: 117.9px" class="disconnected">.</span><span style="position: absolute; top: 194.9px; left: 114.1px" class="disconnected">.</span><span style="position: absolute; top: 194.9px; left: 113.6px" class="disconnected">.</span><span style="position: absolute; top: 194.8px; left: 103.8px" class="disconnected">.</span><span style="position: absolute; top: 194.8px; left: 103.3px" class="disconnected">.</span><span style="position: absolute; top: 194.7px; left: 103.0px" class="disconnected">.</span><span style="position: absolute; top: 194.4px; left: 99.6px" class="disconnected">.</span><span style="position: absolute; top: 194.3px; left: 98.5px" class="disconnected">.</span><span style="position: absolute; top: 193.8px; left: 95.0px" class="disconnected">.</span><span style="position: absolute; top: 193.7px; left: 94.2px" class="disconnected">.</span><span style="position: absolute; top: 187.8px; left: 73.7px" class="disconnected">.</span><span style="position: absolute; top: 186.7px; left: 71.2px" class="disconnected">.</span><span style="position: absolute; top: 179.2px; left: 57.5px" class="disconnected">.</span><span style="position: absolute; top: 171.3px; left: 47.3px" class="disconnected">.</span><span style="position: absolute; top: 161.2px; left: 37.4px" class="disconnected">.</span><span style="position: absolute; top: 160.1px; left: 36.4px" class="disconnected">.</span><span style="position: absolute; top: 152.2px; left: 30.6px" class="disconnected">.</span><span style="position: absolute; top: 147.5px; left: 27.7px" class="disconnected">.</span><span style="position: absolute; top: 125.6px; left: 18.5px" class="disconnected">.</span><span style="position: absolute; top: 120.9px; left: 17.3px" class="disconnected">.</span><span style="position: absolute; top: 117.8px; left: 16.7px" class="disconnected">.</span><span style="position: absolute; top: 109.7px; left: 15.5px" class="disconnected">.</span><span style="position: absolute; top: 99.6px; left: 15.0px" class="disconnected">.</span><span style="position: absolute; top: 97.4px; left: 15.0px" class="disconnected">.</span><span style="position: absolute; top: 69.5px; left: 20.0px" class="disconnected">.</span><span style="position: absolute; top: 62.6px; left: 22.7px" class="disconnected">.</span><span style="position: absolute; top: 54.9px; left: 26.4px" class="disconnected">.</span><span style="position: absolute; top: 50.4px; left: 29.0px" class="disconnected">.</span><span style="position: absolute; top: 50.1px; left: 29.2px" class="disconnected">.</span><span style="position: absolute; top: 45.9px; left: 31.9px" class="disconnected">.</span><span style="position: absolute; top: 40.6px; left: 35.9px" class="disconnected">.</span><span style="position: absolute; top: 38.0px; left: 38.0px" class="disconnected">.</span><span style="position: absolute; top: 37.9px; left: 38.1px" class="disconnected">.</span><span style="position: absolute; top: 36.6px; left: 39.3px" class="disconnected">.</span><span style="position: absolute; top: 28.7px; left: 47.3px" class="disconnected">.</span><span style="position: absolute; top: 28.4px; left: 47.6px" class="disconnected">.</span><span style="position: absolute; top: 27.7px; left: 48.4px" class="disconnected">.</span><span style="position: absolute; top: 27.6px; left: 48.5px" class="disconnected">.</span><span style="position: absolute; top: 27.2px; left: 49.0px" class="disconnected">.</span><span style="position: absolute; top: 26.8px; left: 49.4px" class="disconnected">.</span><span style="position: absolute; top: 23.4px; left: 53.9px" class="disconnected">.</span><span style="position: absolute; top: 22.6px; left: 54.9px" class="disconnected">.</span><span style="position: absolute; top: 22.5px; left: 55.0px" class="disconnected">.</span><span style="position: absolute; top: 8.8px; left: 83.3px" class="disconnected">.</span><span style="position: absolute; top: 8.3px; left: 85.1px" class="disconnected">.</span><span style="position: absolute; top: 7.2px; left: 89.5px" class="disconnected">.</span><span style="position: absolute; top: 7.2px; left: 89.6px" class="disconnected">.</span><span style="position: absolute; top: 5.0px; left: 108.3px" class="disconnected">.</span><span style="position: absolute; top: 5.0px; left: 109.8px" class="disconnected">.</span><span style="position: absolute; top: 27.7px; left: 48.4px" class="connected">o</span><span style="position: absolute; top: 5.0px; left: 110.2px" class="disconnected">.</span><span style="position: absolute; top: 5.1px; left: 114.4px" class="disconnected">.</span><span style="position: absolute; top: 5.4px; left: 119.1px" class="disconnected">.</span><span style="position: absolute; top: 6.1px; left: 124.6px" class="disconnected">.</span><span style="position: absolute; top: 6.2px; left: 125.0px" class="disconnected">.</span><span style="position: absolute; top: 7.1px; left: 129.9px" class="disconnected">.</span><span style="position: absolute; top: 9.7px; left: 139.5px" class="disconnected">.</span><span style="position: absolute; top: 10.7px; left: 142.5px" class="disconnected">.</span><span style="position: absolute; top: 11.5px; left: 144.6px" class="disconnected">.</span><span style="position: absolute; top: 22.3px; left: 164.6px" class="disconnected">.</span><span style="position: absolute; top: 22.8px; left: 165.4px" class="disconnected">.</span><span style="position: absolute; top: 22.9px; left: 165.5px" class="disconnected">.</span><span style="position: absolute; top: 26.0px; left: 169.5px" class="disconnected">.</span><span style="position: absolute; top: 26.0px; left: 169.6px" class="disconnected">.</span><span style="position: absolute; top: 32.6px; left: 177.0px" class="disconnected">.</span><span style="position: absolute; top: 38.1px; left: 182.1px" class="disconnected">.</span><span style="position: absolute; top: 38.5px; left: 182.4px" class="disconnected">.</span><span style="position: absolute; top: 39.8px; left: 183.5px" class="disconnected">.</span><span style="position: absolute; top: 40.8px; left: 184.3px" class="disconnected">.</span><span style="position: absolute; top: 55.1px; left: 193.7px" class="disconnected">.</span><span style="position: absolute; top: 66.0px; left: 198.7px" class="disconnected">.</span><span style="position: absolute; top: 68.0px; left: 199.4px" class="disconnected">.</span><span style="position: absolute; top: 75.2px; left: 201.7px" class="disconnected">.</span><span style="position: absolute; top: 76.9px; left: 202.2px" class="disconnected">.</span><span style="position: absolute; top: 77.9px; left: 202.4px" class="disconnected">.</span><span style="position: absolute; top: 78.6px; left: 202.6px" class="disconnected">.</span><span style="position: absolute; top: 97.9px; left: 205.0px" class="disconnected">.</span><span style="position: absolute; top: 108.2px; left: 204.6px" class="disconnected">.</span><span style="position: absolute; top: 111.9px; left: 204.2px" class="disconnected">.</span><span style="position: absolute; top: 114.4px; left: 203.9px" class="disconnected">.</span><span style="position: absolute; top: 124.1px; left: 201.9px" class="disconnected">.</span><span style="position: absolute; top: 126.4px; left: 201.3px" class="disconnected">.</span><span style="position: absolute; top: 126.9px; left: 201.1px" class="disconnected">.</span><span style="position: absolute; top: 131.6px; left: 199.6px" class="disconnected">.</span><span style="position: absolute; top: 138.7px; left: 196.7px" class="disconnected">.</span><span style="position: absolute; top: 141.1px; left: 195.6px" class="disconnected">.</span><span style="position: absolute; top: 146.6px; left: 192.8px" class="disconnected">.</span><span style="position: absolute; top: 149.3px; left: 191.2px" class="disconnected">.</span><span style="position: absolute; top: 149.4px; left: 191.2px" class="disconnected">.</span><span style="position: absolute; top: 160.7px; left: 183.1px" class="disconnected">.</span><span style="position: absolute; top: 165.4px; left: 179.0px" class="disconnected">.</span><span style="position: absolute; top: 165.6px; left: 178.7px" class="disconnected">.</span><span style="position: absolute; top: 182.6px; left: 157.0px" class="disconnected">.</span><span style="position: absolute; top: 184.2px; left: 154.0px" class="disconnected">.</span><span style="position: absolute; top: 186.4px; left: 149.5px" class="disconnected">.</span><span style="position: absolute; top: 186.5px; left: 149.4px" class="disconnected">.</span><span style="position: absolute; top: 189.3px; left: 142.5px" class="disconnected">.</span><span style="position: absolute; top: 189.9px; left: 140.7px" class="disconnected">.</span><span style="position: absolute; top: 190.8px; left: 138.1px" class="disconnected">.</span><span style="position: absolute; top: 195.0px; left: 112.7px" class="disconnected">.</span><span style="position: absolute; top: 194.6px; left: 100.8px" class="disconnected">.</span><span style="position: absolute; top: 194.5px; left: 99.9px" class="disconnected">.</span><span style="position: absolute; top: 193.8px; left: 95.0px" class="disconnected">.</span><span style="position: absolute; top: 187.8px; left: 73.7px" class="disconnected">.</span><span style="position: absolute; top: 187.8px; left: 73.7px" class="disconnected">.</span><span style="position: absolute; top: 183.7px; left: 65.1px" class="disconnected">.</span><span style="position: absolute; top: 182.9px; left: 63.6px" class="disconnected">.</span><span style="position: absolute; top: 179.4px; left: 57.9px" class="disconnected">.</span><span style="position: absolute; top: 172.3px; left: 48.3px" class="disconnected">.</span><span style="position: absolute; top: 164.7px; left: 40.5px" class="disconnected">.</span><span style="position: absolute; top: 158.1px; left: 34.9px" class="disconnected">.</span><span style="position: absolute; top: 157.4px; left: 34.3px" class="disconnected">.</span><span style="position: absolute; top: 157.4px; left: 34.3px" class="disconnected">.</span><span style="position: absolute; top: 130.6px; left: 20.1px" class="disconnected">.</span><span style="position: absolute; top: 128.8px; left: 19.5px" class="disconnected">.</span><span style="position: absolute; top: 126.0px; left: 18.6px" class="disconnected">.</span><span style="position: absolute; top: 125.6px; left: 18.5px" class="disconnected">.</span><span style="position: absolute; top: 112.3px; left: 15.8px" class="disconnected">.</span><span style="position: absolute; top: 98.7px; left: 15.0px" class="disconnected">.</span><span style="position: absolute; top: 88.0px; left: 15.8px" class="disconnected">.</span><span style="position: absolute; top: 74.2px; left: 18.6px" class="disconnected">.</span><span style="position: absolute; top: 68.7px; left: 20.3px" class="disconnected">.</span><span style="position: absolute; top: 67.3px; left: 20.8px" class="disconnected">.</span><span style="position: absolute; top: 64.4px; left: 21.9px" class="disconnected">.</span><span style="position: absolute; top: 51.9px; left: 28.1px" class="disconnected">.</span><span style="position: absolute; top: 46.8px; left: 31.3px" class="disconnected">.</span><span style="position: absolute; top: 40.7px; left: 35.7px" class="disconnected">.</span><span style="position: absolute; top: 27.1px; left: 49.0px" class="disconnected">.</span><span style="position: absolute; top: 22.3px; left: 55.4px" class="disconnected">.</span><span style="position: absolute; top: 18.6px; left: 61.1px" class="disconnected">.</span><span style="position: absolute; top: 11.6px; left: 75.1px" class="disconnected">.</span><span style="position: absolute; top: 9.5px; left: 81.0px" class="disconnected">.</span><span style="position: absolute; top: 8.7px; left: 83.6px" class="disconnected">.</span><span style="position: absolute; top: 8.6px; left: 83.9px" class="disconnected">.</span><span style="position: absolute; top: 7.6px; left: 88.0px" class="disconnected">.</span><span style="position: absolute; top: 5.0px; left: 107.6px" class="disconnected">.</span><span style="position: absolute; top: 18.2px; left: 167.5px" class="connected">o</span><span style="position: absolute; top: 5.0px; left: 111.7px" class="disconnected">.</span><span style="position: absolute; top: 5.1px; left: 114.6px" class="disconnected">.</span><span style="position: absolute; top: 6.3px; left: 125.4px" class="disconnected">.</span><span style="position: absolute; top: 10.4px; left: 141.7px" class="disconnected">.</span><span style="position: absolute; top: 12.6px; left: 147.2px" class="disconnected">.</span><span style="position: absolute; top: 14.3px; left: 151.0px" class="disconnected">.</span><span style="position: absolute; top: 32.8px; left: 177.2px" class="disconnected">.</span><span style="position: absolute; top: 41.7px; left: 185.0px" class="disconnected">.</span><span style="position: absolute; top: 49.1px; left: 190.2px" class="disconnected">.</span><span style="position: absolute; top: 69.7px; left: 200.0px" class="disconnected">.</span><span style="position: absolute; top: 75.2px; left: 201.7px" class="disconnected">.</span><span style="position: absolute; top: 81.6px; left: 203.2px" class="disconnected">.</span><span style="position: absolute; top: 84.7px; left: 203.8px" class="disconnected">.</span><span style="position: absolute; top: 87.0px; left: 204.1px" class="disconnected">.</span><span style="position: absolute; top: 98.4px; left: 205.0px" class="disconnected">.</span><span style="position: absolute; top: 124.1px; left: 201.9px" class="disconnected">.</span><span style="position: absolute; top: 126.6px; left: 201.2px" class="disconnected">.</span><span style="position: absolute; top: 151.7px; left: 189.7px" class="disconnected">.</span><span style="position: absolute; top: 155.3px; left: 187.2px" class="disconnected">.</span><span style="position: absolute; top: 155.4px; left: 187.1px" class="disconnected">.</span><span style="position: absolute; top: 161.6px; left: 182.3px" class="disconnected">.</span><span style="position: absolute; top: 164.2px; left: 180.0px" class="disconnected">.</span><span style="position: absolute; top: 165.1px; left: 179.2px" class="disconnected">.</span><span style="position: absolute; top: 165.4px; left: 179.0px" class="disconnected">.</span><span style="position: absolute; top: 165.4px; left: 178.9px" class="disconnected">.</span><span style="position: absolute; top: 165.4px; left: 178.9px" class="disconnected">.</span><span style="position: absolute; top: 176.3px; left: 166.6px" class="disconnected">.</span><span style="position: absolute; top: 176.5px; left: 166.4px" class="disconnected">.</span><span style="position: absolute; top: 177.4px; left: 165.0px" class="disconnected">.</span><span style="position: absolute; top: 185.9px; left: 150.5px" class="disconnected">.</span><span style="position: absolute; top: 189.1px; left: 143.0px" class="disconnected">.</span><span style="position: absolute; top: 189.1px; left: 142.8px" class="disconnected">.</span><span style="position: absolute; top: 189.2px; left: 142.8px" class="disconnected">.</span><span style="position: absolute; top: 192.9px; left: 130.0px" class="disconnected">.</span><span style="position: absolute; top: 194.6px; left: 119.2px" class="disconnected">.</span><span style="position: absolute; top: 195.0px; left: 112.5px" class="disconnected">.</span><span style="position: absolute; top: 195.0px; left: 110.7px" class="disconnected">.</span><span style="position: absolute; top: 194.9px; left: 106.4px" class="disconnected">.</span><span style="position: absolute; top: 194.8px; left: 104.5px" class="disconnected">.</span><span style="position: absolute; top: 193.8px; left: 95.0px" class="disconnected">.</span><span style="position: absolute; top: 190.5px; left: 81.0px" class="disconnected">.</span><span style="position: absolute; top: 188.3px; left: 74.9px" class="disconnected">.</span><span style="position: absolute; top: 187.8px; left: 73.7px" class="disconnected">.</span><span style="position: absolute; top: 187.1px; left: 72.0px" class="disconnected">.</span><span style="position: absolute; top: 184.4px; left: 66.4px" class="disconnected">.</span><span style="position: absolute; top: 183.7px; left: 65.1px" class="disconnected">.</span><span style="position: absolute; top: 177.5px; left: 55.0px" class="disconnected">.</span><span style="position: absolute; top: 177.2px; left: 54.7px" class="disconnected">.</span><span style="position: absolute; top: 170.3px; left: 46.1px" class="disconnected">.</span><span style="position: absolute; top: 168.8px; left: 44.5px" class="disconnected">.</span><span style="position: absolute; top: 168.0px; left: 43.7px" class="disconnected">.</span><span style="position: absolute; top: 162.1px; left: 38.1px" class="disconnected">.</span><span style="position: absolute; top: 146.2px; left: 27.0px" class="disconnected">.</span><span style="position: absolute; top: 132.3px; left: 20.7px" class="disconnected">.</span><span style="position: absolute; top: 111.3px; left: 15.7px" class="disconnected">.</span><span style="position: absolute; top: 111.0px; left: 15.6px" class="disconnected">.</span><span style="position: absolute; top: 100.3px; left: 15.0px" class="disconnected">.</span><span style="position: absolute; top: 99.1px; left: 15.0px" class="disconnected">.</span><span style="position: absolute; top: 98.7px; left: 15.0px" class="disconnected">.</span><span style="position: absolute; top: 98.7px; left: 15.0px" class="disconnected">.</span><span style="position: absolute; top: 95.7px; left: 15.1px" class="disconnected">.</span><span style="position: absolute; top: 94.7px; left: 15.2px" class="disconnected">.</span><span style="position: absolute; top: 93.4px; left: 15.2px" class="disconnected">.</span><span style="position: absolute; top: 90.2px; left: 15.5px" class="disconnected">.</span><span style="position: absolute; top: 76.3px; left: 18.0px" class="disconnected">.</span><span style="position: absolute; top: 67.3px; left: 20.8px" class="disconnected">.</span><span style="position: absolute; top: 62.6px; left: 22.7px" class="disconnected">.</span><span style="position: absolute; top: 57.7px; left: 24.9px" class="disconnected">.</span><span style="position: absolute; top: 34.0px; left: 41.7px" class="disconnected">.</span><span style="position: absolute; top: 27.1px; left: 49.0px" class="disconnected">.</span><span style="position: absolute; top: 26.2px; left: 50.2px" class="disconnected">.</span><span style="position: absolute; top: 12.8px; left: 72.3px" class="disconnected">.</span><span style="position: absolute; top: 12.8px; left: 72.4px" class="disconnected">.</span><span style="position: absolute; top: 8.9px; left: 82.9px" class="disconnected">.</span><span style="position: absolute; top: 8.7px; left: 83.6px" class="disconnected">.</span><span style="position: absolute; top: 6.9px; left: 91.2px" class="disconnected">.</span><span style="position: absolute; top: 6.6px; left: 92.8px" class="disconnected">.</span><span style="position: absolute; top: 5.6px; left: 99.5px" class="disconnected">.</span><span style="position: absolute; top: 5.3px; left: 102.1px" class="disconnected">.</span><span style="position: absolute; top: 5.1px; left: 105.5px" class="disconnected">.</span><span style="position: absolute; top: 165.8px; left: 179.9px" class="connected">o</span><span style="position: absolute; top: 5.0px; left: 111.7px" class="disconnected">.</span><span style="position: absolute; top: 5.6px; left: 120.6px" class="disconnected">.</span><span style="position: absolute; top: 49.1px; left: 190.2px" class="disconnected">.</span><span style="position: absolute; top: 77.6px; left: 202.3px" class="disconnected">.</span><span style="position: absolute; top: 120.2px; left: 202.8px" class="disconnected">.</span><span style="position: absolute; top: 138.7px; left: 196.7px" class="disconnected">.</span><span style="position: absolute; top: 146.5px; left: 192.8px" class="disconnected">.</span><span style="position: absolute; top: 165.1px; left: 179.2px" class="disconnected">.</span><span style="position: absolute; top: 176.5px; left: 166.4px" class="disconnected">.</span><span style="position: absolute; top: 179.3px; left: 162.3px" class="disconnected">.</span><span style="position: absolute; top: 194.2px; left: 98.0px" class="disconnected">.</span><span style="position: absolute; top: 192.7px; left: 89.4px" class="disconnected">.</span><span style="position: absolute; top: 192.3px; left: 87.4px" class="disconnected">.</span><span style="position: absolute; top: 187.8px; left: 73.7px" class="disconnected">.</span><span style="position: absolute; top: 185.7px; left: 69.1px" class="disconnected">.</span><span style="position: absolute; top: 160.3px; left: 36.6px" class="disconnected">.</span><span style="position: absolute; top: 136.2px; left: 22.2px" class="disconnected">.</span><span style="position: absolute; top: 121.4px; left: 17.4px" class="disconnected">.</span><span style="position: absolute; top: 27.5px; left: 48.6px" class="disconnected">.</span><span style="position: absolute; top: 154.4px; left: 193.9px" class="connected">o</span><span style="position: absolute; top: 5.0px; left: 110.2px" class="disconnected">.</span><span style="position: absolute; top: 6.0px; left: 124.0px" class="disconnected">.</span><span style="position: absolute; top: 8.1px; left: 134.2px" class="disconnected">.</span><span style="position: absolute; top: 10.5px; left: 141.8px" class="disconnected">.</span><span style="position: absolute; top: 11.9px; left: 145.5px" class="disconnected">.</span><span style="position: absolute; top: 21.3px; left: 163.2px" class="disconnected">.</span><span style="position: absolute; top: 24.3px; left: 167.4px" class="disconnected">.</span><span style="position: absolute; top: 39.8px; left: 183.5px" class="disconnected">.</span><span style="position: absolute; top: 44.5px; left: 187.1px" class="disconnected">.</span><span style="position: absolute; top: 65.6px; left: 198.6px" class="disconnected">.</span><span style="position: absolute; top: 65.8px; left: 198.6px" class="disconnected">.</span><span style="position: absolute; top: 66.4px; left: 198.8px" class="disconnected">.</span><span style="position: absolute; top: 87.0px; left: 204.1px" class="disconnected">.</span><span style="position: absolute; top: 140.6px; left: 195.9px" class="disconnected">.</span><span style="position: absolute; top: 142.8px; left: 194.8px" class="disconnected">.</span><span style="position: absolute; top: 146.6px; left: 192.8px" class="disconnected">.</span><span style="position: absolute; top: 158.9px; left: 184.5px" class="disconnected">.</span><span style="position: absolute; top: 162.5px; left: 181.5px" class="disconnected">.</span><span style="position: absolute; top: 163.3px; left: 180.9px" class="disconnected">.</span><span style="position: absolute; top: 168.2px; left: 176.1px" class="disconnected">.</span><span style="position: absolute; top: 175.2px; left: 168.1px" class="disconnected">.</span><span style="position: absolute; top: 182.2px; left: 157.6px" class="disconnected">.</span><span style="position: absolute; top: 182.8px; left: 156.6px" class="disconnected">.</span><span style="position: absolute; top: 185.9px; left: 150.5px" class="disconnected">.</span><span style="position: absolute; top: 193.8px; left: 125.3px" class="disconnected">.</span><span style="position: absolute; top: 191.9px; left: 86.0px" class="disconnected">.</span><span style="position: absolute; top: 189.8px; left: 79.1px" class="disconnected">.</span><span style="position: absolute; top: 189.7px; left: 78.8px" class="disconnected">.</span><span style="position: absolute; top: 189.6px; left: 78.4px" class="disconnected">.</span><span style="position: absolute; top: 187.8px; left: 73.7px" class="disconnected">.</span><span style="position: absolute; top: 129.4px; left: 19.7px" class="disconnected">.</span><span style="position: absolute; top: 128.8px; left: 19.5px" class="disconnected">.</span><span style="position: absolute; top: 109.6px; left: 15.5px" class="disconnected">.</span><span style="position: absolute; top: 108.4px; left: 15.4px" class="disconnected">.</span><span style="position: absolute; top: 107.5px; left: 15.3px" class="disconnected">.</span><span style="position: absolute; top: 61.4px; left: 23.2px" class="disconnected">.</span><span style="position: absolute; top: 51.6px; left: 28.3px" class="disconnected">.</span><span style="position: absolute; top: 23.8px; left: 53.2px" class="disconnected">.</span><span style="position: absolute; top: 12.0px; left: 74.3px" class="disconnected">.</span><span style="position: absolute; top: 9.3px; left: 81.7px" class="disconnected">.</span><span style="position: absolute; top: 9.1px; left: 82.2px" class="disconnected">.</span><span style="position: absolute; top: 8.6px; left: 84.1px" class="disconnected">.</span><span style="position: absolute; top: 5.2px; left: 104.2px" class="disconnected">.</span><span style="position: absolute; top: 127.0px; left: 13.7px" class="connected">o</span><span style="position: absolute; top: 13.0px; left: 108.4px" class="disconnected">o</span><span style="position: absolute; top: 201.7px; left: 68.0px" class="me">x</span>
+													</div>
+
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													<div class="histogramLabel">
+														0.00
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.05
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.10
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.15
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.20
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.25
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.30
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.35
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.40
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.45
+													</div>
+
+												</td>
+
+											</tr>
+											<tr>
+												<td style="height: 100px;">
+													<div style="height: 0%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+													<div style="height: 0%; width: 100%;" class="histogramDisconnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 0%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+													<div style="height: 0%; width: 100%;" class="histogramDisconnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 14%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+													<div style="height: 0%; width: 100%;" class="histogramDisconnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 14%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+													<div style="height: 0%; width: 100%;" class="histogramDisconnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 14%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+													<div style="height: 0%; width: 100%;" class="histogramDisconnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 0%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+													<div style="height: 0%; width: 100%;" class="histogramDisconnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 14%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+													<div style="height: 0%; width: 100%;" class="histogramDisconnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 14%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+													<div style="height: 0%; width: 100%;" class="histogramDisconnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 0%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+													<div style="height: 14%; width: 100%;" class="histogramDisconnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 14%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+													<div style="height: 0%; width: 100%;" class="histogramDisconnected">
+														&nbsp;
+													</div>
+
+												</td>
+
+											</tr>
+
+										</tbody></table>
+
+									</div>
+
+								</div>
+
+							</td>
+							<td>
+								<div class="infobox">
+									<div class="infobox-header">
+										Node&nbsp;Location&nbsp;Distribution (w/Swap&nbsp;Age)
+									</div>
+									<div class="infobox-content">
+										<table>
+											<tbody><tr>
+												<td colspan="10" class="first">
+													<div style="position: relative; height: 220px; width: 220px" class="peercircle">
+														<span style="position: absolute; top: 0.0px; left: 110.0px" class="mark">|</span><span style="position: absolute; top: 29.3px; left: 180.7px" class="mark">+</span><span style="position: absolute; top: 100.0px; left: 210.0px" class="mark">--</span><span style="position: absolute; top: 170.7px; left: 180.7px" class="mark">+</span><span style="position: absolute; top: 200.0px; left: 110.0px" class="mark">|</span><span style="position: absolute; top: 170.7px; left: 39.3px" class="mark">+</span><span style="position: absolute; top: 100.0px; left: 10.0px" class="mark">--</span><span style="position: absolute; top: 29.3px; left: 39.3px" class="mark">+</span><span style="position: absolute; top: 100px; left: 110px" class="mark">+</span><span style="position: absolute; top: 201.7px; left: 68.0px" class="me">x</span>
+													</div>
+
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+													<div class="histogramLabel">
+														0.0
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.1
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.2
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.3
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.4
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.5
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.6
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.7
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.8
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.9
+													</div>
+
+												</td>
+
+											</tr>
+											<tr>
+												<td style="height: 100px;">
+													<div class="histogramConnected" style="height: 0%; width: 100%;">&nbsp;</div>
+												</td>
+												<td style="height: 100px;">
+													<div class="histogramConnected" style="height: 0%; width: 100%;">&nbsp;</div>
+												</td>
+												<td style="height: 100px;">
+													<div class="histogramConnected" style="height: 0%; width: 100%;">&nbsp;</div>
+												</td>
+												<td style="height: 100px;">
+													<div class="histogramConnected" style="height: 0%; width: 100%;">&nbsp;</div>
+												</td>
+												<td style="height: 100px;">
+													<div class="histogramConnected" style="height: 0%; width: 100%;">&nbsp;</div>
+												</td>
+												<td style="height: 100px;">
+													<div class="histogramConnected" style="height: 0%; width: 100%;">&nbsp;</div>
+												</td>
+												<td style="height: 100px;">
+													<div class="histogramConnected" style="height: 0%; width: 100%;">&nbsp;</div>
+												</td>
+												<td style="height: 100px;">
+													<div class="histogramConnected" style="height: 0%; width: 100%;">&nbsp;</div>
+												</td>
+												<td style="height: 100px;">
+													<div class="histogramConnected" style="height: 0%; width: 100%;">&nbsp;</div>
+												</td>
+												<td style="height: 100px;">
+													<div class="histogramConnected" style="height: 0%; width: 100%;">&nbsp;</div>
+												</td>
+
+											</tr>
+
+										</tbody></table>
+
+									</div>
+
+								</div>
+
+							</td>
+
+						</tr>
+						<tr>
+							<td class="first">
+								<div class="infobox">
+									<div class="infobox-header">
+										Incoming&nbsp;Request&nbsp;Distribution
+									</div>
+									<div class="infobox-content">
+										<table>
+											<tbody><tr>
+												<td>
+													<div class="histogramLabel">
+														0.0
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.1
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.2
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.3
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.4
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														<span class="me">0.5</span>
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.6
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.7
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.8
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.9
+													</div>
+
+												</td>
+
+											</tr>
+											<tr>
+												<td style="height: 100px;">
+													<div style="height: 1%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 15%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 0%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 2%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 0%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 71%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 0%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 0%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 10%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 1%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+
+												</td>
+
+											</tr>
+
+										</tbody></table>
+
+									</div>
+
+								</div>
+
+							</td>
+							<td>
+								<div class="infobox">
+									<div class="infobox-header">
+										Outgoing&nbsp;Request&nbsp;Distribution
+									</div>
+									<div class="infobox-content">
+										<table>
+											<tbody><tr>
+												<td>
+													<div class="histogramLabel">
+														0.0
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.1
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.2
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.3
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.4
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														<span class="me">0.5</span>
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.6
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.7
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.8
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.9
+													</div>
+
+												</td>
+
+											</tr>
+											<tr>
+												<td style="height: 100px;">
+													<div style="height: 9%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+													<div style="height: 9%; width: 100%;" class="histogramDisconnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 8%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+													<div style="height: 8%; width: 100%;" class="histogramDisconnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 11%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+													<div style="height: 10%; width: 100%;" class="histogramDisconnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 17%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+													<div style="height: 18%; width: 100%;" class="histogramDisconnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 8%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+													<div style="height: 8%; width: 100%;" class="histogramDisconnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 12%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+													<div style="height: 12%; width: 100%;" class="histogramDisconnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 7%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+													<div style="height: 7%; width: 100%;" class="histogramDisconnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 8%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+													<div style="height: 7%; width: 100%;" class="histogramDisconnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 8%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+													<div style="height: 9%; width: 100%;" class="histogramDisconnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 11%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+													<div style="height: 11%; width: 100%;" class="histogramDisconnected">
+														&nbsp;
+													</div>
+
+												</td>
+
+											</tr>
+
+										</tbody></table>
+
+									</div>
+
+								</div>
+
+							</td>
+
+						</tr>
+						<tr>
+							<td class="first">
+								<div class="infobox">
+									<div class="infobox-header">
+										Local&nbsp;CHK&nbsp;Success&nbsp;Rates&nbsp;By&nbsp;Location
+									</div>
+									<div class="infobox-content">
+										<table>
+											<tbody><tr>
+												<td>
+													<div class="histogramLabel">
+														0.0
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.1
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.2
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.3
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.4
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														<span class="me">0.5</span>
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.6
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.7
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.8
+													</div>
+
+												</td>
+												<td>
+													<div class="histogramLabel">
+														0.9
+													</div>
+
+												</td>
+
+											</tr>
+											<tr>
+												<td style="height: 100px;">
+													<div style="height: 100%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 100%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 100%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 100%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 100%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 100%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 100%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 100%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 100%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+
+												</td>
+												<td style="height: 100px;">
+													<div style="height: 100%; width: 100%;" class="histogramConnected">
+														&nbsp;
+													</div>
+
+												</td>
+
+											</tr>
+
+										</tbody></table>
+
+									</div>
+
+								</div>
+
+							</td>
+
+						</tr>
+
+					</tbody></table>
+					<div class="infobox">
+						<div class="infobox-header">
+							Datastore
+						</div>
+						<div class="infobox-content">
+							<div style="overflow:scr">
+								<table border="0">
+									<tbody><tr>
+										<th></th><th>Keys</th><th>Capacity</th><th>Data Size</th><th>Utilization</th><th>Read-Requests</th><th>Successful Reads</th><th>Success Rate</th><th>Writes</th><th>Access Rate</th><th>Write Rate</th><th>False Pos.</th><th>Avg. Location</th><th>Avg. Success Loc.</th><th>Furthest Success</th><th>Avg. Distance</th><th>Distance Stats</th>
+									</tr>
+									<tr>
+										<th>Store
+ (CHK)</th><td>
+											0
+										</td>
+										<td>
+											6,509
+										</td>
+										<td>
+											0 B
+										</td>
+										<td>
+											0.0%
+										</td>
+										<td>
+											802 (1,214)
+										</td>
+										<td>
+											0 (0)
+										</td>
+										<td>
+											0.0000% (0.0000%)
+										</td>
+										<td>
+											0 (0)
+										</td>
+										<td>
+											1.00 /s (0.00 /s)
+										</td>
+										<td>
+											0.00 /s (0.00 /s)
+										</td>
+										<td>
+											0 (0)
+										</td>
+										<td>
+											0.5623
+										</td>
+										<td>
+											0.5623
+										</td>
+										<td>
+											0.0000
+										</td>
+										<td>
+											0.4377
+										</td>
+										<td>
+											�
+										</td>
+
+									</tr>
+									<tr>
+										<th>Cache
+ (CHK)</th><td>
+											3
+										</td>
+										<td>
+											6,510
+										</td>
+										<td>
+											96.0 KiB
+										</td>
+										<td>
+											0.0%
+										</td>
+										<td>
+											802 (1,214)
+										</td>
+										<td>
+											0 (0)
+										</td>
+										<td>
+											0.0000% (0.0000%)
+										</td>
+										<td>
+											3 (3)
+										</td>
+										<td>
+											1.00 /s (0.00 /s)
+										</td>
+										<td>
+											0.00 /s (0.00 /s)
+										</td>
+										<td>
+											0 (0)
+										</td>
+										<td>
+											0.6077
+										</td>
+										<td>
+											0.5623
+										</td>
+										<td>
+											0.0000
+										</td>
+										<td>
+											0.3923
+										</td>
+										<td>
+											100.0%
+										</td>
+
+									</tr>
+									<tr>
+										<th>Slashdot cache
+ (CHK)</th><td>
+											32
+										</td>
+										<td>
+											790
+										</td>
+										<td>
+											1.0 MiB
+										</td>
+										<td>
+											4.1%
+										</td>
+										<td>
+											803
+										</td>
+										<td>
+											1
+										</td>
+										<td>
+											0.1245%
+										</td>
+										<td>
+											32
+										</td>
+										<td>
+											1.00 /s
+										</td>
+										<td>
+											0.04 /s
+										</td>
+										<td>
+											0
+										</td>
+										<td>
+											0.4828
+										</td>
+										<td>
+											0.4966
+										</td>
+										<td>
+											0.1306
+										</td>
+										<td>
+											0.4828
+										</td>
+										<td>
+											100.0%
+										</td>
+
+									</tr>
+									<tr>
+										<th>Client cache
+ (CHK)</th><td>
+											51
+										</td>
+										<td>
+											1,534
+										</td>
+										<td>
+											1.59 MiB
+										</td>
+										<td>
+											3.3%
+										</td>
+										<td>
+											713 (1,072)
+										</td>
+										<td>
+											20 (20)
+										</td>
+										<td>
+											2.8050% (1.8657%)
+										</td>
+										<td>
+											19 (51)
+										</td>
+										<td>
+											0.89 /s (0.00 /s)
+										</td>
+										<td>
+											0.02 /s (0.00 /s)
+										</td>
+										<td>
+											0 (0)
+										</td>
+										<td>
+											0.4822
+										</td>
+										<td>
+											0.0939
+										</td>
+										<td>
+											0.4999
+										</td>
+										<td>
+											0.4822
+										</td>
+										<td>
+											100.0%
+										</td>
+
+									</tr>
+									<tr>
+										<th>Store
+ (SSK)</th><td>
+											0
+										</td>
+										<td>
+											6,509
+										</td>
+										<td>
+											0 B
+										</td>
+										<td>
+											0.0%
+										</td>
+										<td>
+											3,167 (4,600)
+										</td>
+										<td>
+											0 (0)
+										</td>
+										<td>
+											0.0000% (0.0000%)
+										</td>
+										<td>
+											0 (0)
+										</td>
+										<td>
+											3.94 /s (0.00 /s)
+										</td>
+										<td>
+											0.00 /s (0.00 /s)
+										</td>
+										<td>
+											0 (0)
+										</td>
+										<td>
+											0.5623
+										</td>
+										<td>
+											0.5623
+										</td>
+										<td>
+											0.0000
+										</td>
+										<td>
+											0.4377
+										</td>
+										<td>
+											�
+										</td>
+
+									</tr>
+									<tr>
+										<th>Cache
+ (SSK)</th><td>
+											7
+										</td>
+										<td>
+											6,510
+										</td>
+										<td>
+											7.0 KiB
+										</td>
+										<td>
+											0.1%
+										</td>
+										<td>
+											3,167 (4,598)
+										</td>
+										<td>
+											3 (3)
+										</td>
+										<td>
+											0.0947% (0.0652%)
+										</td>
+										<td>
+											7 (7)
+										</td>
+										<td>
+											3.94 /s (0.00 /s)
+										</td>
+										<td>
+											0.01 /s (0.00 /s)
+										</td>
+										<td>
+											0 (0)
+										</td>
+										<td>
+											0.5108
+										</td>
+										<td>
+											0.5517
+										</td>
+										<td>
+											0.0013
+										</td>
+										<td>
+											0.4892
+										</td>
+										<td>
+											100.0%
+										</td>
+
+									</tr>
+									<tr>
+										<th>Slashdot cache
+ (SSK)</th><td>
+											340
+										</td>
+										<td>
+											790
+										</td>
+										<td>
+											340 KiB
+										</td>
+										<td>
+											43.0%
+										</td>
+										<td>
+											3,168
+										</td>
+										<td>
+											1
+										</td>
+										<td>
+											0.0316%
+										</td>
+										<td>
+											380
+										</td>
+										<td>
+											3.94 /s
+										</td>
+										<td>
+											0.47 /s
+										</td>
+										<td>
+											0
+										</td>
+										<td>
+											0.1995
+										</td>
+										<td>
+											0.6432
+										</td>
+										<td>
+											0.0002
+										</td>
+										<td>
+											0.1995
+										</td>
+										<td>
+											100.0%
+										</td>
+
+									</tr>
+									<tr>
+										<th>Client cache
+ (SSK)</th><td>
+											299
+										</td>
+										<td>
+											1,534
+										</td>
+										<td>
+											299 KiB
+										</td>
+										<td>
+											19.5%
+										</td>
+										<td>
+											2,889 (4,259)
+										</td>
+										<td>
+											8 (8)
+										</td>
+										<td>
+											0.2769% (0.1878%)
+										</td>
+										<td>
+											299 (299)
+										</td>
+										<td>
+											3.59 /s (0.00 /s)
+										</td>
+										<td>
+											0.37 /s (0.00 /s)
+										</td>
+										<td>
+											0 (0)
+										</td>
+										<td>
+											0.0596
+										</td>
+										<td>
+											0.3899
+										</td>
+										<td>
+											0.4896
+										</td>
+										<td>
+											0.0596
+										</td>
+										<td>
+											100.0%
+										</td>
+
+									</tr>
+									<tr>
+										<th>Store
+ (Pubkey)</th><td>
+											0
+										</td>
+										<td>
+											6,509
+										</td>
+										<td>
+											0 B
+										</td>
+										<td>
+											0.0%
+										</td>
+										<td>
+											41 (91)
+										</td>
+										<td>
+											0 (0)
+										</td>
+										<td>
+											0.0000% (0.0000%)
+										</td>
+										<td>
+											0 (0)
+										</td>
+										<td>
+											0.05 /s (0.00 /s)
+										</td>
+										<td>
+											0.00 /s (0.00 /s)
+										</td>
+										<td>
+											0 (0)
+										</td>
+										<td>
+											N/A
+										</td>
+										<td>
+											N/A
+										</td>
+										<td>
+											N/A
+										</td>
+										<td>
+											N/A
+										</td>
+										<td>
+											N/A
+										</td>
+
+									</tr>
+									<tr>
+										<th>Cache
+ (Pubkey)</th><td>
+											8
+										</td>
+										<td>
+											6,510
+										</td>
+										<td>
+											8.0 KiB
+										</td>
+										<td>
+											0.1%
+										</td>
+										<td>
+											41 (91)
+										</td>
+										<td>
+											0 (0)
+										</td>
+										<td>
+											0.0000% (0.0000%)
+										</td>
+										<td>
+											8 (8)
+										</td>
+										<td>
+											0.05 /s (0.00 /s)
+										</td>
+										<td>
+											0.01 /s (0.00 /s)
+										</td>
+										<td>
+											0 (0)
+										</td>
+										<td>
+											N/A
+										</td>
+										<td>
+											N/A
+										</td>
+										<td>
+											N/A
+										</td>
+										<td>
+											N/A
+										</td>
+										<td>
+											N/A
+										</td>
+
+									</tr>
+									<tr>
+										<th>Slashdot cache
+ (Pubkey)</th><td>
+											24
+										</td>
+										<td>
+											790
+										</td>
+										<td>
+											24.0 KiB
+										</td>
+										<td>
+											3.0%
+										</td>
+										<td>
+											1
+										</td>
+										<td>
+											0
+										</td>
+										<td>
+											0.0000%
+										</td>
+										<td>
+											380
+										</td>
+										<td>
+											0.00 /s
+										</td>
+										<td>
+											0.47 /s
+										</td>
+										<td>
+											0
+										</td>
+										<td>
+											N/A
+										</td>
+										<td>
+											N/A
+										</td>
+										<td>
+											N/A
+										</td>
+										<td>
+											N/A
+										</td>
+										<td>
+											N/A
+										</td>
+
+									</tr>
+									<tr>
+										<th>Client cache
+ (Pubkey)</th><td>
+											15
+										</td>
+										<td>
+											1,534
+										</td>
+										<td>
+											15.0 KiB
+										</td>
+										<td>
+											1.0%
+										</td>
+										<td>
+											40 (90)
+										</td>
+										<td>
+											0 (0)
+										</td>
+										<td>
+											0.0000% (0.0000%)
+										</td>
+										<td>
+											15 (15)
+										</td>
+										<td>
+											0.05 /s (0.00 /s)
+										</td>
+										<td>
+											0.02 /s (0.00 /s)
+										</td>
+										<td>
+											0 (0)
+										</td>
+										<td>
+											N/A
+										</td>
+										<td>
+											N/A
+										</td>
+										<td>
+											N/A
+										</td>
+										<td>
+											N/A
+										</td>
+										<td>
+											N/A
+										</td>
+
+									</tr>
+
+								</tbody></table>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+
+	</body><style type="text/css">embed[type*="application/x-shockwave-flash"],embed[src*=".swf"],object[type*="application/x-shockwave-flash"],object[codetype*="application/x-shockwave-flash"],object[src*=".swf"],object[codebase*="swflash.cab"],object[classid*="D27CDB6E-AE6D-11cf-96B8-444553540000"],object[classid*="d27cdb6e-ae6d-11cf-96b8-444553540000"],object[classid*="D27CDB6E-AE6D-11cf-96B8-444553540000"]{	display: none !important;}</style></html>

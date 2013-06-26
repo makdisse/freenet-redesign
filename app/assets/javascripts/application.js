@@ -27,5 +27,14 @@ $(document).ready(function() {
         html: 'true'
     }).click(function(e) {
         e.preventDefault();
-     });;
+     });
+
+  $("#simpleModeBtn").button('toggle');
+
+  //if have a hash open the modal
+  if (window.location.hash) {
+    $(window.location.hash).modal('show');
+  }
+
 })
+

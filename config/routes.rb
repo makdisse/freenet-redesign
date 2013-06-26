@@ -1,10 +1,13 @@
 Redesignproject::Application.routes.draw do
 
-  root to: "redesign#home"
+  root to: "redesign#pageslist", :nm  => 1
+  match "/about" => "redesign#home", :nm  => 1
   match "/welcome" => "redesign#welcome"
-  get "redesign/downloadingfile"
-  get "redesign/search"
-  get "redesign/searchinprogress"
+  match "/downloadingfile" => "redesign#downloadingfile"
+  match "/search" => "redesign#search"
+  match "/searchinprogress" => "redesign#searchinprogress"
+  match "/notifications" => "redesign#notifications"
+  match "/editbookmarks" => "redesign#editbookmark"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

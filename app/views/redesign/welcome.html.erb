@@ -1,4 +1,4 @@
-<%= render partial: 'redesign/navbar', locals: {menu:  "none"} %>
+
 <div class="row">
   <div class="span4">
     <legend>Messages</legend>
@@ -6,13 +6,13 @@
       <button type="button" class="close" data-dismiss="alert">&times;</button>
       <strong>Bookmark Updated</strong>
       The bookmarked site <a href="#">Freenet Message System</a> has been updated to edition 137.
-      <br><a href="#" class="act">view messages</a> | <a href="#" class="act act-danger"  data-dismiss="alert">delete message</a>
+      <br><a href="/notifications?menu=title&title=Notifications" class="act">view messages</a> | <a href="#" class="act act-danger"  data-dismiss="alert">delete message</a>
     </div>
     <div class="alert alert-block">
       <button type="button" class="close" data-dismiss="alert">&times;</button>
       <strong>Warning!</strong>
       Ononononon n onno no on onnono...
-      <br><a href="#" class="act">view messages</a> | <a href="#" class="act act-danger"  data-dismiss="alert">delete message</a>
+      <br><a href="/notifications?menu=title&title=Notifications" class="act">view messages</a> | <a href="#" class="act act-danger"  data-dismiss="alert">delete message</a>
     </div>
   </div>
   <div class="span8" id="bookmarks-container">
@@ -90,7 +90,7 @@
     </legend>
     <div class="row">
       <div class="span4">
-        <h5>Install new apps</h5>
+        <h5>Talk to people</h5>
         <ul>
           <li><strong>Sone</strong>  <small class="muted">microblogging platform</small> <a href="#installAppModal" class="btn btn-link btn-mini"  data-toggle="modal">Learn more</a></li>
           <li><strong>FMS</strong>  <small class="muted">forum</small> <a href="#installAppModalExisting" class="btn btn-link btn-mini" data-toggle="modal">Learn more</a></li>
@@ -101,8 +101,8 @@
       <div class="span4">
         <h5>Discover freenet</h5>
         <ul>
-          <li><a href="#">Search</a> <small class="muted">dig in freenet</small></li>
-          <li><a href="#">Visit a freesite</a> <small class="muted">(if you already have the key)</small></li>
+          <li><a href="/search?menu=search">Search</a> <small class="muted">dig in freenet</small></li>
+          <li><a href="#visitFreesite"  data-toggle="modal">Visit a freesite</a> <small class="muted">(if you already have the key)</small></li>
         </ul>
         <h5>Learn</h5>
         <ul>
@@ -114,12 +114,12 @@
   </div>
   <div class="span4">
     <legend>Status</legend>
-    <strong>Interface Mode</strong>
+    <!-- strong>Interface Mode</strong>
     <div class="btn-group pull-right" data-toggle="buttons-radio">
-      <button type="button" class="btn btn-small" data-toggle="button">Simple</button>
+      <button type="button" class="btn btn-small" id="simpleModeBtn">Simple</button>
       <button type="button" class="btn btn-small">Advanced</button>
     </div>
-    <br><br>
+    <br><br -->
     <strong>Connections</strong>
     <div class="progress">
       <div class="bar bar-success" style="width: 60%;">6/10</div>
@@ -139,6 +139,21 @@
     <strong>Node control</strong>  <br>
     <a href="#" class="btn btn-small ">Restart freenet</a>
     <a href="#" class="btn btn-small ">Shutdown freenet</a>
+  </div>
+</div>
+
+<!--  MODALS -->
+<div id="visitFreesite" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Visit Freesite</h3>
+  </div>
+  <div class="modal-body text-center">
+    <input type="text" class="span6" placeholder="Freesite KEY">
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+    <button class="btn btn-primary">Fetch freesite</button>
   </div>
 </div>
 

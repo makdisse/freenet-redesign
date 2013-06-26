@@ -1,0 +1,936 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN">
+<!-- saved from url=(0032)http://127.0.0.1:8888/strangers/ -->
+<html xml:lang="eng"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+			<title>(6/0/0/0/0/0/4) Strangers (Untrusted Peers) - Freenet</title>
+			<noscript>&lt;style&gt; .jsonly {display:none;}&lt;/style&gt;</noscript>
+			<link title="clean-dropdown" rel="stylesheet" type="text/css" href="theme.css">
+
+		</head>
+		<body id="page-_strangers_" class="fproxy-page">
+			<div id="page">
+				<div id="topbar">
+					<h1>(6/0/0/0/0/0/4) Strangers (Untrusted Peers)</h1>
+
+				</div>
+				<div id="statusbar-container">
+					<div id="statusbar">
+						<div id="statusbar-language">
+							<a href="http://127.0.0.1:8888/config/node#l10n">English</a>
+						</div>
+						<div class="separator">
+							&nbsp;
+						</div>
+						<div id="statusbar-switchmode" class="simple">
+							<a href="http://127.0.0.1:8888/strangers/?fproxyAdvancedMode=1">Switch to simple mode</a>
+						</div>
+						<div class="separator">
+							&nbsp;
+						</div>
+						<div id="statusbar-seclevels">
+							Security levels:<a title="Protection against a stranger attacking you over the Internet" class="low" href="http://127.0.0.1:8888/seclevels/">LOW&nbsp;</a><a title="Protection of your downloads, uploads and Freenet browsing cache" class="normal" href="http://127.0.0.1:8888/seclevels/">LOW</a>
+						</div>
+						<div class="separator">
+							&nbsp;
+						</div>
+						<div class="progressbar">
+							<div style="width: 60.0%;" class="progressbar-done progressbar-peers avg-peers">
+							</div>
+							<div title="We are currently connected to 0 friends and 6 strangers." class="progress_fraction_finalized">
+								6 / 10
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+				<div id="navbar">
+					<ul id="navlist">
+						<li id="FProxyToadlet_categoryTitleBrowsing" class="navlist-not-selected"><a title="Browse Freenet" href="http://127.0.0.1:8888/">Browsing</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Browse and search Freesites, web sites hosted anonymously on Freenet" href="http://127.0.0.1:8888/">Browse Freenet</a></li>
+								<li class="submenuitem-not-selected"><a title="Upload a web site anonymously to Freenet" href="http://127.0.0.1:8888/insertsite/">Upload a Freesite</a></li>
+								<li class="submenuitem-not-selected"><a title="Search Freenet!" href="http://127.0.0.1:8888/library/">Search Freenet!</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleQueue" class="navlist-not-selected"><a title="Uploads and downloads" href="http://127.0.0.1:8888/downloads/">Filesharing</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Files being downloaded from Freenet" href="http://127.0.0.1:8888/downloads/">Downloads</a></li>
+								<li class="submenuitem-not-selected"><a title="Files being uploaded to Freenet" href="http://127.0.0.1:8888/uploads/">Uploads</a></li>
+								<li class="submenuitem-not-selected"><a title="Upload a file to Freenet" href="http://127.0.0.1:8888/insertfile/">Upload a file</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleFriends" class="navlist-not-selected"><a title="Connect to your friends to improve Freenet&#39;s performance and security" href="http://127.0.0.1:8888/friends/">Friends</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Connections to your friends&#39; nodes" href="http://127.0.0.1:8888/friends/">Connections to friends</a></li>
+								<li class="submenuitem-not-selected"><a title="Connect to a friend running Freenet to improve your security" href="http://127.0.0.1:8888/addfriend/">Add a Friend</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleChat" class="navlist-not-selected"><a title="Talk with other people over Freenet on message boards" href="http://127.0.0.1:8888/chat/">Discussion</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="How to talk to other Freenet users anonymously over chat forums" href="http://127.0.0.1:8888/chat/">Forums</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleStatus" class="navlist-selected"><a title="Status information" href="http://127.0.0.1:8888/alerts/">Status</a><ul class="subnavlist-selected">
+								<li class="submenuitem-not-selected"><a title="Detailed status alerts and messages from your Friends" href="http://127.0.0.1:8888/alerts/">Messages</a></li>
+								<li class="submenuitem-selected"><a title="Connections to nodes you have no reason to trust" href="./strangers_files/strangers.html">Connections to strangers</a></li>
+								<li class="submenuitem-not-selected"><a title="Detailed statistics about your Freenet node" href="http://127.0.0.1:8888/stats/">Statistics</a></li>
+								<li class="submenuitem-not-selected"><a title="Diagnostics to send to developers" href="http://127.0.0.1:8888/diagnostic/">Diagnostic</a></li>
+								<li class="submenuitem-not-selected"><a title="Status of your internet connection (port forwarding etc)" href="http://127.0.0.1:8888/connectivity/">Internet connection</a></li>
+
+							</ul>
+							</li>
+						<li id="FProxyToadlet_categoryTitleConfig" class="navlist-not-selected"><a title="Configure Freenet" href="http://127.0.0.1:8888/seclevels/">Configuration</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Configure the level of security provided by Freenet" href="http://127.0.0.1:8888/seclevels/">Security Levels</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure plugins" href="http://127.0.0.1:8888/plugins/">Plugins</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure the console interface" href="http://127.0.0.1:8888/config/console">Console interface</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure Freenet Client Protocol (used for client applications to talk to Freenet)" href="http://127.0.0.1:8888/config/fcp">FCP</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure the web interface" href="http://127.0.0.1:8888/config/fproxy">Web interface</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure the amount of information kept by Freenet for troubleshooting purposes" href="http://127.0.0.1:8888/config/logger">Logs</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure core settings e.g. bandwidth usage" href="http://127.0.0.1:8888/config/node">Core settings</a></li>
+								<li class="submenuitem-not-selected"><a title="Installation settings, e.g. readonly program directory locations" href="http://127.0.0.1:8888/config/node.install">Installation settings</a></li>
+								<li class="submenuitem-not-selected"><a title="Settings for controlling the amount of traffic through your Freenet node" href="http://127.0.0.1:8888/config/node.load">Load management</a></li>
+								<li class="submenuitem-not-selected"><a title="Settings related to connecting to nodes other than Friends" href="http://127.0.0.1:8888/config/node.opennet">Opennet</a></li>
+								<li class="submenuitem-not-selected"><a title="Settings related to choosing local requests to run" href="http://127.0.0.1:8888/config/node.scheduler">Request scheduling</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure the auto-update system" href="http://127.0.0.1:8888/config/node.updater">Auto-update</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure SSL" href="http://127.0.0.1:8888/config/ssl">SSL (restart required)</a></li>
+								<li class="submenuitem-not-selected"><a title="Configure web interface aliases" href="http://127.0.0.1:8888/config/toadletsymlinker">Web interface aliases</a></li>
+								<li class="submenuitem-not-selected"><a title="Contribute to the translation" href="http://127.0.0.1:8888/translation/">Translation</a></li>
+								<li class="submenuitem-not-selected"><a title="default settings for KeyUtils" href="http://127.0.0.1:8888/config/plugins.KeyUtils.KeyUtilsPlugin">KeyUtils</a></li>
+
+							</ul>
+							</li>
+						<li id="plugins_KeyUtils_KeyUtilsPlugin-ConfigToadlet_plugins_KeyUtils_KeyUtilsPlugin_label" class="navlist-not-selected"><a title="Toolbox for debugging Freenet URIs and more…" href="http://127.0.0.1:8888/KeyUtils/">KeyUtils</a><ul class="subnavlist">
+								<li class="submenuitem-not-selected"><a title="Explore a Freenet URI" href="http://127.0.0.1:8888/KeyUtils/">Key Explorer</a></li>
+								<li class="submenuitem-not-selected"><a title="Explore a site manifest" href="http://127.0.0.1:8888/KeyUtils/Site">Site Explorer</a></li>
+								<li class="submenuitem-not-selected"><a title="Explore a split file" href="http://127.0.0.1:8888/KeyUtils/Split">Split Explorer</a></li>
+								<li class="submenuitem-not-selected"><a title="Compose and decompose Freenet URI extra data" href="http://127.0.0.1:8888/KeyUtils/Extra">Extra Calculator</a></li>
+								<li class="submenuitem-not-selected"><a title="Show the contents of a FBlob" href="http://127.0.0.1:8888/KeyUtils/FBlob">FBlob Viewer</a></li>
+								<li class="submenuitem-not-selected"><a title="Convert a file key to CHK" href="http://127.0.0.1:8888/KeyUtils/KeyConverter">Key Converter</a></li>
+								<li class="submenuitem-not-selected"><a title="Info about Key Utils" href="http://127.0.0.1:8888/KeyUtils/About">About</a></li>
+
+							</ul>
+							</li>
+
+					</ul>
+
+				</div>
+				<div id="selected-subnavbar">
+					<ul id="selected-subnavbar-list">
+						<li class="submenuitem-not-selected"><a title="Detailed status alerts and messages from your Friends" href="http://127.0.0.1:8888/alerts/">Messages</a></li>
+						<li class="submenuitem-selected"><a title="Connections to nodes you have no reason to trust" href="./strangers_files/strangers.html">Connections to strangers</a></li>
+						<li class="submenuitem-not-selected"><a title="Detailed statistics about your Freenet node" href="http://127.0.0.1:8888/stats/">Statistics</a></li>
+						<li class="submenuitem-not-selected"><a title="Diagnostics to send to developers" href="http://127.0.0.1:8888/diagnostic/">Diagnostic</a></li>
+						<li class="submenuitem-not-selected"><a title="Status of your internet connection (port forwarding etc)" href="http://127.0.0.1:8888/connectivity/">Internet connection</a></li>
+
+					</ul>
+
+				</div>
+				<div id="content">
+					<table class="column">
+						<tbody><tr>
+							<td class="first">
+								<div class="infobox">
+									<div class="infobox-header">
+										Node status overview
+									</div>
+									<div class="infobox-content">
+										<ul>
+											<li>bwlimitDelayTime:&nbsp;1043ms</li>
+											<li>nodeAveragePingTime:&nbsp;415ms</li>
+											<li>darknetSizeEstimateSession:&nbsp;0&nbsp;nodes</li>
+											<li>nodeUptime:&nbsp;13m15s</li>
+											<li>routingMissDistanceLocal:&nbsp;0.0027</li>
+											<li>routingMissDistanceRemote:&nbsp;0.0012</li>
+											<li>routingMissDistanceOverall:&nbsp;0.0021</li>
+											<li>routingMissDistanceBulk:&nbsp;0.0014</li>
+											<li>routingMissDistanceRT:&nbsp;0.0029</li>
+											<li>backedOffPercent:&nbsp;0.3%</li>
+											<li>pInstantReject:&nbsp;24.4%</li>
+
+										</ul>
+
+									</div>
+
+								</div>
+
+							</td>
+							<td>
+								<div class="infobox">
+									<div class="infobox-header">
+										Current Activity
+									</div>
+									<div class="infobox-content">
+										<ul>
+											<li>Inserts: 1 CHK handlers, 0 SSK handlers (0/0 local)</li>
+											<li>Requests: 10 CHK handlers, 6 SSK handlers (5/4 local)</li>
+											<li>Transferring Requests: sending 5, receiving 4</li>
+											<li>Block transfers: 1 sends, 6 receives</li>
+											<li>ARK&nbsp;Fetch&nbsp;Requests:&nbsp;7</li>
+											<li>Input Rate: 3.02&nbsp;KiB/s (of 5.0&nbsp;KiB/s)</li>
+											<li>Output Rate: 1.04&nbsp;KiB/s (of 5.0&nbsp;KiB/s)</li>
+											<li>Session Total Input: 3.05&nbsp;MiB (3.93&nbsp;KiB/s average)</li>
+											<li>Session Total Output: 1.19&nbsp;MiB (1.54&nbsp;KiB/s average)</li>
+											<li>Payload Output: 547&nbsp;KiB (704&nbsp;B/sec)(44%)</li>
+											<li>Global Total Input: 9.99&nbsp;MiB</li>
+											<li>Global Total Output: 2.16&nbsp;MiB</li>
+											<li>Request output (excluding payload): CHK 25.7&nbsp;KiB SSK 140&nbsp;KiB.</li>
+											<li>Insert output (excluding payload): CHK 2.90&nbsp;KiB SSK 575&nbsp;B.</li>
+											<li>Offered keys: sending keys 0&nbsp;B, sending offers 3.36&nbsp;KiB</li>
+											<li>Swapping Output: 2.84&nbsp;KiB.</li>
+											<li>Connection setup: 70.3&nbsp;KiB output</li>
+											<li>Ack-only packets: 121&nbsp;KiB</li>
+											<li>Resent bytes: 61.7&nbsp;KiB (5%)</li>
+											<li>Updater Output: 0&nbsp;B</li>
+											<li>Announcement output: 49.1&nbsp;KiB (transferring node refs payload 45.0&nbsp;KiB)</li>
+											<li>Admin bytes: 2.40&nbsp;KiB initial messages, 0&nbsp;B IP change messages, 464&nbsp;B disconnection notifications, 0&nbsp;B routing status</li>
+											<li>Debugging bytes: 0&nbsp;B network coloring, 337&nbsp;B ping, 52&nbsp;B probe requests, 0&nbsp;B routed test messages.</li>
+											<li>Node to node messages: 9.36&nbsp;KiB</li>
+											<li>Load allocation notices: 18.3&nbsp;KiB</li>
+											<li>FOAF related: 0&nbsp;B</li>
+											<li>Other output: 169&nbsp;KiB (13%)</li>
+											<li>Total non-request overhead: 423 B/sec (26%).</li>
+
+										</ul>
+
+									</div>
+
+								</div>
+
+							</td>
+							<td class="last">
+								<div class="infobox">
+									<div class="infobox-header">
+										Peer statistics
+									</div>
+									<div class="infobox-content">
+										<ul>
+											<li><span><span title="Connected: We&#39;re successfully connected to these nodes" style="border-bottom: 1px dotted; cursor: help;" class="peer_connected">Connected</span><span>:&nbsp;6</span></span></li>
+											<li><span><span title="Not connected: No connection so far but this node is continuously trying to connect." style="border-bottom: 1px dotted; cursor: help;" class="peer_disconnected">Disconnected</span><span>:&nbsp;1</span></span></li>
+											<li><span><span title="Never Connected: Freenet has never connected to these peers." style="border-bottom: 1px dotted; cursor: help;" class="peer_never_connected">Never connected</span><span>:&nbsp;3</span></span></li>
+											<li>Max peers: 10</li>
+											<li>Max strangers: 10</li>
+
+										</ul>
+
+									</div>
+
+								</div>
+								<div class="infobox">
+									<div class="infobox-header">
+										Peer backoff reasons (realtime)
+									</div>
+									<div class="infobox-content">
+										Good, your node is not backed off from any peers!
+									</div>
+
+								</div>
+								<div class="infobox">
+									<div class="infobox-header">
+										Peer backoff reasons (bulk)
+									</div>
+									<div class="infobox-content">
+										Good, your node is not backed off from any peers!
+									</div>
+
+								</div>
+
+							</td>
+
+						</tr>
+
+					</tbody></table>
+					<script type="text/javascript">
+						  function peerNoteChange() {
+    var theobj = document.getElementById( "action" );
+    var length = theobj.options.length;
+    for (var i = 0; i < length; i++) {
+      if(theobj.options[i] == "update_notes") {
+        theobj.options[i].select = true;
+      } else {
+        theobj.options[i].select = false;
+      }
+    }
+    theobj.value="update_notes";
+    document.getElementById( "peersForm" ).doAction.click();
+  }
+  function peerNoteBlur() {
+    var theobj = document.getElementById( "action" );
+    var length = theobj.options.length;
+    for (var i = 0; i < length; i++) {
+      if(theobj.options[i] == "update_notes") {
+        theobj.options[i].select = true;
+      } else {
+        theobj.options[i].select = false;
+      }
+    }
+    theobj.value="update_notes";
+  }
+
+					</script>
+					<div class="infobox infobox-normal">
+						<div class="infobox-header">
+							My Opennet Peers (untrusted peers added by Freenet in low/normal network security level) <a href="http://127.0.0.1:8888/strangers/displaymessagetypes.html">(more detailed)</a>
+						</div>
+						<div class="infobox-content">
+							<table class="darknet_connections">
+								<tbody><tr>
+									<th><a href="http://127.0.0.1:8888/strangers/?sortBy=status&reversed">Status</a></th><th><a href="http://127.0.0.1:8888/strangers/?sortBy=address&reversed"><span title="The node&#39;s network address as IP:Port" style="border-bottom: 1px dotted; cursor: help;">Address</span></a></th><th><a href="http://127.0.0.1:8888/strangers/?sortBy=version&reversed">Version</a></th><th><a href="http://127.0.0.1:8888/strangers/?sortBy=location&reversed">Location</a></th><th><a href="http://127.0.0.1:8888/strangers/?sortBy=backoffRT&reversed"><span title="Other node busy (realtime)? Display: Percentage of time the node is overloaded, Current wait time remaining (0=not overloaded)/total/last overload reason" style="border-bottom: 1px dotted; cursor: help;">Backoff (realtime)</span></a></th><th><a href="http://127.0.0.1:8888/strangers/?sortBy=backoffBulk&reversed"><span title="Other node busy (bulk)? Display: Percentage of time the node is overloaded, Current wait time remaining (0=not overloaded)/total/last overload reason" style="border-bottom: 1px dotted; cursor: help;">Backoff (bulk)</span></a></th><th><a href="http://127.0.0.1:8888/strangers/?sortBy=overload_p&reversed"><span title="Probability of the node rejecting a request due to overload or causing a timeout." style="border-bottom: 1px dotted; cursor: help;">Overload Probability</span></a></th><th><a href="http://127.0.0.1:8888/strangers/?sortBy=idle&reversed"><span title="How long since the node connected or was last seen" style="border-bottom: 1px dotted; cursor: help;">Connected / Idle</span></a></th><th><a href="http://127.0.0.1:8888/strangers/?sortBy=time_routable&reversed">%&nbsp;Time Routable</a></th><th><a href="http://127.0.0.1:8888/strangers/?sortBy=selection_percentage&reversed">%&nbsp;Selection</a></th><th><a href="http://127.0.0.1:8888/strangers/?sortBy=total_traffic&reversed">Total&nbsp;Traffic&nbsp;(in/out/resent)</a></th><th><a href="http://127.0.0.1:8888/strangers/?sortBy=total_traffic_since_startup&reversed">Total&nbsp;Traffic&nbsp;(in/out) since startup</a></th><th>Congestion&nbsp;Control</th><th><a href="http://127.0.0.1:8888/strangers/?sortBy=time_delta&reversed">Time&nbsp;Delta</a></th><th><a href="http://127.0.0.1:8888/strangers/?sortBy=uptime&reversed">Reported&nbsp;Uptime</a></th><th>Transmit&nbsp;Queue</th><th>Peer&nbsp;Capacity&nbsp;Bulk</th><th>Peer&nbsp;Capacity&nbsp;Realtime</th><th><a href="http://127.0.0.1:8888/strangers/?sortBy=successTime&reversed"><span title="Last time there was a successful CHK fetch from the node" style="border-bottom: 1px dotted; cursor: help;">Last success</span></a></th>
+								</tr>
+								<tr class="darknet_connections_warning">
+									<td class="peer-status">
+										<span class="peer_connected">CONNECTED</span>
+									</td>
+									<td class="peer-address">
+										x:27734 (415ms / 1000ms)
+									</td>
+									<td class="peer-version">
+										1444
+									</td>
+									<td class="peer-location">
+										<b>0.0975002980556946</b><br><i>3.6238179098657675E-4<br></i><i>0.007327172927589998<br></i><i>0.01529367247285729<br></i><i>0.024593866400920317<br></i><i>0.025171399837040864<br></i><i>0.033652229797487276<br></i><i>0.050195147458153566<br></i><i>0.0555239008235493<br></i><i>0.05932574737922813<br></i><i>0.0974827881785959<br></i><i>0.09911779611405314<br></i><i>0.09934272235724895<br></i><i>0.10775765618946143<br></i><i>0.10800228246925236<br></i><i>0.12449384054020685<br></i><i>0.13714316694865614<br></i><i>0.1379083119282528<br></i><i>0.14086049918678556<br></i><i>0.14293596192122882<br></i><i>0.1715600588751035<br></i><i>0.19172476506399505<br></i><i>0.19525890590392514<br></i><i>0.20800357847613005<br></i><i>0.210946190770548<br></i><i>0.21263241235253583<br></i><i>0.21389410280662224<br></i><i>0.24644659633247012<br></i><i>0.2636895557348189<br></i><i>0.270023935980952<br></i><i>0.27413621358547746<br></i><i>0.2908226631804687<br></i><i>0.29476483721669766<br></i><i>0.29566511632807146<br></i><i>0.30397301662661824<br></i><i>0.31686697698056887<br></i><i>0.32121899539053067<br></i><i>0.3315592149382173<br></i><i>0.3368981864120484<br></i><i>0.3369608643386993<br></i><i>0.36031095695163295<br></i><i>0.37073622797345573<br></i><i>0.37132138537654924<br></i><i>0.41764421635406446<br></i><i>0.4233057114896408<br></i><i>0.4318124246101833<br></i><i>0.4320009402468067<br></i><i>0.444484717203958<br></i><i>0.4476835591401127<br></i><i>0.4522648025530783<br></i><i>0.4955477235300171<br></i><i>0.5153776189469603<br></i><i>0.5169167076887982<br></i><i>0.5252300386758086<br></i><i>0.5623284136366454<br></i><i>0.5624224970664317<br></i><i>0.5812397292879405<br></i><i>0.592402277135807<br></i><i>0.6124621238159674<br></i><i>0.630730916631753<br></i><i>0.6452204724586763<br></i><i>0.6466701369683394<br></i><i>0.6468487499936948<br></i><i>0.6977333988236707<br></i><i>0.7009660627712387<br></i><i>0.7058906688906911<br></i><i>0.7066353561424799<br></i><i>0.7292889773075577<br></i><i>0.7521680434981791<br></i><i>0.7702320350734024<br></i><i>0.7937555796475972<br></i><i>0.8034359779070925<br></i><i>0.8059548332548305<br></i><i>0.8112047541817473<br></i><i>0.8344271586971506<br></i><i>0.8446035036380182<br></i><i>0.8572039687315206<br></i><i>0.8891394444999067<br></i><i>0.9025101758764624<br></i><i>0.913906045995516<br></i><i>0.9401838912687358<br></i><i>0.9506671981042465<br></i><i>0.9551633164899099<br></i><i>0.9557501045396151<br></i><i>0.9627997857749895<br></i><i>0.99600642519711<br></i>
+									</td>
+									<td class="peer-backoff">
+										0.0% 0/1/TooHighPing
+									</td>
+									<td class="peer-backoff">
+										0.2% 0/1/TooHighPing
+									</td>
+									<td class="peer-backoff">
+										1.7%
+									</td>
+									<td class="peer-idle">
+										7m47s
+									</td>
+									<td class="peer-idle">
+										98.5%
+									</td>
+									<td class="peer-idle">
+										32%
+									</td>
+									<td class="peer-idle">
+										706 KiB / 336 KiB/1.30 KiB (0.4%)
+									</td>
+									<td class="peer-idle">
+										0 B / 0 B
+									</td>
+									<td class="peer-idle">
+										42666B/sec delay 24ms (RTT 434ms window 18.0)
+									</td>
+									<td class="peer-idle">
+										-6s
+									</td>
+									<td class="peer-idle">
+										83%
+									</td>
+									<td class="peer-idle">
+										0 B:0s
+									</td>
+									<td class="peer-idle">
+										2reqs:out:65.0 KiB/16.3 MiB/38.0 MiB/1.99 GiB:in:65.0 KiB/15.5 MiB/38.0 MiB/1.99 GiB
+									</td>
+									<td class="peer-idle">
+										2reqs:out:5.0 KiB/888 KiB/19.0 MiB/1.99 GiB:in:5.0 KiB/804 KiB/19.0 MiB/1.99 GiB
+									</td>
+									<td class="peer-last-success">
+										19s
+									</td>
+
+								</tr>
+								<tr class="darknet_connections_normal">
+									<td class="peer-status">
+										<span class="peer_connected">CONNECTED</span>
+									</td>
+									<td class="peer-address">
+										x:16848 (301ms / 1000ms)
+									</td>
+									<td class="peer-version">
+										1444
+									</td>
+									<td class="peer-location">
+										<b>0.16374862811341862</b><br><i>3.6238179098657675E-4<br></i><i>5.076879189760408E-4<br></i><i>9.206690210846746E-4<br></i><i>0.009374194795154778<br></i><i>0.023212666971685336<br></i><i>0.03233538529194824<br></i><i>0.041588844043920714<br></i><i>0.13176406999980683<br></i><i>0.1369598360701133<br></i><i>0.1609096329399392<br></i><i>0.16144290759086832<br></i><i>0.16278060926733473<br></i><i>0.16290217760514092<br></i><i>0.16348982071088713<br></i><i>0.21055822224093013<br></i><i>0.22995419802600825<br></i><i>0.24206397592767337<br></i><i>0.2594421532538582<br></i><i>0.26816307263135364<br></i><i>0.2871788416170945<br></i><i>0.29184786060732903<br></i><i>0.2976583758051573<br></i><i>0.3318656532081149<br></i><i>0.34674486292654383<br></i><i>0.3469300084313409<br></i><i>0.3514884814934073<br></i><i>0.3954745255736678<br></i><i>0.4138679188582025<br></i><i>0.4285298760889248<br></i><i>0.4332177188209805<br></i><i>0.43395013416674877<br></i><i>0.4387552967423195<br></i><i>0.4461102784682852<br></i><i>0.4789786808737089<br></i><i>0.4797035947327828<br></i><i>0.5063841497659671<br></i><i>0.5286079292907663<br></i><i>0.5623284136366454<br></i><i>0.5646018513246766<br></i><i>0.5723158804709603<br></i><i>0.5886691316610528<br></i><i>0.6238869176970986<br></i><i>0.6493881976334955<br></i><i>0.6759845199287687<br></i><i>0.7010547963666659<br></i><i>0.7255541706341726<br></i><i>0.7463907714716167<br></i><i>0.7722642479800363<br></i><i>0.8095156797241425<br></i><i>0.81995019341602<br></i><i>0.8866058032991428<br></i><i>0.8876268341833421<br></i><i>0.901436414152494<br></i><i>0.9151209538528345<br></i><i>0.9188665140420625<br></i><i>0.9189763872327037<br></i><i>0.9196303426400274<br></i><i>0.9391260911770476<br></i><i>0.9812089214289097<br></i>
+									</td>
+									<td class="peer-backoff">
+										0.1% 0/1/ForwardRejectedOverload2
+									</td>
+									<td class="peer-backoff">
+										0.1% 0/1/TransferFailedInsert
+									</td>
+									<td class="peer-backoff">
+										1.1%
+									</td>
+									<td class="peer-idle">
+										3m43s
+									</td>
+									<td class="peer-idle">
+										100.0%
+									</td>
+									<td class="peer-idle">
+										16%
+									</td>
+									<td class="peer-idle">
+										798 KiB / 132 KiB/497 B (0.4%)
+									</td>
+									<td class="peer-idle">
+										0 B / 0 B
+									</td>
+									<td class="peer-idle">
+										42666B/sec delay 24ms (RTT 297ms window 12.176130294799805)
+									</td>
+									<td class="peer-idle">
+										1s
+									</td>
+									<td class="peer-idle">
+										73%
+									</td>
+									<td class="peer-idle">
+										0 B:0s
+									</td>
+									<td class="peer-idle">
+										0reqs:out:0 B/10.0 MiB/660 KiB/118 MiB:in:0 B/9.84 MiB/6.52 MiB/1.17 GiB
+									</td>
+									<td class="peer-idle">
+										0reqs:out:0 B/498 KiB/330 KiB/59.3 MiB:in:0 B/692 KiB/3.26 MiB/600 MiB
+									</td>
+									<td class="peer-last-success">
+										19s
+									</td>
+
+								</tr>
+								<tr class="darknet_connections_normal">
+									<td class="peer-status">
+										<span class="peer_connected">CONNECTED</span>
+									</td>
+									<td class="peer-address">
+										x:7086 (556ms / 1000ms)
+									</td>
+									<td class="peer-version">
+										1444
+									</td>
+									<td class="peer-location">
+										<b>0.34163950645925134</b><br><i>0.002774625025923627<br></i><i>0.017736012105629695<br></i><i>0.16008161637637908<br></i><i>0.2120487853752312<br></i><i>0.2841691692174504<br></i><i>0.31686697698056887<br></i><i>0.33148019673754103<br></i><i>0.370092595300495<br></i><i>0.39889986231038566<br></i><i>0.4071424637353883<br></i><i>0.5201923867073699<br></i><i>0.5347577070849964<br></i><i>0.5382153592643677<br></i><i>0.5623284136366454<br></i><i>0.5708739220348775<br></i><i>0.6406560057545008<br></i><i>0.6878325297341725<br></i><i>0.7138996971817224<br></i><i>0.8881468647221857<br></i>
+									</td>
+									<td class="peer-backoff">
+										0.0% 0/1
+									</td>
+									<td class="peer-backoff">
+										0.0% 0/1
+									</td>
+									<td class="peer-backoff">
+										0.0%
+									</td>
+									<td class="peer-idle">
+										24s
+									</td>
+									<td class="peer-idle">
+										100.0%
+									</td>
+									<td class="peer-idle">
+										8%
+									</td>
+									<td class="peer-idle">
+										5.02 KiB / 3.47 KiB/0 B (0.0%)
+									</td>
+									<td class="peer-idle">
+										0 B / 0 B
+									</td>
+									<td class="peer-idle">
+										28444B/sec delay 36ms (RTT 512ms window 14.0)
+									</td>
+									<td class="peer-idle">
+										-2s
+									</td>
+									<td class="peer-idle">
+										20%
+									</td>
+									<td class="peer-idle">
+										0 B:0s
+									</td>
+									<td class="peer-idle">
+										0reqs:out:0 B/2.74 MiB/1.62 MiB/58.4 MiB:in:0 B/2.99 MiB/6.51 MiB/234 MiB
+									</td>
+									<td class="peer-idle">
+										2reqs:out:5.0 KiB/214 KiB/748 KiB/29.2 MiB:in:5.0 KiB/288 KiB/2.92 MiB/117 MiB
+									</td>
+									<td class="peer-last-success">
+										NEVER
+									</td>
+
+								</tr>
+								<tr class="darknet_connections_normal">
+									<td class="peer-status">
+										<span class="peer_connected">CONNECTED</span>
+									</td>
+									<td class="peer-address">
+										x:6209 (387ms / 1000ms)
+									</td>
+									<td class="peer-version">
+										1444
+									</td>
+									<td class="peer-location">
+										<b>0.370092595300495</b><br><i>9.670816592917131E-4<br></i><i>0.002774625025923627<br></i><i>0.007669547964022083<br></i><i>0.025867398329917357<br></i><i>0.05413106362879927<br></i><i>0.06409621034885782<br></i><i>0.07099797623297854<br></i><i>0.12495664560868502<br></i><i>0.14489750815115288<br></i><i>0.16008161637637908<br></i><i>0.19836285574450807<br></i><i>0.20800357847613005<br></i><i>0.21902933298061178<br></i><i>0.22421632534012603<br></i><i>0.22812174128042928<br></i><i>0.24737403222522714<br></i><i>0.2908964986511664<br></i><i>0.295238695905367<br></i><i>0.34163950645925134<br></i><i>0.34893007187086866<br></i><i>0.34916121187876437<br></i><i>0.36225782585045097<br></i><i>0.3681861451675038<br></i><i>0.37022320616718063<br></i><i>0.37073622797345573<br></i><i>0.37091792651230837<br></i><i>0.3709385664413535<br></i><i>0.3984521272240412<br></i><i>0.39889986231038566<br></i><i>0.401703042903915<br></i><i>0.42986670493940315<br></i><i>0.4434994800631289<br></i><i>0.443905356291703<br></i><i>0.46631809175887995<br></i><i>0.48459075008948127<br></i><i>0.4958139519579542<br></i><i>0.498804376289796<br></i><i>0.5060018395133329<br></i><i>0.5091925836826416<br></i><i>0.5252117771403579<br></i><i>0.5494021936872733<br></i><i>0.560214499415295<br></i><i>0.5623284136366454<br></i><i>0.5654527728003018<br></i><i>0.5758346229208462<br></i><i>0.5783716966889614<br></i><i>0.5982587036686515<br></i><i>0.5988762335921789<br></i><i>0.6174478183787315<br></i><i>0.6210111217339706<br></i><i>0.6229937132022988<br></i><i>0.6366491815418363<br></i><i>0.6692018831686626<br></i><i>0.6947526556041007<br></i><i>0.730982794367745<br></i><i>0.7314466947750007<br></i><i>0.749518007290508<br></i><i>0.7515168136467226<br></i><i>0.752117051718448<br></i><i>0.7521680434981791<br></i><i>0.7571910203920591<br></i><i>0.7589501430471696<br></i><i>0.7610670809761614<br></i><i>0.7664127592917163<br></i><i>0.790090599451756<br></i><i>0.8059548332548305<br></i><i>0.8143640603855876<br></i><i>0.823406432184825<br></i><i>0.8722471343549173<br></i><i>0.8891394444999067<br></i><i>0.8915926145028251<br></i><i>0.9349919578355737<br></i><i>0.9351979622412856<br></i><i>0.9539892924073327<br></i><i>0.9551633164899099<br></i><i>0.9683217911732073<br></i><i>0.9710149701300919<br></i><i>0.9823281134429211<br></i><i>0.9866871099879814<br></i><i>0.9923749382715317<br></i>
+									</td>
+									<td class="peer-backoff">
+										2.2% 0/1/ForwardRejectedOverload
+									</td>
+									<td class="peer-backoff">
+										1.2% 0/1/ForwardRejectedOverload
+									</td>
+									<td class="peer-backoff">
+										8.4%
+									</td>
+									<td class="peer-idle">
+										5m56s
+									</td>
+									<td class="peer-idle">
+										100.0%
+									</td>
+									<td class="peer-idle">
+										16%
+									</td>
+									<td class="peer-idle">
+										225 KiB / 215 KiB/376 B (0.2%)
+									</td>
+									<td class="peer-idle">
+										0 B / 0 B
+									</td>
+									<td class="peer-idle">
+										46545B/sec delay 22ms (RTT 351ms window 15.801182746887207)
+									</td>
+									<td class="peer-idle">
+										-3h12m
+									</td>
+									<td class="peer-idle">
+										21%
+									</td>
+									<td class="peer-idle">
+										0 B:0s
+									</td>
+									<td class="peer-idle">
+										1reqs:out:2.5 KiB/13.4 MiB/4.40 MiB/713 MiB:in:2.5 KiB/12.7 MiB/4.41 MiB/715 MiB
+									</td>
+									<td class="peer-idle">
+										0reqs:out:0 B/602 KiB/2.17 MiB/356 MiB:in:0 B/630 KiB/2.18 MiB/357 MiB
+									</td>
+									<td class="peer-last-success">
+										4m43s
+									</td>
+
+								</tr>
+								<tr class="darknet_connections_normal">
+									<td class="peer-status">
+										<span class="peer_connected">CONNECTED</span>
+									</td>
+									<td class="peer-address">
+										x:8445 (311ms / 1000ms)
+									</td>
+									<td class="peer-version">
+										1444
+									</td>
+									<td class="peer-location">
+										<b>0.7064654640958051</b><br><i>2.7172020305055167E-4<br></i><i>0.023472044455294272<br></i><i>0.04091750317690945<br></i><i>0.05440802014766999<br></i><i>0.06086754240333403<br></i><i>0.09454381298021253<br></i><i>0.1032543271517411<br></i><i>0.14086049918678556<br></i><i>0.15077783352261243<br></i><i>0.19109217548530966<br></i><i>0.19146366365866552<br></i><i>0.19237663410348615<br></i><i>0.22812174128042928<br></i><i>0.3202501219577135<br></i><i>0.32442702014028924<br></i><i>0.3315592149382173<br></i><i>0.3565194329553655<br></i><i>0.36438455502347156<br></i><i>0.36601487032572755<br></i><i>0.3775099308737352<br></i><i>0.39531217706082344<br></i><i>0.4164537161444445<br></i><i>0.4183676841000732<br></i><i>0.4298844701719784<br></i><i>0.47418910428153305<br></i><i>0.5406133046353423<br></i><i>0.5527944032336516<br></i><i>0.553284802754475<br></i><i>0.5539896154495242<br></i><i>0.6999353260257194<br></i><i>0.7010547963666659<br></i><i>0.7066353561424799<br></i><i>0.7338751464067665<br></i><i>0.7358891747194681<br></i><i>0.7374994010099551<br></i><i>0.8165796692342303<br></i><i>0.8351618702150649<br></i><i>0.8980936725293591<br></i><i>0.9386340926761083<br></i><i>0.9518018378924186<br></i><i>0.9527968051731124<br></i><i>0.9560543118572665<br></i><i>0.9901971980871329<br></i>
+									</td>
+									<td class="peer-backoff">
+										0.0% 0/1
+									</td>
+									<td class="peer-backoff">
+										0.0% 0/1
+									</td>
+									<td class="peer-backoff">
+										0.0%
+									</td>
+									<td class="peer-idle">
+										24s
+									</td>
+									<td class="peer-idle">
+										100.0%
+									</td>
+									<td class="peer-idle">
+										16%
+									</td>
+									<td class="peer-idle">
+										3.68 KiB / 5.33 KiB/0 B (0.0%)
+									</td>
+									<td class="peer-idle">
+										0 B / 0 B
+									</td>
+									<td class="peer-idle">
+										44521B/sec delay 23ms (RTT 285ms window 12.0)
+									</td>
+									<td class="peer-idle">
+										1s
+									</td>
+									<td class="peer-idle">
+										62%
+									</td>
+									<td class="peer-idle">
+										0 B:0s
+									</td>
+									<td class="peer-idle">
+										0reqs:out:0 B/4.38 MiB/297 KiB/29.0 MiB:in:0 B/3.99 MiB/307 KiB/30.0 MiB
+									</td>
+									<td class="peer-idle">
+										1reqs:out:2.5 KiB/238 KiB/145 KiB/14.5 MiB:in:2.5 KiB/218 KiB/150 KiB/15.0 MiB
+									</td>
+									<td class="peer-last-success">
+										NEVER
+									</td>
+
+								</tr>
+								<tr class="darknet_connections_normal">
+									<td class="peer-status">
+										<span class="peer_connected">CONNECTED</span>
+									</td>
+									<td class="peer-address">
+										x:60698 (772ms / 1067ms)
+									</td>
+									<td class="peer-version">
+										1444
+									</td>
+									<td class="peer-location">
+										<b>0.8876268341833421</b><br><i>5.076879189760408E-4<br></i><i>9.670816592917131E-4<br></i><i>0.0073336795055989334<br></i><i>0.00788262282362795<br></i><i>0.023212666971685336<br></i><i>0.023472044455294272<br></i><i>0.05692326277549353<br></i><i>0.06162134169805178<br></i><i>0.07058861824703277<br></i><i>0.08330667634835298<br></i><i>0.0861543964917999<br></i><i>0.09333296620751652<br></i><i>0.13227719129985993<br></i><i>0.1575897948353916<br></i><i>0.16374862811341862<br></i><i>0.16794674650099128<br></i><i>0.17546794043688219<br></i><i>0.19157815184533233<br></i><i>0.2309110107042922<br></i><i>0.2338236494576833<br></i><i>0.23865341610477775<br></i><i>0.2445474939214245<br></i><i>0.357286356842084<br></i><i>0.36090449408606595<br></i><i>0.3672905380642021<br></i><i>0.3697951160170281<br></i><i>0.37020818620044593<br></i><i>0.41463159416473294<br></i><i>0.45073950646999406<br></i><i>0.4775444245598317<br></i><i>0.48442421574452366<br></i><i>0.48682673331498605<br></i><i>0.49315624574541805<br></i><i>0.49390293898525617<br></i><i>0.5104569236430432<br></i><i>0.5112658171333867<br></i><i>0.5118017566801452<br></i><i>0.5174174831624117<br></i><i>0.5193079824227425<br></i><i>0.5252300386758086<br></i><i>0.526636538635812<br></i><i>0.5623284136366454<br></i><i>0.5669479139599487<br></i><i>0.5931191457093566<br></i><i>0.6147840143687825<br></i><i>0.6385240557241606<br></i><i>0.6409541648134414<br></i><i>0.6574732681945191<br></i><i>0.666741422712058<br></i><i>0.7066353561424799<br></i><i>0.7147219491768356<br></i><i>0.719941671072754<br></i><i>0.733730329108069<br></i><i>0.7506987056562152<br></i><i>0.7543774412579005<br></i><i>0.8020821839055196<br></i><i>0.8143640603855876<br></i><i>0.8286972366391795<br></i><i>0.8374199425970267<br></i><i>0.8381125938522103<br></i><i>0.8463822287684709<br></i><i>0.8574770564857377<br></i><i>0.8631869677822347<br></i><i>0.8634135126825804<br></i><i>0.8662994625884076<br></i><i>0.8852092587189544<br></i><i>0.8859702737188967<br></i><i>0.8876373271453124<br></i><i>0.8879447463385668<br></i><i>0.8889670290803742<br></i><i>0.8898989378744857<br></i><i>0.8994105696349847<br></i><i>0.901436414152494<br></i><i>0.9017757433005679<br></i><i>0.9546577718345383<br></i><i>0.9578517465204368<br></i><i>0.9654065601744306<br></i><i>0.9654735923294661<br></i><i>0.997175590126398<br></i><i>0.999655924800264<br></i>
+									</td>
+									<td class="peer-backoff">
+										1.7% 0/1/FatalTimeout
+									</td>
+									<td class="peer-backoff">
+										0.6% 0/1/TransferFailedRequest5
+									</td>
+									<td class="peer-backoff">
+										9.4%
+									</td>
+									<td class="peer-idle">
+										3m42s
+									</td>
+									<td class="peer-idle">
+										98.8%
+									</td>
+									<td class="peer-idle">
+										10%
+									</td>
+									<td class="peer-idle">
+										848 KiB / 176 KiB/25.2 KiB (14.3%)
+									</td>
+									<td class="peer-idle">
+										0 B / 0 B
+									</td>
+									<td class="peer-idle">
+										4145B/sec delay 247ms (RTT 822ms window 3.316134452819824)
+									</td>
+									<td class="peer-idle">
+										-22s
+									</td>
+									<td class="peer-idle">
+										100%
+									</td>
+									<td class="peer-idle">
+										0 B:0s
+									</td>
+									<td class="peer-idle">
+										5reqs:out:162 KiB/16.8 MiB/4.29 MiB/712 MiB:in:162 KiB/13.4 MiB/4.30 MiB/715 MiB
+									</td>
+									<td class="peer-idle">
+										0reqs:out:0 B/388 KiB/2.12 MiB/356 MiB:in:0 B/462 KiB/2.12 MiB/357 MiB
+									</td>
+									<td class="peer-last-success">
+										7s
+									</td>
+
+								</tr>
+								<tr class="darknet_connections_normal">
+									<td class="peer-status">
+										<span class="peer_disconnected">DISCONNECTED*</span>
+									</td>
+									<td class="peer-address">
+										x:40309
+									</td>
+									<td class="peer-version">
+										1444
+									</td>
+									<td class="peer-location">
+										<b>0.9971190724508963</b><br><i>2.7172020305055167E-4<br></i><i>0.023472044455294272<br></i><i>0.02522042235847166<br></i><i>0.03209031483903846<br></i><i>0.03828588598877258<br></i><i>0.05562565690812993<br></i><i>0.05719790873300856<br></i><i>0.07621050581672173<br></i><i>0.08042005541825747<br></i><i>0.1929039360459075<br></i><i>0.20056819148360017<br></i><i>0.255498779454995<br></i><i>0.259053146707919<br></i><i>0.2644128981328491<br></i><i>0.2699936950373346<br></i><i>0.270023935980952<br></i><i>0.27330451993196303<br></i><i>0.27374046054254286<br></i><i>0.27404005204683857<br></i><i>0.27947859036258815<br></i><i>0.2908964986511664<br></i><i>0.33694365158519846<br></i><i>0.3393106325031101<br></i><i>0.341063811828609<br></i><i>0.3570542574121027<br></i><i>0.3793176415835784<br></i><i>0.3984521272240412<br></i><i>0.4298844701719784<br></i><i>0.43434437594811903<br></i><i>0.44112476695395164<br></i><i>0.4522152005496969<br></i><i>0.46044243558491627<br></i><i>0.46801683361332813<br></i><i>0.4690363932248768<br></i><i>0.5295153722030597<br></i><i>0.5370811659297751<br></i><i>0.5374179441027266<br></i><i>0.538327705841105<br></i><i>0.5623284136366454<br></i><i>0.5889370969193549<br></i><i>0.605039168296051<br></i><i>0.6193222968475994<br></i><i>0.6229937132022988<br></i><i>0.6301734248810908<br></i><i>0.6450334095722182<br></i><i>0.6654002849971674<br></i><i>0.6792611221407443<br></i><i>0.7119256442145198<br></i><i>0.7409770106432381<br></i><i>0.7443385042408632<br></i><i>0.7712787001906237<br></i><i>0.8006513201788583<br></i><i>0.8024450644267854<br></i><i>0.8085493604922092<br></i><i>0.8286972366391795<br></i><i>0.8632372892517143<br></i><i>0.8917616162353562<br></i><i>0.932280499128414<br></i><i>0.932391771212972<br></i><i>0.9442940332017304<br></i><i>0.9626293649411709<br></i><i>0.9809530045325339<br></i><i>0.996038482596983<br></i><i>0.9964462582291693<br></i><i>0.9969451645265983<br></i><i>0.9974154746318575<br></i><i>0.997687261105045<br></i><i>0.9992691929255271<br></i>
+									</td>
+									<td class="peer-backoff">
+										12.1% 0/32/TooHighPing
+									</td>
+									<td class="peer-backoff">
+										0.6% 0/2/TooHighPing
+									</td>
+									<td class="peer-backoff">
+										22.9%
+									</td>
+									<td class="peer-idle">
+										3m4s
+									</td>
+									<td class="peer-idle">
+										65.3%
+									</td>
+									<td class="peer-idle">
+										0%
+									</td>
+									<td class="peer-idle">
+										312 KiB / 118 KiB/32.4 KiB (27.5%)
+									</td>
+									<td class="peer-idle">
+										0 B / 0 B
+									</td>
+									<td class="peer-idle">
+										1376B/sec delay 744ms (RTT 1801ms window 2.4188051223754883)
+									</td>
+									<td class="peer-idle">
+										0s
+									</td>
+									<td class="peer-idle">
+										95%
+									</td>
+									<td class="peer-idle">
+										0 B:0s
+									</td>
+									<td class="peer-idle">
+										0reqs:out:0 B/11.6 MiB/8.33 MiB/1.22 GiB:in:0 B/11.5 MiB/8.31 MiB/1.22 GiB
+									</td>
+									<td class="peer-idle">
+										0reqs:out:0 B/666 KiB/4.16 MiB/625 MiB:in:0 B/660 KiB/4.17 MiB/625 MiB
+									</td>
+									<td class="peer-last-success">
+										7m14s
+									</td>
+
+								</tr>
+								<tr class="darknet_connections_normal">
+									<td class="peer-status">
+										<span class="peer_never_connected">NEVER CONNECTED*</span>
+									</td>
+									<td class="peer-address">
+										x:9277
+									</td>
+									<td class="peer-version">
+										1444
+									</td>
+									<td class="peer-location">
+										<b>-1.0</b><br>
+									</td>
+									<td class="peer-backoff">
+										0.0% 0/1
+									</td>
+									<td class="peer-backoff">
+										0.0% 0/1
+									</td>
+									<td class="peer-backoff">
+										0.0%
+									</td>
+									<td class="peer-idle">
+										8m45s
+									</td>
+									<td class="peer-idle">
+										0.0%
+									</td>
+									<td class="peer-idle">
+										0%
+									</td>
+									<td class="peer-idle">
+										0 B / 1.19 KiB/0 B (0.0%)
+									</td>
+									<td class="peer-idle">
+										0 B / 0 B
+									</td>
+									<td class="peer-idle">
+										4096B/sec delay 250ms (RTT 500ms window 2.0)
+									</td>
+									<td class="peer-idle">
+										0s
+									</td>
+									<td class="peer-idle">
+										0%
+									</td>
+									<td class="peer-idle">
+										0 B:0s
+									</td>
+									<td class="peer-idle">
+									</td>
+									<td class="peer-idle">
+									</td>
+									<td class="peer-last-success">
+										NEVER
+									</td>
+
+								</tr>
+								<tr class="darknet_connections_normal">
+									<td class="peer-status">
+										<span class="peer_never_connected">NEVER CONNECTED*</span>
+									</td>
+									<td class="peer-address">
+										x:5002
+									</td>
+									<td class="peer-version">
+										1444
+									</td>
+									<td class="peer-location">
+										<b>-1.0</b><br>
+									</td>
+									<td class="peer-backoff">
+										0.0% 0/1
+									</td>
+									<td class="peer-backoff">
+										0.0% 0/1
+									</td>
+									<td class="peer-backoff">
+										0.0%
+									</td>
+									<td class="peer-idle">
+										8m45s
+									</td>
+									<td class="peer-idle">
+										0.0%
+									</td>
+									<td class="peer-idle">
+										0%
+									</td>
+									<td class="peer-idle">
+										0 B / 2.04 KiB/0 B (0.0%)
+									</td>
+									<td class="peer-idle">
+										0 B / 0 B
+									</td>
+									<td class="peer-idle">
+										4096B/sec delay 250ms (RTT 500ms window 2.0)
+									</td>
+									<td class="peer-idle">
+										0s
+									</td>
+									<td class="peer-idle">
+										0%
+									</td>
+									<td class="peer-idle">
+										0 B:0s
+									</td>
+									<td class="peer-idle">
+									</td>
+									<td class="peer-idle">
+									</td>
+									<td class="peer-last-success">
+										NEVER
+									</td>
+
+								</tr>
+								<tr class="darknet_connections_normal">
+									<td class="peer-status">
+										<span class="peer_never_connected">NEVER CONNECTED*</span>
+									</td>
+									<td class="peer-address">
+										x:65219
+									</td>
+									<td class="peer-version">
+										1444
+									</td>
+									<td class="peer-location">
+										<b>-1.0</b><br>
+									</td>
+									<td class="peer-backoff">
+										0.0% 0/1
+									</td>
+									<td class="peer-backoff">
+										0.0% 0/1
+									</td>
+									<td class="peer-backoff">
+										0.0%
+									</td>
+									<td class="peer-idle">
+										<span class="peer_idle_old"> </span>
+									</td>
+									<td class="peer-idle">
+										0.0%
+									</td>
+									<td class="peer-idle">
+										0%
+									</td>
+									<td class="peer-idle">
+										0 B / 4.76 KiB/0 B (0.0%)
+									</td>
+									<td class="peer-idle">
+										0 B / 0 B
+									</td>
+									<td class="peer-idle">
+										4096B/sec delay 250ms (RTT 500ms window 2.0)
+									</td>
+									<td class="peer-idle">
+										0s
+									</td>
+									<td class="peer-idle">
+										0%
+									</td>
+									<td class="peer-idle">
+										0 B:0s
+									</td>
+									<td class="peer-idle">
+									</td>
+									<td class="peer-idle">
+									</td>
+									<td class="peer-last-success">
+										NEVER
+									</td>
+
+								</tr>
+
+							</tbody></table>
+
+						</div>
+
+					</div>
+					<div class="infobox infobox-normal">
+						<div class="infobox-header">
+							Manually connect to a Stranger (not recommended!)
+						</div>
+						<div class="infobox-content">
+							<div>
+								<form id="addPeerForm" enctype="multipart/form-data" action="./strangers_files/strangers.html" method="post" accept-charset="utf-8">
+									<input name="formPassword" value="x" type="hidden">
+
+									Enter node reference directly:<br><textarea id="reftext" cols="74" name="ref" rows="8"></textarea><br>OR enter the URL of the node reference here: <input id="refurl" name="url" type="text">
+
+									<br>OR browse for the node reference file here: <input id="reffile" name="reffile" type="file">
+
+									<br><input name="add" value="Add" type="submit">
+
+
+								</form>
+
+							</div>
+
+						</div>
+
+					</div>
+					<div class="infobox infobox-normal">
+						<div class="infobox-header">
+							<a href="http://127.0.0.1:8888/strangers/myref.fref">My Node Reference</a> (<a href="http://127.0.0.1:8888/strangers/myref.txt">as text</a>)
+						</div>
+						<div class="infobox-content">
+							<p><span>Nickname for this node: (null)</span><span> [</span><span><a href="http://127.0.0.1:8888/config/node#name">Change</a></span><span>]</span></p><p>Node reference must be copied <strong>AS IS</strong>. Modifying it will make it <strong>useless</strong>.</p><pre id="reference">opennet=true
+identity=tZnsYTf5bZfMXPlnqqyHgRtZ6nrjjJiBH4XM-I8oiEI
+lastGoodVersion=Fred,0.7,1.0,1442
+sig=394709cba9ba591f373e93d3d6128990b51a68d689f979febc93301ae193a800,01e462e758cce18f4374da6b6c043b9c8a59249f23b1ba268b9885417dc36a48
+version=Fred,0.7,1.0,1444
+dsaPubKey.y=LEWVh8eUZAqKZIrB-OF5bSSSgSc-15zCdmdh0rEkCr0SStGXwhOFl0rvuZ~vdm8OmmstoNYZW9n~LCKP1zV3ooiOUAdwTGCrtgjddahzTsiUfUej-nMrqOISjnmXocX8btVWBxxkaNxwtfZIPUeU-FPwIV8wpbUl4cLZGkGREjqwVtyJ35RG1~S3B~CSgh3-VxLkI-~8xAxPJ0nJXZJ~Pef6IU7hm0BWIZScVAhISUm6exwz8wVuTqiEq1cSggXxKFPtQVVufAAyiUsAeopeGMY9Cxj9IKc7FyCgS7aMadl0qzuJVCDCCjYOMGywakmdTkAL1ZpmEcHYy-mNed5ynAJ5g
+physical.udp=2001:0:5ef5:79fb:887:5951:68ec:735b:56058;151.19.140.164:56058
+dsaGroup.g=UaRatnDByf0QvTlaaAXTMzn1Z15LDTXe-J~gOqXCv0zpz83CVngSkb--bVRuZ9R65OFg~ATKcuw8VJJwxn1~A9p5jRt2NPj2EM7bu72O85-mFdBhcav8WHJtTbXb4cxNzZaQkbPQUv~gEnuEeMTc80KZVjilQ7wlTIM6GIY~ZJVHMKSIkEU87YBRtIt1R~BJcnaDAKBJv~oXv1PS-6iwQRFMynMEmipfpqDxXBTkqaQ8ahiGWA41rY8d4jDhrzIgjvkzfxkkcCpFFOldwW8w8MEecUoRLuhKnY1sm8nnTjNlYLtc1Okeq-ba0mvwygSAf4wxovwY6n1Fuxqt8yZe1PDVg
+dsaGroup.q=ALFDNoq81R9Y1kQNVBc5kzmk0VvvCWosXY5t9E9S1tN5
+dsaGroup.p=AIYIrE9VNhM38qPjirGGT-PJjWZBHY0q-JxSYyDFQfZQeOhrx4SUpdc~SppnWD~UHymT7WyX28eV3YjwkVyc~--H5Tc83hPjx8qQc7kQbrMb~CJy7QBX~YSocKGfioO-pwfRZEDDguYtOJBHPqeenVDErGsfHTCxDDKgL2hYM8Ynj8Kes0OcUzOIVhShFSGbOAjJKjeg82XNXmG1hhdh2tnv8M4xjJQ9ViEj425Mrh6O9jXovfPmcdYIr3C~3waHXjQvPgUiK4N5Saf~FOri48fK-PmwFZFc-YSgI9o2-70nVybSnBXlM96QkzU6x4CYFUuZ7-B~je0ofeLdX7xhehuk
+ark.pubURI=SSK@oqE56b5GL6xchdW7pSQ7QgEoA19kxjNDdvfmWS7LKsl8,4cJeCz2i-9jMYnagM3w9X9CSD8mCAsXa17hUgxrZGAx4,AQACAAE/ark
+ark.number=0
+auth.negTypes=6;7;8
+End
+
+</pre>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+
+	</body></html>

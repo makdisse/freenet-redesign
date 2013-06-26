@@ -9,9 +9,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-
-
+<% if not params[:nm] %>
+<%= render partial: 'redesign/navbar', locals: {menu:  params[:menu], title: params[:title]} %>
+<% end %>
 <section class="container">
   <%= yield %>
 </section>
