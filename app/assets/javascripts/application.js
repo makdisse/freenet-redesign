@@ -17,6 +17,12 @@
 //= require_tree .
 
 $(document).ready(function() {
+
+  //Setup the x-edit plugin
+  $.fn.editable.defaults.mode = 'popup';
+  $('.friend-note').editable();
+
+  //
     $("[data-toggle='tooltip']").tooltip({
         placement: 'right',
         container: 'body',
@@ -35,6 +41,23 @@ $(document).ready(function() {
   if (window.location.hash) {
     $(window.location.hash).modal('show');
   }
+
+//Simulate buttons usability
+  $("#enable_buttons").change(function()  {
+    if ($("#enable_buttons").prop("checked") ==  true) {
+      $("#btn_n2ntm").attr('disabled',false);
+      $("#btn_trust").attr('disabled',false);
+      $("#btn_visibility").attr('disabled',false);
+      $("#btn_remove").attr('disabled',false);
+    } else {
+      $("#btn_n2ntm").attr('disabled',true);
+      $("#btn_trust").attr('disabled',true);
+      $("#btn_visibility").attr('disabled',true);
+      $("#btn_remove").attr('disabled',true);
+    }
+
+
+  })
 
 })
 
