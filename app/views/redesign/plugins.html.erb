@@ -1,0 +1,148 @@
+<div class="alert alert-block alert-info">
+	<button type="button" class="close" data-dismiss="alert">&times;</button>
+  <h4>Installing app</h4>
+  <table class="table table-condense">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Progress</th>
+      <th>Time spent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="20%">Web Of Trust</td>
+      <td width="60%">
+      	<div class="progress progress-striped active">
+  		<div class="bar" style="width: 40%;">40%</div>
+		</div>
+	</td>
+      <td width="20%">10 Minutes</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<legend>
+	Installed apps
+</legend>
+
+<table class="table table-condense">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Version</th>
+      <th>Installed on</th>
+      <th>Internal ID</th>
+      <th>Class Name</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+  	<% 5.times do %>
+    <tr>
+      <td>App name here</td>
+      <td>1.0</td>
+      <td>10/10/2010</td>
+      <td>xxxx</td>
+      <td>yyyy</td>
+      <td>
+		<div class="btn-group">
+		  <a class="btn dropdown-toggle btn-mini btn-link" data-toggle="dropdown" href="#">
+		    More
+		    <span class="caret"></span>
+		  </a>
+		  <ul class="dropdown-menu">
+		    <li><a href="#">About</a></li>
+		    <li><a href="#">Remove</a></li>
+		    <li><a href="#">Reload</a></li>
+		  </ul>
+		</div>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+<legend>
+	New apps
+</legend>
+<p>
+These are the official Freenet apps. We believe these apps are free of privacy leaks, although bugs are possible and we make no guarantees. You can either fetch the plugin over Freenet or from our internet central servers (insecure, read warning in the bottom). You can also load unofficial plugins, see the last category.
+</p>
+<div class="accordion" id="accordion2">
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+        Communication
+      </a>
+    </div>
+    <div id="collapseOne" class="accordion-body collapse">
+      <div class="accordion-inner">
+			<table class="table table-condense">
+			  <thead>
+			    <tr>
+			      <th>Name</th>
+			      <th>Version</th>
+			      <th>Description</th>
+			      <th>Actions</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			  	<% 5.times do %>
+			    <tr>
+			      <td>App name here</td>
+			      <td>1.0</td>
+			      <td>Easy to use tool for creating a blog on Freenet. Requires Web Of Trust.</td>
+			      <td>
+			      	<div class="btn-group">
+					  <button class="btn btn-success btn-small" title="Install from Freenet">Install from Freenet</button>
+					  <button class="btn dropdown-toggle btn-success btn-small" data-toggle="dropdown">
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#">Install from Internet</a></li>
+					    <li><a href="#">Visit site</a></li>
+					  </ul>
+					</div>
+			      </td>
+			    </tr>
+			    <% end %>
+			  </tbody>
+			</table>
+
+      </div>
+    </div>
+  </div>
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+        Connectivity
+      </a>
+    </div>
+    <div id="collapseTwo" class="accordion-body collapse">
+      <div class="accordion-inner">
+        ...
+      </div>
+    </div>  </div>
+     <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse3">
+        Manually install an unofficial app
+      </a>
+    </div>
+    <div id="collapse3" class="accordion-body collapse">
+      <div class="accordion-inner">
+      	<p>Here you can enter the Freenet key or internet url of a plugin you want to load. These plugins are not even remotely supported or checked for privacy leaks by us, so if you load a remote plugin here, you are basically on your own.</p>
+        <form class="form-inline">
+	        Internet URL or Freenet KEY:
+	        <input type="text" class="span8">
+	        <a href="#" class="btn btn-success">Install</a>
+    	</form>
+      </div>
+    </div>
+</div>
+<small class="muted">
+				WARNING: Installing an app from the internet will give away the fact that you are running Freenet, and won't work if our website is blocked! It may even be possible for a wiretapper to tell what you are trying to load, and thus connect it with when e.g. a Freemail identity was created.
+			</small>

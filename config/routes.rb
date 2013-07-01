@@ -7,6 +7,7 @@ Redesignproject::Application.routes.draw do
   match "/search" => "redesign#search"
   match "/searchinprogress" => "redesign#searchinprogress"
   match "/notifications" => "redesign#notifications"
+  match "/plugins" => "redesign#plugins"
   match "/editbookmarks" => "redesign#editbookmark"
   # The priority is based upon order of creation:
   # first created -> highest priority.
