@@ -9,6 +9,7 @@ Redesignproject::Application.routes.draw do
   match "/notifications" => "redesign#notifications"
   match "/plugins" => "redesign#plugins"
   match "/connectionsfriends" => "redesign#connectionsfriends"
+  match "/addafriend" => "redesign#addafriend"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
