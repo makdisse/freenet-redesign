@@ -53,3 +53,8 @@ header li[id|=navbar-item] > a {
 .text-small {
 	font-size: 0.8em;
 }
+
+abbr[title],
+abbr[data-original-title] {
+  border: none;
+}

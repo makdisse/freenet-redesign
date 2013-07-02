@@ -1,0 +1,127 @@
+<legend>Console interface</legend>
+<div class="row">
+	<div class="span8">
+		<strong>
+			<abbr title="Default: false [console.enabled]">Enable TMCI?</abbr>
+		</strong>
+		<p class="muted">
+			Enable the Text Mode Client Interface
+		</p>
+	</div>
+	<div class="span4">
+		<div class="pull-right">
+			<label class="radio">
+			  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+			  Yes
+			</label>
+			<label class="radio">
+			  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+			  No
+			</label>
+		</div>
+	</div>
+
+</div>
+
+
+<hr>
+<div class="row">
+	<div class="span8">
+		<strong>
+			Enable on stdout/stdin?
+		</strong>
+		<p class="muted">
+			Enable text mode client interface on standard input/output? (.enabled refers to providing a telnet-style server, this runs it over a socket)
+		</p>
+	</div>
+	<div class="span4">
+		<div class="pull-right">
+			<label class="radio">
+			  <input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1" checked>
+			  Yes
+			</label>
+			<label class="radio">
+			  <input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
+			  No
+			</label>
+		</div>
+	</div>
+</div>
+
+
+<hr>
+<div class="row">
+	<div class="span8">
+		<strong>
+			Enable SSL?
+		</strong>
+		<p class="muted">
+			Enable SSL on the TMCI server. You will need the 'Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files' for it to work.
+		</p>
+	</div>
+	<div class="span4">
+		<div class="pull-right">
+			<label class="radio">
+			  <input type="radio" name="optionsRadios1" id="optionsRadios1" value="option1" checked>
+			  Yes
+			</label>
+			<label class="radio">
+			  <input type="radio" name="optionsRadios1" id="optionsRadios2" value="option2">
+			  No
+			</label>
+		</div>
+	</div>
+</div>
+
+<hr>
+<div class="row">
+	<div class="span8">
+		<strong>
+			IP address to bind to
+		</strong>
+		<p class="muted">
+			IP address to bind to
+		</p>
+	</div>
+	<div class="span4">
+		<div class="pull-right">
+			<input type="text" class="span4" value="127.0.0.1,0:0:0:0:0:0:0:1">
+		</div>
+	</div>
+</div>
+
+
+<hr>
+<div class="row">
+	<div class="span8">
+		<strong>
+			Allowed hosts
+		</strong>
+		<p class="muted">
+			Hostnames or IP addresses that are allowed to connect to the TMCI. May be a comma-separated list of hostnames, single IPs and even CIDR masked IPs like 192.168.0.0/24
+		</p>
+	</div>
+	<div class="span4">
+		<div class="pull-right">
+			<input type="text" class="span4" value="127.0.0.1,0:0:0:0:0:0:0:1">
+		</div>
+	</div>
+</div>
+
+
+<hr>
+<div class="row">
+	<div class="span6">
+		<strong>
+			TMCI port
+		</strong>
+		<p class="muted">
+			The TCP port the TMCI server should listen on
+		</p>
+	</div>
+	<div class="span6">
+		<div class="pull-right">
+			<input type="text" class="span2" value="2323">
+		</div>
+	</div>
+</div>
