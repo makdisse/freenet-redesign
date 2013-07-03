@@ -1,12 +1,9 @@
-// Place all the styles related to the redesign controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// Mockups css - No comments, no best practice, total chaos...
 
 //Main menus in the navbar
 header li[id|=navbar-item] > a {
   text-transform: uppercase;
   letter-spacing: 1px;
-
 }
 
 #navbar-item-openapp > li > a {
@@ -57,4 +54,31 @@ header li[id|=navbar-item] > a {
 abbr[title],
 abbr[data-original-title] {
   border: none;
+}
+
+//advanced itens start hidden
+.advanced {
+	display: none;
+}
+
+//dont mess with config titles
+legend h3 {
+	display: inline;
+}
+
+body {
+	margin-bottom: 20px;
+}
+
+.apply-buttons  span {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.apply-buttons.modal-footer {
+	border: 1px solid #ddd;
+}
+
+.apply-buttons.modal-footer .act-warning {
+	margin-top: 10px;
 }
