@@ -82,3 +82,8 @@ body {
 .apply-buttons.modal-footer .act-warning {
 	margin-top: 10px;
 }
+
+//Remove margins (used on download progress bars)
+ .no-margin {
+ 	margin: 0;
+ }

@@ -28,7 +28,6 @@ $(document).ready(function() {
 
   //Setup all tooltip itens
   $("[data-toggle='tooltip']").tooltip({
-    placement: 'right',
     container: 'body',
   });
 

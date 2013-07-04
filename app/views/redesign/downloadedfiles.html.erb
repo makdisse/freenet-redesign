@@ -1,0 +1,115 @@
+</section>
+<style type="text/css">
+body {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+</style>
+
+<div class="row">
+  <div class="span3">
+    <ul class="nav nav-list">
+      <li class="active"><a href="#"> <i class="icon-arrow-down"></i>Downloads</a></li>
+      <li><a href="#"><i class="icon-arrow-up"></i> Uploads</a></li>
+      <li><a href="#" data-toggle="tooltip" title="Files you are keeping alive on Freenet" data-placement="right" data-delay="700"><i class="icon-refresh"></i> Seeding</a></li>
+      <li class="divider"></li>
+      <li><a href="#" data-toggle="tooltip" title="Files you added to YOUR search index - People can find it MORE" data-placement="right" data-delay="700"><i class="icon-star"></i> Promoted by me</a></li>
+      <li><a href="#" data-toggle="tooltip" title="Files you promoted on the UPLOADER search index - People can find it MORE" data-placement="right" data-delay="700"><i class="icon-thumbs-up"></i> Thumbs Up </a></li>
+      <li class="divider"></li>
+      <li class="nav-header">labels</li>
+      <li><a href="#"><i class="icon-tags"></i> Books</a></li>
+      <li><a href="#"><i class="icon-tags"></i> Music</a></li>
+    </ul>
+  </div>
+
+  <div class="span12">
+    <div class="btn-toolbar">
+      <a href="#" class="btn"><i class="icon-info-sign"></i> Details</a>
+      <div class="btn-group">
+        <a class="btn dropdown-toggle" id="btn_trust" data-toggle="dropdown" href="#">
+          Priority
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="">HIGH</a></li>
+          <li><a href="">NORMAL</a></li>
+          <li><a href="">LOW</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <a href="#" class="btn" data-toggle="tooltip" title="Vote UP - This will promote the file on the Seeder search index (people can find it MORE)" data-placement="bottom"><i class="icon-thumbs-up"></i></a>
+        <a href="#" class="btn" data-toggle="tooltip" title="Vote DOWN - This will demote the file on the Seeder search index (people can find it LESS)" data-placement="bottom"><i class="icon-thumbs-down"></i></a>
+      </div>
+
+      <div class="btn-group">
+        <a href="#" class="btn" data-toggle="tooltip" title="Add this file to your search index so people can find it MORE" data-placement="bottom"><i class="icon-star"></i> Promote</a>
+        <a href="#" class="btn" data-toggle="tooltip" title="Keep this file alive on freenet" data-placement="bottom"><i class="icon-refresh"></i> Seed</a>
+      </div>
+
+
+      <div class="btn-group pull-right">
+        <button class="btn">Remove from list</button>
+        <button class="btn dropdown-toggle" data-toggle="dropdown">
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Remove from computer</a></li>
+        </ul>
+      </div>
+            <a href="#" class="btn pull-right"  id="btn_remove">Cancel Download</a>
+
+    </div>
+
+    <table class="table table-condensed table-striped">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="text-small">Name</th>
+          <th class="text-small">Size</th>
+          <th class="text-small" width="20%">Status</th>
+          <th class="text-small">Priority</th>
+          <th class="text-small">Last activity</th>
+          <th class="text-small">Labels</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>Adagio_for_strings.mp3</td>
+          <td>10 MB</td>
+          <td>
+            <div class="progress progress-info no-margin">
+            <div class="bar" style="width: 50%">20%</div>
+          </div></td>
+          <td><small>HIGH</small></td>
+          <td>5m 13s</td>
+          <td><span class="label">Music</span></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>Adagio_for_strings1.mp3</td>
+          <td>10 MB</td>
+          <td><div class="progress progress-success no-margin">
+            <div class="bar" style="width: 100%">Completed!</div>
+          </div></td>
+          <td><small>HIGH</small></td>
+          <td>5m 13s</td>
+          <td><span class="label">Music</span></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>Adagio_for_strings2.mp3</td>
+          <td>10 MB</td>
+          <td><div class="progress progress-danger no-margin">
+            <div class="bar" style="width: 100%">Error</div>
+          </div></td>
+          <td><small>HIGH</small></td>
+          <td>5m 13s</td>
+          <td><span class="label">Music</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+</div>
