@@ -13,8 +13,8 @@ body {
       <li><a href="#"><i class="icon-arrow-up"></i> Uploads</a></li>
       <li><a href="#" data-toggle="tooltip" title="Files you are keeping alive on Freenet" data-placement="right" data-delay="700"><i class="icon-refresh"></i> Seeding</a></li>
       <li class="divider"></li>
-      <li><a href="#" data-toggle="tooltip" title="Files you added to YOUR search index - People can find it MORE" data-placement="right" data-delay="700"><i class="icon-star"></i> Promoted by me</a></li>
-      <li><a href="#" data-toggle="tooltip" title="Files you promoted on the UPLOADER search index - People can find it MORE" data-placement="right" data-delay="700"><i class="icon-thumbs-up"></i> Thumbs Up </a></li>
+      <li><a href="#" data-toggle="tooltip" title="Files you added to YOUR search index - The file become EASIER TO FIND" data-placement="right" data-delay="700"><i class="icon-star"></i> Promoted by me</a></li>
+      <li><a href="#" data-toggle="tooltip" title="Files you promoted on the UPLOADER search index - The file becomes MORE TRUSTWORTHY" data-placement="right" data-delay="700"><i class="icon-thumbs-up"></i> Thumbs Up </a></li>
       <li class="divider"></li>
       <li class="nav-header">labels</li>
       <li><a href="#"><i class="icon-tags"></i> Books</a></li>
@@ -37,15 +37,35 @@ body {
         </ul>
       </div>
       <div class="btn-group">
-        <a href="#" class="btn" data-toggle="tooltip" title="Vote UP - This will promote the file on the Seeder search index (people can find it MORE)" data-placement="bottom"><i class="icon-thumbs-up"></i></a>
-        <a href="#" class="btn" data-toggle="tooltip" title="Vote DOWN - This will demote the file on the Seeder search index (people can find it LESS)" data-placement="bottom"><i class="icon-thumbs-down"></i></a>
+        <a href="#" class="btn" data-toggle="tooltip" title="Vote UP - This will promote the file on the Seeder search index (The file becomes MORE TRUSTWORTHY)" data-placement="bottom"><i class="icon-thumbs-up"></i></a>
+        <a href="#" class="btn" data-toggle="tooltip" title="Vote DOWN - This will demote the file on the Seeder search index (The file becomes LESS TRUSTWORTHY - use this to report spam)" data-placement="bottom"><i class="icon-thumbs-down"></i></a>
       </div>
 
       <div class="btn-group">
-        <a href="#" class="btn" data-toggle="tooltip" title="Add this file to your search index so people can find it MORE" data-placement="bottom"><i class="icon-star"></i> Promote</a>
+        <a href="#" class="btn" data-toggle="tooltip" title="Add this file to your search index so it will become EASIER TO FIND" data-placement="bottom"><i class="icon-star"></i> Promote</a>
         <a href="#" class="btn" data-toggle="tooltip" title="Keep this file alive on freenet" data-placement="bottom"><i class="icon-refresh"></i> Seed</a>
       </div>
 
+      <div class="btn-group">
+        <a class="btn dropdown-toggle" id="btn_trust" data-toggle="dropdown" href="#">
+          <i class="icon-tags"></i> Labels
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-form">
+          <li><label class="checkbox">
+          <input type="checkbox" class="label-item"> Books </label>
+          <i class="icon-trash label-action pull-right " data-toggle="tooltip" title="Remove" data-placement="bottom" style="display:none"></i><i class="pull-right icon-edit label-action" data-toggle="tooltip" title="Rename" data-placement="bottom" style="display:none"></i>
+           </li>
+          <li><label class="checkbox">
+          <input type="checkbox" class="label-item"> Music
+           </label></li>
+          <li class="divider"></li>
+          <li id="labels-create"><a href="#">Create new</a></li>
+          <li id="labels-edit"><a href="#">Edit labels</a></li>
+          <li id="labels-doneedit" style="display:none"><a href="#">Done editing</a></li>
+          <li id="labels-apply" style="display:none"><a href="#">Apply</a></li>
+        </ul>
+      </div>
 
       <div class="btn-group pull-right">
         <button class="btn">Remove from list</button>
@@ -56,7 +76,7 @@ body {
           <li><a href="#">Remove from computer</a></li>
         </ul>
       </div>
-            <a href="#" class="btn pull-right"  id="btn_remove">Cancel Download</a>
+            <a href="#" class="btn pull-right"  id="btn_remove">Cancel</a>
 
     </div>
 
@@ -73,7 +93,7 @@ body {
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr style="cursor: pointer">
           <td><input type="checkbox"></td>
           <td>Adagio_for_strings.mp3</td>
           <td>10 MB</td>
@@ -85,7 +105,7 @@ body {
           <td>5m 13s</td>
           <td><span class="label">Music</span></td>
         </tr>
-        <tr>
+        <tr style="cursor: pointer">
           <td><input type="checkbox"></td>
           <td>Adagio_for_strings1.mp3</td>
           <td>10 MB</td>
@@ -96,7 +116,7 @@ body {
           <td>5m 13s</td>
           <td><span class="label">Music</span></td>
         </tr>
-        <tr>
+        <tr style="cursor: pointer">
           <td><input type="checkbox"></td>
           <td>Adagio_for_strings2.mp3</td>
           <td>10 MB</td>
@@ -113,3 +133,10 @@ body {
   </div>
 
 </div>
+
+  <!-- div class="mockup-alert">
+    <div class="alert alert-info">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      mockup note: each button will be enabled/disabled according to the possible actions of each file state
+    </div>
+  </div -->

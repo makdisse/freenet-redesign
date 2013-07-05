@@ -1,4 +1,4 @@
-// Mockups css - No comments, no best practice, total chaos...
+// Mockups css - No comments, no best practices, total chaos...
 
 //Main menus in the navbar
 header li[id|=navbar-item] > a {
@@ -87,3 +87,20 @@ body {
  .no-margin {
  	margin: 0;
  }
+
+
+ .dropdown-menu-form .checkbox {
+ 	margin-left: 10px;
+ }
+
+ .dropdown-menu-form label {
+ 	display: inline-block;
+
+ }
+
+.mockup-alert {
+  position: absolute;
+  bottom: 0;
+  z-index: 1020;
+  width: 80%;
+}

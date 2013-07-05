@@ -16,9 +16,7 @@
 
 //= require_tree .
 /*
-IF YOU ARE READING THIS YOU ARE WRONG!
-DID YOU READ THAT THE NAME OF THIS PAGE WAS 'MOCKUP'?
-THAT'S A PROTOTYPE
+prototype code. No comments, no best practices, total chaos...
 */
 $(document).ready(function() {
 
@@ -62,13 +60,66 @@ $("#enable_buttons").change(function()  {
 //Always toggle simpleModeBtn
 $(".simpleModeBtn").button('toggle');
 
-//Simple and advanced mode
+//Simple and advanced mode - show and hide
 $(".simpleModeBtn").click(function() {
   $(".advanced[data-parent='" + $(this).data("parenttohide") + "']").slideUp();
 })
 $(".advancedModeBtn").click(function() {
   $(".advanced[data-parent='" + $(this).data("parenttohide") + "']").show("slow");
 })
+
+//Workaround to keep the dropdown open when clicking on a input
+$('.dropdown-menu').on('click', function(e){
+        if($(this).hasClass('dropdown-menu-form')){
+            e.stopPropagation();
+        }
+});
+
+//Simulate the interaction in the labels dropdown
+$(".label-item").change(function() {
+  if ($(this).prop("checked") ==  true) {
+    $("#labels-create").hide();
+    $("#labels-edit").hide();
+    $("#labels-apply").show();
+
+  } else if ($(".label-item").prop("checked") ==  false) {
+    //hide apply only if there is no label selected
+    $("#labels-create").show();
+    $("#labels-edit").show();
+    $("#labels-apply").hide();
+  }
+})
+
+  //show label actions if click on 'edit labels'
+  $("#labels-edit").click(function() {
+    $(".dropdown-menu-form input").hide();
+    $("#labels-create").hide();
+    $("#labels-edit").hide();
+    $("#labels-doneedit").show();
+    $(".label-action").show();
+  });
+  $("#labels-doneedit").click(function(){
+    $(".dropdown-menu-form input").show();
+    $("#labels-create").show();
+    $("#labels-edit").show();
+    $("#labels-doneedit").hide();
+    $(".label-action").hide();
+  })
+
+//simulate better usability on file selection
+$("table tr").click(function() {
+  if ($(this).find("input").prop("checked") == true) {
+    $(this).find("input").prop("checked",false);
+  } else {
+    $(this).find("input").prop("checked",true);
+  }
+
+})
+
+
+
+
+
 
 
 
