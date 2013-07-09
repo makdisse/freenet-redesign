@@ -1,0 +1,12 @@
+    <ul class="nav nav-list">
+      <li <%if sel=="downloads" || sel == nil%>class="active"<%end%>><a href="/downloadingfiles"> <i class="icon-arrow-down"></i>Downloads</a></li>
+      <li <%if sel=="uploads"%>class="active"<%end%>><a href="/uploadingfiles?sel=uploads"><i class="icon-arrow-up"></i> Uploads</a></li>
+      <li <%if sel=="seed"%>class="active"<%end%>><a href="#" data-toggle="tooltip" title="Files you are keeping alive on Freenet" data-placement="right" data-delay="700"><i class="icon-refresh"></i> Seeding</a></li>
+      <li class="divider"></li>
+      <li <%if sel=="promoted"%>class="active"<%end%>><a href="#" data-toggle="tooltip" title="Files you added to YOUR search index - The file become EASIER TO FIND" data-placement="right" data-delay="700"><i class="icon-star"></i> Promoted by me</a></li>
+      <li <%if sel=="thumbs"%>class="active"<%end%>><a href="#" data-toggle="tooltip" title="Files you promoted on the UPLOADER search index - The file becomes MORE TRUSTWORTHY" data-placement="right" data-delay="700"><i class="icon-thumbs-up"></i> Thumbs Up </a></li>
+      <li class="divider"></li>
+      <li class="nav-header">labels</li>
+      <li><a href="#"><i class="icon-tags"></i> Books</a></li>
+      <li><a href="#"><i class="icon-tags"></i> Music</a></li>
+    </ul>
