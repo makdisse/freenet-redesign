@@ -9,10 +9,16 @@ Redesignproject::Application.routes.draw do
   match "/notifications" => "redesign#notifications"
   match "/plugins" => "redesign#plugins"
   match "/connectionsfriends" => "redesign#connectionsfriends"
-  match "/addafriend" => "redesign#addafriend"
-  match "/downloadedfiles" => "redesign#downloadedfiles"
+  match "/addfriend" => "redesign#addfriend"
+  match "/addfriend1" => "redesign#addfriend-step1"
+  match "/addfriend2" => "redesign#addfriend-step2"
+  match "/addfriend3" => "redesign#addfriend-step3"
+
+  match "/downloadingfiles" => "redesign#downloadedfiles"
+  match "/uploadingfiles" => "redesign#uploadingfiles"
 
   match "/interfaces" => "redesign#interfacesconfig"
+  match "/seclevels" => "redesign#seclevels"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
