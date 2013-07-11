@@ -19,6 +19,7 @@ Redesignproject::Application.routes.draw do
 
   match "/interfaces" => "redesign#interfacesconfig"
   match "/seclevels" => "redesign#seclevels"
+  match "/phrase" => "redesign#phrase"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
