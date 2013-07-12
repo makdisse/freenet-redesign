@@ -18,6 +18,7 @@ Redesignproject::Application.routes.draw do
   match "/uploadingfiles" => "redesign#uploadingfiles"
 
   match "/uploadfile" => "redesign#uploadfile"
+  match "/uploadfreesite" => "redesign#uploadfreesite"
 
   match "/interfaces" => "redesign#interfacesconfig"
   match "/seclevels" => "redesign#seclevels"
