@@ -12,9 +12,9 @@
 <% if not params[:nm] %>
 <%= render partial: 'redesign/navbar', locals: {menu:  params[:menu], title: params[:title]} %>
 <% end %>
-<section class="container">
+<main class="container">
   <%= yield %>
-</section>
+</main>
 
 
 </body>

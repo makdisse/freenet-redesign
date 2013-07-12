@@ -1,19 +1,117 @@
-TODO: ESTUDAR MELHOR A PAGINA. EMPURRAR O USUARIO PRA DARKNET, OPENNET NAO EH SEGURA. ELE TEM QUE CONVERCER OS AMIGOS A USAREM TB.
+<section>
+	<div class="page-header">
+		<h3>Protection against a stranger attacking you over the Internet</h3>
+	</div>
+	<p class="muted">
+		Do you know personally anyone who already uses Freenet? If you know at least 3 people who already use Freenet, you can enable darknet mode, so Freenet will only connect to your Friends, greatly improving security. However, if you don't know anyone already on Freenet, or if you want maximum performance, you should enable opennet mode, and Freenet will automatically connect to other Freenet nodes run by strangers (as well as your Friends).<br>
+		<strong class="muted">NOTE: Adding people as Friends who you don't know outside of Freenet will not improve security and will reduce performance!</strong>
+	</p>
+	<br>
+	<h4>Choose your security level:</h4>
+
+	<table class="table table-condensed" >
+		<thead>
+			<tr>
+				<td class="text-middle"><h4 class="muted">Connect to</h4></td>
+				<td colspan="2" class="text-middle">
+					<h5 class="text-center">
+						STRANGERS & FRIENDS
+						<br>
+						<span class="muted">OPEN-NET</span>
+						<br>
+						<small><em>I don't know anyone who already uses Freenet: Connect to other Freenet nodes automatically.</em></small>
+					</h5></td>
+					<td colspan="2" class="text-middle">
+						<h5 class="text-center">
+							ONLY FRIENDS	
+							<br>
+							<span class="muted">DARK-NET</span>	
+							<br>
+							<small><em>I know at least 3 people (10+ for good performance) who already use Freenet</em></small>
+						</h5></td>
+
+					</tr>
+				</thead>
+				<tbody>	
+					<tr>
+						<td><h4 class="muted">Security level</h4></td>
+						<td width="20%" class="warning"><h5 class="text-center">LOW</h5></td>
+						<td width="20%" class="info"><h5 class="text-center">NORMAL</h5></td>
+						<td width="20%" class="success"><h5 class="text-center">HIGH</h5></td>
+						<td width="20%" class="inverse"><h5 class="text-center">MAXIMUM</h5></td>
+					</tr>
+					<tr>
+						<td><h4 class="muted">Use case</h4></td>
+						<td><small><em>I do not care about monitoring and want maximum performance.</em></small></td>
+						<td><small><em>I live in a relatively free country, but I would like to make it more difficult for others to monitor my communications.</em></small></td>
+						<td><small><em>I would like to make it much more difficult for others to monitor my communications, or I am worried about ISPs and/or governments trying to block Freenet.</em></small></td>
+						<td><small><em>I intend to access information that could get me arrested, imprisoned, or worse.</em></small></td>
+					</tr>
+					<tr>
+						<td><h4 class="muted">Details</h4></td>
+						<td><small>It may be quite easy for others to discover your identity!</small></td>
+						<td><small>Freenet will be reasonably careful to protect your anonymity, at some performance cost. You should add friends running Freenet and upgrade to HIGH when you are able.</small></td>
+						<td><small>Only connecting to Friends massively improves security, but Freenet will be slow unless you add at least 5-10 friends.</small></td>
+						<td><small>Freenet will be significantly slower than in HIGH, as well as only connecting to Friends. Your real identity should be relatively safe provided you only connect to people you trust.</small></td>
+					</tr>
+					<tr data-toggle="buttons-radio">
+						<td></td>
+						<td class="text-center"><button class="btn btn-large btn-block">Use this</button></td>
+						<td class="text-center"><button class="btn btn-large btn-block">Use this</button></td>
+						<td class="text-center"><button class="btn btn-large btn-block btn-toggled">Use this</button></td>
+						<td class="text-center"><button class="btn btn-large btn-block">Use this</button></td>
+					</tr>
+				</tbody>
+			</table>
+
+			
+		</section>
 
 
-<legend>
-<h3>Protection against a stranger attacking you over the Internet</h3>
-</legend>
-<p class="muted">
-Do you know personally anyone who already uses Freenet? If you know at least 3 people who already use Freenet, you can enable darknet mode, so Freenet will only connect to your Friends, greatly improving security. However, if you don't know anyone already on Freenet, or if you want maximum performance, you should enable opennet mode, and Freenet will automatically connect to other Freenet nodes run by strangers (as well as your Friends).
-</p>
 
-<h4>Choose your security level:</h4>
+		<section>
+			<div class="page-header">
+				<h3>Protection of your downloads, uploads and Freenet browsing cache</h3>
+			</div>
+			<p class="muted">
+				How concerned are you about people stealing or seizing your computer?<br>
+				We strongly recommend you encrypt your hard disk using e.g. Truecrypt. This will provide the best protection, especially if you use third party apps and plugins such as Sone and FMS, but may take some time to set up. Otherwise, you can set a password for your downloads, uploads, and cache of recently visited Freenet websites. <br><br>
 
-<h5>I don't know anyone who already uses Freenet (Opennet mode)</h5>
-<small class="muted">Connect to other Freenet nodes automatically (connect to strangers and friends).</small>
+				Also, you should encrypt your swapfile if possible (this is a temporary file used by Windows to provide extra space if it runs out of memory). This may be easier to set up than full disk encryption. On some versions of Windows you can encrypt your swapfile with the command "fsutil behavior set encryptpagingfile 1".
+			</p>
+			<br>
+			<h4>Choose your security level:</h4>
 
-<label class="radio">
-  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-  <strong>LOW</strong> - I do not care about monitoring and want maximum performance.
-</label>
+			<table class="table table-condensed" >
+				<tbody>	
+					<tr>
+						<td><h4 class="muted">Security level</h4></td>
+						<td width="20%" class="warning"><h5 class="text-center">NONE</h5></td>
+						<td width="20%" class="info"><h5 class="text-center">LOW</h5></td>
+						<td width="20%" class="success"><h5 class="text-center">HIGH</h5></td>
+						<td width="20%" class="inverse"><h5 class="text-center">MAXIMUM</h5></td>
+					</tr>
+					<tr>
+						<td><h4 class="muted">Use case</h4></td>
+						<td><small><em>Don't encrypt anything.</em></small></td>
+						<td><small><em>Protect the downloads, uploads, and Freenet browsing cache, with a persistent encryption key so they can be wiped quickly.</em></small></td>
+						<td><small><em>Protect the downloads, uploads, and Freenet browsing cache with a password.</em></small></td>
+						<td><small><em>Use a temporary encryption key, so that downloads, uploads and Freenet browsing cache are wiped on restarting Freenet.</em></small></td>
+					</tr>
+					<tr>
+						<td><h4 class="muted">Details</h4></td>
+						<td><small>Choose this option if you are using some form of whole disk encryption. Warning: Freenet will not decrypt your downloads/uploads database (node.db4o) until you restart Freenet. Until then Freenet will continue to use the encrypted node.db4o.crypt, so it will be slightly slower.</small></td>
+						<td><small>You can quickly wipe this data by using the panic button or securely deleting the file master.keys. We recommend you "Fetch" big files rather than "Downloading" them, so that they are encrypted and can be viewed through the downloads page. However if your computer is seized, unless you have been able to use the Panic button, they will be able to see what you have been doing on Freenet.</small></td>
+						<td><small>You will have to enter the password to access your download queue (and the cache of recently visited sites). You can also use the panic button. We recommend you "Fetch" big files rather than "Downloading" them, so that they are encrypted and can be viewed through the downloads page. If your computer is seized they will need the password. <br><a href="#" data-type="text" data-pk="1" data-original-title="Set master password" title="" class="friend-note editable editable-click editable-open">Set master password</a></small></td>
+						<td><small>Freenet will keep the encryption keys in RAM only, and will never store the keys to disk. All downloads and uploads will persist only until restart, and Freenet will refuse to write files to disk. You should take care to avoid saving content from Freenet to disk accidentally. Warning: Freenet will delete your download/upload queue on the next restart if you select this security level!</small></td>
+					</tr>
+					<tr data-toggle="buttons-radio">
+						<td></td>
+						<td class="text-center"><button class="btn btn-large btn-block">Use this</button></td>
+						<td class="text-center"><button class="btn btn-large btn-block">Use this</button></td>
+						<td class="text-center"><button class="btn btn-large btn-block btn-toggled">Use this</button></td>
+						<td class="text-center"><button class="btn btn-large btn-block">Use this</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>

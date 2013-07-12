@@ -109,3 +109,33 @@ body {
 .noborder {
 	border: none;
 }
+
+//add backcolor to columns
+.table tbody td.success {
+  background-color: #dff0d8;
+}
+
+.table tbody td.error {
+  background-color: #f2dede;
+}
+
+.table tbody td.warning {
+  background-color: #fcf8e3;
+}
+
+.table tbody td.info {
+  background-color: #d9edf7;
+}
+
+.table tbody td.inverse {
+  background-color: #363636;
+  color: white;
+}
+
+.text-middle {
+	vertical-align: middle !important;
+}
+
+section {
+padding-top: 30px;
+}

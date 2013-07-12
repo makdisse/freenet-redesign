@@ -116,7 +116,8 @@ $("table tr").click(function() {
 
 })
 
-
+//Auto toggle selected btns
+$(".btn-toggled").button('toggle');
 
 
 
