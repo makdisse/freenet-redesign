@@ -60,6 +60,10 @@ $("#enable_buttons").change(function()  {
 //Always toggle simpleModeBtn
 $(".simpleModeBtn").button('toggle');
 
+//Be sure that all advanced itens are hidden
+//Used to fix the problem with input boxes
+$(".advanced").hide();
+
 //Simple and advanced mode - show and hide
 $(".simpleModeBtn").click(function() {
   $(".advanced[data-parent='" + $(this).data("parenttohide") + "']").slideUp();

@@ -14,8 +14,10 @@ Redesignproject::Application.routes.draw do
   match "/addfriend2" => "redesign#addfriend-step2"
   match "/addfriend3" => "redesign#addfriend-step3"
 
-  match "/downloadingfiles" => "redesign#downloadedfiles"
+  match "/downloadedfiles" => "redesign#downloadedfiles"
   match "/uploadingfiles" => "redesign#uploadingfiles"
+
+  match "/uploadfile" => "redesign#uploadfile"
 
   match "/interfaces" => "redesign#interfacesconfig"
   match "/seclevels" => "redesign#seclevels"

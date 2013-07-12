@@ -1,5 +1,5 @@
     <ul class="nav nav-list">
-      <li <%if sel=="downloads" || sel == nil%>class="active"<%end%>><a href="/downloadingfiles"> <i class="icon-arrow-down"></i>Downloads</a></li>
+      <li <%if sel=="downloads" || sel == nil%>class="active"<%end%>><a href="/downloadedfiles?sel=downloads"> <i class="icon-arrow-down"></i>Downloads</a></li>
       <li <%if sel=="uploads"%>class="active"<%end%>><a href="/uploadingfiles?sel=uploads"><i class="icon-arrow-up"></i> Uploads</a></li>
       <li <%if sel=="seed"%>class="active"<%end%>><a href="#" data-toggle="tooltip" title="Files you are keeping alive on Freenet" data-placement="right" data-delay="700"><i class="icon-refresh"></i> Seeding</a></li>
       <li class="divider"></li>
