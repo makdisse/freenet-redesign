@@ -1,137 +1,138 @@
 <section>
-<div class="page-header">
-	<h3>Console interface
+	<div class="page-header">
 		<div class="btn-group pull-right" data-toggle="buttons-radio">
 			<button type="button" class="btn btn-mini simpleModeBtn" data-parenttohide="console">Basic</button>
 			<button type="button" class="btn btn-mini advancedModeBtn" data-parenttohide="console">Advanced</button>
 		</div>
-	</h3>
-</div>
-<div class="row">
-	<div class="span8">
-		<strong>
-			IP address to bind to
-		</strong>
-		<p class="muted">
-			IP address to bind to
-		</p>
+		<h3>Console interface</h3>
+
+		
 	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<input type="text" class="span4" value="127.0.0.1,0:0:0:0:0:0:0:1">
+	<div class="row">
+		<div class="span8">
+			<strong>
+				IP address to bind to
+			</strong>
+			<p class="muted">
+				IP address to bind to
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="127.0.0.1,0:0:0:0:0:0:0:1">
+			</div>
 		</div>
 	</div>
-</div>
-<hr>
+	<hr>
 
-<div class="row advanced" data-parent="console">
-	<div class="span8">
+	<div class="row advanced" data-parent="console">
+		<div class="span8">
 
-		<strong>
-			<abbr title="Default: false [console.enabled]">Enable TMCI?</abbr>
-		</strong>
-		<p class="muted">
-			Enable the Text Mode Client Interface
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<label class="radio">
-				<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-				Yes
-			</label>
-			<label class="radio">
-				<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-				No
-			</label>
+			<strong>
+				<abbr title="Default: false [console.enabled]">Enable TMCI?</abbr>
+			</strong>
+			<p class="muted">
+				Enable the Text Mode Client Interface
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
 		</div>
 	</div>
-</div>
-<hr class="advanced" data-parent="console">
+	<hr class="advanced" data-parent="console">
 
-<div class="row advanced" data-parent="console">
-	<div class="span8">
-		<strong>
-			Enable on stdout/stdin?
-		</strong>
-		<p class="muted">
-			Enable text mode client interface on standard input/output? (.enabled refers to providing a telnet-style server, this runs it over a socket)
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1" checked>
-				Yes
-			</label>
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
-				No
-			</label>
+	<div class="row advanced" data-parent="console">
+		<div class="span8">
+			<strong>
+				Enable on stdout/stdin?
+			</strong>
+			<p class="muted">
+				Enable text mode client interface on standard input/output? (.enabled refers to providing a telnet-style server, this runs it over a socket)
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="" id="" value="option2">
+					No
+				</label>
+			</div>
 		</div>
 	</div>
-</div>
-<hr class="advanced" data-parent="console">
+	<hr class="advanced" data-parent="console">
 
 
-<div class="row advanced" data-parent="console">
-	<div class="span8">
-		<strong>
-			Enable SSL?
-		</strong>
-		<p class="muted">
-			Enable SSL on the TMCI server. You will need the 'Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files' for it to work.
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<label class="radio">
-				<input type="radio" name="optionsRadios1" id="optionsRadios1" value="option1" checked>
-				Yes
-			</label>
-			<label class="radio">
-				<input type="radio" name="optionsRadios1" id="optionsRadios2" value="option2">
-				No
-			</label>
+	<div class="row advanced" data-parent="console">
+		<div class="span8">
+			<strong>
+				Enable SSL?
+			</strong>
+			<p class="muted">
+				Enable SSL on the TMCI server. You will need the 'Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files' for it to work.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="" id="" value="option2">
+					No
+				</label>
+			</div>
 		</div>
 	</div>
-</div>
-<hr class="advanced" data-parent="console">
+	<hr class="advanced" data-parent="console">
 
 
-<div class="row advanced" data-parent="console">
-	<div class="span8">
-		<strong>
-			Allowed hosts
-		</strong>
-		<p class="muted">
-			Hostnames or IP addresses that are allowed to connect to the TMCI. May be a comma-separated list of hostnames, single IPs and even CIDR masked IPs like 192.168.0.0/24
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<input type="text" class="span4" value="127.0.0.1,0:0:0:0:0:0:0:1">
+	<div class="row advanced" data-parent="console">
+		<div class="span8">
+			<strong>
+				Allowed hosts
+			</strong>
+			<p class="muted">
+				Hostnames or IP addresses that are allowed to connect to the TMCI. May be a comma-separated list of hostnames, single IPs and even CIDR masked IPs like 192.168.0.0/24
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="127.0.0.1,0:0:0:0:0:0:0:1">
+			</div>
 		</div>
 	</div>
-</div>
-<hr class="advanced" data-parent="console">
+	<hr class="advanced" data-parent="console">
 
 
-<div class="row advanced" data-parent="console">
-	<div class="span6">
-		<strong>
-			TMCI port
-		</strong>
-		<p class="muted">
-			The TCP port the TMCI server should listen on
-		</p>
-	</div>
-	<div class="span6">
-		<div class="pull-right">
-			<input type="text" class="span2" value="2323">
+	<div class="row advanced" data-parent="console">
+		<div class="span6">
+			<strong>
+				TMCI port
+			</strong>
+			<p class="muted">
+				The TCP port the TMCI server should listen on
+			</p>
+		</div>
+		<div class="span6">
+			<div class="pull-right">
+				<input type="text" class="span2" value="2323">
+			</div>
 		</div>
 	</div>
-</div>
 </section>
 
 
@@ -147,634 +148,634 @@
 
 
 <section>
-<div class="page-header">
-	<h3>Web interface
-		<div class="btn-group pull-right" data-toggle="buttons-radio">
-			<button type="button" class="btn btn-mini simpleModeBtn" data-parenttohide="web">Basic</button>
-			<button type="button" class="btn btn-mini advancedModeBtn" data-parenttohide="web">Advanced</button>
-		</div>
-	</h3>
-</div>
+	<div class="page-header">
+		
+			<div class="btn-group pull-right" data-toggle="buttons-radio">
+				<button type="button" class="btn btn-mini simpleModeBtn" data-parenttohide="web">Basic</button>
+				<button type="button" class="btn btn-mini advancedModeBtn" data-parenttohide="web">Advanced</button>
+			</div>
+		<h3>Web interface</h3>
+	</div>
 
-<div class="row">
-	<div class="span8">
-		<strong>
-			Enable the web interface (FProxy)?
-		</strong>
-		<p class="muted">
-			Whether to enable the web interface and related HTTP services. The web interface is the user interface to Freenet which you can access with your browser.
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1" checked>
-				Yes
-			</label>
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
-				No
-			</label>
+	<div class="row">
+		<div class="span8">
+			<strong>
+				Enable the web interface (FProxy)?
+			</strong>
+			<p class="muted">
+				Whether to enable the web interface and related HTTP services. The web interface is the user interface to Freenet which you can access with your browser.
+			</p>
 		</div>
-	</div>
-</div>
-
-<hr>
-<div class="row">
-	<div class="span8">
-		<strong>
-			Enable SSL?
-		</strong>
-		<p class="muted">
-			Enable SSL on the web interface. You will need the 'Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files' for it to work.
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1" checked>
-				Yes
-			</label>
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
-				No
-			</label>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="" id="" value="option2">
+					No
+				</label>
+			</div>
 		</div>
 	</div>
-</div>
 
-<hr>
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			Web interface port
-		</strong>
-		<p class="muted">
-			The TCP port the web interface should listen on
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<input type="text" class="span4" value="8888">
+	<hr>
+	<div class="row">
+		<div class="span8">
+			<strong>
+				Enable SSL?
+			</strong>
+			<p class="muted">
+				Enable SSL on the web interface. You will need the 'Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files' for it to work.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="" id="" value="option2">
+					No
+				</label>
+			</div>
 		</div>
 	</div>
-</div>
 
-<hr class="advanced" data-parent="web">
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			IP address to bind to
-		</strong>
-		<p class="muted">
-			IP address to bind to
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<input type="text" class="span4" value="127.0.0.1,0:0:0:0:0:0:0:1">
+	<hr>
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				Web interface port
+			</strong>
+			<p class="muted">
+				The TCP port the web interface should listen on
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="8888">
+			</div>
 		</div>
 	</div>
-</div>
 
-<hr class="advanced" data-parent="web">
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			Web interface theme
-		</strong>
-		<p class="muted">
-			Select a theme for the Freenet web interface
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<select>
-				<option>Default</option>
-				<option>None</option>
-			</select>
+	<hr class="advanced" data-parent="web">
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				IP address to bind to
+			</strong>
+			<p class="muted">
+				IP address to bind to
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="127.0.0.1,0:0:0:0:0:0:0:1">
+			</div>
 		</div>
 	</div>
-</div>
 
-<hr class="advanced" data-parent="web">
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			Override the CSS with a custom one
-		</strong>
-		<p class="muted">
-			That setting allows you to override Freenet's CSS with a custom file. WARNING: CSSes can be dangerous and won't be filtered! use at your own risks. We will allow access to the CSS file from /static/override/ (plus the filename within the folder the file is in), so you can refer to images, @include other CSS files etc. If you make a nice theme, consider mailing devl@freenetproject to get it included in the main distribution ;)
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<input type="text" class="span4" value="">
+	<hr class="advanced" data-parent="web">
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				Web interface theme
+			</strong>
+			<p class="muted">
+				Select a theme for the Freenet web interface
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<select>
+					<option>Default</option>
+					<option>None</option>
+				</select>
+			</div>
 		</div>
 	</div>
-</div>
 
-
-<hr class="advanced" data-parent="web">
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			Send all themes to browser?
-		</strong>
-		<p class="muted">
-			If set true, all available themes will be loaded by the browser when viewing the FProxy UI pages, and switchable using your browser's page style selection options.
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1" checked>
-				Yes
-			</label>
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
-				No
-			</label>
+	<hr class="advanced" data-parent="web">
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				Override the CSS with a custom one
+			</strong>
+			<p class="muted">
+				That setting allows you to override Freenet's CSS with a custom file. WARNING: CSSes can be dangerous and won't be filtered! use at your own risks. We will allow access to the CSS file from /static/override/ (plus the filename within the folder the file is in), so you can refer to images, @include other CSS files etc. If you make a nice theme, consider mailing devl@freenetproject to get it included in the main distribution ;)
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="">
+			</div>
 		</div>
 	</div>
-</div>
 
-<hr class="advanced" data-parent="web">
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			Enable Advanced Mode?
-		</strong>
-		<p class="muted">
-			Enables display of advanced options and information in the web interface by default. This setting should be turned to false in most cases.
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1" checked>
-				Yes
-			</label>
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
-				No
-			</label>
+
+	<hr class="advanced" data-parent="web">
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				Send all themes to browser?
+			</strong>
+			<p class="muted">
+				If set true, all available themes will be loaded by the browser when viewing the FProxy UI pages, and switchable using your browser's page style selection options.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="" id="" value="option2">
+					No
+				</label>
+			</div>
 		</div>
 	</div>
-</div>
 
-<hr class="advanced" data-parent="web">
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			Enable extended HTTP method handling?
-		</strong>
-		<p class="muted">
-			Enable this to allow other HTTP methods then GET and POST to be handled. Required for WebDAV and other HTTP extensions.
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1" checked>
-				Yes
-			</label>
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
-				No
-			</label>
+	<hr class="advanced" data-parent="web">
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				Enable Advanced Mode?
+			</strong>
+			<p class="muted">
+				Enables display of advanced options and information in the web interface by default. This setting should be turned to false in most cases.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="" id="" value="option2">
+					No
+				</label>
+			</div>
 		</div>
 	</div>
-</div>
 
-<hr class="advanced" data-parent="web">
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			Enable web interface use of Javascript?
-		</strong>
-		<p class="muted">
-			Whether or not the web interface should use Javascript "helpers". This setting should be turned to false in most cases. Note that freesites may not use javascript even if this is enabled.
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1" checked>
-				Yes
-			</label>
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
-				No
-			</label>
+	<hr class="advanced" data-parent="web">
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				Enable extended HTTP method handling?
+			</strong>
+			<p class="muted">
+				Enable this to allow other HTTP methods then GET and POST to be handled. Required for WebDAV and other HTTP extensions.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="" id="" value="option2">
+					No
+				</label>
+			</div>
 		</div>
 	</div>
-</div>
 
-
-<hr class="advanced" data-parent="web">
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			Enable web interface use of web pushing? (experimental)
-		</strong>
-		<p class="muted">
-			Whether or not the web interface should use javascript web pushing to update displayed data without reloading. It requires that javascript is turned on. It is experimental and use at your own risk.
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1" checked>
-				Yes
-			</label>
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
-				No
-			</label>
+	<hr class="advanced" data-parent="web">
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				Enable web interface use of Javascript?
+			</strong>
+			<p class="muted">
+				Whether or not the web interface should use Javascript "helpers". This setting should be turned to false in most cases. Note that freesites may not use javascript even if this is enabled.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="" id="" value="option2">
+					No
+				</label>
+			</div>
 		</div>
 	</div>
-</div>
 
 
-<hr class="advanced" data-parent="web">
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			Have you completed the first-time configuration wizard yet?
-		</strong>
-		<p class="muted">
-			Have you completed the first-time configuration wizard yet? If not, the web interface will redirect all your requests to it.
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1" checked>
-				Yes
-			</label>
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
-				No
-			</label>
+	<hr class="advanced" data-parent="web">
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				Enable web interface use of web pushing? (experimental)
+			</strong>
+			<p class="muted">
+				Whether or not the web interface should use javascript web pushing to update displayed data without reloading. It requires that javascript is turned on. It is experimental and use at your own risk.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="" id="" value="option2">
+					No
+				</label>
+			</div>
 		</div>
 	</div>
-</div>
 
 
-<hr class="advanced" data-parent="web">
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			Disable progress page when loading pages?
-		</strong>
-		<p class="muted">
-			Set to not show the progress page when loading a page. WARNING: Most browsers will only use a small number of connections to Freenet, therefore turning off the progress page will reduce performance considerably.
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1" checked>
-				Yes
-			</label>
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
-				No
-			</label>
+	<hr class="advanced" data-parent="web">
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				Have you completed the first-time configuration wizard yet?
+			</strong>
+			<p class="muted">
+				Have you completed the first-time configuration wizard yet? If not, the web interface will redirect all your requests to it.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="" id="" value="option2">
+					No
+				</label>
+			</div>
 		</div>
 	</div>
-</div>
 
 
-<hr class="advanced" data-parent="web">
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			Show the panic button?
-		</strong>
-		<p class="muted">
-			Shows a 'panic button' on the queue page that will remove all downloads and uploads, wipe the cache of recently visited freesites, and clear the master keys file.
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1" checked>
-				Yes
-			</label>
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
-				No
-			</label>
+	<hr class="advanced" data-parent="web">
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				Disable progress page when loading pages?
+			</strong>
+			<p class="muted">
+				Set to not show the progress page when loading a page. WARNING: Most browsers will only use a small number of connections to Freenet, therefore turning off the progress page will reduce performance considerably.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="" id="" value="option2">
+					No
+				</label>
+			</div>
 		</div>
 	</div>
-</div>
 
 
-<hr class="advanced" data-parent="web">
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			No confirmation on panic button?
-		</strong>
-		<p class="muted">
-			If true, the panic button will not ask for confirmation but will act immediately.
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1" checked>
-				Yes
-			</label>
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
-				No
-			</label>
+	<hr class="advanced" data-parent="web">
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				Show the panic button?
+			</strong>
+			<p class="muted">
+				Shows a 'panic button' on the queue page that will remove all downloads and uploads, wipe the cache of recently visited freesites, and clear the master keys file.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="" id="" value="option2">
+					No
+				</label>
+			</div>
 		</div>
 	</div>
-</div>
 
 
-<hr class="advanced" data-parent="web">
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			Public gateway mode? (Only applies to allowed but non-full-access connections)
-		</strong>
-		<p class="muted">
-			Should we enable public gateway mode? For IPs which are allowed to access Freenet, but are not allowed full access, this option disables the download queue and anything else that might conceivably be abused to attack the Freenet node, while still allowing browsing freesites. They will also only see the default bookmarks, not your bookmarks. IP addresses with full access will be allowed to configure the node. You will still need to configure allowed addresses and bind address to get a true public gateway; you should do this after restarting.
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1" checked>
-				Yes
-			</label>
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
-				No
-			</label>
+	<hr class="advanced" data-parent="web">
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				No confirmation on panic button?
+			</strong>
+			<p class="muted">
+				If true, the panic button will not ask for confirmation but will act immediately.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="" id="" value="option2">
+					No
+				</label>
+			</div>
 		</div>
 	</div>
-</div>
 
-<hr class="advanced" data-parent="web">
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			Enable persistent HTTP connections? (Read detailed description)
-		</strong>
-		<p class="muted">
-			Don't enable this unless your browser is configured to use lots of connections even if they are persistent.
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1" checked>
-				Yes
-			</label>
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
-				No
-			</label>
+
+	<hr class="advanced" data-parent="web">
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				Public gateway mode? (Only applies to allowed but non-full-access connections)
+			</strong>
+			<p class="muted">
+				Should we enable public gateway mode? For IPs which are allowed to access Freenet, but are not allowed full access, this option disables the download queue and anything else that might conceivably be abused to attack the Freenet node, while still allowing browsing freesites. They will also only see the default bookmarks, not your bookmarks. IP addresses with full access will be allowed to configure the node. You will still need to configure allowed addresses and bind address to get a true public gateway; you should do this after restarting.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="" id="" value="option2">
+					No
+				</label>
+			</div>
 		</div>
 	</div>
-</div>
 
-
-
-<hr class="advanced" data-parent="web">
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			Enable prefetching of inline images?
-		</strong>
-		<p class="muted">
-			This may help if your browser only uses a small number of connections to talk to Freenet. On the other hand it may not.
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1" checked>
-				Yes
-			</label>
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
-				No
-			</label>
+	<hr class="advanced" data-parent="web">
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				Enable persistent HTTP connections? (Read detailed description)
+			</strong>
+			<p class="muted">
+				Don't enable this unless your browser is configured to use lots of connections even if they are persistent.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="" id="" value="option2">
+					No
+				</label>
+			</div>
 		</div>
 	</div>
-</div>
 
 
-<hr class="advanced" data-parent="web">
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			Enable activelinks?
-		</strong>
-		<p class="muted">
-			Should the Browse Freenet page show icons for each bookmarked page? The page will load faster if it doesn't show the icons...
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1" checked>
-				Yes
-			</label>
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
-				No
-			</label>
+
+	<hr class="advanced" data-parent="web">
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				Enable prefetching of inline images?
+			</strong>
+			<p class="muted">
+				This may help if your browser only uses a small number of connections to talk to Freenet. On the other hand it may not.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="" id="" value="option2">
+					No
+				</label>
+			</div>
 		</div>
 	</div>
-</div>
 
 
-<hr class="advanced" data-parent="web">
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			Exclude robots via robots.txt?
-		</strong>
-		<p class="muted">
-			Whether to serve a /robots.txt telling google, spiders, wget, etc to go away
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1" checked>
-				Yes
-			</label>
-			<label class="radio">
-				<input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
-				No
-			</label>
+	<hr class="advanced" data-parent="web">
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				Enable activelinks?
+			</strong>
+			<p class="muted">
+				Should the Browse Freenet page show icons for each bookmarked page? The page will load faster if it doesn't show the icons...
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="" id="" value="option2">
+					No
+				</label>
+			</div>
 		</div>
 	</div>
-</div>
 
-<hr class="advanced" data-parent="web">
 
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			Maximum size for transparent pass-through in the web interface where we cannot show progress (e.g. images)
-		</strong>
-		<p class="muted">
-			Maximum size for images etc on the Freenet web interface. If an image, style sheet etc is larger than this threshold, it will fail, and if possible Freenet will show an error. This is to prevent your browser from waiting forever for a page full of enormous images.
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<input type="text" class="span4" value="2306867">
+	<hr class="advanced" data-parent="web">
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				Exclude robots via robots.txt?
+			</strong>
+			<p class="muted">
+				Whether to serve a /robots.txt telling google, spiders, wget, etc to go away
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="" id="" value="option2">
+					No
+				</label>
+			</div>
 		</div>
 	</div>
-</div>
-<hr class="advanced" data-parent="web">
 
+	<hr class="advanced" data-parent="web">
 
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			Maximum size for transparent pass-through in the web interface where we can show a progress bar (e.g. HTML pages)
-		</strong>
-		<p class="muted">
-			Maximum size of an HTML page or file, where Freenet can show a progress bar. If the file is larger than this it will ask you whether you want to download it in the background, e.g. to your downloads folder.
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<input type="text" class="span4" value="5632KiB">
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				Maximum size for transparent pass-through in the web interface where we cannot show progress (e.g. images)
+			</strong>
+			<p class="muted">
+				Maximum size for images etc on the Freenet web interface. If an image, style sheet etc is larger than this threshold, it will fail, and if possible Freenet will show an error. This is to prevent your browser from waiting forever for a page full of enormous images.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="2306867">
+			</div>
 		</div>
 	</div>
-</div>
-<hr class="advanced" data-parent="web">
+	<hr class="advanced" data-parent="web">
 
 
-
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			Hostnames or IP addresses that are allowed to connect to the web interface.
-		</strong>
-		<p class="muted">
-			May be a comma-separated list of single IPs and CIDR masked IPs like 192.168.0.0/24. Note that these can access the hard disk within the limits set by other config options. They can also see your bookmarks.
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<input type="text" class="span4" value="127.0.0.1,0:0:0:0:0:0:0:1">
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				Maximum size for transparent pass-through in the web interface where we can show a progress bar (e.g. HTML pages)
+			</strong>
+			<p class="muted">
+				Maximum size of an HTML page or file, where Freenet can show a progress bar. If the file is larger than this it will ask you whether you want to download it in the background, e.g. to your downloads folder.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="5632KiB">
+			</div>
 		</div>
 	</div>
-</div>
-<hr class="advanced" data-parent="web">
+	<hr class="advanced" data-parent="web">
 
 
 
-
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			Hosts having a full access to the Freenet web interface (read warning)
-		</strong>
-		<p class="muted">
-			Hosts granted full access (i.e. change config settings, restart, etc) to your Freenet node. WARNING: Be very careful who you give full web interface access to!
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<input type="text" class="span4" value="127.0.0.1,0:0:0:0:0:0:0:1">
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				Hostnames or IP addresses that are allowed to connect to the web interface.
+			</strong>
+			<p class="muted">
+				May be a comma-separated list of single IPs and CIDR masked IPs like 192.168.0.0/24. Note that these can access the hard disk within the limits set by other config options. They can also see your bookmarks.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="127.0.0.1,0:0:0:0:0:0:0:1">
+			</div>
 		</div>
 	</div>
-</div>
-<hr class="advanced" data-parent="web">
+	<hr class="advanced" data-parent="web">
 
 
 
 
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			Maximum fproxy connections
-		</strong>
-		<p class="muted">
-			Maximum number of fproxy connections we will serve at once. Each uses a thread.
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<input type="text" class="span4" value="100">
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				Hosts having a full access to the Freenet web interface (read warning)
+			</strong>
+			<p class="muted">
+				Hosts granted full access (i.e. change config settings, restart, etc) to your Freenet node. WARNING: Be very careful who you give full web interface access to!
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="127.0.0.1,0:0:0:0:0:0:0:1">
+			</div>
 		</div>
 	</div>
-</div>
-<hr class="advanced" data-parent="web">
+	<hr class="advanced" data-parent="web">
 
 
 
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			Allow freesites to refresh themselves periodically: Minimum interval in seconds or -1 for disabled.
-		</strong>
-		<p class="muted">
-			Allow freesites to refresh themselves periodically with HTML meta refresh: Minimum interval in seconds or -1 for disabled.
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<input type="text" class="span4" value="1">
+
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				Maximum fproxy connections
+			</strong>
+			<p class="muted">
+				Maximum number of fproxy connections we will serve at once. Each uses a thread.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="100">
+			</div>
 		</div>
 	</div>
-</div>
-<hr class="advanced" data-parent="web">
+	<hr class="advanced" data-parent="web">
 
 
 
-
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			Allow freesites to redirect to other freesites after a delay: Minimum interval in seconds or -1 for disabled.
-		</strong>
-		<p class="muted">
-			Allow freesites to redirect to other freesites after a delay with HTML meta refresh: Minimum interval in seconds or -1 for disabled.
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<input type="text" class="span4" value="1">
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				Allow freesites to refresh themselves periodically: Minimum interval in seconds or -1 for disabled.
+			</strong>
+			<p class="muted">
+				Allow freesites to refresh themselves periodically with HTML meta refresh: Minimum interval in seconds or -1 for disabled.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="1">
+			</div>
 		</div>
 	</div>
-</div>
-<hr class="advanced" data-parent="web">
+	<hr class="advanced" data-parent="web">
 
 
 
-<div class="row advanced" data-parent="web">
-	<div class="span8">
-		<strong>
-			What should fproxy do when a downloaded file matches the key being fetched, but it has already been filtered?
-		</strong>
-		<p class="muted">
-			What should fproxy do when a downloaded file matches the key being fetched, but it has already been filtered? RE_FILTER = filter it anyway, since the filter may have been improved since the original download, ACCEPT_OLD = accept the old data (maximum performance), RE_FETCH = ignore the old data.
-		</p>
-	</div>
-	<div class="span4">
-		<div class="pull-right">
-			<select>
-				<option>accept old data</option>
-			</select>
+
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				Allow freesites to redirect to other freesites after a delay: Minimum interval in seconds or -1 for disabled.
+			</strong>
+			<p class="muted">
+				Allow freesites to redirect to other freesites after a delay with HTML meta refresh: Minimum interval in seconds or -1 for disabled.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="1">
+			</div>
 		</div>
 	</div>
-</div>
+	<hr class="advanced" data-parent="web">
+
+
+
+	<div class="row advanced" data-parent="web">
+		<div class="span8">
+			<strong>
+				What should fproxy do when a downloaded file matches the key being fetched, but it has already been filtered?
+			</strong>
+			<p class="muted">
+				What should fproxy do when a downloaded file matches the key being fetched, but it has already been filtered? RE_FILTER = filter it anyway, since the filter may have been improved since the original download, ACCEPT_OLD = accept the old data (maximum performance), RE_FETCH = ignore the old data.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<select>
+					<option>accept old data</option>
+				</select>
+			</div>
+		</div>
+	</div>
 </section>
 
 
@@ -792,30 +793,30 @@
 
 
 <section>
-<div class="page-header">
-	<h3>Web interface aliases
-		<div class="btn-group pull-right" data-toggle="buttons-radio">
-			<button type="button" class="btn btn-mini simpleModeBtn" data-parenttohide="aliases">Basic</button>
-			<button type="button" class="btn btn-mini advancedModeBtn" data-parenttohide="aliases">Advanced</button>
-		</div>
-	</h3>
-</div>
-<div class="row advanced" data-parent="aliases">
-	<div class="span6">
-		<strong>
-			Symlinks in ToadletServer
-		</strong>
-		<p class="muted">
-			A list of "alias#target"'s that forms a bunch of symlinks
-		</p>
+	<div class="page-header">
+		
+			<div class="btn-group pull-right" data-toggle="buttons-radio">
+				<button type="button" class="btn btn-mini simpleModeBtn" data-parenttohide="aliases">Basic</button>
+				<button type="button" class="btn btn-mini advancedModeBtn" data-parenttohide="aliases">Advanced</button>
+			</div>
+		<h3>Web interface aliases</h3>
 	</div>
-	<div class="span6">
-		<div class="pull-right">
-			<input type="text" class="span6" value="/sl/gallery/%23/plugins/plugins.TestGallery/;/sl/search/%23/plugins/plugins.Librarian/">
+	<div class="row advanced" data-parent="aliases">
+		<div class="span6">
+			<strong>
+				Symlinks in ToadletServer
+			</strong>
+			<p class="muted">
+				A list of "alias#target"'s that forms a bunch of symlinks
+			</p>
+		</div>
+		<div class="span6">
+			<div class="pull-right">
+				<input type="text" class="span6" value="/sl/gallery/%23/plugins/plugins.TestGallery/;/sl/search/%23/plugins/plugins.Librarian/">
+			</div>
 		</div>
 	</div>
-</div>
-<hr class="advanced" data-parent="aliases">
+	<hr class="advanced" data-parent="aliases">
 </section>
 
 
