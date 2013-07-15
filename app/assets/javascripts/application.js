@@ -27,6 +27,10 @@ $(document).ready(function() {
   //Setup all tooltip itens
   $("[data-toggle='tooltip']").tooltip({
     container: 'body',
+  })
+  //Hide the tooltip if the item is opened
+  .click(function() {
+    $(this).tooltip('hide');
   });
 
   //Setup all popover components

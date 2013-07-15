@@ -51,6 +51,10 @@ header li[id|=navbar-item] > a {
 	font-size: 0.8em;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 abbr[title],
 abbr[data-original-title] {
   border: none;
@@ -85,7 +89,7 @@ legend h3 {
 
 //Remove margins (used on download progress bars)
  .no-margin {
- 	margin: 0;
+ 	margin: 0 !important;
  }
 
 
@@ -138,4 +142,10 @@ legend h3 {
 
 section {
 padding-top: 30px;
+}
+
+//Used to content dropdown-menus
+div.dropdown-menu {
+  width:300px; 
+  padding: 10px;
 }
