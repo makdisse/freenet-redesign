@@ -1,0 +1,164 @@
+
+<div class="row">
+  <% if request.fullpath == "/welcome?messages" %>
+  <div class="span4">
+    <section class="nopadding">
+      <div class="page-header clearfix">
+        <span class="lead">Messages</span>
+      </div>
+      <div class="alert alert-info alert-block">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Bookmark Updated</strong>
+        The bookmarked site <a href="#">Freenet Message System</a> has been updated to edition 137.
+        <br><a href="/notifications?menu=title&amp;title=Notifications" class="act">view messages</a> | <a href="#" class="act act-danger"  data-dismiss="alert">delete message</a>
+      </div>
+      <div class="alert alert-block">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Warning!</strong>
+        Ononononon n onno no on onnono...
+        <br><a href="/notifications?menu=title&amp;title=Notifications" class="act">view messages</a> | <a href="#" class="act act-danger"  data-dismiss="alert">delete message</a>
+      </div>
+    </section>
+  </div>
+  <% end %>
+
+  <div class="<% if request.fullpath == "/welcome?messages" %>span8<% else %>span12<% end %>" id="bookmarks-container">
+    <section class="nopadding">
+      <div class="page-header">
+        <a class="btn btn-small btn-link pull-right" id="edit-bookmarks">Edit</a>
+        <span class="lead">Bookmarks </span>
+      </div>
+      <div class="accordion" id="bookmark-list">
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#bookmark-list" href="#collapseOne">
+              Directories of websites on Freenet
+            </a>
+          </div>
+          <div id="collapseOne" class="accordion-body collapse" style="height: 0px;">
+            <div class="accordion-inner">
+              <ul>
+                <li><a title="A large, regularly updated index, linking to absolutely everything. Some sites may not have accurate descriptions. Be careful!"  data-placement="right" href="/redesign/downloadingfile" data-toggle="tooltip">Linkageddon</a></li>
+                <li><a title="An index of freenet sites with categories" data-placement="right" data-toggle="tooltip" href="#">AFKindex</a></li>
+                <li><a data-toggle="tooltip"  data-placement="right" title="A one-page index with a menu including categories" href="#">The Ultimate FreeNet Index</a></li>
+                <li><a data-toggle="tooltip"  data-placement="right" title="A small French index with descriptions" href="#">Index des sites Français</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#bookmark-list" href="#collapseTwo">
+                Freenet related software and documentation
+              </a>
+            </div>
+            <div id="collapseTwo" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <ul>
+                  <li><a data-toggle="tooltip" data-placement="right"  title="The official freesite of FMS, a spam resistant message board system for Freenet"  href="#">Freenet Message System</a></li>
+                  <li><a data-toggle="tooltip" data-placement="right" title="The official site for Freemail - email over Freenet"  href="#">Freemail</a></li>
+                  <li><a data-toggle="tooltip" data-placement="right"  title="Simple guide to publishing web sites to Freenet" href="#">Publish!</a></li>
+                  <li><a data-toggle="tooltip" data-placement="right"  title="A more detailed explanation of publishing freesites" href="#/">Freesite HOWTO</a></li>
+                  <li><a data-toggle="tooltip" data-placement="right"  title="Fast anonymous social chat over Freenet" href="#">Sone</a></li>
+                  <li><a data-toggle="tooltip" data-placement="right"  title="Tool for uploading freesites (Freenet websites)" href="http://127.0.0.1:8888/USK@e3myoFyp5avg6WYN16ImHri6J7Nj8980Fm~aQe4EX1U,QvbWT0ImE0TwLODTl7EoJx2NBnwDxTbLTE6zkB-eGPs,AQACAAE/jSite/19/">jSite</a></li>
+                  <li><a data-toggle="tooltip" data-placement="right"  title="A Wiki about Freenet (needs some tools to edit)" href="#">Freenet
+                    Documentation Wiki</a></li>
+                    <li><a data-toggle="tooltip" data-placement="right"  title="An illustrated guide to setting up social networking tools" href="#">Freenet Social Networking Guide</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#bookmark-list" href="#collapseThree">
+                  Freenet team's blogs
+                </a>
+              </div>
+              <div id="collapseThree" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <ul>
+                    <li><a data-toggle="tooltip" data-placement="right"  title="Toad&#39;s flog" href="#">Toad</a></li>
+                    <li><a data-toggle="tooltip" data-placement="right"  title="Bombe&#39;s flog" href="#">Bombe</a></li>
+                    <li><a data-toggle="tooltip" data-placement="right"  title="Flog of the main Freetalk &amp; Web Of Trust developer" href="#/">xor</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+  </div>
+</div>
+      
+      <br>
+      <div class="row">
+        <div class="span8">
+          <section class="nopadding">
+            <div class="page-header clearfix">
+              <span class="lead"> Tasks   </span>
+            </div>
+            <div class="row">
+              <div class="span4">
+                <h5>Talk to people</h5>
+                <ul>
+                  <li><strong>Sone</strong>  <small class="muted">microblogging platform</small> <a href="#installAppModal" class="btn btn-link btn-mini"  data-toggle="modal">Learn more</a></li>
+                  <li><strong>FMS</strong>  <small class="muted">forum</small> <a href="#installAppModalExisting" class="btn btn-link btn-mini" data-toggle="modal">Learn more</a></li>
+                  <li><strong>FLIC</strong>  <small class="muted">real-time chat</small> <a href="#" class="btn btn-link btn-mini">Learn more</a></li>
+                  <li><strong>Freemail</strong>  <small class="muted">anonymous email</small> <a href="#" class="btn btn-link btn-mini">Learn more</a></li>
+                </ul>
+              </div>
+              <div class="span4">
+                <h5>Discover freenet</h5>
+                <ul>
+                  <li><a href="/search?menu=search">Search</a> <small class="muted">dig in freenet</small></li>
+                  <li><a href="#visitFreesite"  data-toggle="modal">Visit a freesite</a> <small class="muted">(if you already have the key)</small></li>
+                </ul>
+                <h5>Learn</h5>
+                <ul>
+                  <li><a href="#">Social Guide</a> <small class="muted">social apps how-to</small></li>
+                  <li><a href="#">Wiki</a> <small class="muted">freenet wiki site</small></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="span4">
+          <section class="nopadding">
+            <div class="page-header clearfix">
+              <span class="lead">Status</span>
+            </div>
+            <strong>Connections</strong>
+            <a href="#" class="btn btn-link btn-small">Details</a>
+            <div class="progress">
+              <div class="bar bar-success" style="width: 60%;">6/10</div>
+            </div>
+            <strong>Security levels</strong> 
+            <a href="/seclevels" class="btn btn-link btn-small">Edit</a>
+            <br>
+            <div class="row">
+              <div class="span2">
+                <small class="text-small uppercase">Connection</small><br>
+                <span class="text-warning"><i class="icon-unlock-alt"></i> NORMAL </span>
+              </div>
+              <div class="span2">
+                <small class="text-small uppercase">Data storage</small><br>
+                <span class="text-success"><i class="icon-lock"></i> HIGH </span>
+              </div>
+            </div>
+            <br>
+            <strong>General</strong>  <br>
+            <small>Language: <a href="#">English</a></small>  <br>
+            <small>Version: <span class="muted">Freenet 0.7.5 Build #1444 build01444</span> </small>  <br>
+            <small>Ext version: <span class="muted">Freenet-ext Build #29 rv29</span></small>  <br>
+            <br>
+            <strong>Node control</strong>  <br>
+            <a href="#" class="btn btn-small "><i class="icon-repeat"></i> Restart freenet</a>
+            <a href="#" class="btn btn-small "><i class="icon-off"></i> Shutdown freenet</a>
+          </section>
+        </div>
+      </div>
+
+      <!--  MODALS -->
+
+
+      <%= render 'redesign/welcomemodal_new' %>
+      <%= render 'redesign/welcomemodal_existing' %>

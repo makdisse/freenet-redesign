@@ -70,10 +70,10 @@ $(".advanced").hide();
 
 //Simple and advanced mode - show and hide
 $(".simpleModeBtn").click(function() {
-  $(".advanced[data-parent='" + $(this).data("parenttohide") + "']").slideUp();
+  $(".advanced[data-parent='" + $(this).data("parenttohide") + "']").slideToggle("slow");
 })
 $(".advancedModeBtn").click(function() {
-  $(".advanced[data-parent='" + $(this).data("parenttohide") + "']").show("slow");
+  $(".advanced[data-parent='" + $(this).data("parenttohide") + "']").slideToggle("slow");
 })
 
 //Workaround to keep the dropdown open when clicking on a input

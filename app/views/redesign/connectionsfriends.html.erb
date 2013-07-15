@@ -30,31 +30,35 @@
  </ul>
 </div>
 <a href="#" class="btn btn-danger"  id="btn_remove"  disabled>Remove</a>
+<div class="btn-group pull-right" data-toggle="buttons-radio">
+  <button type="button" class="btn btn-mini simpleModeBtn" data-parenttohide="friends">Basic</button>
+  <button type="button" class="btn btn-mini advancedModeBtn" data-parenttohide="friends">Advanced</button>
+</div>
 </div>
 
 <table class="table table-bordered">
   <thead>
     <tr>
-      <th></th>
-      <th class="text-small">Status</th>
+      <th width="1%"></th>
+      <th class="text-small" width="1%">Status</th>
       <th class="text-small">Name</th>
       <th class="text-small">Trust level</th>
       <th class="text-small">Visible to friends?</th>
-      <th class="text-small">Address</th>
-      <th class="text-small">Freenet version</th>
+      <th class="text-small advanced" data-parent="friends">Address</th>
+      <th class="text-small advanced" data-parent="friends">Freenet version</th>
       <th class="text-small">Connected / Idle</th>
       <th class="text-small">Note(private)</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr class="text-center">
       <td><input type="checkbox" id="enable_buttons"></td>
       <td><span class="label label-success">CONNECTED</span></td>
       <td>Mike</td>
       <td>HIGH</td>
       <td>NO</td>
-      <td>x:24374 (282ms / 1000ms)</td>
-      <td>1445</td>
+      <td class="advanced" data-parent="friends">x:24374 (282ms / 1000ms)</td>
+      <td class="advanced" data-parent="friends">1445</td>
       <td>1m13s</td>
       <td><a href="#" data-type="text" data-pk="1" data-original-title="Enter note" class="friend-note editable editable-click editable-open">my brother</a></td>
     </tr>
