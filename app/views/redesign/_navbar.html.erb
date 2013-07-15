@@ -3,7 +3,16 @@
     <div class="container">
 <% if menu == "wizard" %>
 <a class="brand" href="#">
-        <span id="#logo"></span> Freenet wizard: Let's setup Freenet!</a>
+        <span id="#logo"></span> Freenet wizard: Let's setup Freenet!
+</a>
+
+<div class="pull-right" style="color:white; margin-top:10px">
+<span class="badge <% if request.fullpath == "/wizard1?menu=wizard" %> badge-success<% end %>">1 - Disk space</span>
+<small class="icon-arrow-right"></small>
+<span class="badge <% if request.fullpath == "/wizard2?menu=wizard" %> badge-success<% end %>">2 - Bandwidth</span>
+<small class="icon-arrow-right"></small>
+<span class="badge <% if request.fullpath == "/wizard3?menu=wizard" %> badge-success<% end %>">3 - Security</span>
+</div>
         
 <% else %>
 

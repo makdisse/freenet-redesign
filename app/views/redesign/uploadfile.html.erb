@@ -1,5 +1,5 @@
 <section>
-	<div class="page-header">
+	<div class="page-header text-center">
 		<h3>Upload a file to Freenet</h3>
 	</div>
 
@@ -14,11 +14,9 @@
 			<a class="btn btn-success btn-large" href="/uploadingfiles?sel=uploads">Upload file</a>
 		</div>
 	</div>
-	<br><br><br>
 	<div class="row">
 		<div class="span8 offset2">
-
-			<div class="accordion" id="accordion2">
+			<div class="accordion advanced-options" id="accordion2">
 				<div class="accordion-group">
 					<div class="accordion-heading">
 						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
@@ -52,30 +50,29 @@
 								<input type="checkbox" class="advancedModeBtn" data-parenttohide="compress"> Compress file
 							</label>
 							<form class="form-horizontal advanced" data-parent="compress">
-							<div class="control-group">
-								<label class="control-label" for="inputEmail">Compatibility mode:</label>
-								<div class="controls">
-									<select>
-										<option>Current (most efficient)</option>
-										<option>2</option>
-										<option>3</option>
-										<option>4</option>
-										<option>5</option>
-									</select>
+								<div class="control-group">
+									<label class="control-label" for="inputEmail">Compatibility mode:</label>
+									<div class="controls">
+										<select>
+											<option>Current (most efficient)</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
 								</div>
-							</div>
-							<div class="control-group">
-								<label class="control-label" for="inputPassword">Splitfile encryption key:</label>
-								<div class="controls">
-									<input type="text" placeholder="Hex value" class="input-medium"> <small>(optional)</small>
+								<div class="control-group">
+									<label class="control-label" for="inputPassword">Splitfile encryption key:</label>
+									<div class="controls">
+										<input type="text" placeholder="Hex value" class="input-medium"> <small>(optional)</small>
+									</div>
 								</div>
-							</div>
-						</form>
+							</form>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
 </section>

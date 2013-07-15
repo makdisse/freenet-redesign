@@ -27,8 +27,8 @@ header li[id|=navbar-item] > a {
 	font-size: 1.1em;
 }
 
-#search-advanced {
-	margin-top: 100px;
+.advanced-options {
+	margin-top: 60px;
 }
 
 .show-item-on-mouse-over .item-to-show {
@@ -152,4 +152,9 @@ padding-top: 30px;
 div.dropdown-menu {
   width:300px; 
   padding: 10px;
+}
+
+//No title line when title is centered
+.page-header.text-center {
+  border:0;
 }
