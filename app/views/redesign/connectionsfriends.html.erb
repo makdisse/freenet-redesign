@@ -1,32 +1,35 @@
-<legend>
-My Friends (trusted peers added by me)
-</legend>
-<div class="btn-toolbar">
-  <a href="/addfriend?menu=friends" class="btn btn-success">Add new friend</a>
-	<a href="#" class="btn" id="btn_n2ntm" disabled>Send N2NTM</a>
+<section>
+  <div class="page-header clearfix">
+    <h3>
+      My Friends
+    </h3>
+  </div>
+  <div class="btn-toolbar">
+    <a href="/addfriend?menu=friends" class="btn btn-success">Add new friend</a>
+    <a href="#" class="btn" id="btn_n2ntm" disabled>Send N2NTM</a>
     <div class="btn-group">
- 		<a class="btn dropdown-toggle" id="btn_trust" data-toggle="dropdown" href="#" disabled>
-    		Trust
-    	<span class="caret"></span>
-  		</a>
-	  <ul class="dropdown-menu">
-	    <li><a href="">High</a></li>
-	    <li><a href="">Normal</a></li>
-	    <li><a href="">Low</a></li>
-	  </ul>
-	</div>
-	    <div class="btn-group">
- 		<a class="btn dropdown-toggle"  id="btn_visibility"  data-toggle="dropdown" href="#" disabled>
-    		Visibility
-    	<span class="caret"></span>
-  		</a>
-	  <ul class="dropdown-menu">
-	    <li><a href="">Hidden</a></li>
-	    <li><a href="">Name only</a></li>
-	    <li><a href="">Visible</a></li>
-	  </ul>
-	</div>
-	<a href="#" class="btn btn-danger"  id="btn_remove"  disabled>Remove</a>
+     <a class="btn dropdown-toggle" id="btn_trust" data-toggle="dropdown" href="#" disabled>
+      Trust
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+     <li><a href="">High</a></li>
+     <li><a href="">Normal</a></li>
+     <li><a href="">Low</a></li>
+   </ul>
+ </div>
+ <div class="btn-group">
+   <a class="btn dropdown-toggle"  id="btn_visibility"  data-toggle="dropdown" href="#" disabled>
+    Visibility
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu">
+   <li><a href="">Hidden</a></li>
+   <li><a href="">Name only</a></li>
+   <li><a href="">Visible</a></li>
+ </ul>
+</div>
+<a href="#" class="btn btn-danger"  id="btn_remove"  disabled>Remove</a>
 </div>
 
 <table class="table table-bordered">
@@ -57,12 +60,16 @@ My Friends (trusted peers added by me)
     </tr>
   </tbody>
 </table>
+</section>
+<section>
 
-<br>
-<legend>
-My node
-</legend>
-<strong>Nickname for this node:</strong> <a href="#" data-type="text" data-pk="1" data-original-title="Edit node name" class="friend-note editable editable-click editable-open">xxxxxxx</a>
-<br>
-<br>
-<strong>Node reference:</strong> <a href="#" class="btn btn-link">Open</a> <span class="muted">Send this file to your friends so they can add your node as a friend.</span>
+  <div class="page-header clearfix">
+    <h3>
+      My node
+    </h3>
+  </div>
+  <strong>Nickname for this node:</strong> <a href="#" data-type="text" data-pk="1" data-original-title="Edit node name" class="friend-note editable editable-click editable-open">xxxxxxx</a>
+  <br>
+  <br>
+  <strong>Node reference file:</strong> <a href="#" class="btn btn-link">Open</a> <span class="muted">Send this file to your friends so they can add your node as a friend.</span>
+</section>

@@ -66,7 +66,7 @@ abbr[data-original-title] {
 }
 
 //dont mess with config titles
-legend h3 {
+.page-header h3 {
 	display: inline;
 }
 
@@ -142,6 +142,10 @@ legend h3 {
 
 section {
 padding-top: 30px;
+}
+
+.nopadding {
+  padding: 0; 
 }
 
 //Used to content dropdown-menus
