@@ -1,0 +1,49 @@
+<div class="pull-right">
+<span class="badge">1 - Disk space</span>
+<small class="icon-arrow-right"></small>
+<span class="badge">2 - Bandwidth</span>
+<small class="icon-arrow-right"></small>
+<span class="badge badge-success">3 - Security</span>
+</div>
+
+<section>
+	<h3>Security settings</h3>
+	<p class="muted">
+		Those are the default settings...etc...
+		<br>
+		<strong>You can edit those settings after the instalation</strong>
+	</p>
+	<br>
+	<strong>Freenet connection security 
+		<a href="#" class="help-icon" data-toggle="popover" data-placement="right" data-content="help blurb here" data-trigger="hover" title=""><i class="icon-question-sign"></i></a>
+		:	</strong> 
+		<span class="securityconnectionlow">LOW</span><span class="securityconnectiondisc advanced">DISCONECTED</span>
+	<br>
+	<label class="checkbox advanced" data-parent="security"><input type="checkbox" data-on-click-hide="securityconnectionlow" data-on-click-show="securityconnectiondisc"> Start Freenet disconected so I can add my friends and choose another security level</label>
+	<br>
+	<strong>Saved data security 
+<a href="#" class="help-icon" data-toggle="popover" data-placement="right" data-content="help blurb here" data-trigger="hover" title=""><i class="icon-question-sign"></i></a>
+	:</strong> 
+	<span class="securitydata">LOW</span>
+	<div class="btn-group advanced" data-toggle="buttons-radio" data-parent="security">
+		<button type="button" class="btn">None</button>
+		<button type="button" class="btn active">Low</button>
+		<button type="button" class="btn" data-on-click-show="setmaster">High</button>
+		<button type="button" class="btn" data-on-click-show="setmaster">Maximum</button>
+	</div>
+	<br>
+	<label class="advanced setmaster">Set master password: <input type="password" placeholder="Master password"></label>
+<br><br>
+<div class="alert alert-warning"><h4>Important</h4>
+use darknet blurb...
+</div>
+</section>
+
+
+<br>
+<div class="apply-buttons modal-footer">
+<button class="advancedModeBtn btn btn-warning pull-left" data-parenttohide="security" data-on-click-hide="securitydata">Edit settings</button>
+<a href="/wizard2?menu=wizard" class="act act-danger act-large"><i class="icon-arrow-left"></i> Back</a>
+or
+<a href="/welcome" class="btn btn-primary btn-large">Finish</a>
+</div>

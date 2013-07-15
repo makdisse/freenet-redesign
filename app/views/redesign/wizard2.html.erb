@@ -1,0 +1,37 @@
+<div class="pull-right">
+<span class="badge">1 - Disk space</span>
+<small class="icon-arrow-right"></small>
+<span class="badge badge-success">2 - Bandwidth</span>
+<small class="icon-arrow-right"></small>
+<span class="badge">3 - Security</span>
+</div>
+
+<section>
+	<h3>Does your internet connection have a monthly data limit?</h3>
+	<p class="muted">
+		Freenet can be configured to not exceed a data limit. How much data do you want to allow Freenet to use each month? Freenet may have to be very slow in order to stay under a given limit. The bandwidth limits will be set with the assumption that Freenet is always online, so actual bandwidth usage may be lower. You can adjust these limits at any time from the Core settings page.
+	</p>
+	<div class="row">
+		<div class="span2">
+			<div class="btn-group" data-toggle="buttons-radio">
+				<button type="button" class="btn btn-large active simpleModeBtn" data-parenttohide="bandwidth-limit">No</button>
+				<button type="button" class="btn btn-large advancedModeBtn" data-parenttohide="bandwidth-limit">Yes</button>
+			</div>
+		</div>
+		<div class="span3 advanced"  data-parent="bandwidth-limit"><h3>Bandwidth limit:</h3></div>
+		<div class="span5 advanced" style="padding-top: 20px" data-parent="bandwidth-limit">
+			<input type="text" class="input-xlarge slider" value="" data-slider-min="1" data-slider-max="150" data-slider-step="1" data-slider-value="10" data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="hide" data-target="bandwidth">
+		</div>
+		<div class="span2 advanced" data-parent="bandwidth-limit">
+			<h3 id="bandwidth">10 GB</h3>
+		</div>
+	</div>
+</section>
+
+
+<br>
+<div class="apply-buttons modal-footer">
+<a href="/wizard1?menu=wizard" class="act act-danger act-large"><i class="icon-arrow-left"></i> Back</a>
+or
+<a href="/wizard3?menu=wizard" class="btn btn-primary btn-large">Next <i class="icon-arrow-right"></i></a>
+</div>

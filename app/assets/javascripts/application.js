@@ -123,10 +123,22 @@ $("table tr").click(function() {
 //Auto toggle selected btns
 $(".btn-toggled").button('toggle');
 
+//Initiallize sliders
+$('.slider').slider()  
+  .on('slide', function(ev){
+    $("#"+$(this).data("target")).text(ev.value+" GB");
+  });
 
 
-
-
+//FIXME: Verify for checked/unchecked in inputs
+//Easy way to hide an element when another one is clicked
+$("[data-on-click-hide]").click(function() {
+  $("."+$(this).data("on-click-hide")).slideUp();
+})
+//Easy way to show an element when another one is clicked
+$("[data-on-click-show]").click(function() {
+  $("."+$(this).data("on-click-show")).show('slow');
+})
 
 
 

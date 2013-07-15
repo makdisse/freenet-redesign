@@ -1,6 +1,12 @@
 <header id="navbar" class="navbar navbar-inverse navbar-fixed-top">
   <nav class="navbar-inner">
     <div class="container">
+<% if menu == "wizard" %>
+<a class="brand" href="#">
+        <span id="#logo"></span> Freenet wizard: Let's setup Freenet!</a>
+        
+<% else %>
+
       <a class="brand" href="/welcome">
         <span id="#logo"></span> Freenet</a>
         <ul class="nav" id="navbar-item-openapp">
@@ -159,6 +165,8 @@
             </li>
 
           </ul>
+
+              <% end %>
         </div>
       </nav>
     </header>
@@ -177,3 +185,4 @@
         <button class="btn btn-primary">Fetch freesite</button>
       </div>
     </div>
+
