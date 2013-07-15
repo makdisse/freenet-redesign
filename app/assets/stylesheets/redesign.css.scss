@@ -11,6 +11,8 @@ header li[id|=navbar-item] > a {
   color: white;
 }
 
+
+
 #navbar-item-notifications > a,
 #navbar-item-downloads > a,
 #navbar-item-security > a,
@@ -157,4 +159,10 @@ div.dropdown-menu {
 //No title line when title is centered
 .page-header.text-center {
   border:0;
+}
+
+#logo-nav{
+  float:left; 
+  margin-top: 5px; 
+  margin-left: -60px;
 }

@@ -1,9 +1,10 @@
 <header id="navbar" class="navbar navbar-inverse navbar-fixed-top">
   <nav class="navbar-inner">
     <div class="container">
+      <img src="assets/logo-nav.png" id="logo-nav">
 <% if menu == "wizard" %>
-<a class="brand" href="#">
-        <span id="#logo"></span> Freenet wizard: Let's setup Freenet!
+<a class="brand">
+         Freenet wizard: Let's setup Freenet!
 </a>
 
 <div class="pull-right" style="color:white; margin-top:10px">
@@ -16,8 +17,10 @@
         
 <% else %>
 
+      
       <a class="brand" href="/welcome">
-        <span id="#logo"></span> Freenet</a>
+         Freenet
+       </a>
         <ul class="nav" id="navbar-item-openapp">
           <li class="divider-vertical"></li>
           <% if menu == 'sone' %>
