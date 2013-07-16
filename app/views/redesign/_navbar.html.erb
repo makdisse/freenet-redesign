@@ -174,7 +174,7 @@
                     <li class="<% if request.fullpath.include?("connectionstostrangers") %> active<% end %>"><a href="/settings/status/connectionstostrangers">Connections to strangers</a></li>
                     <li class="<% if request.fullpath.include?("statistics") %> active<% end %>"><a href="/settings/status/statistics">Statistics</a></li>
                     <li><a href="#">Diagnostic</a></li>
-                    <li><a href="#">Internet connection</a></li>
+                    <li class="<% if request.fullpath.include?("internetconnection") %> active<% end %>"><a href="/settings/status/internetconnection">Internet connection</a></li>
                   </ul>
                 </li>
                 <li class="divider"></li>

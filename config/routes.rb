@@ -21,6 +21,7 @@ Redesignproject::Application.routes.draw do
   match "/settings/seclevels" => "redesign#seclevels"
   match "/settings/status/connectionstostrangers" => "redesign#connectionstostrangers"
   match "/settings/status/statistics" => "redesign#statistics"
+  match "/settings/status/internetconnection" => "redesign#internetconnection"
 
   match "/apps/manage" => "redesign#manage"
   match "/apps/connectionsfriends" => "redesign#connectionsfriends"
