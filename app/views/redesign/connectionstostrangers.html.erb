@@ -1,0 +1,241 @@
+
+<section>
+    <div class="page-header">
+        <div class="btn-group pull-right" data-toggle="buttons-radio">
+            <button type="button" class="btn btn-mini simpleModeBtn" data-parenttohide="connlist">Basic</button> <button type="button" class="btn btn-mini advancedModeBtn" data-parenttohide="connlist">Advanced</button>
+        </div>
+
+        <h3>
+            Connections to strangers
+        </h3>
+        <a href="#" class="help-icon" data-toggle="popover" data-placement="right" data-content="Untrusted peers added by Freenet in low/normal network security level" title=""><i class="icon-question-sign"></i></a>
+    </div>
+
+    <table class="table table-hover table-condensed">
+        <tbody>
+            <tr>
+                <th class="text-small">
+                    <a href="http://127.0.0.1:8888/strangers/?sortBy=status&amp;reversed">Status</a>
+                </th>
+                <th class="text-small">
+                    <a href="http://127.0.0.1:8888/strangers/?sortBy=address&amp;reversed"><span title="The node's network address as IP:Port" style="border-bottom: 1px dotted; cursor: help;">Address</span></a>
+                </th>
+                <th class="text-small">
+                    <a href="http://127.0.0.1:8888/strangers/?sortBy=version&amp;reversed">Version</a>
+                </th>
+                <th class="text-small advanced" data-parent="connlist">
+                    <a href="http://127.0.0.1:8888/strangers/?sortBy=location&amp;reversed">Location</a>
+                </th>
+                <th class="text-small advanced" data-parent="connlist">
+                    <a href="http://127.0.0.1:8888/strangers/?sortBy=backoffRT&amp;reversed"><span title="Other node busy (realtime)? Display: Percentage of time the node is overloaded, Current wait time remaining (0=not overloaded)/total/last overload reason" style="border-bottom: 1px dotted; cursor: help;">Backoff (realtime)</span></a>
+                </th>
+                <th class="text-small advanced" data-parent="connlist">
+                    <a href="http://127.0.0.1:8888/strangers/?sortBy=backoffBulk&amp;reversed"><span title="Other node busy (bulk)? Display: Percentage of time the node is overloaded, Current wait time remaining (0=not overloaded)/total/last overload reason" style="border-bottom: 1px dotted; cursor: help;">Backoff (bulk)</span></a>
+                </th>
+                <th class="text-small advanced" data-parent="connlist">
+                    <a href="http://127.0.0.1:8888/strangers/?sortBy=overload_p&amp;reversed"><span title="Probability of the node rejecting a request due to overload or causing a timeout." style="border-bottom: 1px dotted; cursor: help;">Overload Probability</span></a>
+                </th>
+                <th class="text-small advanced" data-parent="connlist">
+                    <a href="http://127.0.0.1:8888/strangers/?sortBy=idle&amp;reversed"><span title="How long since the node connected or was last seen" style="border-bottom: 1px dotted; cursor: help;">Connected / Idle</span></a>
+                </th>
+                <th class="text-small advanced" data-parent="connlist">
+                    <a href="http://127.0.0.1:8888/strangers/?sortBy=time_routable&amp;reversed">%&nbsp;Time Routable</a>
+                </th>
+                <th class="text-small advanced" data-parent="connlist">
+                    <a href="http://127.0.0.1:8888/strangers/?sortBy=selection_percentage&amp;reversed">%&nbsp;Selection</a>
+                </th>
+                <th class="text-small">
+                    <a href="http://127.0.0.1:8888/strangers/?sortBy=total_traffic&amp;reversed">Total&nbsp;Traffic&nbsp;(in/out/resent)</a>
+                </th>
+                <th  class="text-small advanced" data-parent="connlist">
+                    <a href="http://127.0.0.1:8888/strangers/?sortBy=total_traffic_since_startup&amp;reversed">Total&nbsp;Traffic&nbsp;(in/out) since startup</a>
+                </th>
+                <th class="text-small advanced" data-parent="connlist">
+                    Congestion&nbsp;Control
+                </th>
+                <th  class="text-small advanced" data-parent="connlist">
+                    <a href="http://127.0.0.1:8888/strangers/?sortBy=time_delta&amp;reversed">Time&nbsp;Delta</a>
+                </th>
+                <th  class="text-small advanced" data-parent="connlist">
+                    <a href="http://127.0.0.1:8888/strangers/?sortBy=uptime&amp;reversed">Reported&nbsp;Uptime</a>
+                </th>
+                <th  class="text-small advanced" data-parent="connlist">
+                    Transmit&nbsp;Queue
+                </th>
+                <th class="text-small advanced" data-parent="connlist">
+                    Peer&nbsp;Capacity&nbsp;Bulk
+                </th>
+                <th class="text-small advanced" data-parent="connlist">
+                    Peer&nbsp;Capacity&nbsp;Realtime
+                </th>
+                <th class="text-small">
+                    <a href="http://127.0.0.1:8888/strangers/?sortBy=successTime&amp;reversed"><span title="Last time there was a successful CHK fetch from the node" style="border-bottom: 1px dotted; cursor: help;">Last success</span></a>
+                </th>
+            </tr>
+            <% 5.times do %>
+            <tr class="text-center">
+                <td class="peer-status">
+                    <span class="label label-success">CONNECTED</span>
+                </td>
+                <td class="peer-address">
+                    x:27734 (415ms / 1000ms)
+                </td>
+                <td class="peer-version">
+                    1444
+                </td>
+                <td  class="text-small advanced" data-parent="connlist">
+                    <b>0.0975002980556946</b><br>
+                    <i>3.6238179098657675E-4<br></i><i>0.007327172927589998<br></i><i>0.01529367247285729<br></i><i>0.024593866400920317<br></i><i>0.025171399837040864<br></i><i>0.033652229797487276<br></i><i>0.050195147458153566<br></i><i>0.0555239008235493<br></i><i>0.05932574737922813<br></i><i>0.0974827881785959<br></i><i>0.09911779611405314<br></i><i>0.09934272235724895<br></i><i>0.10775765618946143<br></i><i>0.10800228246925236<br></i><i>0.12449384054020685<br></i><i>0.13714316694865614<br></i><i>0.1379083119282528<br></i><i>0.14086049918678556<br></i><i>0.14293596192122882<br></i><i>0.1715600588751035<br></i><i>0.19172476506399505<br></i><i>0.19525890590392514<br></i><i>0.20800357847613005<br></i><i>0.210946190770548<br></i><i>0.21263241235253583<br></i><i>0.21389410280662224<br></i><i>0.24644659633247012<br></i><i>0.2636895557348189<br></i><i>0.270023935980952<br></i><i>0.27413621358547746<br></i><i>0.2908226631804687<br></i><i>0.29476483721669766<br></i><i>0.29566511632807146<br></i><i>0.30397301662661824<br></i><i>0.31686697698056887<br></i><i>0.32121899539053067<br></i><i>0.3315592149382173<br></i><i>0.3368981864120484<br></i><i>0.3369608643386993<br></i><i>0.36031095695163295<br></i><i>0.37073622797345573<br></i><i>0.37132138537654924<br></i><i>0.41764421635406446<br></i><i>0.4233057114896408<br></i><i>0.4318124246101833<br></i><i>0.4320009402468067<br></i><i>0.444484717203958<br></i><i>0.4476835591401127<br></i><i>0.4522648025530783<br></i><i>0.4955477235300171<br></i><i>0.5153776189469603<br></i><i>0.5169167076887982<br></i><i>0.5252300386758086<br></i><i>0.5623284136366454<br></i><i>0.5624224970664317<br></i><i>0.5812397292879405<br></i><i>0.592402277135807<br></i><i>0.6124621238159674<br></i><i>0.630730916631753<br></i><i>0.6452204724586763<br></i><i>0.6466701369683394<br></i><i>0.6468487499936948<br></i><i>0.6977333988236707<br></i><i>0.7009660627712387<br></i><i>0.7058906688906911<br></i><i>0.7066353561424799<br></i><i>0.7292889773075577<br></i><i>0.7521680434981791<br></i><i>0.7702320350734024<br></i><i>0.7937555796475972<br></i><i>0.8034359779070925<br></i><i>0.8059548332548305<br></i><i>0.8112047541817473<br></i><i>0.8344271586971506<br></i><i>0.8446035036380182<br></i><i>0.8572039687315206<br></i><i>0.8891394444999067<br></i><i>0.9025101758764624<br></i><i>0.913906045995516<br></i><i>0.9401838912687358<br></i><i>0.9506671981042465<br></i><i>0.9551633164899099<br></i><i>0.9557501045396151<br></i><i>0.9627997857749895<br></i><i>0.99600642519711<br></i>
+                </td>
+                <td  class="text-small advanced" data-parent="connlist">
+                    0.0% 0/1/TooHighPing
+                </td>
+                <td  class="text-small advanced" data-parent="connlist">
+                    0.2% 0/1/TooHighPing
+                </td>
+                <td  class="text-small advanced" data-parent="connlist">
+                    1.7%
+                </td>
+                <td  class="text-small advanced" data-parent="connlist">
+                    7m47s
+                </td>
+                <td  class="text-small advanced" data-parent="connlist">
+                    98.5%
+                </td>
+                <td  class="text-small advanced" data-parent="connlist">
+                    32%
+                </td>
+                <td class="peer-idle">
+                    706 KiB / 336 KiB/1.30 KiB (0.4%)
+                </td>
+                <td class="text-small advanced" data-parent="connlist">
+                    0 B / 0 B
+                </td>
+                <td class="text-small advanced" data-parent="connlist">
+                    42666B/sec delay 24ms (RTT 434ms window 18.0)
+                </td>
+                <td class="text-small advanced" data-parent="connlist">
+                    -6s
+                </td>
+                <td class="text-small advanced" data-parent="connlist">
+                    83%
+                </td>
+                <td class="text-small advanced" data-parent="connlist">
+                    0 B:0s
+                </td>
+                <td class="text-small advanced" data-parent="connlist">
+                    2reqs:out:65.0 KiB/16.3 MiB/38.0 MiB/1.99 GiB:in:65.0 KiB/15.5 MiB/38.0 MiB/1.99 GiB
+                </td>
+                <td class="text-small advanced" data-parent="connlist">
+                    2reqs:out:5.0 KiB/888 KiB/19.0 MiB/1.99 GiB:in:5.0 KiB/804 KiB/19.0 MiB/1.99 GiB
+                </td>
+                <td>
+                    19s
+                </td>
+            </tr>
+            <% end %>
+        </tbody>
+    </table>
+</section>
+
+
+
+
+<section>
+    <div class="page-header">
+        <div class="btn-group pull-right" data-toggle="buttons-radio">
+            <button type="button" class="btn btn-mini simpleModeBtn" data-parenttohide="stats">Basic</button> <button type="button" class="btn btn-mini advancedModeBtn" data-parenttohide="stats">Advanced</button>
+        </div>
+        <h3>
+            More info
+        </h3>
+    </div>
+
+    <div>
+        <h4>Peer statistics</h4>
+        <ul>
+            <li><span><span title="Connected: We're successfully connected to these nodes" style="border-bottom: 1px dotted; cursor: help;" class="peer_connected">Connected</span><span>:&nbsp;6</span></span></li>
+            <li><span><span title="Not connected: No connection so far but this node is continuously trying to connect." style="border-bottom: 1px dotted; cursor: help;" class="peer_disconnected">Disconnected</span><span>:&nbsp;1</span></span></li>
+            <li><span><span title="Never Connected: Freenet has never connected to these peers." style="border-bottom: 1px dotted; cursor: help;" class="peer_never_connected">Never connected</span><span>:&nbsp;3</span></span></li>
+            <li>Max peers: 10</li>
+            <li>Max strangers: 10</li>
+
+        </ul>
+    </div>
+    <br>
+    <div class="advanced" data-parent="stats">
+        <h4>Peer backoff reasons (realtime)</h4>
+        Good, your node is not backed off from any peers!
+    </div>
+    <br>
+    <div class="advanced" data-parent="stats">
+        <h4>Peer backoff reasons (bulk)</h4>
+        Good, your node is not backed off from any peers!
+    </div>
+    <br>
+    <div class="advanced" data-parent="stats">
+        <h4>Node status overview</h4>
+        <ul>
+            <li>bwlimitDelayTime:&nbsp;1043ms</li>
+            <li>nodeAveragePingTime:&nbsp;415ms</li>
+            <li>darknetSizeEstimateSession:&nbsp;0&nbsp;nodes</li>
+            <li>nodeUptime:&nbsp;13m15s</li>
+            <li>routingMissDistanceLocal:&nbsp;0.0027</li>
+            <li>routingMissDistanceRemote:&nbsp;0.0012</li>
+            <li>routingMissDistanceOverall:&nbsp;0.0021</li>
+            <li>routingMissDistanceBulk:&nbsp;0.0014</li>
+            <li>routingMissDistanceRT:&nbsp;0.0029</li>
+            <li>backedOffPercent:&nbsp;0.3%</li>
+            <li>pInstantReject:&nbsp;24.4%</li>
+        </ul>
+    </div>
+    <br>
+    <div class="advanced" data-parent="stats">
+        <h4>Current Activity</h4>
+        <ul>
+            <li>Inserts: 1 CHK handlers, 0 SSK handlers (0/0 local)</li>
+            <li>Requests: 10 CHK handlers, 6 SSK handlers (5/4 local)</li>
+            <li>Transferring Requests: sending 5, receiving 4</li>
+            <li>Block transfers: 1 sends, 6 receives</li>
+            <li>ARK&nbsp;Fetch&nbsp;Requests:&nbsp;7</li>
+            <li>Input Rate: 3.02&nbsp;KiB/s (of 5.0&nbsp;KiB/s)</li>
+            <li>Output Rate: 1.04&nbsp;KiB/s (of 5.0&nbsp;KiB/s)</li>
+            <li>Session Total Input: 3.05&nbsp;MiB (3.93&nbsp;KiB/s average)</li>
+            <li>Session Total Output: 1.19&nbsp;MiB (1.54&nbsp;KiB/s average)</li>
+            <li>Payload Output: 547&nbsp;KiB (704&nbsp;B/sec)(44%)</li>
+            <li>Global Total Input: 9.99&nbsp;MiB</li>
+            <li>Global Total Output: 2.16&nbsp;MiB</li>
+            <li>Request output (excluding payload): CHK 25.7&nbsp;KiB SSK 140&nbsp;KiB.</li>
+            <li>Insert output (excluding payload): CHK 2.90&nbsp;KiB SSK 575&nbsp;B.</li>
+            <li>Offered keys: sending keys 0&nbsp;B, sending offers 3.36&nbsp;KiB</li>
+            <li>Swapping Output: 2.84&nbsp;KiB.</li>
+            <li>Connection setup: 70.3&nbsp;KiB output</li>
+            <li>Ack-only packets: 121&nbsp;KiB</li>
+            <li>Resent bytes: 61.7&nbsp;KiB (5%)</li>
+            <li>Updater Output: 0&nbsp;B</li>
+            <li>Announcement output: 49.1&nbsp;KiB (transferring node refs payload 45.0&nbsp;KiB)</li>
+            <li>Admin bytes: 2.40&nbsp;KiB initial messages, 0&nbsp;B IP change messages, 464&nbsp;B disconnection notifications, 0&nbsp;B routing status</li>
+            <li>Debugging bytes: 0&nbsp;B network coloring, 337&nbsp;B ping, 52&nbsp;B probe requests, 0&nbsp;B routed test messages.</li>
+            <li>Node to node messages: 9.36&nbsp;KiB</li>
+            <li>Load allocation notices: 18.3&nbsp;KiB</li>
+            <li>FOAF related: 0&nbsp;B</li>
+            <li>Other output: 169&nbsp;KiB (13%)</li>
+            <li>Total non-request overhead: 423 B/sec (26%).</li>
+        </ul>
+    </div>
+    <br>
+    <div class="advanced" data-parent="stats">
+        <h4>Manually connect to a Stranger</h4>
+        Paste the node reference:<br>
+        <textarea rows="2" class="span8"></textarea>
+        <br>
+        <strong>OR</strong> Reference URL: <input type="text" class="span8" placeholder="Enter the URL of your friend's node reference">   
+        <br>
+        <div class="fileupload fileupload-new" data-provides="fileupload">
+            <strong>OR</strong> Upload reference file: <span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file" /></span>
+            <span class="fileupload-preview"></span>
+            <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+        </div>
+        <button class="btn">Add stranger</button>
+    </div>
+</section>
