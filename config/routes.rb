@@ -20,6 +20,7 @@ Redesignproject::Application.routes.draw do
   match "/settings/interfaces" => "redesign#interfacesconfig"
   match "/settings/seclevels" => "redesign#seclevels"
   match "/settings/status/connectionstostrangers" => "redesign#connectionstostrangers"
+  match "/settings/status/statistics" => "redesign#statistics"
 
   match "/apps/manage" => "redesign#manage"
   match "/apps/connectionsfriends" => "redesign#connectionsfriends"

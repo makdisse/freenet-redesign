@@ -172,7 +172,7 @@
                 <li class="dropdown-submenu<% if request.fullpath.include?("status") %> active<% end %>"><a href="#">Status</a>
                   <ul class="dropdown-menu">
                     <li class="<% if request.fullpath.include?("connectionstostrangers") %> active<% end %>"><a href="/settings/status/connectionstostrangers">Connections to strangers</a></li>
-                    <li><a href="#">Statistics</a></li>
+                    <li class="<% if request.fullpath.include?("statistics") %> active<% end %>"><a href="/settings/status/statistics">Statistics</a></li>
                     <li><a href="#">Diagnostic</a></li>
                     <li><a href="#">Internet connection</a></li>
                   </ul>
