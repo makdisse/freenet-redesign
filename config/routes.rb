@@ -7,21 +7,25 @@ Redesignproject::Application.routes.draw do
   match "/search" => "redesign#search"
   match "/searchinprogress" => "redesign#searchinprogress"
   match "/notifications" => "redesign#notifications"
-  match "/plugins" => "redesign#plugins"
-  match "/connectionsfriends" => "redesign#connectionsfriends"
-  match "/addfriend" => "redesign#addfriend"
-  match "/addfriend1" => "redesign#addfriend-step1"
-  match "/addfriend2" => "redesign#addfriend-step2"
-  match "/addfriend3" => "redesign#addfriend-step3"
+  
+  
 
-  match "/downloadedfiles" => "redesign#downloadedfiles"
-  match "/uploadingfiles" => "redesign#uploadingfiles"
+
+  match "/share/downloadedfiles" => "redesign#downloadedfiles"
+  match "/share/uploadingfiles" => "redesign#uploadingfiles"
 
   match "/uploadfile" => "redesign#uploadfile"
   match "/uploadfreesite" => "redesign#uploadfreesite"
 
-  match "/interfaces" => "redesign#interfacesconfig"
-  match "/seclevels" => "redesign#seclevels"
+  match "/settings/interfaces" => "redesign#interfacesconfig"
+  match "/settings/seclevels" => "redesign#seclevels"
+
+  match "/apps/manage" => "redesign#manage"
+  match "/apps/connectionsfriends" => "redesign#connectionsfriends"
+  match "/apps/addfriend" => "redesign#addfriend"
+  match "/apps/addfriend1" => "redesign#addfriend-step1"
+  match "/apps/addfriend2" => "redesign#addfriend-step2"
+  match "/apps/addfriend3" => "redesign#addfriend-step3"
   
 
   match "/phrase" => "redesign#phrase"

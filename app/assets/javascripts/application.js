@@ -78,9 +78,9 @@ $(".advancedModeBtn").click(function() {
 
 //Workaround to keep the dropdown open when clicking on a input
 $('.dropdown-menu').on('click', function(e){
-        if($(this).hasClass('dropdown-menu-form')){
-            e.stopPropagation();
-        }
+  if($(this).hasClass('dropdown-menu-form')){
+    e.stopPropagation();
+  }
 });
 
 //Simulate the interaction in the labels dropdown
@@ -129,9 +129,9 @@ $(".btn-toggled").button('toggle');
 
 //Initiallize sliders
 $('.slider').slider()  
-  .on('slide', function(ev){
-    $("#"+$(this).data("target")).text(ev.value+" GB");
-  });
+.on('slide', function(ev){
+  $("#"+$(this).data("target")).text(ev.value+" GB");
+});
 
 
 //FIXME: Verify for checked/unchecked in inputs
@@ -145,7 +145,17 @@ $("[data-on-click-show]").click(function() {
 })
 
 
+        //Clone and modify the currently open app menu to paste it as in the navbar central portion
+        var selected_menu = location.pathname.split('/')[location.pathname.split('/').length-1];
+        var open_app  = $("#"+selected_menu).parents("li").clone();
+        $(open_app).find("a").addClass("dropdown-toggle");
+        $(open_app).find("a").attr("data-toggle","dropdown");
+        $(open_app).find("a").append("<b class=\"caret\"></b>");
+        $(open_app).find("ul li a").removeClass("dropdown-toggle").attr("data-toggle","");
+        $(open_app).find("ul li a b").remove();
+        $("#open-app").html($(open_app).html());
 
 
-})
+
+      })
 

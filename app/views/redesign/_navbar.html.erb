@@ -1,151 +1,149 @@
 <header id="navbar" class="navbar navbar-inverse navbar-fixed-top">
   <nav class="navbar-inner">
     <div class="container">
-      <img src="assets/logo-nav.png" alt="Freenet" id="logo-nav">
-<% if menu == "wizard" %>
-<a class="brand">
-         Freenet wizard: Let's setup Freenet!
-</a>
+      <a href="/welcome">
+        <img src="/assets/logo-nav.png" alt="Freenet" id="logo-nav">
+      </a>
+      <% if menu == "wizard" %>
+      <a class="brand">
+       Freenet wizard: Let's setup Freenet!
+     </a>
 
-<div class="pull-right" style="color:white; margin-top:10px">
-<span class="badge <% if request.fullpath == "/wizard1?menu=wizard" %> badge-success<% end %>">1 - Disk space</span>
-<small class="icon-arrow-right"></small>
-<span class="badge <% if request.fullpath == "/wizard2?menu=wizard" %> badge-success<% end %>">2 - Bandwidth</span>
-<small class="icon-arrow-right"></small>
-<span class="badge <% if request.fullpath == "/wizard3?menu=wizard" %> badge-success<% end %>">3 - Security</span>
-</div>
-        
-<% else %>
+     <div class="pull-right" style="color:white; margin-top:10px">
+      <span class="badge <% if request.fullpath == "/wizard1?menu=wizard" %> badge-success<% end %>">1 - Disk space</span>
+      <small class="icon-arrow-right"></small>
+      <span class="badge <% if request.fullpath == "/wizard2?menu=wizard" %> badge-success<% end %>">2 - Bandwidth</span>
+      <small class="icon-arrow-right"></small>
+      <span class="badge <% if request.fullpath == "/wizard3?menu=wizard" %> badge-success<% end %>">3 - Security</span>
+    </div>
 
-      
-      <a class="brand" href="/welcome">
-         Freenet
-       </a>
-        <ul class="nav" id="navbar-item-openapp">
-          <li class="divider-vertical"></li>
-          <% if menu == 'sone' %>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sone <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
-              <li class="nav-header">Nav header</li>
-              <li><a href="#">Separated link</a></li>
-              <li class="dropdown-submenu">
-                <a tabindex="-1" href="#">More options</a>
-                <ul class="dropdown-menu">
-                  <li><a tabindex="-1" href="#">Second level link</a></li>
-                  <li><a tabindex="-1" href="#">Second level link</a></li>
-                  <li><a tabindex="-1" href="#">Second level link</a></li>
-                  <li><a tabindex="-1" href="#">Second level link</a></li>
-                  <li><a tabindex="-1" href="#">Second level link</a></li>
-                </ul>
-              </li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-          </li>
+    <% else %>
 
-            <% elsif menu == 'title' %>
-            <li><a href="#"><%= title %></a></li>
-            <% elsif menu  == 'friends' %>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Friends <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li class="active"><a href="/connectionsfriends?menu=friends">Connections to friends</a></li>
-                <li><a href="/addfriend?menu=friends">Add a friend</a></li>
-              </ul>
-            </li>
-            <% end %>
-        </ul>
-        <ul class="nav pull-right">
-          <li class="divider-vertical"></li>
-          <li class="dropdown" id="navbar-item-apps">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">apps <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li class="nav-header">messaging</li>
-              <li class="dropdown-submenu"><a href="#">Freemail</a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">sub item</a></li>
-                </ul>
-              </li>
-              <li class="dropdown-submenu"><a href="#">FLIC</a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">sub item</a></li>
-                </ul>
-              </li>
-              <li class="nav-header">community</li>
-              <li class="dropdown-submenu"><a href="#">Anonymous Identities</a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">sub item</a></li>
-                </ul>
-              </li>
-              <li class="dropdown-submenu"><a href="#">Friends</a>
-                <ul class="dropdown-menu">
-                  <li><a href="/connectionsfriends?menu=friends">Connections to friends</a></li>
-                  <li><a href="/addfriend?menu=friends">Add a friend</a></li>
-                </ul>
-              </li>
-              <li class="nav-header">discussion</li>
-              <li><a href="#">Forum</a></li>
-              <li class="dropdown-submenu"><a href="#">Sone</a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">sub item</a></li>
-                </ul>
-              </li>
-              <li class="nav-header">tools</li>
-              <li class="dropdown-submenu"><a href="#">Key Utils</a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Key Explorer</a></li>
-                  <li><a href="#">Site Explorer</a></li>
-                  <li><a href="#">Split Explorer</a></li>
-                  <li><a href="#">Extra Calculator</a></li>
-                  <li><a href="#">FBlob Viewer</a></li>
-                  <li><a href="#">Key Converter</a></li>
-                  <li><a href="#">About</a></li>
-                </ul>
-              </li>
-              <li class="divider"></li> <!--  this divider is a needed, the install link MUST BE SEPARATED from the other items in the menu, this can't be left to be done by the theme maker or  else  we give the theme the possibility to 'break' the usability and the logic of the interface -->
-              <li><a href="#">Install new app</a></li>
-            </ul>
-          </li>
-          <li class="dropdown" id="navbar-item-browse">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Browse Freenet" >BROWSE <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#" title="Browse freesites saved on your bookmarks">Bookmarks</a></li>
-              <li><a href="/search" title="Search Freenet!">Search</a></li>
-              <li><a href="#visitFreesite"  data-toggle="modal">Visit Freesite</a></li>
-            </ul>
-          </li>
-          <li class="dropdown" id="navbar-item-upload">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">upload <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="/uploadfreesite">Upload Freesite</a></li>
-              <li><a href="/uploadfile">Upload File</a></li>
-            </ul>
-          </li>
-          <li class="divider-vertical"></li>
-          <li class="dropdown <% if request.fullpath == "/notifications" %>active<%end%>" id="navbar-item-notifications" data-toggle="tooltip" title="Notifications" data-placement="bottom">
-            <!-- a href="/notifications" class="dropdown-toggle" data-toggle="dropdown"-->
-            <a href="/notifications">
-              <span id="notifications-quantity" class="label label-warning">
-                1
-              </span></a>
+
+    <a class="brand" href="/welcome">
+     Freenet
+   </a>
+   <ul class="nav" id="navbar-item-openapp">
+    <li class="divider-vertical"></li>
+    <% if menu == 'sone' %>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sone <b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li class="nav-header">Nav header</li>
+        <li><a href="#">Separated link</a></li>
+        <li class="dropdown-submenu">
+          <a tabindex="-1" href="#">More options</a>
+          <ul class="dropdown-menu">
+            <li><a tabindex="-1" href="#">Second level link</a></li>
+            <li><a tabindex="-1" href="#">Second level link</a></li>
+            <li><a tabindex="-1" href="#">Second level link</a></li>
+            <li><a tabindex="-1" href="#">Second level link</a></li>
+            <li><a tabindex="-1" href="#">Second level link</a></li>
+          </ul>
+        </li>
+        <li><a href="#">One more separated link</a></li>
+      </ul>
+    </li>
+
+    <% elsif menu == 'title' %>
+    <li><a href="#"><%= title %></a></li>
+    <% end %>
+
+    <% if request.fullpath.include?("apps") %>
+    <li class="dropdown" id="open-app"></li>
+    <%end%>
+  </ul>
+  <ul class="nav pull-right">
+    <li class="divider-vertical"></li>
+    <li class="dropdown<% if request.fullpath.include?("manage") %> active<%end%>" id="navbar-item-apps">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">apps <b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li class="nav-header">messaging</li>
+        <li class="dropdown-submenu"><a href="#">Freemail</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">sub item</a></li>
+          </ul>
+        </li>
+        <li class="dropdown-submenu"><a href="#">FLIC</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">sub item</a></li>
+          </ul>
+        </li>
+        <li class="nav-header">community</li>
+        <li class="dropdown-submenu"><a href="#">Anonymous Identities</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">sub item</a></li>
+          </ul>
+        </li>
+        <li class="dropdown-submenu<% if request.fullpath.include?("friend") %> active<%end%>"><a href="#">Friends</a>
+          <ul class="dropdown-menu">
+            <li class="<% if request.fullpath.include?("connectionsfriends") %> active<%end%>" id="connectionsfriends"><a href="/apps/connectionsfriends">Connections to friends</a></li>
+            <li class="<% if request.fullpath.include?("addfriend") %> active<%end%>" id="addfriend"><a href="/apps/addfriend">Add a friend</a></li>
+          </ul>
+        </li>
+        <li class="nav-header">discussion</li>
+        <li><a href="#">Forum</a></li>
+        <li class="dropdown-submenu"><a href="#">Sone</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">sub item</a></li>
+          </ul>
+        </li>
+        <li class="nav-header">tools</li>
+        <li class="dropdown-submenu"><a href="#">Key Utils</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Key Explorer</a></li>
+            <li><a href="#">Site Explorer</a></li>
+            <li><a href="#">Split Explorer</a></li>
+            <li><a href="#">Extra Calculator</a></li>
+            <li><a href="#">FBlob Viewer</a></li>
+            <li><a href="#">Key Converter</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </li>
+        <li class="divider"></li> <!--  this divider is a needed, the install link MUST BE SEPARATED from the other items in the menu, this can't be left to be done by the theme maker or  else  we give the theme the possibility to 'break' the usability and the logic of the interface -->
+        <li class="<% if request.fullpath.include?("manage") %> active<%end%>"><a href="/apps/manage">Manage Apps</a></li>
+      </ul>
+    </li>
+    <li class="dropdown<% if request.fullpath.include?("search") %> active<%end%>" id="navbar-item-browse">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Browse Freenet" >BROWSE <b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li><a href="#" title="Browse freesites saved on your bookmarks">Bookmarks</a></li>
+        <li class="<% if request.fullpath.include?("search") %> active<%end%>"><a href="/search" title="Search Freenet!">Search</a></li>
+        <li><a href="#visitFreesite"  data-toggle="modal">Visit Freesite</a></li>
+      </ul>
+    </li>
+    <li class="dropdown<% if request.fullpath.include?("uploadf") %> active<%end%>" id="navbar-item-upload">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">upload <b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li class="<% if request.fullpath.include?("uploadfreesite") %> active<%end%>"><a href="/uploadfreesite">Upload Freesite</a></li>
+        <li class="<% if request.fullpath.include?("uploadfile") %> active<%end%>"><a href="/uploadfile">Upload File</a></li>
+      </ul>
+    </li>
+    <li class="divider-vertical"></li>
+    <li class="dropdown <% if request.fullpath.include?("notifications") %> active<%end%>" id="navbar-item-notifications" data-toggle="tooltip" title="Notifications" data-placement="bottom">
+      <!-- a href="/notifications" class="dropdown-toggle" data-toggle="dropdown"-->
+      <a href="/notifications">
+        <span id="notifications-quantity" class="label label-warning">
+          1
+        </span></a>
               <!-- ul class="dropdown-menu">
                 <li><a href="/notifications?menu=title&amp;title=Notifications">View notifications list</a></li>
               </ul -->
             </li>
-            <li class="<% if request.fullpath == "/downloadedfiles" %>active<%end%>" id="navbar-item-downloads" data-toggle="tooltip" title="Downloads" data-placement="bottom">
-            <!-- li class="dropdown <% if request.fullpath == "/downloadedfiles" %>active<%end%>" id="navbar-item-downloads" data-toggle="tooltip" title="Downloads" data-placement="bottom">
-              <a href="/downloadedfiles" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-download"></i></a -->
-              <a href="/downloadedfiles"><i class="icon-download"></i></a>
+            <li class="<% if request.fullpath.include?("share") %> active<%end%>" id="navbar-item-downloads" data-toggle="tooltip" title="Downloads" data-placement="bottom">
+            <!-- li class="dropdown <% if request.fullpath.include?("downloadedfiles") %>active<%end%>" id="navbar-item-downloads" data-toggle="tooltip" title="Downloads" data-placement="bottom">
+            <a href="/downloadedfiles" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-download"></i></a -->
+              <a href="/share/downloadedfiles"><i class="icon-download"></i></a>
               <!-- ul class="dropdown-menu">
                 <li><a href="/downloadedfiles">View downloads list</a></li>
                 <li><a href="/downloadedfiles">View uploads list</a></li>
               </ul -->
             </li>
-            <li class="dropdown <% if request.fullpath == "/seclevels" %>active<%end%>" id="navbar-item-security" data-toggle="tooltip" title="Status & Security" data-placement="bottom">
+            <li class="dropdown" id="navbar-item-security" data-toggle="tooltip" title="Status & Security" data-placement="bottom">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-lock"></i></a>
               <div class="dropdown-menu">
                 <strong>Connections</strong>
@@ -154,7 +152,7 @@
                   <div class="bar bar-success" style="width: 60%;">6/10</div>
                 </div>
                 <strong>Security levels</strong> 
-                <a href="/seclevels" class="btn btn-link btn-small no-margin">Edit</a>
+                <a href="/settings/seclevels" class="btn btn-link btn-small no-margin">Edit</a>
                 <br>
                 <div class="row">
                   <div class="span2">
@@ -168,7 +166,7 @@
                 </div>
               </div>
             </li>
-            <li class="dropdown" id="navbar-item-settings" data-toggle="tooltip" title="Settings" data-placement="bottom">
+            <li class="dropdown<% if request.fullpath.include?("settings") %> active<% end %>" id="navbar-item-settings" data-toggle="tooltip" title="Settings" data-placement="bottom">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cog"></i></a>
               <ul class="dropdown-menu">
                 <li class="dropdown-submenu"><a href="#">Status</a>
@@ -180,9 +178,8 @@
                   </ul>
                 </li>
                 <li class="divider"></li>
-                <li><a href="#">Security Levels</a></li>
-                <li><a href="/plugins">Apps</a></li>
-                <li><a href="/interfaces">Interfaces</a></li>
+                <li class=" <% if request.fullpath.include?("seclevels") %>active<%end%>"><a href="/settings/seclevels">Security Levels</a></li>
+                <li class="<% if request.fullpath.include?("interfaces") %>active<%end%>"><a href="/settings/interfaces">Interfaces</a></li>
                 <li><a href="#">FCP</a></li>
                 <li><a href="#">Logs</a></li>
                 <li><a href="#">Core settings</a></li>
@@ -199,7 +196,7 @@
 
           </ul>
 
-              <% end %>
+          <% end %>
         </div>
       </nav>
     </header>
