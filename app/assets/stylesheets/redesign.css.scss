@@ -72,6 +72,18 @@ abbr[data-original-title] {
 	display: inline;
 }
 
+//allow the advanced button to be absolute
+.page-header, .btn-toolbar {
+  position: relative;
+}
+
+//position the advanced button
+.advancedModeBtn {
+  bottom: 0px;
+  right: 0;
+  position: absolute;
+}
+
 .apply-buttons {
     margin-top: 50px;
 }

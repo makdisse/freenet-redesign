@@ -61,19 +61,18 @@ $("#enable_buttons").change(function()  {
   }
 })
 
-//Always toggle simpleModeBtn
-$(".simpleModeBtn").button('toggle');
-
 //Be sure that all advanced itens are hidden
 //Used to fix the problem with input boxes
 $(".advanced").hide();
 
 //Simple and advanced mode - show and hide
-$(".simpleModeBtn").click(function() {
-  $(".advanced[data-parent='" + $(this).data("parenttohide") + "']").slideToggle("slow");
-})
 $(".advancedModeBtn").click(function() {
   $(".advanced[data-parent='" + $(this).data("parenttohide") + "']").slideToggle("slow");
+  if ($(this).find("i").attr("class") == "icon-caret-up") {
+    $(this).find("i").attr("class","icon-caret-down");
+  } else {
+    $(this).find("i").attr("class","icon-caret-up");
+  }
 })
 
 //Workaround to keep the dropdown open when clicking on a input

@@ -181,7 +181,7 @@
                 <li class=" <% if request.fullpath.include?("seclevels") %>active<%end%>"><a href="/settings/seclevels">Security Levels</a></li>
                 <li class="<% if request.fullpath.include?("interfaces") %>active<%end%>"><a href="/settings/interfaces">Interfaces</a></li>
                 <li><a href="#">FCP</a></li>
-                <li><a href="#">Logs</a></li>
+                <li class="<% if request.fullpath.include?("logs") %>active<%end%>"><a href="/settings/logs">Logs</a></li>
                 <li><a href="#">Core settings</a></li>
                 <li><a href="#">Installation settings</a></li>
                 <li><a href="#">Load management</a></li>

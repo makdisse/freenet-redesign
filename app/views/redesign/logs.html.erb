@@ -1,0 +1,205 @@
+<section>
+	<div class="page-header">
+		<button type="button" class="pull-right btn btn-link btn-mini advancedModeBtn" data-parenttohide="logs">Advanced <i class="icon-caret-down"></i></button>
+		<h1>Logs</h1>
+	</div>
+
+	<div class="row">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxx.xxx]">Enable logging?</abbr>
+			</strong>
+			<p class="muted">
+				Set to no to completely disable logging
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr>
+
+
+
+	<div class="row advanced" data-parent="logs">
+		<div class="span8">
+			<strong>
+				<abbr title="Default:  xxx [xxx.xxx]">Logging directory</abbr>
+			</strong>
+			<p class="muted">
+				Directory into which to put log files
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="logs">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="logs">
+
+
+
+	<div class="row advanced" data-parent="logs">
+		<div class="span8">
+			<strong>
+				<abbr title="Default:  xxx [xxx.xxx]">Maximum disk space used by old logs</abbr>
+			</strong>
+			<p class="muted">
+				Maximum disk space used by old logs
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="10 MB">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="logs">
+
+
+
+
+	<div class="row advanced" data-parent="logs">
+		<div class="span8">
+			<strong>
+				<abbr title="Default:  xxx [xxx.xxx]">Minimum priority to log messages at</abbr>
+			</strong>
+			<p class="muted">
+				Minimum priority at which messages are logged. options are debug, minor, normal, warning, error, in order of diminishing verbosity. Generally you only need to change this if something is broken and you need to gather more information for the developers. If you are worried about your computer being seized, set this to ERROR to minimise any possible information leakage.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<select name="logger.priority"><option value="MINIMAL">MINIMAL</option>
+					<option value="DEBUG">DEBUG</option>
+					<option value="MINOR">MINOR</option>
+					<option value="NORMAL">NORMAL</option>
+					<option selected="selected" value="WARNING">WARNING</option>
+					<option value="ERROR">ERROR</option>
+					<option value="NONE">NONE</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="logs">
+
+
+
+	<div class="row advanced" data-parent="logs">
+		<div class="span8">
+			<strong>
+				<abbr title="Default:  xxx [xxx.xxx]">Detailed priority thresholds</abbr>
+			</strong>
+			<p class="muted">
+				Detailed priority thresholds, example freenet:normal,freenet.node:minor
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="logs">
+
+
+
+
+	<div class="row advanced" data-parent="logs">
+		<div class="span8">
+			<strong>
+				<abbr title="Default:  xxx [xxx.xxx]">Log rotation interval</abbr>
+			</strong>
+			<p class="muted">
+				Log rotation interval - period after which logs are rotated. We keep the last two log files (current and prev), plus lots of compressed logfiles up to maxZippedLogsSize
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="1HOUR">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="logs">
+
+
+
+
+	<div class="row advanced" data-parent="logs">
+		<div class="span8">
+			<strong>
+				<abbr title="Default:  xxx [xxx.xxx]">Max cached log bytes in RAM</abbr>
+			</strong>
+			<p class="muted">
+				Maximum number of bytes of logging cached in RAM
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="1024KiB">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="logs">
+
+
+
+
+	<div class="row advanced" data-parent="logs">
+		<div class="span8">
+			<strong>
+				<abbr title="Default:  xxx [xxx.xxx]">Max cached log lines in RAM</abbr>
+			</strong>
+			<p class="muted">
+				Maximum number of lines of logging cached in RAM
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="10k">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="logs">
+
+
+
+
+	<div class="row advanced" data-parent="logs">
+		<div class="span8">
+			<strong>
+				<abbr title="Default:  xxx [xxx.xxx]">Max time between writing logs </abbr>
+			</strong>
+			<p class="muted">
+				Max time between writing logs (milliseconds)
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="60k">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="logs">
+
+
+</section>
+
+
+
+<div class="apply-buttons modal-footer">
+	<a href="#" class="act act-warning pull-left">Reset to defaults</a>
+	<a href="#" class="act act-danger act-large">Discard changes</a>
+	<span>or</span>
+	<a href="#" class="btn btn-primary btn-large">Save changes</a>
+</div>
