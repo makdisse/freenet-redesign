@@ -1,0 +1,232 @@
+<section>
+	<div class="page-header">
+		<button type="button" class="pull-right btn btn-link btn-mini advancedModeBtn" data-parenttohide="load">Advanced <i class="icon-caret-down"></i></button>
+		<h1>Load Management</h1>
+	</div>
+
+
+
+
+
+	<div class="row">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Thread limit</abbr>
+			</strong>
+			<p class="muted">
+				Freenet will try to limit its thread usage to the specified value by refusing new requests when it is using too many threads.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="500">
+			</div>
+		</div>
+	</div>
+	<hr>
+
+
+
+
+
+	<div class="row advanced" data-parent="load">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">AggressiveGC modificator</abbr>
+			</strong>
+			<p class="muted">
+				Enables the user to tweak the time in between GC and forced finalization. SHOULD NOT BE CHANGED unless you know what you're doing! -1 means: disable forced call to System.gc() and System.runFinalization()
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="-1">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="load">
+
+
+
+	<div class="row advanced" data-parent="load">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Enable the Memory check</abbr>
+			</strong>
+			<p class="muted">
+				Enable the memory check (writes a message in logfile, mandatory for aggressiveGCModificator to have any effect!)
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="load">
+
+
+
+
+
+	<div class="row advanced" data-parent="load">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Treat local requests as remote requests for bandwidth liability limiting?</abbr>
+			</strong>
+			<p class="muted">
+				Enable this for significantly lower bandwidth usage and slightly more security against request starting timing attacks (mostly you don't need to worry about them as correlation attacks are probably easier)
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="load">
+
+
+
+
+	<div class="row advanced" data-parent="load">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Maximum ping time?</abbr>
+			</strong>
+			<p class="muted">
+				Freenet will reject all requests if the average ping time to its peers goes above this level. Ping times have proven a reliable indicator of both system and network load, but if your internet connection is unusually slow, you should increase this. Measured in milliseconds.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="1500">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="load">
+
+
+
+	<div class="row advanced" data-parent="load">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Start rejecting requests at what ping time?</abbr>
+			</strong>
+			<p class="muted">
+				Freenet will start to reject some requests when the average ping time to its peers goes beyond this time. Increase it if your internet connection is unusually slow. Measured in milliseconds.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="700">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="load">
+
+
+
+
+	<div class="row advanced" data-parent="load">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Enable new load management (for realtime requests)? (EXPERIMENTAL!)</abbr>
+			</strong>
+			<p class="muted">
+				Turn this on to test the new load management code for realtime requests. This is highly experimental and may severely break your node or dramatically reduce or increase its performance! Good luck, and tell us what happens!
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="load">
+
+
+
+
+	<div class="row advanced" data-parent="load">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Enable new load management (for bulk requests)? (EXPERIMENTAL!)</abbr>
+			</strong>
+			<p class="muted">
+				Turn this on to test the new load management code for bulk requests. This is highly experimental and may severely break your node or dramatically reduce or increase its performance! Good luck, and tell us what happens!
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="load">
+
+
+
+
+
+	<div class="row advanced" data-parent="load">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">File to store node statistics in</abbr>
+			</strong>
+			<p class="muted">
+				File to store node statistics in (not client statistics, and these are used to decide whether to accept requests so please don't delete)
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="node-throttle.dat">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="load">
+
+
+
+
+
+</section>
+
+
+
+<div class="apply-buttons modal-footer">
+	<a href="#" class="act act-warning pull-left">Reset to defaults</a>
+	<a href="#" class="act act-danger act-large">Discard changes</a>
+	<span>or</span>
+	<a href="#" class="btn btn-primary btn-large">Save changes</a>
+</div>
+
+
