@@ -1,0 +1,1724 @@
+<section>
+	<div class="page-header">
+		<button type="button" class="pull-right btn btn-link btn-mini advancedModeBtn" data-parenttohide="core">Advanced <i class="icon-caret-down"></i></button>
+		<h1>Core settings</h1>
+	</div>
+
+
+	<div class="row">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [console.xxxx]">The language Freenet will use to display messages</abbr>
+			</strong>
+			<p class="muted">
+				This setting will change the language used to display messages.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<select name="node.l10n"><option selected="selected" value="English">English</option>
+					<option value="Español">Español</option>
+					<option value="Dansk">Dansk</option>
+					<option value="Nederlands">Nederlands</option>
+					<option value="Deutsch">Deutsch</option>
+					<option value="Suomi">Suomi</option>
+					<option value="Français">Français</option>
+					<option value="Italiano">Italiano</option>
+					<option value="Norsk">Norsk</option>
+					<option value="Polski">Polski</option>
+					<option value="Svenska">Svenska</option>
+					<option value="中文(简体)">中文(简体)</option>
+					<option value="中文(繁體)">中文(繁體)</option>
+					<option value="Русский">Русский</option>
+					<option value="日本語">日本語</option>
+					<option value="unlisted">unlisted</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<hr>
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Automatically encrypt or decrypt node.db4o on restarting the node?</abbr>
+			</strong>
+			<p class="muted">
+				Automatically encrypt or decrypt node.db4o on restart (or on first entering the password) if the security level has changed? (It is encrypted unless physical security level is LOW). This can take some time during startup, but if it is disabled, you will have to shut down Freenet, remove node.db4o(.crypt), and start it back up to change whether it is encrypted, which will wipe out your downloads/uploads queue.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Location of the master keys file</abbr>
+			</strong>
+			<p class="muted">
+				Filename for the master keys file. This contains the encryption keys for the cache of recently visited sites (client-cache), the download queue etc. These may be passworded through the security levels page, but securely deleting the keys file will make them useless even with the password. (If this is a relative path, it will be taken relative to the user data directory.)
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="master.keys">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Defragment the downloads database during the next startup?</abbr>
+			</strong>
+			<p class="muted">
+				If true, the database will be defragmented during the next startup (or after the password is entered).
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Defrag once only (set above option as well!)</abbr>
+			</strong>
+			<p class="muted">
+				If this and the above option is true, we will defragment on the next startup and then turn off the defragment option.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Show the friends' visibility settings need to be set alert?</abbr>
+			</strong>
+			<p class="muted">
+				Show the friends' visibility settings need to be set alert?
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Disable probabilistic HTL</abbr>
+			</strong>
+			<p class="muted">
+				Disable probabilistic HTL (don't touch this unless you know what you are doing)
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Maximum HTL</abbr>
+			</strong>
+			<p class="muted">
+				Maximum HTL (FOR DEVELOPER USE ONLY!)
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="18">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">IP address override</abbr>
+			</strong>
+			<p class="muted">
+				IP address override (not usually needed) - set this if you have a *static* IP address or a domain name (e.g. via dyndns), and you are behind a firewall. Note that Freenet will still include other detected IP addresses unless you use the "bind to" option.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Temporary IP address hint</abbr>
+			</strong>
+			<p class="muted">
+				Temporary hint to what our IP might be; deleted after use
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Enable ARKs?</abbr>
+			</strong>
+			<p class="muted">
+				Enable ARKs? (DON'T TURN THIS OFF!).
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Enable per-node failure tables?</abbr>
+			</strong>
+			<p class="muted">
+				Enable automatically rerouting around nodes that failed a request within the last 10 minutes?
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Enable ULPR data propagation?</abbr>
+			</strong>
+			<p class="muted">
+				Enable fast propagation of recently requested keys to those nodes which have asked for them when the data is eventually found? (Ultra-Lightweight Persistent Requests; this is particularly important for chat clients). Note that this also enables RecentlyFailed, which will squash requests which have recently had 3 DNFs at at least the HTL it is being fetched at now (this is only safe because ULPRs ensure that we will get the key quickly if it is found); this is important to limit the load chat clients put on the Freenet network.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Enable location swapping? </abbr>
+			</strong>
+			<p class="muted">
+				Enable location swapping? (DO NOT TURN THIS OFF! It is only useful in some simulations).
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Shall we send our peers' locations to our peers?</abbr>
+			</strong>
+			<p class="muted">
+				Shall we send our peers' locations to our peers? Doing so helps routing but gives some information away to a potential attacker.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Shall we use the locations of the peers of our peers into account for routing purposes?</abbr>
+			</strong>
+			<p class="muted">
+				Shall we use the locations of the peers of our peers into account for routing purposes? Doing so helps routing but might help a potential attacker.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Enable queueing of swap requests?</abbr>
+			</strong>
+			<p class="muted">
+				Enable queueing of swap requests? (DO NOT TURN THIS OFF!)
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Enable packet coalescing?</abbr>
+			</strong>
+			<p class="muted">
+				Enable packet coalescing? Packet coalescing increases bandwidth efficiency, reduces CPU usage and gains some resistance to traffic analysis at a small cost in message latency. Don't turn this off unless you know what you're doing.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Darknet port number (UDP)</abbr>
+			</strong>
+			<p class="muted">
+				UDP port used by Freenet to communicate with your Friends' nodes. This port should be forwarded in your router if possible. We use a separate port for connections to Strangers.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="22227">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">IP address to bind to</abbr>
+			</strong>
+			<p class="muted">
+				IP address to bind to
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="0.0.0.0">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Testing packet drop frequency</abbr>
+			</strong>
+			<p class="muted">
+				Frequency of dropping packets. Testing option used by devs to simulate packet loss. 0 means never artificially drop a packet. Don't touch this!
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="0">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Limit to one connection per address? (friends) (NOT RECOMMENDED)</abbr>
+			</strong>
+			<p class="muted">
+				Automatically drop friend connections when other friends have the same (external) IP address. DO NOT ENABLE THIS UNLESS YOU *REALLY* KNOW WHAT YOU ARE DOING!
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Always allow connecting to nodes via local addresses?</abbr>
+			</strong>
+			<p class="muted">
+				If true, Freenet will attempt to connect to other nodes via their local (localhost, LAN) addresses as well as their public IPs. If this is not set, you can still enable it for specific darknet peers (but not opennet peers). Set this if you want to connect to other nodes on the same LAN or computer, and don't mind that bogus references can cause your node to send UDP packets to machines on your LAN.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Assume the port is not forwarded.</abbr>
+			</strong>
+			<p class="muted">
+				Should Freenet assume the port is NATed and not forwarded, and always send handshakes aggressively (every 10-30 seconds), regardless of any evidence to the contrary?
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Include local addresses in noderef</abbr>
+			</strong>
+			<p class="muted">
+				Whether to include local addresses (LAN and localhost) in node references. This will not be useful unless the both sides set allowLocalAddresses=true for the respective references (use the Friends page in advanced mode to set this flag).
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Pad data packets sent by this Freenet node with random data of random length? (READ WARNING BEFORE TURNING OFF!)</abbr>
+			</strong>
+			<p class="muted">
+				Pad data packets sent by this Freenet node with random-length content? For security, on a single node, turning this off is bad; if a large part of the network starts doing it, we become very vulnerable to a passive attacker. However, it should improve performance, particularly the payload percentage. You have been warned!
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+
+	<div class="row">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Upload bandwidth limit</abbr>
+			</strong>
+			<p class="muted">
+				Hard upload bandwidth limit. Freenet should almost never exceed this. Normally you should set this to no more than half the your internet connection's upload bandwidth, which is usually much less than your download bandwidth. Without units this is in bytes/second, and SI and IEC units are accepted, so things like 10 KiB/s or 1.5 mbps (meaning 10 kibibytes/sec and 1.5 megabytes/sec respectively) are okay.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="5KiB">
+			</div>
+		</div>
+	</div>
+	<hr>
+
+
+
+
+
+
+	<div class="row ">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Download bandwidth limit</abbr>
+			</strong>
+			<p class="muted">
+				Download bandwidth limit. Freenet will try not to exceed this, but it is not very accurate. If set to -1 the download bandwidth limit will be 4x the upload bandwidth limit. Without units this is in bytes/second, and SI and IEC units are accepted, so things like 10 KiB/s or 1.5 mbps (meaning 10 kibibytes/sec and 1.5 megabytes/sec respectively) are okay.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="5KiB">
+			</div>
+		</div>
+	</div>
+	<hr>
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Throttle local traffic?</abbr>
+			</strong>
+			<p class="muted">
+				Throttle local traffic? If enabled, even LAN and localhost traffic will be subject to bandwidth limiting.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Respond to probe requests for bandwidth limit</abbr>
+			</strong>
+			<p class="muted">
+				If true Freenet will respond to requests for the outgoing bandwidth limit. This is to improve knowledge of network conditions and allow simulations to better reflect the actual network. It will add a small amount of random noise to make the information less identifiable but still useful for diagnostics. If false it will respond with a refusal.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Respond to probe requests for build</abbr>
+			</strong>
+			<p class="muted">
+				If true Freenet will respond to probe requests for the build. This is to measure update propagation. If false it will respond with a refusal.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Respond to probe requests for an identifier</abbr>
+			</strong>
+			<p class="muted">
+				If true Freenet will respond to probe requests for an identifier and very low-precision uptime information. It will add a small amount of random noise to the uptime to make it less identifiable but still useful for diagnostics. This is useful for estimations of network size and churn. If false it will respond with a refusal.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Respond to probe requests for link lengths</abbr>
+			</strong>
+			<p class="muted">
+				If true Freenet will respond to probe requests for link lengths. This is to improve knowledge of network conditions, and allow simulations to better reflect the actual network. It will add a small amount of random noise to make the information less identifiable but still useful for diagnostics. If false it will respond with a refusal.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Respond to probe requests for location</abbr>
+			</strong>
+			<p class="muted">
+				If true Freenet will respond to probe requests for low-precision location. This is to allow measurement of the network location distribution, and contains no information other than location. If false it will respond with a refusal.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Respond to probe requests for store size</abbr>
+			</strong>
+			<p class="muted">
+				If true freenet will respond to probe requests for store size. This is to improve knowledge of network conditions, and allow simulations to better reflect the actual network. It will add a small amount of random noise to make the information less identifiable but still useful for diagnostics. If false it will respond with a refusal.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Respond to probe requests for uptime</abbr>
+			</strong>
+			<p class="muted">
+				If true freenet will respond to probe requests for 48-hour or 7-day uptime percentage. This is to improve knowledge of network conditions, and allow simulations to better reflect the actual network. It will add a small amount of random noise to make the information less identifiable but still useful for diagnostics. If false it will respond with a refusal.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Respond to probe requests for proportion of requests of various kinds rejected.</abbr>
+			</strong>
+			<p class="muted">
+				If true, Freenet will respond to probe requests for the proportion of various kinds of requests which are being rejected. This returns an integer proportion if there have been more than 200 requests, for each category (CHK, SSK for insert, request) and it is updated every 10 minutes.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Respond to probe requests for overall capacity usage and very approximate bandwidth limit</abbr>
+			</strong>
+			<p class="muted">
+				If true Freenet will respond to probe requests for the overall capacity usage (bandwidth liability, this is a guesstimate of how much bandwidth would be used if all running requests succeeded), and a rough idea of the bandwidth limit (as an integer, divided by 10KB/sec, min 1 max 10).
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Randomly assigned identifier for probe requests</abbr>
+			</strong>
+			<p class="muted">
+				This identifier is only used in probe requests for an identifier. If set to -1 it will select a new random value.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="8715864291665981597">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">File to store client statistics in</abbr>
+			</strong>
+			<p class="muted">
+				File to store client throttling statistics in (used to decide how often to send requests)
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="client-throttle.dat">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Encrypt the persistent temporary buckets? LEAVE THIS ALONE!</abbr>
+			</strong>
+			<p class="muted">
+				Encrypt the persistent temporary buckets? In some cases (if you use hard-drive and swap encryption) it might not make sense to encrypt persistent temporary buckets. LEAVE THIS ALONE IF YOU DON'T KNOW WHAT YOU ARE DOING!
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Maximum size of a RAMBucket (bytes, KB MB etc allowed)</abbr>
+			</strong>
+			<p class="muted">
+				Maximum size of a RAMBucket (bigger buckets will be kept as files on the disk)
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="2243952">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Amount of RAM to dedicate to temporary buckets (bytes, KB MB etc allowed)</abbr>
+			</strong>
+			<p class="muted">
+				Amount of RAM to dedicate to temporary buckets. The tradeoff is more memory usage against more IOs.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="43MiB">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Encrypt the temporary buckets? LEAVE THIS ALONE!</abbr>
+			</strong>
+			<p class="muted">
+				Encrypt the temporary buckets? In some cases (if you use hard-drive and swap encryption) it might not make sense to encrypt temporary buckets. LEAVE THIS ALONE IF YOU DON'T KNOW WHAT YOU ARE DOING!
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+	<div class="row">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Default download directory</abbr>
+			</strong>
+			<p class="muted">
+				The directory to save downloaded files into by default
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="downloads"> <a href="#" class="btn">Select</a>
+			</div>
+		</div>
+	</div>
+	<hr>
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Directories downloading is allowed to</abbr>
+			</strong>
+			<p class="muted">
+				Semicolon separated list of directories to which downloads are allowed. "downloads" means downloadsDir, empty means no downloads to disk allowed, "all" means downloads allowed from anywhere. WARNING! If this is set to "all" any user with access to FCP can download any file to anywhere on your computer!
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="all">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Directories uploading is allowed from</abbr>
+			</strong>
+			<p class="muted">
+				Semicolon separated list of directories from which uploads are allowed. Empty means no uploads from disk allowed, "all" means uploads allowed from anywhere (including system files etc!). WARNING! If this is set to "all" any file on your computer can be uploaded by any user with access to FCP.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="all">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Maximum number of temporary USK fetchers</abbr>
+			</strong>
+			<p class="muted">
+				Maximum number of temporary background fetches for recently visited USKs (e.g. freesites). Note that clients and plugins (e.g. WebOfTrust) can subscribe to USKs, which does not count towards the limit.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="64">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Commit after every database job?</abbr>
+			</strong>
+			<p class="muted">
+				If this option is false, we commit the database to disk every 30 seconds. If it is true we commit it after every database job. This will reduce performance but will ensure that no progress is lost on an unclean shutdown, and slightly reduce memory usage. Normally this should be false, to reduce disk access.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Relay opennet noderefs through darknet peers?</abbr>
+			</strong>
+			<p class="muted">
+				If true, opennet noderefs (NEVER our own darknet noderef) will be relayed through our darknet peers. So a node (this node, or its peers) can get opennet peers from its darknet peers. This is useful because it allows us to bootstrap new opennet peers after having lost our peers due to downtime, for example. However, it may make traffic analysis slightly easier, so turn it off if you are paranoid.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+
+	<div class="row">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Nickname for this Freenet node</abbr>
+			</strong>
+			<p class="muted">
+				Node nickname. This will be visible to your friends only.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="xxx">
+			</div>
+		</div>
+	</div>
+	<hr>
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Do large store shrinks immediately (bdbje-index store type only)</abbr>
+			</strong>
+			<p class="muted">
+				Whether to do large store shrinks (over 10%) immediately (rather than waiting for the next node restart). Online shrinks do not preserve the most recently used data, so this is not recommended; use it only if you must have an immediate result. Specific to bdbje-index store type.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Datastore type (LEAVE THIS ALONE)</abbr>
+			</strong>
+			<p class="muted">
+				Datastore type. Currently this can be salt-hash (this is the default, stores data on disk with a lossy hashtable and a Bloom filter), or ram (FOR TESTING ONLY, keep the index and the data in memory, not on disk). Only use ram if you know what you are doing and have enough RAM to store all your data (and note it will not be saved on shutdown)! Changes will not take effect until Freenet has been restarted.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<select name="node.storeType"><option selected="selected" value="salt-hash">salt-hash</option>
+					<option value="ram">ram</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Freenet datastore size (bytes, MB GB TB etc allowed)</abbr>
+			</strong>
+			<p class="muted">
+				Size of the Freenet datastore, which includes the store and cache, and stores data passing through your node. Freenet uses disk space for many other things, such as temporary files and your downloads, which are separate.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="455535821">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Use slot filters? (Strongly recommended)</abbr>
+			</strong>
+			<p class="muted">
+				This greatly reduces disk I/O for the salted-hash store, at a memory and disk cost of around 4 bytes for every key i.e. 1/3000th of the store size. This is strongly recommended, unless your RAM is small and you have a fast SSD.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Persistence interval for slot filters</abbr>
+			</strong>
+			<p class="muted">
+				How often should the slot filters be written for the store? -1 = write immediately. 0 = write at shutdown. >0 = write every n milliseconds. So e.g. 60000 = every minute. Note that if Freenet is shut down uncleanly, and this is not set to write immediately, the slot filter will be rebuilt on the next start-up, which will cause a significant amount of disk access.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="300k">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Resize store on node start (salt-hash only)</abbr>
+			</strong>
+			<p class="muted">
+				Resize store on node start (salt-hash only). If this is true, Freenet will complete resizing the datastore during startup. This will complete much faster than doing it "on the fly", but on the other hand your Freenet node will not be available for some time while it completes the resize.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Preallocate space for datastore</abbr>
+			</strong>
+			<p class="muted">
+				Preallocate space for datastore
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Maximum size of the in-memory write cache for each store (there are 9 such stores).</abbr>
+			</strong>
+			<p class="muted">
+				Maximum size of the in-memory write cache for each store (there are 9 such stores). 0 for no in-memory cache (e.g. if you have a solid-state disk). Keys are of various sizes, so e.g. if the limit is between 2K and 32K it will only be used for storing small keys (SSKs and public keys).
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="1024KiB">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Maximum time blocks will be kept in the in-memory datastore cache before being written to the store on disk (in milliseconds).</abbr>
+			</strong>
+			<p class="muted">
+				Maximum time blocks will be kept in the in-memory datastore cache before being written to the store on disk (in milliseconds).
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="300k">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Client cache type?</abbr>
+			</strong>
+			<p class="muted">
+				If you set this to none there will be less evidence if your computer is seized, but your node will need to re-fetch every page you visit every time you visit it, reducing performance and making your requests more visible on the network; if you set it to ram, cached pages will only be remembered until shutting down this Freenet node and will take up RAM; the first-time wizard sets it to salt-hash, which stores visited freesites on disk, but encrypted and possibly passworded according to the physical security level (so securely deleting master.keys will wipe the client cache).
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<select name="node.clientCacheType">
+					<option selected="selected" value="salt-hash">salt-hash</option>
+					<option value="ram">ram</option>
+					<option value="none">none</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Size of the client cache? (bytes, MB, GB etc allowed)</abbr>
+			</strong>
+			<p class="muted">
+				Set the size of the client cache. This is used to cache freesites you visit so that they won't need to be requested next time, and therefore will load faster and won't be visible on the network. If the client cache type is "none", this option is ignored; if it is "ram", this option is the size in RAM of the client cache (part of by the overall maximum memory limit, so increase that if you need to); if it is "salt-hash", this option is the size of the client-cache on disk.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="53687091">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Cache all requests for 30 minutes?</abbr>
+			</strong>
+			<p class="muted">
+				Requests with high HTL are not eligible to be stored in the datastore. If this option is true, they will be stored in the recent requests cache, a special short-term cache. If this option is false then only ULPR responses (i.e. delayed answers to requests) will be stored in this cache. This is enabled by default unless network security level is MAXIMUM, as it is important for performance when a key becomes popular suddenly. However, it does have some security impact, in that if an attacker can get close to the target within 30 minutes (unlikely in most cases), this mechanism may help him to confirm his guesses.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Write local and nearby requests to the datastore?</abbr>
+			</strong>
+			<p class="muted">
+				Whether to write data returned by high HTL (local and nearby) requests to the main persistent datastore. Strongly recommend you keep this option disabled unless you don't care about either datastore seizure or store probing attacks. Will be enabled by default only if the network security level and physical security level are both LOW.
+
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">How long to keep data in the recent requests cache?</abbr>
+			</strong>
+			<p class="muted">
+				How long to keep data in the recent requests cache (milliseconds, use k for seconds)? Note that this goes away on restart anyway.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="1800k">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Maximum size of the recent requests cache (in bytes, KB MB GB TB etc)</abbr>
+			</strong>
+			<p class="muted">
+				Maximum size of the recent requests cache (note that there is also a time limit).
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="27000KiB">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Skip "not using the wrapper" warning?</abbr>
+			</strong>
+			<p class="muted">
+				If true, the "not using the wrapper" warning will not be shown. Note that this will only hide the warning from the next restart on.
+
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Maximum packet size (aka MTU)</abbr>
+			</strong>
+			<p class="muted">
+				Maximum size of the UDP packets Freenet sends, assuming UDP/IP headers are 28 bytes. We will use the MTU of the interface if we can detect it, but mostly obstructions happen elsewhere, and unfortunately we cannot easily detect the path MTU.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="1280">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+	<div class="row advanced" data-parent="core">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Enable FNPRoutedPing?</abbr>
+			</strong>
+			<p class="muted">
+				Enable FNPRoutedPing? Only useful in simulations, not on the real network. Turn it off.
+
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="core">
+
+
+
+</section>
+
+
+
+<div class="apply-buttons modal-footer">
+	<a href="#" class="act act-warning pull-left">Reset to defaults</a>
+	<a href="#" class="act act-danger act-large">Discard changes</a>
+	<span>or</span>
+	<a href="#" class="btn btn-primary btn-large">Save changes</a>
+</div>
+
+
