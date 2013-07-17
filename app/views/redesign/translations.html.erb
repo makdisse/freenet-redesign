@@ -1,0 +1,71 @@
+<section>
+	<div class="page-header">
+        <div class="pull-right">
+            <label>
+                <strong>Viewing translations for:</strong>
+                <select name="translating_for">
+                    <option selected="selected" name="Node">Freenet</option>
+                    <option name="plugins.KeyUtils.KeyUtilsPlugin">plugins.KeyUtils.KeyUtilsPlugin</option>
+                    <option name="plugins.WebOfTrust.WebOfTrust">plugins.WebOfTrust.WebOfTrust</option>
+                </select></label>
+            </div>
+            <h1>Freenet translation</h1>
+        </div>
+
+        <div class="well">
+            You are currently contributing to the <strong>Freenet - English</strong> translation:
+            <a href="#"><i class="icon-download"></i> Download current translations file</a> 
+            <span class="muted"> | </span>
+            <a href="#"><i class="icon-eye-close"></i> Hide already translated strings</a>
+        </div>
+
+        <table class="table table-condensed table-hover">
+
+            <tr>
+                <th class="translation-key">
+                    Original (English version)
+                </th>
+                <th class="translation-key">
+                    Current translation
+                </th>
+
+            </tr>
+            <% 5.times do %>
+            <tr>
+                <td class="translation-orig">
+                Include local addresses in noderef
+                </td>
+                <td class="translation-new">
+                    <span class="translate_it">Include local addresses in noderef <small><a href="#" class="act act-info"><i class="icon-edit"></i> Edit</a></small></span>
+                </td>
+
+            </tr>
+            <tr>
+                <td class="translation-orig">
+                    IP address override (not usually needed) - set this if you have
+                    a *static* IP address or a domain name (e.g. via dyndns), and you are
+                    behind a firewall. Note that Freenet will still include other detected
+                    IP addresses unless you use the "bind to" option.
+                </td>
+                <td class="translation-new">
+                    <span class="translate_it">IP address override (not usually
+                        needed) - set this if you have a *static* IP address or a domain name
+                        (e.g. via dyndns), and you are behind a firewall. Note that Freenet will
+                        still include other detected IP addresses unless you use the "bind to"
+                        option. <small><a href="#" class="act act-info"><i class="icon-edit"></i> Edit</a></small></span>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="translation-orig">
+                        Warning: Freenet will delete your download/upload queue on the next restart if you select this security level!
+                    </td>
+                    <td class="translation-new">
+                        <span class="translate_it"> <small><a href="#" class="act act-info"><i class="icon-edit"></i> Edit</a></small></span>
+                    </td>
+
+                </tr>
+                <% end %>
+            </table>
+
+        </section>
