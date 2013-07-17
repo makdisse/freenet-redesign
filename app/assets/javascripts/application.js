@@ -66,7 +66,7 @@ $("#enable_buttons").change(function()  {
 $(".advanced").hide();
 
 //Simple and advanced mode - show and hide
-$(".advancedModeBtn").click(function() {
+$(".advancedModeBtn,.wizardEditConfig").click(function() {
   $(".advanced[data-parent='" + $(this).data("parenttohide") + "']").slideToggle("slow");
   if ($(this).find("i").attr("class") == "icon-caret-up") {
     $(this).find("i").attr("class","icon-caret-down");
