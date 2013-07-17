@@ -1,0 +1,245 @@
+<section>
+	<div class="page-header">
+		<button type="button" class="pull-right btn btn-link btn-mini advancedModeBtn" data-parenttohide="fcp">Advanced <i class="icon-caret-down"></i></button>
+		<h1>Freenet Client Protocol</h1>
+	</div>
+
+
+	<div class="row ">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Enable FCP?</abbr>
+			</strong>
+			<p class="muted">
+				Enable the Freenet Client Protocol server
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr>
+
+
+	<div class="row advanced" data-parent="fcp">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Enable SSL?</abbr>
+			</strong>
+			<p class="muted">
+				Enable SSL on the FCP server. You will need the 'Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files' for it to work.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="fcp">
+
+
+	<div class="row advanced" data-parent="fcp">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">FCP port</abbr>
+			</strong>
+			<p class="muted">
+				The TCP port the FCP server should listen on
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="9481">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="fcp">
+
+
+
+
+	<div class="row advanced" data-parent="fcp">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">IP address to bind to</abbr>
+			</strong>
+			<p class="muted">
+				IP address to bind the FCP server to.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="127.0.0.1,0:0:0:0:0:0:0:1">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="fcp">
+
+
+
+
+	<div class="row advanced" data-parent="fcp">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Allowed hosts (read the warning!)</abbr>
+			</strong>
+			<p class="muted">
+				IP addresses that are allowed to connect to the FCP server. May be a comma-separated list of single IPs and CIDR masked IPs like 192.168.0.0/24. WARNING! Anyone who has access to FCP can upload any file your Freenet node has access to, or download files to disk (but the node will try not to overwrite existing files).
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="127.0.0.1,0:0:0:0:0:0:0:1">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="fcp">
+
+
+
+
+	<div class="row advanced" data-parent="fcp">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Hosts allowed full access</abbr>
+			</strong>
+			<p class="muted">
+				IP addresses which are allowed full access to your Freenet node. Clients on these IPs may restart Freenet, reconfigure it, etc. Note that ALL clients are allowed to do direct disk I/O!
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="127.0.0.1,0:0:0:0:0:0:0:1">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="fcp">
+
+
+
+	<div class="row advanced" data-parent="fcp">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Assume that download DDA is allowed?</abbr>
+			</strong>
+			<p class="muted">
+				Assume that download DDA is allowed? if false, you have to issue a TestDDARequest before making any DDA access.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="fcp">
+
+
+
+
+	<div class="row advanced" data-parent="fcp">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Assume that upload DDA is allowed?</abbr>
+			</strong>
+			<p class="muted">
+				Assume that upload DDA is allowed? if false, you have to issue a TestDDARequest before making any DDA access.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="fcp">
+
+
+
+	<div class="row advanced" data-parent="fcp">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Maximum number of queued FCP messages per connection</abbr>
+			</strong>
+			<p class="muted">
+				Above this queue length we will either drop messages or log an ERROR complaining depending on the "never drop a message" config option.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="1024">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="fcp">
+
+
+	<div class="row advanced" data-parent="fcp">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Never drop an FCP message?</abbr>
+			</strong>
+			<p class="muted">
+				Enable this to cache all messages for any FCP connection forever even if it causes the node to run out of memory. Not a good idea but useful for debugging in some cases.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="fcp">
+
+
+
+</section>
+
+
+
+<div class="apply-buttons modal-footer">
+	<a href="#" class="act act-warning pull-left">Reset to defaults</a>
+	<a href="#" class="act act-danger act-large">Discard changes</a>
+	<span>or</span>
+	<a href="#" class="btn btn-primary btn-large">Save changes</a>
+</div>
+
+

@@ -27,6 +27,7 @@ Redesignproject::Application.routes.draw do
   match "/settings/scheduling" => "redesign#scheduling"
   match "/settings/autoupdate" => "redesign#autoupdate"
   match "/settings/ssl" => "redesign#ssl"
+  match "/settings/fcp" => "redesign#fcp"
   match "/settings/status/connectionstostrangers" => "redesign#connectionstostrangers"
   match "/settings/status/statistics" => "redesign#statistics"
   match "/settings/status/internetconnection" => "redesign#internetconnection"

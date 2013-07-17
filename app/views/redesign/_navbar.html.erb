@@ -180,7 +180,7 @@
                 <li class="divider"></li>
                 <li class=" <% if request.fullpath.include?("seclevels") %>active<%end%>"><a href="/settings/seclevels">Security Levels</a></li>
                 <li class="<% if request.fullpath.include?("interfaces") %>active<%end%>"><a href="/settings/interfaces">Interfaces</a></li>
-                <li><a href="#">FCP</a></li>
+                <li class="<% if request.fullpath.include?("fcp") %>active<%end%>"><a href="/settings/fcp">FCP</a></li>
                 <li class="<% if request.fullpath.include?("logs") %>active<%end%>"><a href="/settings/logs">Logs</a></li>
                 <li class="<% if request.fullpath.include?("core") %>active<%end%>"><a href="/settings/core">Core settings</a></li>
                 <li class="<% if request.fullpath.include?("installation") %>active<%end%>"><a href="/settings/installation">Installation settings</a></li>
