@@ -185,7 +185,7 @@
                 <li class="<% if request.fullpath.include?("core") %>active<%end%>"><a href="/settings/core">Core settings</a></li>
                 <li class="<% if request.fullpath.include?("installation") %>active<%end%>"><a href="/settings/installation">Installation settings</a></li>
                 <li class="<% if request.fullpath.include?("loadmanagement") %>active<%end%>"><a href="/settings/loadmanagement">Load management</a></li>
-                <li><a href="#">Opennet</a></li>
+                <li class="<% if request.fullpath.include?("opennet") %>active<%end%>"><a href="/settings/opennet">Opennet</a></li>
                 <li><a href="#">Request scheduling</a></li>
                 <li><a href="#">Auto-update</a></li>
                 <li><a href="#">SSL</a></li>

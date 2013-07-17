@@ -1,0 +1,321 @@
+<section>
+	<div class="page-header">
+		<button type="button" class="pull-right btn btn-link btn-mini advancedModeBtn" data-parenttohide="opennet">Advanced <i class="icon-caret-down"></i></button>
+		<h1>Opennet settings</h1>
+	</div>
+
+
+
+
+
+	<div class="row">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Allow Freenet to bootstrap itself using seednodes? (Leave this alone unless you know what you're doing)</abbr>
+			</strong>
+			<p class="muted">
+				Allow your Freenet node to bootstrap itself using seednodes? To get onto the opennet (the Strangers network, automatic Freenet connection on low/normal network security level), we contact public nodes chosen from a small list shipped with Freenet. Obviously this is somewhat insecure, but if you are using opennet, you probably need it: if your node is down for a while, especially if it is NATed and/or changes its IP address, it will probably need to reseed. If you want better security, you need to connect to your friends and enable high network security.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr>
+
+
+
+	<div class="row">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Enable insecure mode (automatically connect to untrusted nodes)?</abbr>
+			</strong>
+			<p class="muted">
+				Enable insecure mode (aka opennet)? If this is enabled, your Freenet node will automatically exchange node references with other untrusted nodes (Strangers as opposed to Friends). But this means that the fact that you are running a node is no longer private, and many attacks are much easier. If you know enough people running Freenet, you should stick to trusted (Friends) connections to them, and turn this off.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr>
+
+
+
+	<div class="row " >
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Maximum number of Opennet peers</abbr>
+			</strong>
+			<p class="muted">
+				Maximum number of Opennet peers (must be between 0 and 40 inclusive, the actual limit will depend on the number of Friends and your bandwidth limit, and will be shown on the statistics page).
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="100">
+			</div>
+		</div>
+	</div>
+	<hr>
+
+
+
+	<div class="row advanced" data-parent="opennet">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Opennet port number (UDP)</abbr>
+			</strong>
+			<p class="muted">
+				UDP port used by Freenet to communicate with Strangers i.e. freenet nodes running in opennet mode. This port should be forwarded in your router if possible. We use a separate port for connections to your Friends' nodes.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="56058">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="opennet">
+
+
+
+
+	<div class="row advanced" data-parent="opennet">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">IP address to bind to</abbr>
+			</strong>
+			<p class="muted">
+				IP address to bind to
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="0.0.0.0">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="opennet">
+
+
+
+
+	<div class="row advanced" data-parent="opennet">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Testing packet drop frequency</abbr>
+			</strong>
+			<p class="muted">
+				Frequency of dropping packets. Testing option used by devs to simulate packet loss. 0 means never artificially drop a packet. Don't touch this!
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="0">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="opennet">
+
+
+
+
+
+
+	<div class="row advanced" data-parent="opennet">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Limit to one connection per address? (strangers)</abbr>
+			</strong>
+			<p class="muted">
+				Don't allow more than one stranger connection per address? This will make it slightly harder for an attacker to connect more than once to your node as different identities, in order to dominate your routing or make harvesting easier. Also prevents having the same node connected on as a friend and stranger simultaneously.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="opennet">
+
+
+
+
+
+
+	<div class="row advanced" data-parent="opennet">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Always allow connecting to nodes via local addresses?</abbr>
+			</strong>
+			<p class="muted">
+				If true, Freenet will attempt to connect to other nodes via their local (localhost, LAN) addresses as well as their public IPs. If this is not set, you can still enable it for specific darknet peers (but not opennet peers). Set this if you want to connect to other nodes on the same LAN or computer, and don't mind that bogus references can cause your node to send UDP packets to machines on your LAN.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="opennet">
+
+
+
+
+
+	<div class="row advanced" data-parent="opennet">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Assume the port is not forwarded.</abbr>
+			</strong>
+			<p class="muted">
+				Should Freenet assume the port is NATed and not forwarded, and always send handshakes aggressively (every 10-30 seconds), regardless of any evidence to the contrary?
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="opennet">
+
+
+
+
+
+
+	<div class="row advanced" data-parent="opennet">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Include local addresses in noderef</abbr>
+			</strong>
+			<p class="muted">
+				Whether to include local addresses (LAN and localhost) in node references. This will not be useful unless the both sides set allowLocalAddresses=true for the respective references (use the Friends page in advanced mode to set this flag).
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="opennet">
+
+
+
+
+
+	<div class="row advanced" data-parent="opennet">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Pad data packets sent by this Freenet node with random data of random length? (READ WARNING BEFORE TURNING OFF!)</abbr>
+			</strong>
+			<p class="muted">
+				Pad data packets sent by this Freenet node with random-length content? For security, on a single node, turning this off is bad; if a large part of the network starts doing it, we become very vulnerable to a passive attacker. However, it should improve performance, particularly the payload percentage. You have been warned!
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="opennet">
+
+
+
+	<div class="row advanced" data-parent="opennet">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Be a seednode?</abbr>
+			</strong>
+			<p class="muted">
+				If true, the node will accept connections from new insecure-mode nodes and help to bootstrap them onto the network. This allows any node with your noderef to connect, but only for purposes of announcement: it can only do requests to nodes that it gets through the announcement (possibly including this node if we don't have many Strangers).
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="opennet">
+
+
+
+</section>
+
+
+
+<div class="apply-buttons modal-footer">
+	<a href="#" class="act act-warning pull-left">Reset to defaults</a>
+	<a href="#" class="act act-danger act-large">Discard changes</a>
+	<span>or</span>
+	<a href="#" class="btn btn-primary btn-large">Save changes</a>
+</div>
+
+

@@ -23,6 +23,7 @@ Redesignproject::Application.routes.draw do
   match "/settings/core" => "redesign#core"
   match "/settings/installation" => "redesign#installation"
   match "/settings/loadmanagement" => "redesign#loadmanagement"
+  match "/settings/opennet" => "redesign#opennet"
   match "/settings/status/connectionstostrangers" => "redesign#connectionstostrangers"
   match "/settings/status/statistics" => "redesign#statistics"
   match "/settings/status/internetconnection" => "redesign#internetconnection"
