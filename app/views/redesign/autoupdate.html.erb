@@ -1,0 +1,170 @@
+
+<section>
+	<div class="page-header">
+		<button type="button" class="pull-right btn btn-link btn-mini advancedModeBtn" data-parenttohide="autoupdate">Advanced <i class="icon-caret-down"></i></button>
+		<h1>Auto-update Freenet</h1>
+	</div>
+
+
+	<div class="row">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Check for, and download new versions</abbr>
+			</strong>
+			<p class="muted">
+				Should your node automatically check for new versions of Freenet. If yes, new versions will be automatically detected and downloaded, but not necessarily installed. This setting resets itself always back to false unless your Freenet node runs within the wrapper.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr>
+
+
+
+	<div class="row advanced" data-parent="autoupdate">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Automatically install new versions</abbr>
+			</strong>
+			<p class="muted">
+				Should your node automatically update to the newest version of Freenet, without asking?
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="autoupdate">
+
+
+
+	<div class="row advanced" data-parent="autoupdate">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Where should Freenet look for updates?</abbr>
+			</strong>
+			<p class="muted">
+				Where should your Freenet node look for updates? This should be a Freenet URI where updates can be downloaded from. The default URI ends in /update/(version number). To download the source code for an update, you can copy the key below, and change "update" to "update-source". Similarly, "fullchangelog" gives you the long, developer-friendly list of changes, and "installer", "wininstaller", "seednodes" and "iptocountryv4" give other files.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="xxx">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="autoupdate">
+
+
+
+	<div class="row advanced" data-parent="autoupdate">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Where should Freenet look for the revocation key?</abbr>
+			</strong>
+			<p class="muted">
+				URI for the revocation key. If this is found Freenet will display its contents and disable the auto-updater.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<input type="text" class="span4" value="xxx">
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="autoupdate">
+
+
+
+
+	<div class="row advanced" data-parent="autoupdate">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Update the seednodes automatically?</abbr>
+			</strong>
+			<p class="muted">
+				Update the seednodes.fref file automatically over Freenet?
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="autoupdate">
+
+
+
+
+	<div class="row advanced" data-parent="autoupdate">
+		<div class="span8">
+			<strong>
+				<abbr title="Default: xxx [xxxx.xxx]">Download the latest installers over Freenet?</abbr>
+			</strong>
+			<p class="muted">
+				Download the latest installers over Freenet? These will be linked from the "Add a Friend" page.
+			</p>
+		</div>
+		<div class="span4">
+			<div class="pull-right">
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option1" checked>
+					Yes
+				</label>
+				<label class="radio">
+					<input type="radio" name="optionsRadios" id="" value="option2">
+					No
+				</label>
+			</div>
+		</div>
+	</div>
+	<hr class="advanced" data-parent="autoupdate">
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+<div class="apply-buttons modal-footer">
+	<a href="#" class="act act-warning pull-left">Reset to defaults</a>
+	<a href="#" class="act act-danger act-large">Discard changes</a>
+	<span>or</span>
+	<a href="#" class="btn btn-primary btn-large">Save changes</a>
+</div>
+
+
