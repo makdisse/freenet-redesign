@@ -183,7 +183,7 @@
                 <li><a href="#">FCP</a></li>
                 <li class="<% if request.fullpath.include?("logs") %>active<%end%>"><a href="/settings/logs">Logs</a></li>
                 <li class="<% if request.fullpath.include?("core") %>active<%end%>"><a href="/settings/core">Core settings</a></li>
-                <li><a href="#">Installation settings</a></li>
+                <li class="<% if request.fullpath.include?("installation") %>active<%end%>"><a href="/settings/installation">Installation settings</a></li>
                 <li><a href="#">Load management</a></li>
                 <li><a href="#">Opennet</a></li>
                 <li><a href="#">Request scheduling</a></li>
