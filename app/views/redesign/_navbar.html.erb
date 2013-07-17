@@ -188,7 +188,7 @@
                 <li class="<% if request.fullpath.include?("opennet") %>active<%end%>"><a href="/settings/opennet">Opennet</a></li>
                 <li class="<% if request.fullpath.include?("scheduling") %>active<%end%>"><a href="/settings/scheduling">Request scheduling</a></li>
                 <li class="<% if request.fullpath.include?("autoupdate") %>active<%end%>"><a href="/settings/autoupdate">Auto-update</a></li>
-                <li><a href="#">SSL</a></li>
+                <li class="<% if request.fullpath.include?("ssl") %>active<%end%>"><a href="/settings/ssl">SSL</a></li>
                 <li><a href="#">Translation</a></li>
                 <li><a href="#">Keyutils</a></li>
               </ul>
