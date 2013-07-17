@@ -28,6 +28,7 @@ Redesignproject::Application.routes.draw do
   match "/settings/autoupdate" => "redesign#autoupdate"
   match "/settings/ssl" => "redesign#ssl"
   match "/settings/fcp" => "redesign#fcp"
+  match "/settings/keyutilssettings" => "redesign#keyutilssettings"
   match "/settings/status/connectionstostrangers" => "redesign#connectionstostrangers"
   match "/settings/status/statistics" => "redesign#statistics"
   match "/settings/status/internetconnection" => "redesign#internetconnection"

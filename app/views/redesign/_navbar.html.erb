@@ -190,7 +190,7 @@
                 <li class="<% if request.fullpath.include?("autoupdate") %>active<%end%>"><a href="/settings/autoupdate">Auto-update</a></li>
                 <li class="<% if request.fullpath.include?("ssl") %>active<%end%>"><a href="/settings/ssl">SSL</a></li>
                 <li><a href="#">Translation</a></li>
-                <li><a href="#">Keyutils</a></li>
+                <li class="<% if request.fullpath.include?("keyutilssettings") %>active<%end%>"><a href="/settings/keyutilssettings">Keyutils</a></li>
               </ul>
             </li>
 
